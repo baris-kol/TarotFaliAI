@@ -1,0 +1,83 @@
+name: Günlük burç yorumu
+
+on:
+  schedule:
+    # Saatler UTC. GitHub zamanlanmış işleri yoğunlukta birkaç dakika (bazen
+    # daha fazla) geciktirebiliyor; tam saat başı bilerek seçilmedi.
+    - cron: "17 20 * * *" # 23:17 TR — ertesi günün yorumu
+    - cron: "47 23 * * *" # 02:47 TR — yedek: gece koşusu başarısızsa bugünün yorumu
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Tarih (YYYY-MM-DD). Boşsa: TR saatiyle 18:00'den sonra yarın, önce bugün."
+        required: false
+        default: ""
+      force:
+        description: "O günün yorumu zaten varsa yeniden üret"
+        type: boolean
+        default: false
+
+# Aynı anda iki koşu repoya yazmaya çalışmasın.
+concurrency:
+  group: daily-horoscope
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Yorumları üret
+        id: generate
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          HOROSCOPE_DATE: ${{ inputs.date }}
+          HOROSCOPE_FORCE: ${{ inputs.force }}
+        run: python -m horoscope
+
+      # Her gün bir commit: hem arşiv git geçmişinde duruyor hem de repo
+      # "aktif" kalıyor — GitHub 60 gün hareketsiz kalan repoların
+      # zamanlanmış işlerini kendiliğinden kapatıyor.
+      - name: Repoya yaz
+        env:
+          DAY: ${{ steps.generate.outputs.date }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public
+          if git diff --cached --quiet; then
+            echo "Değişiklik yok."
+          else
+            git commit -m "Günlük burç yorumu: $DAY"
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: public
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
