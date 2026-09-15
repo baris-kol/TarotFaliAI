@@ -3,7 +3,10 @@ name: Burç yorumları
 on:
   schedule:
     - cron: "17 20 * * *"
-    - cron: "47 23 * * *"
+    - cron: "47 21 * * *"
+    - cron: "17 23 * * *"
+    - cron: "17 1 * * *"
+    - cron: "7 8 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -30,6 +33,8 @@ jobs:
     timeout-minutes: 45
     permissions:
       contents: write
+    outputs:
+      changed: ${{ steps.write.outputs.changed }}
     steps:
       - uses: actions/checkout@v7
 
@@ -51,6 +56,7 @@ jobs:
         run: python -m horoscope
 
       - name: Repoya yaz
+        id: write
         if: ${{ !cancelled() }}
         env:
           DAY: ${{ steps.generate.outputs.date }}
@@ -64,16 +70,17 @@ jobs:
             git commit -m "Burç yorumları: $DAY"
             git pull --rebase origin "$GITHUB_REF_NAME"
             git push origin "HEAD:$GITHUB_REF_NAME"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
       - uses: actions/upload-pages-artifact@v5
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && (steps.write.outputs.changed == 'true' || github.event_name == 'workflow_dispatch') }}
         with:
           path: public
 
   deploy:
     needs: generate
-    if: ${{ !cancelled() }}
+    if: ${{ !cancelled() && (needs.generate.outputs.changed == 'true' || github.event_name == 'workflow_dispatch') }}
     runs-on: ubuntu-latest
     permissions:
       pages: write

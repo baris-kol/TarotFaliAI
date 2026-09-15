@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import os
 import sys
+import time
 from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
@@ -28,6 +29,7 @@ PUBLIC = Path(__file__).resolve().parent.parent / "public"
 GENERATION_ATTEMPTS = 3
 REPAIR_ROUNDS = 2
 EVENING_HOUR = 18
+BUDGET_MINUTES = 32
 PERIODS = ("daily", "weekly", "monthly")
 
 Readings = dict[str, dict[str, str]]
@@ -55,8 +57,26 @@ def main(argv: list[str] | None = None) -> int:
     day: date = args.date or _default_day()
     set_output("date", day.isoformat())
 
+    minutes = float(os.environ.get("HOROSCOPE_BUDGET_MINUTES", "").strip() or BUDGET_MINUTES)
+    deadline = time.monotonic() + minutes * 60
+
     periods = PERIODS if args.period == "all" else (args.period,)
-    failed = [period for period in periods if _run(_job(period, day, args.out), args) != 0]
+    failed: list[str] = []
+    for index, period in enumerate(periods):
+        job = _job(period, day, args.out)
+        try:
+            if _run(job, args, deadline) != 0:
+                failed.append(period)
+        except gemini.Postponed as error:
+            waiting = ", ".join(periods[index:])
+            reset = (
+                " Günlük kota Türkiye saatiyle 10:00'da (kışın 11:00) sıfırlanıyor; "
+                "11:07 koşusu yeniden deneyecek."
+                if error.quota
+                else " Bir sonraki zamanlanmış koşu yeniden deneyecek."
+            )
+            log("warning", f"Ertelendi ({waiting}): {error}.{reset}")
+            break
     if failed:
         log("error", "Üretilemeyen: " + ", ".join(failed) + ". Önceki yorumlar yayında kalıyor.")
         return 1
@@ -118,7 +138,7 @@ def _bounds(period: str, day: date) -> tuple[date, date]:
     return start, following - timedelta(days=1)
 
 
-def _run(job: Job, args: argparse.Namespace) -> int:
+def _run(job: Job, args: argparse.Namespace, deadline: float) -> int:
     if job.exists and not args.force and not args.dry_run:
         info(f"{job.label} yorumu zaten var; yeniden üretilmiyor (zorlamak için --force).")
         job.refresh_feed()
@@ -160,6 +180,7 @@ def _run(job: Job, args: argparse.Namespace) -> int:
                 system=job.system,
                 prompt=job.prompt,
                 schema=response_schema(SIGNS, job.specs),
+                deadline=deadline,
             )
             readings = feed.parse_readings(reply.text, limits=job.limits)
             break
@@ -172,12 +193,21 @@ def _run(job: Job, args: argparse.Namespace) -> int:
         log("error", f"{job.label}: {GENERATION_ATTEMPTS} denemede de geçerli yorum alınamadı.")
         return 1
 
-    readings = _repair(api_key, models, job, readings)
     log("notice", job.write(readings, reply.model))
+    order = [reply.requested, *(m for m in models if m != reply.requested)]
+    repaired = _repair(api_key, order, job, readings, deadline)
+    if repaired is not readings:
+        log("notice", job.write(repaired, reply.model))
     return 0
 
 
-def _repair(api_key: str, models: list[str], job: Job, readings: Readings) -> Readings:
+def _repair(
+    api_key: str,
+    models: list[str],
+    job: Job,
+    readings: Readings,
+    deadline: float,
+) -> Readings:
     for round_ in range(1, REPAIR_ROUNDS + 1):
         issues = feed.content_issues(readings, job.previous)
         if not issues:
@@ -191,13 +221,15 @@ def _repair(api_key: str, models: list[str], job: Job, readings: Readings) -> Re
                 system=job.system,
                 prompt=job.repair_prompt(readings, issues),
                 schema=response_schema(signs, job.specs),
+                deadline=deadline,
+                patient=False,
             )
             fixed = feed.parse_readings(reply.text, expected=signs, limits=job.limits)
         except (gemini.IncompleteReply, feed.InvalidReadings) as error:
             log("warning", f"{job.label}: düzeltme turu {round_} kullanılamadı: {error}")
             continue
-        except gemini.GeminiError as error:
-            log("warning", f"{job.label}: düzeltme yapılamadı: {error}")
+        except (gemini.GeminiError, gemini.Postponed) as error:
+            log("warning", f"{job.label}: düzeltme atlandı, ilk metin yayında kalıyor: {error}")
             break
         readings = {slug: fixed.get(slug, entry) for slug, entry in readings.items()}
 

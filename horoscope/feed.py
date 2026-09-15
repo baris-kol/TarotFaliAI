@@ -90,7 +90,7 @@ _WORD = re.compile(r"\w+(?:['’]\w+)?")
 _SENTENCE = re.compile(r"[.!?;:]")
 _ASTRO = re.compile(
     r"\w+['’]\w*|gezegen\w*|yönetici\w*|açı(?:sı|yla|lar\w*)?|kare|üçgen\w*"
-    r"|karşıt\w*|kavuşum\w*|altmışlık\w*|retro\w*"
+    r"|karşıt\w*|kavuşum\w*|altmışlık\w*|retro\w*|burc\w*|burç\w*|geçiş\w*"
     r"|güneş|ay|merkür|venüs|mars|jüpiter|satürn|uranüs|neptün|plüton"
     r"|koç|boğa|ikizler|yengeç|aslan|başak|terazi|akrep|yay|oğlak|kova|balık"
 )
