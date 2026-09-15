@@ -1,24 +1,3 @@
-"""Gemini'ye giden talimat, istem ve yanıt şeması.
-
-Yorumların kalitesi büyük ölçüde bu dosyada. Değiştirirken:
-
-* Gökyüzü modelden istenmiyor, `sky.py` hesaplıyor; talimat modelin yalnızca
-  verilen konumları kullanmasını istiyor. Bu kuralı gevşetme.
-* Alan uzunlukları uygulamadaki mektup düzenine göre. `feed.LIMITS` (günlük)
-  ve `feed.PERIOD_LIMITS` (haftalık/aylık) aynı aralıkları (karakter olarak,
-  daha geniş) denetliyor — birini değiştirirsen ötekine de bak.
-* Üslup kurallarının bir kısmı (sağlıkta organ/yiyecek, "Ay" ile başlayan
-  giriş, "-malısın", burçlar arası kalıp tekrarı, İngilizce kelime, aşk
-  bölümlerinin doğru okura seslenmesi) `feed.content_issues` ile de
-  denetleniyor; çiğneyen
-  burçlar `build_repair_prompt` ile yeniden yazdırılıyor. Kuralı burada
-  değiştirirsen orada da değiştir.
-* Talimat parçalardan kuruluyor: üslup, sınırlar ve çeşitlilik günlük,
-  haftalık ve aylık yorumda ortak; yalnızca giriş ve gökyüzü bölümü dönemine
-  göre değişiyor.
-* Değişikliği Gemini'ye gitmeden görmek için: `python -m horoscope --dry-run`.
-"""
-
 from __future__ import annotations
 
 import json
@@ -43,8 +22,6 @@ FIELD_SPECS: dict[str, str] = {
 
 FIELDS: tuple[str, ...] = tuple(FIELD_SPECS)
 
-# Haftalık ve aylık yorumda alanlar aynı (uygulama aynı mektup düzeniyle
-# gösteriyor), yalnızca uzunluk ve bakış farklı.
 PERIOD_FIELD_SPECS: dict[str, dict[str, str]] = {
     "weekly": {
         "ozet": "Haftanın tek cümlelik özü; en fazla 120 karakter. Akılda "
@@ -98,6 +75,10 @@ başlatma; her burçta başka bir girişle başla (bir imge, günün duygusu, bi
 soru…).
 - Korkutucu, suçlayıcı ya da kaderci cümle kurma. Zorlayıcı bir etkiyi \
 anlatırken onu nasıl iyi kullanabileceğini de söyle.
+- Şu kalıpları hiç kullanma: "harika bir gün", "son derece", "muazzam", \
+"elverişli bir zamandasın", "parlak fikirler", "tazeleyici enerji", \
+"fırsatlarla karşılaşabilirsin", "pozitif enerji", "yeni kapılar", \
+"ilham kaynağı". Yerine somut bir durum, bir imge ya da bir ayrıntı yaz.
 """
 
 _SKY_DAILY = """
@@ -109,10 +90,15 @@ listelenmeyen hiçbir gezegenin retro olduğunu söyleme.
 üçgen ve altmışlık akış, kolaylık ve destek getirir; kare gerilim ve harekete \
 geçme baskısı yaratır; karşıt denge arayışı ve başkalarıyla yüzleşme \
 demektir. Zorlayıcı açıları da nasıl iyi kullanılacağıyla birlikte anlat.
-- Her burç için listeden o burca en çok dokunan bir iki etkiyi seç: açıyı \
-yapan gezegenlerin o burcun hangi evlerinde olduğuna, yöneticisinin açılarına, \
-yaklaşan dönüşlere ve tutulmalara bak. Hepsini sayma; aynı açıyı her burçta \
-tekrarlama.
+- Günün ekseni Ay: her burcun satırında "GÜNÜN EKSENİ" diye verilen, Ay'ın \
+o burç için bulunduğu alan, gün içindeki geçişi ve Ay'ın o güne ait açıları. \
+Genel yorumu bunun üzerine kur.
+- "(süren etki)" diye işaretlenenler günlerdir ya da haftalardır sürüyor \
+(Güneş'in evi, yavaş gezegen açıları, retrolar). Bunları en fazla bir yan \
+cümleyle, arka plan olarak an; hiçbirini genel yorumun ana teması yapma.
+- Bunun dışında her burç için o burca en çok dokunan bir iki etkiyi seç: \
+yöneticisinin açılarına, yaklaşan dönüşlere ve tutulmalara bak. Hepsini \
+sayma; aynı açıyı her burçta tekrarlama.
 - Günün bir bölümünü ("sabah", "öğleden sonra", "akşama doğru") yalnızca \
 listede saati verilen olaylar için (Ay'ın açıları, burç geçişleri, Ay evresi) \
 kullan; saati rakamla yazma. Gezegen açıları gün boyu sürer; onlara saat ya \
@@ -195,7 +181,27 @@ gibi) tekrarlama; her burçta başka kelimelerle ve başka bir yerden gir.
 karakteriyle ele al.
 """
 
-SYSTEM = _ROLE.format(kind="günlük", rhythm="her gün") + _STYLE + _SKY_DAILY + _LIMITS + _VARIETY
+_CONTINUITY = """
+GÜNDEN GÜNE
+- Okurların uygulamayı her gün açıyor ve dünkü yorumunu okudu. İstemde her \
+burcun dünkü yorumu var: dünkü açılış cümlesini, imgeyi, ana temayı ve \
+önerileri tekrar etme. Aynı konuya dönmen gerekiyorsa başka bir yerden, yeni \
+bir ayrıntıyla gir.
+- Arka arkaya iki gün okuyan biri "bu dünküyle aynı" dememeli: her burcun \
+yorumunu o güne özgü en az bir somut ayrıntı taşısın (Ay'ın geçtiği alan, \
+günün bir bölümü, Ay'ın bir açısı).
+- Aşk, kariyer ve sağlık bölümlerinde de dünkü öneriyi başka kelimelerle \
+tekrarlama; her gün farklı bir durum ya da küçük bir adım öner.
+"""
+
+SYSTEM = (
+    _ROLE.format(kind="günlük", rhythm="her gün")
+    + _STYLE
+    + _SKY_DAILY
+    + _CONTINUITY
+    + _LIMITS
+    + _VARIETY
+)
 
 _PERIOD_WORDS = {
     "weekly": ("haftalık", "her hafta başında"),
@@ -204,7 +210,6 @@ _PERIOD_WORDS = {
 
 
 def period_system(kind: str) -> str:
-    """Haftalık ya da aylık yorumun talimatı."""
     label, rhythm = _PERIOD_WORDS[kind]
     return (
         _ROLE.format(kind=label, rhythm=rhythm)
@@ -222,8 +227,15 @@ _CLOSING = (
 )
 
 
-def build_prompt(sky: Sky) -> str:
-    return _context(sky) + _CLOSING
+Readings = dict[str, dict[str, str]]
+
+
+def build_prompt(
+    sky: Sky,
+    yesterday: Sky | None = None,
+    previous: Readings | None = None,
+) -> str:
+    return _context(sky, yesterday, previous) + _CLOSING
 
 
 def build_period_prompt(psky: PeriodSky) -> str:
@@ -232,11 +244,12 @@ def build_period_prompt(psky: PeriodSky) -> str:
 
 def build_repair_prompt(
     sky: Sky,
-    readings: dict[str, dict[str, str]],
+    readings: Readings,
     issues: dict[str, list[str]],
+    yesterday: Sky | None = None,
+    previous: Readings | None = None,
 ) -> str:
-    """Kuralları çiğneyen burçları, sorunlarıyla birlikte yeniden yazdıran istem."""
-    return _repair(_context(sky), readings, issues)
+    return _repair(_context(sky, yesterday, previous), readings, issues)
 
 
 def build_period_repair_prompt(
@@ -297,8 +310,11 @@ def response_schema(
     }
 
 
-def _context(sky: Sky) -> str:
-    """Tarih, gökyüzü, burç burç vurgular ve alan tarifleri — son talimat hariç."""
+def _context(
+    sky: Sky,
+    yesterday: Sky | None = None,
+    previous: Readings | None = None,
+) -> str:
     day = sky.day
     lines = [
         f"Tarih: {day_label(day)} {day.year}, "
@@ -308,7 +324,22 @@ def _context(sky: Sky) -> str:
         "",
         "BURÇ BURÇ GÜNÜN VURGULARI (her burç kendi burcunu 1. ev sayar; "
         "parantez içinde o evin konuları):",
-        *(f"- {_sign_line(sign, sky)}" for sign in SIGNS),
+        *(f"- {_sign_line(sign, sky, yesterday)}" for sign in SIGNS),
+    ]
+    if previous:
+        lines += [
+            "",
+            "DÜNKÜ YORUMLAR (okur bunları dün okudu; açılışı, imgeyi, ana "
+            "temayı ve önerileri tekrar etme):",
+        ]
+        for sign in SIGNS:
+            entry = previous.get(sign.slug)
+            if isinstance(entry, dict) and entry.get("genel"):
+                lines.append(
+                    f"- {sign.name}: özet: “{entry.get('ozet', '')}” · genel: "
+                    f"“{entry['genel']}” · kariyer: “{entry.get('kariyer', '')}”"
+                )
+    lines += [
         "",
         "YAZILACAK ALANLAR (her burç için):",
         *(f"- {field}: {spec}" for field, spec in FIELD_SPECS.items()),
@@ -317,7 +348,6 @@ def _context(sky: Sky) -> str:
 
 
 def _period_context(psky: PeriodSky) -> str:
-    """Dönem, gökyüzü, burç burç vurgular ve alan tarifleri."""
     span = (
         "Pazartesi–Pazar"
         if psky.kind == "weekly"
@@ -338,19 +368,36 @@ def _period_context(psky: PeriodSky) -> str:
     return "\n".join(lines)
 
 
-def _sign_line(sign: Sign, sky: Sky) -> str:
-    notes = [
-        _transit("Güneş", sign, sky.sun.sign, sky.sun.ingress),
-        _transit("Ay", sign, sky.moon.sign, sky.moon.ingress),
-    ]
-    # Ay'ın açıları zaten ayrı listede; Yengeç için tekrar sayılmıyor.
+def _sign_line(sign: Sign, sky: Sky, yesterday: Sky | None = None) -> str:
+    axis = _transit("Ay", sign, sky.moon.sign, sky.moon.ingress)
+    if yesterday and not sky.moon.ingress:
+        last_night = yesterday.moon.ingress.sign if yesterday.moon.ingress else yesterday.moon.sign
+        if last_night == sky.moon.sign:
+            axis += (
+                " (Ay dün de bu alandaydı: bugünün farkını Ay'ın bugünkü "
+                "açılarından ya da günün bir bölümünden kur)"
+            )
+    notes = [f"GÜNÜN EKSENİ — {axis}"]
+
+    if sign.ruler == "Ay":
+        notes.append("yöneticisi Ay: günün Ay açıları bu burç için daha belirgin")
+    else:
+        moon_hits = [a.label for a in sky.moon_aspects if a.exact and a.involves(sign.ruler)]
+        if moon_hits:
+            notes.append(f"Ay'ın bugün yöneticisiyle açısı: {', '.join(moon_hits)}")
+
+    sun = _transit("Güneş", sign, sky.sun.sign, sky.sun.ingress)
+    notes.append(sun if sky.sun.ingress else f"(süren etki) {sun}")
+
     if sign.ruler != "Ay":
-        ruler_aspects = [a.label for a in sky.aspects_of(sign.ruler)]
-        if ruler_aspects:
-            notes.append(f"yöneticisinin bugünkü açıları: {', '.join(ruler_aspects)}")
+        known = {a.label for a in yesterday.planet_aspects} if yesterday else set()
+        for aspect in sky.planet_aspects:
+            if aspect.involves(sign.ruler):
+                tag = "(süren etki) " if aspect.label in known else "(yeni) "
+                notes.append(f"{tag}yöneticisinin açısı: {aspect.label}")
     ruler = sky.planet(sign.ruler)
     if ruler and ruler.retrograde:
-        notes.append(f"yöneticisi {ruler.name} geri harekette")
+        notes.append(f"(süren etki) yöneticisi {ruler.name} geri harekette")
     for station in sky.stations:
         if station.planet == sign.ruler:
             notes.append(
@@ -363,7 +410,7 @@ def _sign_line(sign: Sign, sky: Sky) -> str:
             f"({HOUSE_THEMES[house - 1]})"
         )
     if sky.sun.sign == sign:
-        notes.append("Güneş kendi burcunda: yaş günü dönemi")
+        notes.append("(süren etki) Güneş kendi burcunda: yaş günü dönemi")
     return (
         f"{sign.name} ({sign.element} · {sign.modality} · yöneticisi {sign.ruler}): "
         + "; ".join(notes)
@@ -372,8 +419,6 @@ def _sign_line(sign: Sign, sky: Sky) -> str:
 
 
 def _period_sign_line(sign: Sign, psky: PeriodSky) -> str:
-    """Bir burç için dönemin öne çıkanları: Güneş'in evi, Yeni Ay / Dolunay /
-    tutulmanın düştüğü evler, yöneticisinin geçişleri, retroları ve açıları."""
 
     def house(other: Sign) -> str:
         number = house_of(sign, other)

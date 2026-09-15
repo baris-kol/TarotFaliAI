@@ -1,34 +1,3 @@
-"""Günün gökyüzü — yorumların dayanacağı gerçek konumlar.
-
-Gökyüzünü Gemini'ye sormuyoruz: kendi hâline bırakılınca olmayan bir Merkür
-retrosu ya da yanlış bir Ay burcu uydurabiliyor. Bir astroloğun günlük yorum
-yazarken baktığı efemeris burada hesaplanıp istemin içine hazır cümleler
-olarak giriyor; talimat modelin yalnızca bunları kullanmasını istiyor:
-
-* Güneş, Ay, Merkür–Satürn ve kuşak gezegenleri (Uranüs, Neptün, Plüton):
-  burç, gün içi burç geçişi, retro.
-* Ay'ın gün içinde tam olan büyük açıları, saatiyle — günlük yorumların asıl
-  malzemesi. Ay her gezegenden hızlı olduğu için günde birkaç tane oluyor.
-* Gezegenler arası etkin açılar: öğlen `PLANET_ORB` dereceden yakın olanlar,
-  yaklaşıyor mu ayrılıyor mu, bugün tam oluyorsa saati.
-* Retro dönüşleri: `STATION_WINDOW` içinde başlayan ya da biten retrolar.
-* Tutulmalar: `ECLIPSE_WINDOW` içindeki Yeni Ay ve Dolunaylarda Güneş, Ay ve
-  Dünya gölgesinin geometrisinden; türüyle (tam / halkalı / parçalı / yarı
-  gölge).
-
-Uygulamadaki "Gökyüzü şu an" kartı aynı Güneş/Ay burcunu kendi hesabıyla
-gösteriyor — metinle çelişmiyorlar.
-
-Haftalık ve aylık yorumlar için `compute_period` bir dönemin gökyüzünü
-veriyor: dönem başındaki konumlar ve dönem içindeki olaylar (ana evreler ve
-tutulmalar, gezegenlerin burç geçişleri, retro dönüşleri, tam olan gezegen
-açıları; haftalıkta Ay'ın burç geçişleri de). Olaylar yayınlanan dosyaya da
-giriyor; uygulama onları "Gökyüzü takvimi" olarak gösteriyor.
-
-Gün, Türkiye saatiyle 00:00–24:00. Türkiye 2016'dan beri yaz saati
-uygulamıyor, sabit UTC+3 — saat dilimi veritabanına gerek yok.
-"""
-
 from __future__ import annotations
 
 import math
@@ -73,11 +42,8 @@ ASPECTS = (
     ("karşıt", 180),
 )
 
-# Gezegenler arası açının "etkin" sayıldığı sapma (derece). Hızlı gezegenler
-# için yaklaşık bir iki gün, yavaşlar için birkaç hafta.
 PLANET_ORB = 1.5
 
-# (kaç gün öncesinden, kaç gün sonrasına)
 STATION_WINDOW = (3, 7)
 ECLIPSE_WINDOW = (3, 14)
 
@@ -94,18 +60,17 @@ _PRECISION = timedelta(seconds=30)
 
 @dataclass(frozen=True)
 class Ingress:
-    """Gün içinde başka bir burca geçiş."""
 
     sign: Sign
-    at: datetime  # Türkiye saati
+    at: datetime
 
 
 @dataclass(frozen=True)
 class Body:
     name: str
-    sign: Sign  # günün başında (00:00)
+    sign: Sign
     ingress: Ingress | None
-    retrograde: bool  # öğlen
+    retrograde: bool
 
     def to_json(self) -> dict:
         data: dict = {"burc": self.sign.name, "gecis": None}
@@ -119,8 +84,8 @@ class Aspect:
     first: str
     second: str
     kind: str
-    exact: datetime | None  # bugün tam olduğu an (Türkiye saati)
-    orb: float | None = None  # öğlendeki sapma — yalnızca gezegen açıları
+    exact: datetime | None
+    orb: float | None = None
     applying: bool | None = None
 
     @property
@@ -133,10 +98,9 @@ class Aspect:
 
 @dataclass(frozen=True)
 class Station:
-    """Retro dönüşü: gezegenin görünür hareket yönünü değiştirdiği gün."""
 
     planet: str
-    retrograde: bool  # True: geri hareket başlıyor, False: retro bitiyor
+    retrograde: bool
     day: date
     sign: Sign
 
@@ -152,8 +116,8 @@ class Station:
 @dataclass(frozen=True)
 class Eclipse:
     solar: bool
-    kind: str  # tam / halkalı / parçalı / yarı gölge
-    at: datetime  # tam Yeni Ay ya da Dolunay anı (Türkiye saati)
+    kind: str
+    at: datetime
     sign: Sign
     degree: int
 
@@ -165,7 +129,7 @@ class Eclipse:
 @dataclass(frozen=True)
 class PhaseEvent:
     name: str
-    at: datetime  # Türkiye saati
+    at: datetime
 
 
 @dataclass(frozen=True)
@@ -173,11 +137,11 @@ class Sky:
     day: date
     sun: Body
     moon: Body
-    planets: tuple[Body, ...]  # Merkür–Satürn
-    outer: tuple[Body, ...]  # Uranüs, Neptün, Plüton
-    phase: str  # öğlen, uygulamadaki MoonPhase adlarıyla
-    illumination: int  # öğlen, yüzde
-    event: PhaseEvent | None  # gün içinde tam Yeni Ay / Dördün / Dolunay
+    planets: tuple[Body, ...]
+    outer: tuple[Body, ...]
+    phase: str
+    illumination: int
+    event: PhaseEvent | None
     moon_aspects: tuple[Aspect, ...]
     planet_aspects: tuple[Aspect, ...]
     stations: tuple[Station, ...]
@@ -194,7 +158,6 @@ class Sky:
         return [a for a in (*self.moon_aspects, *self.planet_aspects) if a.involves(name)]
 
     def describe(self) -> str:
-        """İstemdeki gökyüzü bölümleri."""
         lines = ["GÜNÜN GÖKYÜZÜ (hesaplanmış gerçek konumlar — yalnızca bunları kullan):"]
         lines += [f"- {_body_line(self.sun)}", f"- {_body_line(self.moon)}"]
         lines.append(f"- Ay evresi (öğlen): {self.phase}, aydınlık oranı %{self.illumination}.")
@@ -238,7 +201,6 @@ class Sky:
         return "\n".join(lines)
 
     def to_json(self) -> dict:
-        """Yayınlanan dosyadaki `gokyuzu` — yorum hangi gökyüzüne göre yazıldı."""
         return {
             "gunes": self.sun.to_json(),
             "ay": {
@@ -295,14 +257,13 @@ class Sky:
 
 @dataclass(frozen=True)
 class PeriodEvent:
-    """Haftalık/aylık dönem içindeki bir gök olayı."""
 
-    at: datetime  # Türkiye saati
-    kind: str  # "evre" | "tutulma" | "gecis" | "retro" | "aci"
-    text: str  # istemde ve uygulamada gösterilen cümle
-    phase: str | None = None  # evre/tutulma: "Yeni Ay", "Dolunay", …
-    bodies: tuple[str, ...] = ()  # olaya karışan gezegenler
-    sign: Sign | None = None  # evre: Ay'ın burcu; geçiş: girilen burç
+    at: datetime
+    kind: str
+    text: str
+    phase: str | None = None
+    bodies: tuple[str, ...] = ()
+    sign: Sign | None = None
 
     def to_json(self) -> dict:
         data = {
@@ -318,17 +279,15 @@ class PeriodEvent:
 
 @dataclass(frozen=True)
 class PeriodSky:
-    """Bir haftanın ya da ayın gökyüzü: başındaki konumlar ve içindeki olaylar."""
 
-    kind: str  # "weekly" | "monthly"
+    kind: str
     start: date
-    end: date  # dahil
-    bodies: tuple[Body, ...]  # dönemin başında Güneş, Merkür–Plüton
+    end: date
+    bodies: tuple[Body, ...]
     events: tuple[PeriodEvent, ...]
 
     @property
     def title(self) -> str:
-        """"14–20 Eylül 2026 haftası", "28 Eylül – 4 Ekim 2026 haftası", "Eylül 2026"."""
         if self.kind == "monthly":
             return f"{MONTHS[self.start.month - 1]} {self.start.year}"
         if self.start.month == self.end.month:
@@ -342,7 +301,6 @@ class PeriodSky:
         return next((b for b in self.bodies if b.name == name), None)
 
     def describe(self) -> str:
-        """İstemdeki gökyüzü bölümleri."""
         lines = [
             "DÖNEMİN GÖKYÜZÜ (hesaplanmış gerçek konumlar ve olaylar — yalnızca bunları kullan):",
             "Dönemin başında konumlar:",
@@ -366,7 +324,6 @@ class PeriodSky:
         return "\n".join(lines)
 
     def to_json(self) -> dict:
-        """Yayınlanan dosyadaki `gokyuzu` — uygulama olayları takvim olarak gösteriyor."""
         return {
             "konumlar": {
                 b.name: {"burc": b.sign.name, "retro": b.retrograde} for b in self.bodies
@@ -376,12 +333,6 @@ class PeriodSky:
 
 
 def compute_period(kind: str, start: date, end: date) -> PeriodSky:
-    """`start`–`end` (ikisi de dahil) gökyüzü; Türkiye saatiyle.
-
-    Haftalıkta Ay'ın burç geçişleri de olay olarak giriyor (haftada üç
-    dört tane — hangi gün neyin öne çıktığını söylemeye yarıyor); aylıkta
-    yalnızca ana evreler.
-    """
     begin = datetime.combine(start, time(0), TURKEY)
     finish = datetime.combine(end + timedelta(days=1), time(0), TURKEY)
     everyone = (_SUN, *_PLANETS, *_OUTER)
@@ -482,11 +433,6 @@ def _period_stations(begin: datetime, finish: datetime) -> list[PeriodEvent]:
 
 
 def _period_aspects(begin: datetime, finish: datetime) -> list[PeriodEvent]:
-    """Dönem içinde tam olan gezegen açıları (Güneş–Plüton, kuşak kendi arasında hariç).
-
-    Boylamlar günde bir kez hesaplanıp önbelleğe alınıyor; yalnızca işaret
-    değiştiren günde kök aranıyor.
-    """
     marks = [begin]
     while marks[-1] < finish:
         marks.append(min(marks[-1] + timedelta(days=1), finish))
@@ -543,12 +489,6 @@ def compute_sky(day: date) -> Sky:
 
 
 def longitude(body_class: type, when: datetime) -> float:
-    """Görünür, tropikal, jeosantrik ekliptik boylam (derece) — astrolojideki.
-
-    Nutasyon ve sapınç (aberration) dahil: ephem'in ekinoks ve dolunay
-    anlarıyla birebir tutuyor. Astrometrik konum (`ephem.Ecliptic(body)`)
-    ~0,003° sapıyordu — Güneş'in burç geçişinde 4 dakika.
-    """
     moment = _ephem_date(when)
     body = body_class()
     body.compute(moment, epoch=moment)
@@ -557,7 +497,6 @@ def longitude(body_class: type, when: datetime) -> float:
 
 
 def day_label(day: date) -> str:
-    """"16 Eylül"."""
     return f"{day.day} {MONTHS[day.month - 1]}"
 
 
@@ -580,8 +519,6 @@ def _moon_aspects(start: datetime) -> tuple[Aspect, ...]:
         for kind, angle in ASPECTS:
             for target in {angle, -angle % 360}:
                 for i in range(24):
-                    # Ay her gezegenden hızlı: fark hep artıyor, tam an
-                    # eksiden artıya geçiş (±180 sarması artıdan eksiye).
                     if _offset(moon[i], other[i], target) < 0 <= _offset(
                         moon[i + 1], other[i + 1], target
                     ):
@@ -602,7 +539,6 @@ def _planet_aspects(start: datetime) -> tuple[Aspect, ...]:
     later = noon + timedelta(hours=6)
     found: list[Aspect] = []
     for (a, cls_a), (b, cls_b) in combinations((_SUN, *_PLANETS, *_OUTER), 2):
-        # Kuşak gezegenlerinin kendi aralarındaki açılar yıllarca sürüyor.
         if a in _OUTER_NAMES and b in _OUTER_NAMES:
             continue
         separation = abs(_offset(longitude(cls_a, noon), longitude(cls_b, noon), 0))
@@ -672,16 +608,8 @@ def _eclipses(start: datetime) -> tuple[Eclipse, ...]:
 
 
 def _classify_eclipse(lunation: ephem.Date, solar: bool) -> Eclipse | None:
-    """Yeni Ay'da Güneş, Dolunay'da Ay tutulması var mı; varsa türü.
-
-    Jeosantrik geometri: Güneş tutulmasında Ay ile Güneş'in merkezleri
-    arasındaki en küçük açı, Dünya'dan görülebilirlik sınırıyla (Ay ve Güneş
-    yarıçapları + paralaks farkı); Ay tutulmasında Ay ile gölgenin merkezi
-    (Güneş'in tam karşısı) arasındaki açı, tam gölge ve yarı gölge
-    yarıçaplarıyla (Chauvenet'nin %2 atmosfer payı dahil) karşılaştırılıyor.
-    """
     best = None
-    for step in range(-12, 13):  # tam anın ±3 saati, 15 dakikada bir
+    for step in range(-12, 13):
         moment = ephem.Date(lunation + step * 15 * ephem.minute)
         sun, moon = ephem.Sun(moment), ephem.Moon(moment)
         if solar:
@@ -728,7 +656,6 @@ def _classify_eclipse(lunation: ephem.Date, solar: bool) -> Eclipse | None:
 
 
 def _ingress_time(body_class: type, sign: Sign, start: datetime, end: datetime) -> datetime:
-    """İkiye bölerek burç sınırının geçildiği an (yarım dakika hassasiyet)."""
     low, high = start, end
     while high - low > _PRECISION:
         middle = low + (high - low) / 2
@@ -740,7 +667,6 @@ def _ingress_time(body_class: type, sign: Sign, start: datetime, end: datetime) 
 
 
 def _root(f: Callable[[datetime], float], low: datetime, high: datetime) -> datetime:
-    """`f`'nin işaret değiştirdiği an, ikiye bölerek (yarım dakika hassasiyet)."""
     positive = f(low) > 0
     while high - low > _PRECISION:
         middle = low + (high - low) / 2
@@ -752,18 +678,15 @@ def _root(f: Callable[[datetime], float], low: datetime, high: datetime) -> date
 
 
 def _offset(first: float, second: float, target: float) -> float:
-    """`first − second`'in `target` açısından farkı, −180..180 aralığına katlanmış."""
     return (first - second - target + 180) % 360 - 180
 
 
 def _speed(body_class: type, when: datetime) -> float:
-    """Günlük görünür hareket (derece/gün); eksi = geri hareket."""
     half = timedelta(hours=12)
     return _offset(longitude(body_class, when + half), longitude(body_class, when - half), 0)
 
 
 def _phase_name(elongation: float) -> str:
-    # Uygulamadaki MoonPhase eşikleriyle birebir (sky_today.dart).
     for limit, name in (
         (10, "Yeni Ay"),
         (80, "Büyüyen Hilal"),
@@ -831,5 +754,4 @@ def _decimal(value: float) -> str:
 
 
 def _hhmm(moment: datetime) -> str:
-    # Saniyeleri yuvarla: 14:31:50 → 14:32.
     return (moment + timedelta(seconds=30)).strftime("%H:%M")

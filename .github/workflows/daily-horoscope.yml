@@ -1,14 +1,9 @@
 name: Burç yorumları
 
-# Tek zamanlama üç dönemi de taşıyor: her gece yarının günlük yorumu; o gün
-# yeni bir haftanın (pazartesi) ya da ayın ilk günüyse haftalık/aylık yorum
-# da (bkz. horoscope/__main__.py). Ayrı cron yok.
 on:
   schedule:
-    # Saatler UTC. GitHub zamanlanmış işleri yoğunlukta birkaç dakika (bazen
-    # daha fazla) geciktirebiliyor; tam saat başı bilerek seçilmedi.
-    - cron: "17 20 * * *" # 23:17 TR — ertesi günün yorumu (+ gerekiyorsa hafta/ay)
-    - cron: "47 23 * * *" # 02:47 TR — yedek: gece koşusu başarısızsa bugünün yorumu
+    - cron: "17 20 * * *"
+    - cron: "47 23 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -25,7 +20,6 @@ on:
         type: boolean
         default: false
 
-# Aynı anda iki koşu repoya yazmaya çalışmasın.
 concurrency:
   group: daily-horoscope
   cancel-in-progress: false
@@ -33,7 +27,6 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    # Hafta ve ay başına denk gelen gecelerde üç üretim arka arkaya.
     timeout-minutes: 45
     permissions:
       contents: write
@@ -57,10 +50,6 @@ jobs:
           HOROSCOPE_FORCE: ${{ inputs.force }}
         run: python -m horoscope
 
-      # Her gün bir commit: hem arşiv git geçmişinde duruyor hem de repo
-      # "aktif" kalıyor — GitHub 60 gün hareketsiz kalan repoların
-      # zamanlanmış işlerini kendiliğinden kapatıyor. Bir dönem başarısız
-      # olsa da üretilenler yayına çıksın diye bu adım her durumda çalışıyor.
       - name: Repoya yaz
         if: ${{ !cancelled() }}
         env:

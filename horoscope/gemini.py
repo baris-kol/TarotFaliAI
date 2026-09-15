@@ -1,10 +1,3 @@
-"""Gemini REST istemcisi.
-
-Bağımlılıksız (yalnızca urllib): Actions'ta kurulacak paket azalsın, SDK
-sürümleri arasındaki değişiklikler bu dosyayı bozmasın. Anahtar URL'de değil
-`x-goog-api-key` başlığında gidiyor — hata mesajlarına ve loglara karışmasın.
-"""
-
 from __future__ import annotations
 
 import http.client
@@ -21,32 +14,24 @@ ENDPOINT = (
     "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 )
 
-# Sırayla denenir: model yoksa (404), bu anahtara kapalıysa ya da günlük
-# kotası dolduysa sıradakine geçilir. GEMINI_MODEL değişkeni (virgülle
-# ayrılmış liste) bunu ezer — Google bir modeli kapattığında kod değil,
-# yalnızca repodaki değişken güncellenir.
 DEFAULT_MODELS = (
     "gemini-3.8-flash", 
     "gemini-3.5-flash",
     "gemini-2.5-flash",
 )
 
-# 12 burç tek yanıtta ~8–10 bin çıktı token'ı; düşünme payıyla birlikte
-# bir iki dakika sürebiliyor.
 REQUEST_TIMEOUT = 300
 
-# Geçici hatalarda (kota anlık dolu, sunucu meşgul) bekleyip aynı modeli
-# yeniden dene; hepsi tükenirse sıradaki modele geç.
 TRANSIENT_STATUS = frozenset({429, 500, 502, 503, 504})
 BACKOFF_SECONDS = (15, 45, 90)
 
 
 class GeminiError(Exception):
-    """Devam etmenin anlamı olmayan hata: anahtar geçersiz, hiçbir model yok."""
+    pass
 
 
 class IncompleteReply(Exception):
-    """Model yanıt verdi ama kullanılamaz: yarım kaldı, engellendi ya da boş."""
+    pass
 
 
 class _ModelUnavailable(Exception):
@@ -73,7 +58,6 @@ def generate(
     prompt: str,
     schema: dict,
 ) -> Reply:
-    """Yapılandırılmış (JSON şemalı) tek bir yanıt üretir."""
     body = {
         "systemInstruction": {"parts": [{"text": system}]},
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
@@ -119,7 +103,6 @@ def _call(model: str, api_key: str, payload: bytes) -> Reply:
                     f"Anahtar reddedildi (HTTP {status}): {message}"
                 ) from None
             if status in (400, 404):
-                # Model adı yanlış/kapatılmış ya da bu modelde şema desteklenmiyor.
                 raise _ModelUnavailable(f"HTTP {status}: {message}") from None
             if status not in TRANSIENT_STATUS:
                 raise GeminiError(f"HTTP {status}: {message}") from None
@@ -173,5 +156,5 @@ def _error_message(error: urllib.error.HTTPError) -> str:
     try:
         body = json.loads(error.read())
         return str(body["error"]["message"])
-    except Exception:  # noqa: BLE001 — gövde her zaman JSON değil
+    except Exception:
         return str(error.reason)

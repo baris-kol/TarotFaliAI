@@ -1,37 +1,9 @@
-"""Yanıtın denetlenmesi ve yayınlanan dosyalar.
-
-    public/v1/arsiv/YYYY-MM-DD.json   bir günün yorumu — kalıcı arşiv
-    public/v1/gunluk.json             uygulamanın okuduğu dosya: arşivdeki
-                                      en yeni 3 gün, yeniden eskiye
-    public/v1/haftalik/YYYY-MM-DD.json  bir haftanın yorumu (pazartesi)
-    public/v1/haftalik.json             en yeni 2 hafta
-    public/v1/aylik/YYYY-MM-01.json     bir ayın yorumu
-    public/v1/aylik.json                en yeni 2 ay
-
-Uygulama `gunluk.json`'dan cihazın bugününe denk gelen günü seçiyor. Yarının
-yorumu gece 23:17'de yayınlandığında bugünkü hâlâ dosyada; Türkiye'den geri
-saat dilimlerindeki kullanıcılar da kendi "bugün"lerini buluyor; bir gece
-üretim başarısız olursa önceki gün yerinde duruyor.
-
-İki ayrı denetim var:
-
-* `parse_readings` yapıyı denetliyor (her burç bir kez, alanlar makul
-  uzunlukta). Bozuksa yanıtın tamamı yeniden üretiliyor.
-* `content_issues` üslup kurallarını denetliyor (sağlıkta organ/yiyecek,
-  "Ay" ile başlayan giriş, "-malısın", burçlar arası kalıp tekrarı,
-  İngilizce kelime, aşk bölümlerinin doğru okura seslenmesi). Çiğneyen
-  burçlar yalnızca kendileri yeniden yazdırılıyor.
-
-Format değişirse `v1` klasörünü bozma, `v2` aç: yayındaki eski uygulama
-sürümleri `v1`'i okumaya devam ediyor.
-"""
-
 from __future__ import annotations
 
 import json
 import re
 from collections.abc import Sequence
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from .prompt import FIELDS
@@ -41,9 +13,6 @@ from .sky import PeriodSky, Sky
 FEED_VERSION = 1
 FEED_DAYS = 3
 
-# Karakter sınırları. Alt sınır yarım kalmış metni yakalıyor; üst sınır
-# istemdeki kelime aralığının epey üstünde, yalnızca kontrolden çıkmış
-# yanıtı eliyor.
 LIMITS: dict[str, tuple[int, int]] = {
     "ozet": (15, 180),
     "genel": (250, 1100),
@@ -53,8 +22,6 @@ LIMITS: dict[str, tuple[int, int]] = {
     "saglik": (60, 500),
 }
 
-# Haftalık ve aylık yorumun sınırları — istemdeki kelime aralıklarının epey
-# dışında; yalnızca yarım kalmış ya da kontrolden çıkmış yanıtı eliyor.
 PERIOD_LIMITS: dict[str, dict[str, tuple[int, int]]] = {
     "weekly": {
         "ozet": (15, 200),
@@ -74,22 +41,14 @@ PERIOD_LIMITS: dict[str, dict[str, tuple[int, int]]] = {
     },
 }
 
-# public/v1/<klasör>/<başlangıç>.json (arşiv) ve public/v1/<klasör>.json
-# (uygulamanın okuduğu, en yeni PERIOD_FEED_COUNT dönem).
 PERIOD_FOLDERS = {"weekly": "haftalik", "monthly": "aylik"}
 PERIOD_FEED_COUNT = 2
 
 _ARCHIVE_NAME = re.compile(r"^\d{4}-\d{2}-\d{2}\.json$")
-# Emoji blokları, ☀–➿ semboller, varyasyon seçici ve birleştirici.
 _EMOJI = re.compile("[\U0001F000-\U0001FAFF\U00002600-\U000027BF\U0000FE0F\U0000200D]")
 _MARKDOWN = re.compile(r"[*#`]+")
 _SPACE = re.compile(r"\s+")
 
-# Sağlık bölümünde istenmeyen konular: organ ve beden bölgeleri, belirti ve
-# hastalık, yiyecek, içecek, tedavi. Türkçe ekler için kelime başından
-# eşleşiyor; masum kelimelere takılan kökler bilerek yok ("boyun" →
-# "boyunca", "eklem" → "eklemek", "göz" → "göz önünde", "kalp" → "kalbinin
-# sesi") ya da sınırlı ("kas" → "kasım" değil, "çay" → "çayır" değil).
 _HEALTH_TERMS = (
     r"omu?z", r"sırt", r"omurga", r"boğaz", r"ses tel", r"mide", r"sindirim",
     r"bağırsak", r"karaciğer", r"böbrek", r"akciğer", r"kemik", r"cil[dt]",
@@ -104,8 +63,6 @@ _HEALTH = re.compile(r"(?<!\w)(?:" + "|".join(_HEALTH_TERMS) + r")\w*", re.IGNOR
 _MOON_OPENING = re.compile(r"(?:bugün\W+)?(?:gökyüzündeki\s+)?ay(?!\w)", re.IGNORECASE)
 _IMPERATIVE = re.compile(r"\w+m[ae]l[ıi]s[ıi]n(?:[ıi]z)?(?!\w)", re.IGNORECASE)
 
-# Modelin arada bir sızdırdığı İngilizce kelimeler ("energyyle") ve Türkçe
-# alfabede olmayan q, w, x harfli kelimeler.
 _FOREIGN = re.compile(
     r"(?<!\w)(?:energy|focus|vibe|mood|mindset|timing|healing|journey|feedback|deadline)\w*"
     r"|(?<!\w)(?:the|and|with|your|you|feel|self)(?!\w)"
@@ -113,8 +70,6 @@ _FOREIGN = re.compile(
     re.IGNORECASE,
 )
 
-# Aşk bölümlerinin yanlış okura seslenmesi: ilişkide olanlara "yalnızsan",
-# yalnızlara "partnerinle".
 _SINGLE_HINT = re.compile(
     r"(?<!\w)(?:yalnızsan|yalnız isen|bekarsan|bekârsan|ilişkin yoksa|kalbin boşsa)",
     re.IGNORECASE,
@@ -124,10 +79,6 @@ _PARTNER_HINT = re.compile(
     re.IGNORECASE,
 )
 
-# Burçlar arası kalıp tekrarı: özet ve genel yorumdaki üç kelimelik diziler.
-# Aynı diziyi en fazla REPEAT_LIMIT burç kullanabiliyor; fazlası (burç
-# sırasıyla sonrakiler) düzeltmeye gidiyor. İki ya da üç kelimesi bağlaç,
-# zamir gibi dolgu kelimesi olan diziler ("için harika bir") sayılmıyor.
 REPEAT_FIELDS = ("ozet", "genel")
 REPEAT_WORDS = 3
 REPEAT_LIMIT = 2
@@ -137,9 +88,6 @@ _FILLER = frozenset(
 )
 _WORD = re.compile(r"\w+(?:['’]\w+)?")
 _SENTENCE = re.compile(r"[.!?;:]")
-# Gökyüzü göndermeleri ("Venüs'ün Plüton ile", "yönetici gezegenin") aynı
-# olayı anlatan burçlarda doğal olarak ortak; kalıp sayılmıyor. Kesme
-# işaretli her kelime özel ad (burç, gezegen).
 _ASTRO = re.compile(
     r"\w+['’]\w*|gezegen\w*|yönetici\w*|açı(?:sı|yla|lar\w*)?|kare|üçgen\w*"
     r"|karşıt\w*|kavuşum\w*|altmışlık\w*|retro\w*"
@@ -149,7 +97,7 @@ _ASTRO = re.compile(
 
 
 class InvalidReadings(Exception):
-    """Modelin yanıtı yayınlanabilir değil — yeniden üretilmeli."""
+    pass
 
 
 def parse_readings(
@@ -157,11 +105,6 @@ def parse_readings(
     expected: Sequence[Sign] = SIGNS,
     limits: dict[str, tuple[int, int]] = LIMITS,
 ) -> dict[str, dict[str, str]]:
-    """Model yanıtı → `{slug: {ad, ozet, genel, ask, kariyer, saglik}}`, burç sırasıyla.
-
-    `expected`: yanıtta olması gereken burçlar — düzeltme turunda yalnızca
-    yeniden yazdırılanlar. `limits`: alan uzunlukları (günlük ya da dönem).
-    """
     try:
         data = json.loads(text)
     except json.JSONDecodeError as error:
@@ -200,12 +143,67 @@ def parse_readings(
     return {s.slug: readings[s.slug] for s in expected}
 
 
-def content_issues(readings: dict[str, dict[str, str]]) -> dict[str, list[str]]:
-    """Üslup kurallarını çiğneyen burçlar: `{slug: [sorunlar]}`; temizse boş."""
+_CLICHE = re.compile(
+    r"harika bir (?:gün|dönem|zaman|fırsat)\w*|son derece|muazzam\w*"
+    r"|elverişli bir (?:zaman|dönem|gün)\w*|parlak fikir\w*|tazeleyici"
+    r"|fırsatlarla karşılaş\w*|pozitif enerji\w*|yeni kapılar\w*|ilham kayna\w*",
+    re.IGNORECASE,
+)
+
+ECHO_LIMIT = 0.2
+_ECHO_STOP = frozenset(
+    "olabilir edebilir yapabilir sağlayabilir bugün günün gününe sana senin "
+    "kendi kendini içinde daha fazla kadar olarak üzerine".split()
+)
+
+
+def _stems(entry: dict[str, str]) -> set[str]:
+    text = " ".join(entry.get(f, "") for f in ("ozet", "genel"))
+    text = text.replace("İ", "i").replace("I", "ı").lower()
+    return {
+        word[:6]
+        for word in _WORD.findall(text)
+        if len(word) >= 5 and word not in _ECHO_STOP and not _ASTRO.fullmatch(word)
+    }
+
+
+def echo(entry: dict[str, str], previous: dict[str, str]) -> float:
+    today, yesterday = _stems(entry), _stems(previous)
+    if not today or not yesterday:
+        return 0.0
+    return len(today & yesterday) / len(today | yesterday)
+
+
+def previous_day(root: Path, day: date) -> dict[str, dict[str, str]] | None:
+    try:
+        data = json.loads(
+            archive_path(root, day - timedelta(days=1)).read_text(encoding="utf-8")
+        )
+    except (OSError, json.JSONDecodeError):
+        return None
+    readings = data.get("burclar")
+    return readings if isinstance(readings, dict) and readings else None
+
+
+def content_issues(
+    readings: dict[str, dict[str, str]],
+    previous: dict[str, dict[str, str]] | None = None,
+) -> dict[str, list[str]]:
     issues: dict[str, list[str]] = {}
     repeated = _repeated_phrases(readings)
     for slug, entry in readings.items():
         problems: list[str] = []
+        cliches = sorted({m.group(0).lower() for f in FIELDS for m in _CLICHE.finditer(entry[f])})
+        if cliches:
+            problems.append(
+                "klişe ifade: " + ", ".join(cliches) + " — somut bir durum ya da imgeyle anlat"
+            )
+        before = (previous or {}).get(slug)
+        if isinstance(before, dict) and echo(entry, before) > ECHO_LIMIT:
+            problems.append(
+                "dünkü yorumuna çok benziyor (aynı tema ve kelimeler) — Ay'ın bugünkü "
+                "konumundan yola çıkarak başka bir açılış, imge ve öneriyle yaz"
+            )
         health = sorted({m.group(0).lower() for m in _HEALTH.finditer(entry["saglik"])})
         if health:
             problems.append(
@@ -234,7 +232,6 @@ def content_issues(readings: dict[str, dict[str, str]]) -> dict[str, list[str]]:
 
 
 def _repeated_phrases(readings: dict[str, dict[str, str]]) -> dict[str, list[str]]:
-    """`REPEAT_LIMIT`'ten fazla burçta geçen diziler → fazladan kullanan burçlar."""
     owners: dict[str, list[str]] = {}
     for slug, entry in readings.items():
         for phrase in _phrases(entry):
@@ -249,9 +246,7 @@ def _repeated_phrases(readings: dict[str, dict[str, str]]) -> dict[str, list[str
 def _phrases(entry: dict[str, str]) -> set[str]:
     found: set[str] = set()
     for field in REPEAT_FIELDS:
-        # Python'un lower()'ı Türkçe bilmiyor: "İ" → "i̇", "I" → "i".
         text = entry[field].replace("İ", "i").replace("I", "ı").lower()
-        # Diziler cümle sınırını aşmasın ("…kayabilir. Yönetici …").
         for sentence in _SENTENCE.split(text):
             words = _WORD.findall(sentence)
             for i in range(len(words) - REPEAT_WORDS + 1):
@@ -268,7 +263,6 @@ def clean_text(value: object) -> str:
     text = _EMOJI.sub("", str(value or ""))
     text = _MARKDOWN.sub("", text)
     text = _SPACE.sub(" ", text).strip()
-    # Özet bazen tırnak içinde geliyor.
     if len(text) >= 2 and text[0] in "\"“«" and text[-1] in "\"”»":
         text = text[1:-1].strip()
     return text
@@ -283,7 +277,6 @@ def feed_path(root: Path) -> Path:
 
 
 def has_day(root: Path, day: date) -> bool:
-    """O günün eksiksiz yorumu arşivde var mı?"""
     try:
         data = json.loads(archive_path(root, day).read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
@@ -306,11 +299,6 @@ def write_day(root: Path, sky: Sky, readings: dict[str, dict[str, str]], model: 
 
 
 def write_feed(root: Path) -> list[str]:
-    """`gunluk.json`'u arşivin en yeni günlerinden yeniden kurar.
-
-    İçerik değişmediyse dosyaya dokunmuyor — yedek koşu boş yere commit
-    üretmesin. Dönen değer dosyadaki tarihler.
-    """
     folder = root / "v1" / "arsiv"
     files = sorted(
         (p for p in folder.glob("*.json") if _ARCHIVE_NAME.match(p.name)),
@@ -338,7 +326,6 @@ def period_feed_path(root: Path, kind: str) -> Path:
 
 
 def has_period(root: Path, kind: str, start: date) -> bool:
-    """O haftanın/ayın eksiksiz yorumu arşivde var mı?"""
     try:
         data = json.loads(period_path(root, kind, start).read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
@@ -367,11 +354,6 @@ def write_period(
 
 
 def write_period_feed(root: Path, kind: str) -> list[str]:
-    """`haftalik.json` / `aylik.json`: arşivin en yeni dönemleri, yeniden eskiye.
-
-    `write_feed` gibi: içerik değişmediyse dosyaya dokunmuyor. Dönen değer
-    dosyadaki başlangıç tarihleri.
-    """
     folder = root / "v1" / PERIOD_FOLDERS[kind]
     files = sorted(
         (p for p in folder.glob("*.json") if _ARCHIVE_NAME.match(p.name)),
