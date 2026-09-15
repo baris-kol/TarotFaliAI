@@ -1,0 +1,306 @@
+{
+  "surum": 1,
+  "guncellendi": "2026-09-15T19:51:30Z",
+  "donemler": [
+    {
+      "baslangic": "2026-09-01",
+      "bitis": "2026-09-30",
+      "uretildi": "2026-09-15T19:51:30Z",
+      "model": "gemini-3.6-flash",
+      "gokyuzu": {
+        "konumlar": {
+          "Güneş": {
+            "burc": "Başak",
+            "retro": false
+          },
+          "Merkür": {
+            "burc": "Başak",
+            "retro": false
+          },
+          "Venüs": {
+            "burc": "Terazi",
+            "retro": false
+          },
+          "Mars": {
+            "burc": "Yengeç",
+            "retro": false
+          },
+          "Jüpiter": {
+            "burc": "Aslan",
+            "retro": false
+          },
+          "Satürn": {
+            "burc": "Koç",
+            "retro": true
+          },
+          "Uranüs": {
+            "burc": "İkizler",
+            "retro": false
+          },
+          "Neptün": {
+            "burc": "Koç",
+            "retro": true
+          },
+          "Plüton": {
+            "burc": "Kova",
+            "retro": true
+          }
+        },
+        "olaylar": [
+          {
+            "tarih": "2026-09-01",
+            "saat": "01:18",
+            "tur": "aci",
+            "metin": "Jüpiter–Satürn üçgen"
+          },
+          {
+            "tarih": "2026-09-01",
+            "saat": "12:59",
+            "tur": "aci",
+            "metin": "Mars–Satürn kare"
+          },
+          {
+            "tarih": "2026-09-01",
+            "saat": "16:21",
+            "tur": "aci",
+            "metin": "Merkür–Mars altmışlık"
+          },
+          {
+            "tarih": "2026-09-04",
+            "saat": "10:51",
+            "tur": "evre",
+            "metin": "Son Dördün, İkizler 11°",
+            "evre": "Son Dördün"
+          },
+          {
+            "tarih": "2026-09-10",
+            "saat": "11:08",
+            "tur": "gecis",
+            "metin": "Venüs Akrep burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-09-10",
+            "saat": "19:21",
+            "tur": "gecis",
+            "metin": "Merkür Terazi burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-09-10",
+            "saat": "21:28",
+            "tur": "retro",
+            "metin": "Uranüs İkizler burcunda geri harekete başlıyor (retro başlıyor)"
+          },
+          {
+            "tarih": "2026-09-11",
+            "saat": "06:27",
+            "tur": "evre",
+            "metin": "Yeni Ay, Başak 18°",
+            "evre": "Yeni Ay"
+          },
+          {
+            "tarih": "2026-09-12",
+            "saat": "18:57",
+            "tur": "aci",
+            "metin": "Merkür–Plüton üçgen"
+          },
+          {
+            "tarih": "2026-09-12",
+            "saat": "19:38",
+            "tur": "aci",
+            "metin": "Merkür–Neptün karşıt"
+          },
+          {
+            "tarih": "2026-09-14",
+            "saat": "05:40",
+            "tur": "aci",
+            "metin": "Merkür–Uranüs üçgen"
+          },
+          {
+            "tarih": "2026-09-14",
+            "saat": "22:53",
+            "tur": "aci",
+            "metin": "Güneş–Mars altmışlık"
+          },
+          {
+            "tarih": "2026-09-15",
+            "saat": "21:30",
+            "tur": "aci",
+            "metin": "Venüs–Plüton kare"
+          },
+          {
+            "tarih": "2026-09-18",
+            "saat": "13:01",
+            "tur": "aci",
+            "metin": "Merkür–Satürn karşıt"
+          },
+          {
+            "tarih": "2026-09-18",
+            "saat": "23:44",
+            "tur": "evre",
+            "metin": "İlk Dördün, Yay 25°",
+            "evre": "İlk Dördün"
+          },
+          {
+            "tarih": "2026-09-22",
+            "saat": "01:51",
+            "tur": "aci",
+            "metin": "Merkür–Jüpiter altmışlık"
+          },
+          {
+            "tarih": "2026-09-23",
+            "saat": "03:05",
+            "tur": "gecis",
+            "metin": "Güneş Terazi burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-09-26",
+            "saat": "04:37",
+            "tur": "aci",
+            "metin": "Güneş–Neptün karşıt"
+          },
+          {
+            "tarih": "2026-09-26",
+            "saat": "08:31",
+            "tur": "aci",
+            "metin": "Güneş–Plüton üçgen"
+          },
+          {
+            "tarih": "2026-09-26",
+            "saat": "19:49",
+            "tur": "evre",
+            "metin": "Dolunay, Koç 3°",
+            "evre": "Dolunay"
+          },
+          {
+            "tarih": "2026-09-28",
+            "saat": "05:49",
+            "tur": "gecis",
+            "metin": "Mars Aslan burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-09-28",
+            "saat": "19:22",
+            "tur": "aci",
+            "metin": "Güneş–Uranüs üçgen"
+          },
+          {
+            "tarih": "2026-09-30",
+            "saat": "14:45",
+            "tur": "gecis",
+            "metin": "Merkür Akrep burcuna geçiyor"
+          }
+        ]
+      },
+      "burclar": {
+        "aries": {
+          "ad": "Koç",
+          "ozet": "Temponu ayarlamayı öğrenirken, ayın ikinci yarısında odağını tamamen ikili ilişkilere ve kendi duruşuna çeviriyorsun.",
+          "genel": "Çalışma alanındaki detaylar ve günlük düzenin, Eylül ayının ilk yarısında tüm dikkatini toplamanı gerektirebilir. Salı günü Mars ile Satürn arasındaki gerilim, ev ve aile konularında sabırlı davranmanın önemini sana hatırlatıyor. Dönem başında kurduğun etkili diyaloglar sayesinde sorumluluklarını çok daha rahat organize etme imkanı bulabilirsin. 11 Eylül'deki Yeni Ay ile birlikte iş yükünü hafifletecek pratik yöntemler geliştirebilirsin. Ayın ortasından itibaren Merkür ve Güneş'in konum değiştirmesiyle zihnin biraz daha hafifliyor ve bakış açın tazeleniyor. 23 Eylül'de Güneş'in karşıt burcuna geçişi, odağını tamamen ortaklıklara ve ikili bağlarına kaydırıyor. 26 Eylül'deki Dolunay ise kendi adımların ve kişisel ihtiyaçların konusunda net kararlar almana yardımcı olabilir. Ay sonunda Mars'ın burç değiştirmesiyle birlikte içindeki cesareti yeniden eyleme dökebilirsin.",
+          "askIliskide": "Birlikteliğinde günlük sorumlulukların yarattığı zihinsel baskı ayın başlarında biraz mesafe hissettirebilir. Ayın ortasından sonra diyalog kanallarını açık tutmak ilişkinize çok daha dengeli bir uyum getirecektir. Birlikte ortak kararlar almak ve geleceğe yönelmek için ayın ikinci yarısındaki yumuşak ve yapıcı akıştan kolaylıkla yararlanabilirsiniz.",
+          "askYalniz": "Günlük koşuşturmaca içinde yeni biriyle karşılaşma ihtimalin ayın ilk haftalarında oldukça yüksek görünüyor. 23 Eylül sonrasında sosyalleşme arzun artarken karşılaştığın insanları daha dikkatli gözlemlemek isteyebilirsin. Ay sonunda gerçekleşen dolunay, ilişkilerden ne beklediğini net bir şekilde fark etmeni sağlayabilir.",
+          "kariyer": "İş ortamındaki görev dağılımı ve rutinler ayın başında zamanının büyük kısmını alabilir. 11 Eylül civarında çalışma şeklini düzene sokacak ve verimini artıracak adımlar atabilirsin. Ayın son günlerinde Mars'ın burç değiştirmesiyle birlikte projelerde öne çıkma ve işine liderlik etme isteğin belirgin biçimde güçlenebilir.",
+          "saglik": "Temponun arttığı günlerde dinlenme zamanlarını aksatmamak zihinsel dengeni korumanı sağlar. Akşam saatlerini sakin geçirmek ve uyku düzenine dikkat etmek sana çok iyi gelecektir. Ay sonuna doğru enerjin yükselse de bedenini aşırı yormamaya özen gösterebilirsin."
+        },
+        "taurus": {
+          "ad": "Boğa",
+          "ozet": "Ayın başında yaratıcı konulara odaklanırken, ayın ortasından itibaren ilişkilerinde derinlik ve denge arayışına giriyorsun.",
+          "genel": "Yaşamın keyifli yanlarına, hobilerine ve üretkenliğine odaklanarak Eylül ayına adım atıyorsun. 10 Eylül'de yönetici gezegenin Venüs'ün Akrep burcuna geçişiyle birlikte ikili temaslarında duygu yoğunluğu öne çıkmaya başlıyor. 11 Eylül Başak Yeni Ayı, sana hayattan tat alma ve yeteneklerini sergileme alanı açabilir. Ayın ortalarında Venüs ve Plüton arasındaki zorlayıcı açı, ilişkilerde güç mücadelelerine karşı temkinli durmanı gerekli kılabilir. Zihnini yoran detaylardan uzaklaşıp anın tadını çıkarmak bu süreçte ruhuna dengeli bir huzur katacaktır. 23 Eylül'den itibaren Güneş'in Terazi seyri, günlük akışına daha düzenli ve uyumlu bir ritim getirebilir. 26 Eylül Koç Dolunayı ise iç dünyanda bir birikimi serbest bırakmanı ve dinlenmeni kolaylaştırabilir. Ay sonuna doğru sezgilerine güvenerek hareket edebilirsin.",
+          "askIliskide": "Partnerinle ilişkinizde duygusal derinlik ve bağlılık arzusu ayın ikinci haftasından itibaren belirginleşiyor. Aranızdaki güç dengesini korumaya çalışırken anlayışlı ve esnek bir dil kullanmak fayda sağlayabilir. Ayın sonuna doğru ortak hedeflere yönelmek bağınızı gözle görülür şekilde güçlendirecektir.",
+          "askYalniz": "Aşka dair beklentilerinin arttığı bir dönemdesin ve ayın ilk yarısında heyecan verici yeni tanışmalar gündeme gelebilir. 10 Eylül sonrasında karşılaştığın kişilerin gizemli ve güçlü yönleri ilgini çekebilir. Duygularını hemen açmak yerine zamana yayarak ilerlemeyi ve gözlem yapmayı tercih edebilirsin.",
+          "kariyer": "Yaratıcı projeler ve kişisel becerilerin ayın başında iş hayatında dikkat çekmeni sağlayabilir. Ayın ortasında iş ortamındaki diyalogları ve hassas dengeleri nazikçe yönetmek gerekebilir. 23 Eylül sonrası günlük görevlerini daha planlı ve sistemli bir şekilde tamamlayarak net sonuçlar elde edebilirsin.",
+          "saglik": "Zihinsel yoğunluğu azaltmak için doğada vakit geçirmek ve temponu yavaşlatmak sana iyi gelebilir. Ayın ortalarında gelişen gerilimlerde nefesine ve anın akışına odaklanmayı seçebilirsin. Düzenli dinlenme saatleri oluşturmak enerjini dengede tutacaktır."
+        },
+        "gemini": {
+          "ad": "İkizler",
+          "ozet": "Yuva ve aile konularıyla başlayan Eylül ayı, zamanla üretkenliğini ve sosyal çevrenle olan bağlarını ön plana çıkarıyor.",
+          "genel": "Ev, aile ve yerleşimle ilgili başlıklar Eylül ayının ilk yarısında zihnini fazlasıyla meşgul edebilir. 10 Eylül'de yönetici gezegenin Merkür'ün Terazi burcuna geçmesi, iletişiminde daha uzlaşmacı ve yapıcı bir ton kullanmanı sağlıyor. 11 Eylül'deki Yeni Ay, yaşam alanında yapmak istediğin yenilikler için güçlü bir başlangıç noktası oluşturabilir. Ayın ortasında Merkür'ün Uranüs ve Neptün ile temasları, bakış açında beklenmedik ve özgürleştirici kavrayışlar yaratabilir. Sert açılar altında kararlarını aceleye getirmeden sakin kalmak sana avantaj sağlar. 23 Eylül'den sonra Güneş'in Terazi burcuna geçişiyle yaratıcılığın ve keyif aldığın uğraşlar canlanıyor. 26 Eylül Koç Dolunayı ise arkadaş gruplarınla ilgili uzun süredir devam eden bir konuyu netliğe kavuşturabilir.",
+          "askIliskide": "Evde veya ortak yaşam alanınızda huzuru yakalamak ayın başında ana gündeminiz olabilir. Ayın ikinci yarısında birlikte daha fazla vakit geçirmek ve eğlenceli paylaşımlarda bulunmak ilişkinize canlılık getirecektir. İletişimde açık sözlü ve nazik olmak yanlış anlaşılmaları tamamen önleyebilir.",
+          "askYalniz": "Ayın ortasından itibaren sosyal etkileşimlerin belirgin şekilde artmasıyla birlikte yeni insanlarla iletişim kurabilirsin. Zekası ve konuşma tarzıyla seni etkileyen biriyle karşılaşman oldukça mümkündür. Ay sonunda beklentilerini netleştirmek doğru adımlar atmana ve huzurlu hissetmene yardım edebilir.",
+          "kariyer": "İş ve ev hayatı arasındaki dengeyi kurmak ayın ilk haftalarında önceliğin haline gelebilir. 10 Eylül sonrasında sözlü ve yazılı anlaşmalarda daha ikna edici bir iletişim dili yakalayabilirsin. Ayın son günlerinde zihinsel projelerini başarıyla tamamlamak için çevrenden güçlü destekler bulabilirsin.",
+          "saglik": "Yoğun zihinsel tempo sebebiyle gün içinde dinlenme araları vermeyi kesinlikle ihmal etmemelisin. Akşam saatlerinde ekranlardan uzak kalmak zihnini boşaltmana ve sakinleşmene yardımcı olabilir. Bedenini yormadan hafif yürüyüşler yapmak ritmini koruyacaktır."
+        },
+        "cancer": {
+          "ad": "Yengeç",
+          "ozet": "İletişim ve yakın çevreye odaklanan tempon, sonbaharın ilerleyen günlerinde yuva ve kariyer hedeflerine kayıyor.",
+          "genel": "Yakın çevrenle temaslar, günlük görüşmeler ve kısa yolculuklar Eylül'ün başındaki ana gündemini oluşturuyor. Burcundaki Mars'ın Satürn ile yapacağı zorlayıcı temas, ilk günlerde kişisel sınırlarını korurken sabırlı olmanı gerektirebilir. 11 Eylül Başak Yeni Ayı, zihnindeki dağınık fikirleri sistemli hale getirmek ve net kararlar almak adına destek veriyor. 10 Eylül sonrasında Venüs'ün Akrep burcuna geçmesiyle duygusal bağların derinleşirken yaratıcı gücün güçleniyor. 23 Eylül tarihinde Güneş'in yer değiştirmesi, iç dünyana dönüp yaşam alanında huzurlu bir denge kurma arzunu artırabilir. 26 Eylül Koç Dolunayı ise toplumsal görünürlüğün veya mesleki hedeflerinle ilgili bir süreci netleştirebilir. Dönem sonuna doğru Mars Aslan burcuna ilerlerken üzerindeki baskı yerini özgüvene ve hareket serbestisine bırakıyor.",
+          "askIliskide": "Sevdiklerinle kurduğun iletişimde bazı hassasiyetler Eylül başlarında öne çıkabilir. Ay ortasından itibaren yaşam alanınızda baş başa zaman geçirmek ve samimi diyaloglar kurmak aranızdaki bağı belirgin şekilde güçlendirecektir. Birlikte geleceğe dair somut kararlar almak ilişkinize derin bir güven verebilir.",
+          "askYalniz": "Diyalogların hızlandığı ilk haftalarda yakın çevren ya da katıldığın bir etkinlik vesilesiyle yeni biriyle tanışabilirsin. 10 Eylül sonrasında duygusal açıdan seni derinden kavrayacak samimi bağlar arayabilirsin. Aceleci adımlar atmak yerine karşındaki insanı zaman içinde tanımayı seçmek daha sağlıklı olabilir.",
+          "kariyer": "Yazışmalar ve kısa mesafeli iş seyahatleri ay başlarında yoğun bir tempo yaratabilir. 26 Eylül Koç Dolunayı civarında mesleki hedeflerinle bağlantılı önemli bir yol ayrımına gelebilir ve karara varabilirsin. Dönem sonuna doğru Mars Aslan burcuna geçerken iş hayatındaki girişimci gücün gözle görülür biçimde artış gösteriyor.",
+          "saglik": "Duygusal dalgalanmaların temposunu dengede tutmak için gün içinde kendine sessiz anlar ayırabilirsin. Düzenli uyku ritmi ve sakin yürüyüşler zihnini rahatlatmana katkı sağlar. Sezgilerini dinleyerek temponu ayarlamak iyi gelir."
+        },
+        "leo": {
+          "ad": "Aslan",
+          "ozet": "Maddi konuları düzene soktuğun günlerin ardından zihinsel paylaşımların ve hareketliliğin öne çıktığı bir aya giriyorsun.",
+          "genel": "Gelirler, harcamalar ve öz değer algın Eylül'ün ilk günlerinde ana odağını oluşturuyor. 11 Eylül'deki Yeni Ay, bütçeni yeniden planlamak veya mevcut imkanlarını verimli yönetmek adına elverişli bir zemin sunuyor. Ayın ortasında yönetici gezegenin Güneş'in Mars ile kuracağı olumlu bağ, adımlarında cesaret kazanmana katkı sağlayabilir. 23 Eylül tarihinde Güneş'in Terazi burcuna geçmesiyle birlikte diyaloglar, yakın çevre temasları ve fikir alışverişleri canlanmaya başlıyor. 26 Eylül Koç Dolunayı, uzak bağlantılı işler veya uzun süren bir öğrenme süreciyle ilgili netleşme getirebilir. 28 Eylül'de Mars'ın burcuna yerleşmesi ise yaşam enerjini ve liderlik yönünü belirgin biçimde yükseltecektir. Dönem boyunca kararlı hareket etmek sana büyük avantaj kazandırır.",
+          "askIliskide": "Birlikteliğinde karşılıklı değer görme ve güven duyma arzusu ilk günlerde öne çıkabilir. Sonraki süreçte diyalogların artmasıyla partnerinle ortak hedeflerde çok daha kolay buluşabilirsiniz. Fikirlerinizi açıkça paylaşırken karşı tarafı da dikkatle dinlemek aranızdaki bağı güçlendirecektir.",
+          "askYalniz": "Kendine olan inancının ve ışıltının yüksek olduğu bu dönemde etrafla bağ kurman kolaylaşıyor. Ay kapanışına doğru yakın çevren veya katıldığın organizasyonlar üzerinden ilgini çekecek biriyle karşılaşman olasıdır. Doğal tavırların ve içten yaklaşımın taze bağlar kurmanı güçlendirecektir.",
+          "kariyer": "Maddi konular ve iş bütçesi Eylül başından itibaren özenli bir planlama gerektirebilir. 11 Eylül Yeni Ayı ile birlikte taze bir gelir olanağı veya verimli bir çalışma düzeni geliştirebilirsin. Ay sonuna doğru Mars'ın burcuna geçiş yapmasıyla projelerinde çok daha kararlı, istekli ve cesur davranabilirsin.",
+          "saglik": "Ay sonuna doğru hareket kabiliyetin arttığı için bu canlılığı yürüyüş veya egzersizle destekleyebilirsin. Günlük akışında dinlenmeye de yeterince alan ayırman zihnini korur. Sakin kalabileceğin hobiler zamanı verimli kılabilir."
+        },
+        "virgo": {
+          "ad": "Başak",
+          "ozet": "Kişisel hedeflerinle parladığın günlerin ardından odağın kazançlarına ve değer yargılarına kayıyor.",
+          "genel": "Güneş'in burcundaki ilerleyişi, Eylül'ün başlarında kişisel kararların ve hayatındaki yenilikler için güçlü bir ivme sunuyor. Yönetici gezegenin Merkür'ün de burada bulunması zihnini berrak ve analitik kılıyor. 11 Eylül'de burcunda gerçekleşen Yeni Ay, tazelenmek ve yaşamında taze bir sayfa açmak adına elverişli bir zemin hazırlıyor. Ay ortasında Merkür'ün kurduğu zengin temaslar, hem sezgilerini hem de mantığını dengeli kullanmanı sağlayabilir. 23 Eylül'de Güneş Terazi burcuna geçtiğinde ilgin kişisel değerlerine ve kazançlarına yönelecektir. 26 Eylül Koç Dolunayı ise ortak paylaşımlar alanında ertelediğin bir konuyu netleştirebilir. Ay sonuna doğru Merkür Akrep burcuna geçtiğinde düşüncelerini çok daha derin ve etkili bir dille ifade edebilirsin.",
+          "askIliskide": "Bireysel isteklerini dile getirdiğin dönem başında partnerinle kişisel beklentilerinizi açıkça konuşabilirsiniz. Eylül'ün sonlarına doğru daha uzlaşmacı ve dengeli bir diyalog ortamı yakalamanız mümkündür. İkiniz için de adil çözümler üretmek ilişkinize belirgin bir tazelik ve huzur katacaktır.",
+          "askYalniz": "Çekim gücünün yükseldiği dönem başlarında çevrenin ilgisini rahatça üzerine toplayabilirsin. 11 Eylül Yeni Ayı civarında hayatına farklı bir bakış açısı katacak biriyle tanışman olasıdır. Kararlarını aceleye getirmeden hem hislerine hem de mantığına zaman tanımak sağlıklı bağlar kurmanı sağlar.",
+          "kariyer": "Burcundaki güçlü gezegen hareketleri sayesinde iş yaşamında dikkat çekici adımlar atma olanağı bulabilirsin. 11 Eylül sonrasında taze sorumluluklar üstlenmek veya yeni bir projeyi başlatmak adına uygun şartlar oluşuyor. Ay kapanışına doğru finansal konuları ve mesleki hedeflerini detaylıca gözden geçirmek yararlı olabilir.",
+          "saglik": "Zihinsel faaliyetlerin yoğunlaştığı anlarda temponu yavaşlatmayı seçebilirsin. Günlük akışını sadeleştirip kendine sakin anlar yaratmak zihnini dinlendirecektir. Düzenli yürüyüşler yapmak ve kendi ritmini korumak bedenine çok iyi gelir."
+        },
+        "libra": {
+          "ad": "Terazi",
+          "ozet": "Dinlenerek ve iç dünyana çekilerek başladığın ayı, doğum gününle birlikte tazelenip öne çıkarak tamamlıyorsun.",
+          "genel": "Eylül'ün ilk haftaları, biraz geriye çekilip zihnini dinlendirmek ve iç dünyanı gözden geçirmek isteyeceğin sakin bir döneme işaret ediyor. 10 Eylül'de yönetici gezegenin Venüs'ün Akrep burcuna, Merkür'ün ise senin burcuna geçişiyle diyalogların hız kazanmaya başlıyor. 11 Eylül Yeni Ayı, geçmişten gelen zihinsel yükleri geride bırakman için destekleyici bir zemin sunuyor. 15 Eylül'deki Venüs-Plüton karesi, tutku ve kontrol arzusu konusunda dengeli durmanı hatırlatabilir. 23 Eylül'de Güneş'in burcuna geçişiyle doğum günü dönemin başlıyor ve kişisel canlılığın yükseliyor. 26 Eylül Koç Dolunayı ise ikili ilişkilerde önemli netleşmeler ve ortak kararlar getirebilir. Dönem sonuna doğru kendine güvenerek atacağın adımlar seni çevrende belirgin biçimde öne çıkaracaktır.",
+          "askIliskide": "İlk zamanlarda partnerinle gözlerden uzak kalmayı ve sakin vakit geçirmeyi tercih edebilirsin. 23 Eylül sonrasında Güneş'in burcuna geçmesiyle birliktelikteki duruşun güçleniyor. 26 Eylül Dolunayı civarında ilişkinize dair ertelediğiniz bir konuyu açıklıkla konuşup net bir çözüme kavuşturabilirsiniz.",
+          "askYalniz": "Kendi kabuğunda kalmayı seçtiğin ilk zamanların ardından, ay ortasından itibaren çekim gücün belirginleşiyor. 23 Eylül sonrasında etrafındakilerin ilgisini çok daha kolay çekmen mümkündür. Yeni tanışmalarda aceleci davranmayıp akışa zaman tanımak daha derin bağlar kurmana imkan verecektir.",
+          "kariyer": "Dönem başında arka planda kalan işleri tamamlamak ve yeni stratejiler belirlemek akıllıca olabilir. Güneş'in burcuna geçiş yapmasıyla birlikte iş ortamında gözle görülür şekilde öne çıkmaya başlıyorsun. Bireysel projelerini sunmak ve taleplerini iletmek adına ayın son haftasını rahatlıkla değerlendirebilirsin.",
+          "saglik": "Ayın ilk yarısında uyku ritmine dikkat etmek enerjini korumana yardım eder. Zihnindeki karmaşayı azaltmak için sakin anlar yaratmayı seçebilirsin. Güneş burcuna geçtiğinde bedensel canlılığın ve hareket isteğin belirgin şekilde artacaktır."
+        },
+        "scorpio": {
+          "ad": "Akrep",
+          "ozet": "Sosyal çevrenle güçlenen hedeflerin, zamanla içsel bir değerlendirme ve yenilenme sürecine evriliyor.",
+          "genel": "Geleceğe dair büyük tasarıların ve arkadaşlık ilişkilerin Eylül başlarında ön planda yer alıyor. 10 Eylül'de Venüs'ün burcuna geçmesiyle çekiciliğin, karizman ve duygusal derinliğin görünür şekilde belirginleşiyor. 11 Eylül Başak Yeni Ayı, dahil olduğun topluluklarda taze sorumluluklar üstlenme imkanı sunabilir. Yönetici gezegenin Mars'ın Satürn ile kuracağı sert temas, ilk günlerde adımlarında sabır göstermenin değerini hatırlatıyor. 23 Eylül'den itibaren Güneş'in Terazi seyri, temponu yavaşlatıp iç dünyanda sakin bir değerlendirme yapmanı teşvik edebilir. 26 Eylül Koç Dolunayı ise günlük çalışma düzeninde yeni bir ayarlamayı gerekli kılacaktır. Ay sonunda Mars'ın Aslan burcuna geçişiyle mesleki yaşamında oldukça güçlü hamleler yapabilirsin.",
+          "askIliskide": "Partnerinle ortak hayaller kurmak ve sosyal ortamlarda bulunmak ilk günlerde bağlarınızı canlandırabilir. 10 Eylül'den sonra Venüs'ün burcundaki seyri aranızdaki duygusal yakınlığı ve tutkuyu artıracaktır. Şüpheci yaklaşımlar yerine güvene odaklanmak ilişkinize derin bir huzur katmaya yardımcı olur.",
+          "askYalniz": "Arkadaş çevren vasıtasıyla yeni insanlarla temas kurma ihtimalin ilk haftalarda oldukça yüksek görünüyor. Venüs'ün burcuna gelişiyle etrafına oldukça güçlü bir çekim kuvveti yayabilirsin. Bu dönemde filizlenen samimi bir diyalog, zamanla derin bir duygusal bağa dönüşebilir.",
+          "kariyer": "Ekip çalışmaları ve ortak projeler Eylül başlarında öncelikli gündemin haline gelebilir. 11 Eylül Yeni Ayı, uzun vadeli kariyer hedeflerini yeniden düzenlemek adına fırsatlar sunuyor. 28 Eylül'de Mars'ın Aslan burcuna geçmesiyle mesleki alanda ses getirecek güçlü ve kararlı adımlar atabilirsin.",
+          "saglik": "Yoğunlaşan hisleri ve stresi dengede tutmak için zihnini rahatlatacak aktivitelere yönelebilirsin. Bedeninin verdiği dinlenme işaretlerini dikkate almak enerjini dengeler. Akşam saatlerinde düzenli uyku ritmine özen göstermek iyi gelir."
+        },
+        "sagittarius": {
+          "ad": "Yay",
+          "ozet": "Kariyer hedeflerinle yön bulduğun günlerin ardından sosyal çevren ve yaratıcı projelerin hareket kazanıyor.",
+          "genel": "Toplumsal konumun ve mesleki sorumlulukların Eylül başlarında tüm dikkatini çekiyor. 1 Eylül'de yönetici gezegenin Jüpiter'in Satürn ile kurduğu olumlu açı, uzun vadeli planların için sağlam zeminler hazırlıyor. 11 Eylül Başak Yeni Ayı, iş hayatında görünürlüğünü artırmak veya taze bir başlangıç yapmak adına olanaklar sunabilir. 22 Eylül'de Merkür ile Jüpiter'in uyumlu teması, yeni fikirler geliştirmeni ve vizyonunu büyütmeni kolaylaştırıyor. 23 Eylül'de Güneş'in Terazi burcuna geçmesiyle arkadaş çevren ve sosyal yaşamın hareketlenmeye başlıyor. 26 Eylül Koç Dolunayı ise yaratıcılık gerektiren bir işte veya aşka dair bir konuda net bir karar almanı sağlayabilir. Dönem boyunca geleceğe güvenle bakmak sana büyük ivme kazandıracaktır.",
+          "askIliskide": "İlk zamanlarda yoğun tempo sebebiyle partnerine zaman ayırmakta zorlanabilirsin. İlerleyen günlerde sosyal etkinliklere birlikte katılmak aranızdaki neşeyi ve paylaşımı artıracaktır. 26 Eylül Dolunayı civarında ilişkinizdeki beklentileri açıkça dile getirmek aranızdaki bağı belirgin şekilde pekiştirir.",
+          "askYalniz": "İş ya da resmi ortamlar vasıtasıyla tanışacağın birisi ilgini çekebilir. Ay kapanışına doğru dahil olacağın organizasyonlar veya katıldığın sosyal gruplar yeni duygusal başlangıçlara zemin hazırlayabilir. İletişiminde cesur, doğal ve samimi davranmak seni çevrende öne çıkaracaktır.",
+          "kariyer": "Gelecek planların ve mesleki duruşun Eylül başlarında öncelikli konuların arasında yer alıyor. 11 Eylül Yeni Ayı ile birlikte taze sorumluluklar veya projeler gündeme gelebilir. 22 Eylül civarında gerçekleştireceğin önemli görüşmelerden oldukça verimli ve somut sonuçlar alabilirsin.",
+          "saglik": "Yoğun tempo içinde kendinle baş başa kalmayı ve dinlenmeyi unutmamak iyi gelir. Temiz havada yürüyüşler yapmak zihinsel yorgunluğunu atmana destek olur. Günün akışını aşırı hızlandırmadan dengede kalmak fayda getirir."
+        },
+        "capricorn": {
+          "ad": "Oğlak",
+          "ozet": "Ufkunu genişleten öğrenme süreçleriyle başlayan ay, işinde görünürlük kazanarak sağlam adımlar atmanı destekliyor.",
+          "genel": "Zihnini uzak yerlere, yeni eğitimlere ve büyük resme açarak Eylül ayına giriyorsun. Dönemin hemen başında yönetici gezegenin Satürn'ün Jüpiter ile yaptığı uyumlu açı, geleceğe dair planlarını sağlam temellere oturtma imkanı veriyor. 11 Eylül Başak Yeni Ayı, vizyonunu genişletecek somut başlangıçlar getirebilir. Ayın ilk yarısında keşfetme arzun öne çıkarken, 18 Eylül civarında Merkür-Satürn gerilimi iletişimde biraz daha sabırlı ve esnek olmanı gerektirebilir. 23 Eylül'de Güneş'in Terazi burcuna geçişiyle birlikte odağın tamamen kariyerine ve toplumsal duruşuna kayıyor. 26 Eylül Koç Dolunayı ise ev ve aile hayatınla ilgili bir konuyu netliğe kavuşturabilir. Ay bitimine yakın bir zamanda sorumluluklarını dengeli yöneterek emeklerinin karşılığını toplayabilirsin.",
+          "askIliskide": "Birlikte yeni alanlar keşfetmek ve ufkunuzu genişletmek ayın ilk yarısında ilişkinize canlılık katabilir. Ayın sonlarına doğru toplumsal hedefleriniz ve ortak geleceğiniz daha fazla ön plana çıkıyor. 18 Eylül civarında iletişimde eleştirel tutumlar yerine yapıcı bir dil benimsemek aranızdaki bağı güçlendirir.",
+          "askYalniz": "Farklı kültürlerden ya da öğrenme ortamlarından biriyle diyalog kurma olasılığın Eylül başlarında yükseliyor. 23 Eylül sonrasında ise iş ya da sosyal çevrenden birinin dikkatini çekebilirsin. İlişkilerde aradığın ciddiyet ve güven, beklentilerini netleştirerek hareket etmeni kolaylaştırıyor.",
+          "kariyer": "Eğitim, hukuk ya da yurt dışı bağlantılı işler Eylül başlarında hız kazanabilir. Güneş'in 23 Eylül'de Terazi burcuna geçmesiyle mesleki alandaki görünürlüğün belirgin şekilde artıyor. 26 Eylül Koç Dolunayı civarında iş hayatın ile evdeki sorumlulukların arasındaki dengeyi yeniden ayarlaman gerekebilir.",
+          "saglik": "Zihinsel yüklerin biriktiği anlarda temponu biraz yavaşlatmak dengeni korumana yardımcı olur. Bedenini hırpalamadan esnetmeye ve gün içinde kısa molalar vermeye zaman ayırabilirsin. Akşam saatlerini sakin geçirmek zihnini rahatlatır."
+        },
+        "aquarius": {
+          "ad": "Kova",
+          "ozet": "Ortaklı bütçeler ve derinleşen bağlarla başlayan ay, zihnini özgürleştirip ufkunu genişleten bir akışa evriliyor.",
+          "genel": "Paylaşımlı kaynaklar, bütçe düzenlemeleri ve duygusal derinlikler Eylül başlarında gündeminin merkezinde yer alıyor. Dönemin başında yönetici gezegenin Satürn'ün Jüpiter ile yaptığı üçgen açı, uzun vadeli planlarında gerçekçi kararlar almanı destekliyor. 11 Eylül'deki Yeni Ay, finansal süreçlerini yeniden yapılandırmak adına berrak bir zemin hazırlıyor. Ayın ilk yarısında içsel dönüşümüne odaklanırken, 10 Eylül'de Uranüs'ün durağanlaşarak retroya geçmesi farkındalığını iyice artırabilir. 23 Eylül'de Güneş'in Terazi burcuna geçişiyle birlikte zihnin özgürleşiyor, öğrenme ve keşfetme arzun belirginleşiyor. 26 Eylül Koç Dolunayı ise yakın çevrenle yürüttüğün bir diyalog veya projeyi sonuca ulaştırabilir. Son günlere geldiğinde özgün fikirlerinle çevrende fark yaratmayı başarabilirsin.",
+          "askIliskide": "İlişki içindeki duygusal ve maddi paylaşımları konuşmak ayın ilk yarısında daha fazla yer tutabilir. Güneş Terazi'ye geçtikten sonra partnerinle ortak entelektüel ilgilere yönelmek bağınızı tazeler. 18 Eylül civarında fikir ayrılıklarında esnek bir tutum sergilemek aranızdaki huzuru korur.",
+          "askYalniz": "İlk haftalarda gizemli ve derinlikli karakterler dikkatini çekebilir. 23 Eylül sonrasında bakış açını zenginleştiren, farklı ortamlardan biriyle zihinsel bir çekim yakalayabilirsin. Karşılıklı özgürlüğe ve entelektüel uyuma değer veren bağlar kurmak bu dönemde sana iyi gelir.",
+          "kariyer": "Ortaklı finansal konular ve bütçe planlamaları Eylül başında öncelikli başlığın haline gelebilir. 11 Eylül Başak Yeni Ayı civarında alacak ve borç dengeni rahatlıkla düzenleyebilirsin. Ayın sonuna yaklaştığında özgün tasarılarını ve vizyoner fikirlerini geniş çevrelere sunma imkanı yakalayabilirsin.",
+          "saglik": "Zihinsel dinginliğini korumak için gün içinde kendine yalnız kalabileceğin sakin alanlar yaratabilirsin. Dinlenme saatlerini aksatmamak ve kaliteli uykuya özen göstermek enerjini tazeler. Günlük temponu aşırı yükleme yapmadan ayarlamak sana iyi gelecektir."
+        },
+        "pisces": {
+          "ad": "Balık",
+          "ozet": "İkili ilişkilerde netlik ve denge arayışıyla başlayan ay, finansal ve manevi birikimlerini güçlendirerek sürüyor.",
+          "genel": "Birebir ilişkiler, ortaklıklar ve karşındaki insanların beklentileri Eylül ayının ilk yarısında odağını şekillendiriyor. Yönetici gezegenin Jüpiter'in Satürn ile kurduğu üçgen temas, hayatındaki sorumlulukları daha kararlı üstlenmene yardımcı oluyor. 11 Eylül Başak Yeni Ayı, ikili bağlarında taze kararlar almayı ve var olan ilişkileri güçlendirmeyi kolaylaştırabilir. 12 Eylül'deki Merkür-Neptün karşıtlığı, iletişimde net ve gerçekçi kalmanın önemini gösteriyor. 23 Eylül'de Güneş'in Terazi burcuna geçişiyle birlikte ortak kaynaklar ve finansal konular gündemine yerleşiyor. 26 Eylül Koç Dolunayı ise kendi kazançlarınla ilgili bir konuyu sonuçlandırabilir. Ay kapanışına doğru sezgilerine güvenerek dengeli ve huzurlu adımlar atabilirsin.",
+          "askIliskide": "Birlikteliğinizde netlik ve karşılıklı uyum ayın ilk yarısında ana temanız haline geliyor. 11 Eylül Yeni Ayı ilişkinize taze bir heyecan ve ivme kazandırabilir. 12 Eylül civarında oluşabilecek kafa karışıklıklarını önlemek adına birbirinizle tamamen açık konuşmanız faydalı olur.",
+          "askYalniz": "Karşılıklı bağların hareketlendiği bu dönemde sana ciddiyetle yaklaşan samimi biriyle tanışabilirsin. Ay ortasında yaşanabilecek karmaşık hislere kapılmadan mantığını da dinlemen iyi gelir. Süreç ilerledikçe kendini güvende hissettiğin seçimler yapmak ruhunu dinlendirir.",
+          "kariyer": "Ortaklaşa yürütülen projeler ve anlaşmalar Eylül başlarında öne çıkabilir. 11 Eylül civarında yeni bir sözleşme veya ortaklık süreci gündemine gelebilir. 26 Eylül Koç Dolunayı ise kendi bütçenle ilgili kararlı adımlar atmanı ve verdiğin emeklerin sonucunu net biçimde görmeni sağlayabilir.",
+          "saglik": "Duygusal açıdan yoğunlaştığın günlerde temponu düşürüp dinlenmeye vakit ayırmalısın. Zihnini sakinleştirmek adına doğayla baş başa kalmak sana çok iyi gelir. Uyku ritmini koruyarak yaşam enerjini dengede tutabilirsin."
+        }
+      }
+    }
+  ]
+}
