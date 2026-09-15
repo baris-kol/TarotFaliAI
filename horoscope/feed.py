@@ -360,7 +360,14 @@ def write_period_feed(root: Path, kind: str) -> list[str]:
         key=lambda p: p.name,
         reverse=True,
     )[:PERIOD_FEED_COUNT]
-    periods = [json.loads(p.read_text(encoding="utf-8")) for p in files]
+    periods = []
+    for path in files:
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if isinstance(data, dict) and data.get("baslangic") and data.get("burclar"):
+            periods.append(data)
 
     path = period_feed_path(root, kind)
     try:
