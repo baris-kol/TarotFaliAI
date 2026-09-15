@@ -12,29 +12,39 @@
     h1 { font-weight: 400; letter-spacing: .02em; }
     a { color: #E2C27A; }
     code { background: #1B1326; padding: 2px 6px; border-radius: 4px; }
-    #durum { margin-top: 24px; padding: 16px; border: 1px solid #3A2C4F; border-radius: 12px; }
+    .durum { margin-top: 16px; padding: 16px; border: 1px solid #3A2C4F; border-radius: 12px; }
   </style>
 </head>
 <body>
 <main>
   <h1>TarotFaliAI</h1>
-  <p>Astarot uygulamasının günlük burç yorumu dosyaları. Her gece GitHub
-     Actions ile üretiliyor.</p>
-  <p>Uygulamanın okuduğu dosya: <a href="v1/gunluk.json"><code>v1/gunluk.json</code></a></p>
-  <div id="durum">Yükleniyor…</div>
+  <p>Arkanay uygulamasının burç yorumu dosyaları. Her gece GitHub Actions ile
+     üretiliyor.</p>
+  <p>Uygulamanın okuduğu dosyalar:
+     <a href="v1/gunluk.json"><code>v1/gunluk.json</code></a>,
+     <a href="v1/haftalik.json"><code>v1/haftalik.json</code></a>,
+     <a href="v1/aylik.json"><code>v1/aylik.json</code></a></p>
+  <div id="gunluk" class="durum">Yükleniyor…</div>
+  <div id="haftalik" class="durum">Yükleniyor…</div>
+  <div id="aylik" class="durum">Yükleniyor…</div>
 </main>
 <script>
-  fetch('v1/gunluk.json', { cache: 'no-store' })
-    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-    .then(function (feed) {
-      var days = feed.gunler.map(function (d) { return d.tarih + ' (' + d.model + ')'; });
-      document.getElementById('durum').textContent =
-        'Son güncelleme: ' + feed.guncellendi + ' — içindeki günler: ' + days.join(', ');
-    })
-    .catch(function (e) {
-      document.getElementById('durum').textContent =
-        'Henüz yorum yayınlanmadı ya da dosya okunamadı (' + e.message + ').';
-    });
+  function show(id, label, list, key) {
+    fetch('v1/' + id + '.json', { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (feed) {
+        var items = feed[list].map(function (d) { return d[key] + ' (' + d.model + ')'; });
+        document.getElementById(id).textContent =
+          label + ' — son güncelleme: ' + feed.guncellendi + ' — içindekiler: ' + items.join(', ');
+      })
+      .catch(function (e) {
+        document.getElementById(id).textContent =
+          label + ': henüz yayınlanmadı ya da okunamadı (' + e.message + ').';
+      });
+  }
+  show('gunluk', 'Günlük', 'gunler', 'tarih');
+  show('haftalik', 'Haftalık', 'donemler', 'baslangic');
+  show('aylik', 'Aylık', 'donemler', 'baslangic');
 </script>
 </body>
 </html>

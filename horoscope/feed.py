@@ -3,6 +3,10 @@
     public/v1/arsiv/YYYY-MM-DD.json   bir günün yorumu — kalıcı arşiv
     public/v1/gunluk.json             uygulamanın okuduğu dosya: arşivdeki
                                       en yeni 3 gün, yeniden eskiye
+    public/v1/haftalik/YYYY-MM-DD.json  bir haftanın yorumu (pazartesi)
+    public/v1/haftalik.json             en yeni 2 hafta
+    public/v1/aylik/YYYY-MM-01.json     bir ayın yorumu
+    public/v1/aylik.json                en yeni 2 ay
 
 Uygulama `gunluk.json`'dan cihazın bugününe denk gelen günü seçiyor. Yarının
 yorumu gece 23:17'de yayınlandığında bugünkü hâlâ dosyada; Türkiye'den geri
@@ -32,7 +36,7 @@ from pathlib import Path
 
 from .prompt import FIELDS
 from .signs import SIGNS, Sign, find_sign
-from .sky import Sky
+from .sky import PeriodSky, Sky
 
 FEED_VERSION = 1
 FEED_DAYS = 3
@@ -48,6 +52,32 @@ LIMITS: dict[str, tuple[int, int]] = {
     "kariyer": (90, 600),
     "saglik": (60, 500),
 }
+
+# Haftalık ve aylık yorumun sınırları — istemdeki kelime aralıklarının epey
+# dışında; yalnızca yarım kalmış ya da kontrolden çıkmış yanıtı eliyor.
+PERIOD_LIMITS: dict[str, dict[str, tuple[int, int]]] = {
+    "weekly": {
+        "ozet": (15, 200),
+        "genel": (450, 1500),
+        "askIliskide": (120, 650),
+        "askYalniz": (120, 650),
+        "kariyer": (140, 750),
+        "saglik": (100, 600),
+    },
+    "monthly": {
+        "ozet": (15, 210),
+        "genel": (600, 1900),
+        "askIliskide": (170, 800),
+        "askYalniz": (170, 800),
+        "kariyer": (190, 900),
+        "saglik": (130, 700),
+    },
+}
+
+# public/v1/<klasör>/<başlangıç>.json (arşiv) ve public/v1/<klasör>.json
+# (uygulamanın okuduğu, en yeni PERIOD_FEED_COUNT dönem).
+PERIOD_FOLDERS = {"weekly": "haftalik", "monthly": "aylik"}
+PERIOD_FEED_COUNT = 2
 
 _ARCHIVE_NAME = re.compile(r"^\d{4}-\d{2}-\d{2}\.json$")
 # Emoji blokları, ☀–➿ semboller, varyasyon seçici ve birleştirici.
@@ -125,11 +155,12 @@ class InvalidReadings(Exception):
 def parse_readings(
     text: str,
     expected: Sequence[Sign] = SIGNS,
+    limits: dict[str, tuple[int, int]] = LIMITS,
 ) -> dict[str, dict[str, str]]:
     """Model yanıtı → `{slug: {ad, ozet, genel, ask, kariyer, saglik}}`, burç sırasıyla.
 
     `expected`: yanıtta olması gereken burçlar — düzeltme turunda yalnızca
-    yeniden yazdırılanlar.
+    yeniden yazdırılanlar. `limits`: alan uzunlukları (günlük ya da dönem).
     """
     try:
         data = json.loads(text)
@@ -155,7 +186,7 @@ def parse_readings(
         entry = {"ad": sign.name}
         for field in FIELDS:
             value = clean_text(item.get(field))
-            low, high = LIMITS[field]
+            low, high = limits[field]
             if not low <= len(value) <= high:
                 problems.append(f"{sign.name}.{field} {len(value)} karakter ({low}–{high} bekleniyor)")
             entry[field] = value
@@ -296,6 +327,72 @@ def write_feed(root: Path) -> list[str]:
     if not (current and current.get("surum") == FEED_VERSION and current.get("gunler") == days):
         _write_json(path, {"surum": FEED_VERSION, "guncellendi": _now(), "gunler": days})
     return [d["tarih"] for d in days]
+
+
+def period_path(root: Path, kind: str, start: date) -> Path:
+    return root / "v1" / PERIOD_FOLDERS[kind] / f"{start.isoformat()}.json"
+
+
+def period_feed_path(root: Path, kind: str) -> Path:
+    return root / "v1" / f"{PERIOD_FOLDERS[kind]}.json"
+
+
+def has_period(root: Path, kind: str, start: date) -> bool:
+    """O haftanın/ayın eksiksiz yorumu arşivde var mı?"""
+    try:
+        data = json.loads(period_path(root, kind, start).read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return False
+    return len(data.get("burclar") or {}) == len(SIGNS)
+
+
+def write_period(
+    root: Path,
+    psky: PeriodSky,
+    readings: dict[str, dict[str, str]],
+    model: str,
+) -> Path:
+    record = {
+        "baslangic": psky.start.isoformat(),
+        "bitis": psky.end.isoformat(),
+        "uretildi": _now(),
+        "model": model,
+        "gokyuzu": psky.to_json(),
+        "burclar": readings,
+    }
+    path = period_path(root, psky.kind, psky.start)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    _write_json(path, record)
+    return path
+
+
+def write_period_feed(root: Path, kind: str) -> list[str]:
+    """`haftalik.json` / `aylik.json`: arşivin en yeni dönemleri, yeniden eskiye.
+
+    `write_feed` gibi: içerik değişmediyse dosyaya dokunmuyor. Dönen değer
+    dosyadaki başlangıç tarihleri.
+    """
+    folder = root / "v1" / PERIOD_FOLDERS[kind]
+    files = sorted(
+        (p for p in folder.glob("*.json") if _ARCHIVE_NAME.match(p.name)),
+        key=lambda p: p.name,
+        reverse=True,
+    )[:PERIOD_FEED_COUNT]
+    periods = [json.loads(p.read_text(encoding="utf-8")) for p in files]
+
+    path = period_feed_path(root, kind)
+    try:
+        current = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        current = None
+    if not (
+        current
+        and current.get("surum") == FEED_VERSION
+        and current.get("donemler") == periods
+    ):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        _write_json(path, {"surum": FEED_VERSION, "guncellendi": _now(), "donemler": periods})
+    return [p["baslangic"] for p in periods]
 
 
 def _write_json(path: Path, data: dict) -> None:

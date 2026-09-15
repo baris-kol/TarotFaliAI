@@ -19,6 +19,12 @@ olarak giriyor; talimat modelin yalnızca bunları kullanmasını istiyor:
 Uygulamadaki "Gökyüzü şu an" kartı aynı Güneş/Ay burcunu kendi hesabıyla
 gösteriyor — metinle çelişmiyorlar.
 
+Haftalık ve aylık yorumlar için `compute_period` bir dönemin gökyüzünü
+veriyor: dönem başındaki konumlar ve dönem içindeki olaylar (ana evreler ve
+tutulmalar, gezegenlerin burç geçişleri, retro dönüşleri, tam olan gezegen
+açıları; haftalıkta Ay'ın burç geçişleri de). Olaylar yayınlanan dosyaya da
+giriyor; uygulama onları "Gökyüzü takvimi" olarak gösteriyor.
+
 Gün, Türkiye saatiyle 00:00–24:00. Türkiye 2016'dan beri yaz saati
 uygulamıyor, sabit UTC+3 — saat dilimi veritabanına gerek yok.
 """
@@ -41,6 +47,7 @@ MONTHS = (
     "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
     "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık",
 )
+WEEKDAYS = ("Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar")
 
 _SUN = ("Güneş", ephem.Sun)
 _MOON = ("Ay", ephem.Moon)
@@ -284,6 +291,233 @@ class Sky:
                 for e in self.eclipses
             ],
         }
+
+
+@dataclass(frozen=True)
+class PeriodEvent:
+    """Haftalık/aylık dönem içindeki bir gök olayı."""
+
+    at: datetime  # Türkiye saati
+    kind: str  # "evre" | "tutulma" | "gecis" | "retro" | "aci"
+    text: str  # istemde ve uygulamada gösterilen cümle
+    phase: str | None = None  # evre/tutulma: "Yeni Ay", "Dolunay", …
+    bodies: tuple[str, ...] = ()  # olaya karışan gezegenler
+    sign: Sign | None = None  # evre: Ay'ın burcu; geçiş: girilen burç
+
+    def to_json(self) -> dict:
+        data = {
+            "tarih": self.at.date().isoformat(),
+            "saat": _hhmm(self.at),
+            "tur": self.kind,
+            "metin": self.text,
+        }
+        if self.phase:
+            data["evre"] = self.phase
+        return data
+
+
+@dataclass(frozen=True)
+class PeriodSky:
+    """Bir haftanın ya da ayın gökyüzü: başındaki konumlar ve içindeki olaylar."""
+
+    kind: str  # "weekly" | "monthly"
+    start: date
+    end: date  # dahil
+    bodies: tuple[Body, ...]  # dönemin başında Güneş, Merkür–Plüton
+    events: tuple[PeriodEvent, ...]
+
+    @property
+    def title(self) -> str:
+        """"14–20 Eylül 2026 haftası", "28 Eylül – 4 Ekim 2026 haftası", "Eylül 2026"."""
+        if self.kind == "monthly":
+            return f"{MONTHS[self.start.month - 1]} {self.start.year}"
+        if self.start.month == self.end.month:
+            return (
+                f"{self.start.day}–{self.end.day} {MONTHS[self.end.month - 1]} "
+                f"{self.end.year} haftası"
+            )
+        return f"{day_label(self.start)} – {day_label(self.end)} {self.end.year} haftası"
+
+    def body(self, name: str) -> Body | None:
+        return next((b for b in self.bodies if b.name == name), None)
+
+    def describe(self) -> str:
+        """İstemdeki gökyüzü bölümleri."""
+        lines = [
+            "DÖNEMİN GÖKYÜZÜ (hesaplanmış gerçek konumlar ve olaylar — yalnızca bunları kullan):",
+            "Dönemin başında konumlar:",
+        ]
+        for body in self.bodies:
+            text = f"- {body.name}: {body.sign.name} burcunda"
+            if body.retrograde:
+                text += ", geri harekette (retro)"
+            lines.append(text + ".")
+        retro = [b.name for b in self.bodies if b.retrograde]
+        lines.append(
+            "- Dönemin başında geri harekette (retro) olanlar: " + ", ".join(retro) + "."
+            if retro
+            else "- Dönemin başında geri harekette (retro) olan gezegen yok."
+        )
+        lines += ["", "DÖNEMİN OLAYLARI (Türkiye saatiyle, zaman sırasıyla):"]
+        lines += [
+            f"- {day_label(e.at.date())} {weekday_label(e.at.date())} {_hhmm(e.at)} — {e.text}."
+            for e in self.events
+        ] or ["- Bu dönemde listelenecek olay yok."]
+        return "\n".join(lines)
+
+    def to_json(self) -> dict:
+        """Yayınlanan dosyadaki `gokyuzu` — uygulama olayları takvim olarak gösteriyor."""
+        return {
+            "konumlar": {
+                b.name: {"burc": b.sign.name, "retro": b.retrograde} for b in self.bodies
+            },
+            "olaylar": [e.to_json() for e in self.events],
+        }
+
+
+def compute_period(kind: str, start: date, end: date) -> PeriodSky:
+    """`start`–`end` (ikisi de dahil) gökyüzü; Türkiye saatiyle.
+
+    Haftalıkta Ay'ın burç geçişleri de olay olarak giriyor (haftada üç
+    dört tane — hangi gün neyin öne çıktığını söylemeye yarıyor); aylıkta
+    yalnızca ana evreler.
+    """
+    begin = datetime.combine(start, time(0), TURKEY)
+    finish = datetime.combine(end + timedelta(days=1), time(0), TURKEY)
+    everyone = (_SUN, *_PLANETS, *_OUTER)
+
+    bodies = tuple(_body(name, cls, begin, begin + timedelta(days=1)) for name, cls in everyone)
+    events: list[PeriodEvent] = []
+    events += _period_phases(begin, finish)
+    for name, cls in everyone:
+        events += _period_ingresses(name, cls, begin, finish, timedelta(days=1))
+    if kind == "weekly":
+        events += _period_ingresses(*_MOON, begin, finish, timedelta(hours=6))
+    events += _period_stations(begin, finish)
+    events += _period_aspects(begin, finish)
+    events.sort(key=lambda e: e.at)
+    return PeriodSky(kind=kind, start=start, end=end, bodies=bodies, events=tuple(events))
+
+
+def _period_phases(begin: datetime, finish: datetime) -> list[PeriodEvent]:
+    found: list[PeriodEvent] = []
+    stop = _ephem_date(finish)
+    for name, next_event in _PHASE_EVENTS:
+        moment = next_event(_ephem_date(begin))
+        while moment < stop:
+            at = _to_turkey(moment)
+            lon = longitude(ephem.Moon, at)
+            sign = sign_of(lon)
+            eclipse = None
+            if name in ("Yeni Ay", "Dolunay"):
+                eclipse = _classify_eclipse(moment, solar=name == "Yeni Ay")
+            text = f"{name}, {sign.name} {int(lon % 30)}°"
+            if eclipse:
+                text += f" — {eclipse.name.lower()} ({eclipse.kind})"
+            found.append(
+                PeriodEvent(
+                    at=at,
+                    kind="tutulma" if eclipse else "evre",
+                    text=text,
+                    phase=name,
+                    sign=sign,
+                )
+            )
+            moment = next_event(ephem.Date(moment + 1))
+    return found
+
+
+def _period_ingresses(
+    name: str, cls: type, begin: datetime, finish: datetime, step: timedelta
+) -> list[PeriodEvent]:
+    found: list[PeriodEvent] = []
+    t = begin
+    sign = sign_of(longitude(cls, t))
+    while t < finish:
+        nxt = min(t + step, finish)
+        later = sign_of(longitude(cls, nxt))
+        if later != sign:
+            at = _ingress_time(cls, sign, t, nxt)
+            backwards = name != "Ay" and _speed(cls, at) < 0
+            found.append(
+                PeriodEvent(
+                    at=at,
+                    kind="gecis",
+                    text=f"{name} {later.name} burcuna geçiyor"
+                    + (" (geri hareketle)" if backwards else ""),
+                    bodies=(name,),
+                    sign=later,
+                )
+            )
+        t, sign = nxt, later
+    return found
+
+
+def _period_stations(begin: datetime, finish: datetime) -> list[PeriodEvent]:
+    found: list[PeriodEvent] = []
+    marks = [begin]
+    while marks[-1] < finish:
+        marks.append(min(marks[-1] + timedelta(days=1), finish))
+    for name, cls in (*_PLANETS, *_OUTER):
+        speeds = [_speed(cls, t) for t in marks]
+        for i in range(len(marks) - 1):
+            if (speeds[i] < 0) != (speeds[i + 1] < 0):
+                at = _root(lambda t, c=cls: _speed(c, t), marks[i], marks[i + 1])
+                sign = sign_of(longitude(cls, at))
+                starting = speeds[i + 1] < 0
+                found.append(
+                    PeriodEvent(
+                        at=at,
+                        kind="retro",
+                        text=(
+                            f"{name} {sign.name} burcunda geri harekete başlıyor (retro başlıyor)"
+                            if starting
+                            else f"{name} {sign.name} burcunda düz harekete dönüyor (retro bitiyor)"
+                        ),
+                        bodies=(name,),
+                        sign=sign,
+                    )
+                )
+    return found
+
+
+def _period_aspects(begin: datetime, finish: datetime) -> list[PeriodEvent]:
+    """Dönem içinde tam olan gezegen açıları (Güneş–Plüton, kuşak kendi arasında hariç).
+
+    Boylamlar günde bir kez hesaplanıp önbelleğe alınıyor; yalnızca işaret
+    değiştiren günde kök aranıyor.
+    """
+    marks = [begin]
+    while marks[-1] < finish:
+        marks.append(min(marks[-1] + timedelta(days=1), finish))
+    everyone = (_SUN, *_PLANETS, *_OUTER)
+    lons = {name: [longitude(cls, t) for t in marks] for name, cls in everyone}
+
+    found: list[PeriodEvent] = []
+    for (a, cls_a), (b, cls_b) in combinations(everyone, 2):
+        if a in _OUTER_NAMES and b in _OUTER_NAMES:
+            continue
+        for kind, angle in ASPECTS:
+            for target in {angle, -angle % 360}:
+                gaps = [_offset(x, y, target) for x, y in zip(lons[a], lons[b])]
+                for i in range(len(marks) - 1):
+                    first, last = gaps[i], gaps[i + 1]
+                    if (first > 0) != (last > 0) and abs(first) < 10 and abs(last) < 10:
+                        at = _root(
+                            lambda t, ca=cls_a, cb=cls_b, g=target: _offset(
+                                longitude(ca, t), longitude(cb, t), g
+                            ),
+                            marks[i],
+                            marks[i + 1],
+                        )
+                        found.append(
+                            PeriodEvent(at=at, kind="aci", text=f"{a}–{b} {kind}", bodies=(a, b))
+                        )
+    return found
+
+
+def weekday_label(day: date) -> str:
+    return WEEKDAYS[day.weekday()]
 
 
 def compute_sky(day: date) -> Sky:

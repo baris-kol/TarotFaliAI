@@ -1,24 +1,31 @@
-"""Günlük burç yorumunu üretip `public/` altına yazar.
+"""Burç yorumlarını üretip `public/` altına yazar: günlük, haftalık, aylık.
 
-    python -m horoscope                       # varsayılan gün (aşağıya bak)
-    python -m horoscope --date 2026-09-14     # belirli bir gün
-    python -m horoscope --force               # o gün zaten varsa yeniden üret
+    python -m horoscope                       # üçü de, varsayılan gün (aşağıya bak)
+    python -m horoscope --period daily        # yalnızca günlük (weekly, monthly)
+    python -m horoscope --date 2026-09-14     # belirli bir gün — ve onun haftası, ayı
+    python -m horoscope --force               # zaten varsa yeniden üret
     python -m horoscope --dry-run             # Gemini'ye gitmeden istemi yazdır
 
 Varsayılan gün: Türkiye saatiyle 18:00'den sonra yarın, önce bugün. Gece
 23:17'deki zamanlanmış koşu yarını, 02:47'deki yedek koşu bugünü hedefliyor
 (bugün zaten varsa hiçbir şey yapmıyor).
 
-Akış: 12 burç tek istekte üretiliyor; yapısı bozuksa (eksik burç, yarım
-metin) baştan, en fazla `GENERATION_ATTEMPTS` kez. Üslup kurallarını
-çiğneyen burçlar ise yalnızca kendileri, sorunları söylenerek en fazla
-`REPAIR_ROUNDS` tur yeniden yazdırılıyor.
+Haftalık ve aylık yorum o günün haftası (Pazartesi–Pazar) ve ayı için —
+yalnızca yoksa üretiliyor. Pazar gecesi koşusu pazartesi başlayan haftayı,
+ayın son gecesi koşusu yeni ayı yayınlıyor; ayrı bir zamanlama gerekmiyor.
+Bir gece başarısız olursa yedek koşu ya da ertesi gece tamamlıyor.
+
+Akış (her dönem için): 12 burç tek istekte üretiliyor; yapısı bozuksa
+(eksik burç, yarım metin) baştan, en fazla `GENERATION_ATTEMPTS` kez. Üslup
+kurallarını çiğneyen burçlar ise yalnızca kendileri, sorunları söylenerek en
+fazla `REPAIR_ROUNDS` tur yeniden yazdırılıyor.
 
 Ortam değişkenleri:
-    GEMINI_API_KEY   zorunlu (--dry-run hariç)
-    GEMINI_MODEL     isteğe bağlı, virgülle ayrılmış model listesi
-    HOROSCOPE_DATE   --date ile aynı (Actions'taki elle çalıştırma kutusu)
-    HOROSCOPE_FORCE  "true" ise --force
+    GEMINI_API_KEY    zorunlu (--dry-run hariç)
+    GEMINI_MODEL      isteğe bağlı, virgülle ayrılmış model listesi
+    HOROSCOPE_DATE    --date ile aynı (Actions'taki elle çalıştırma kutusu)
+    HOROSCOPE_FORCE   "true" ise --force
+    HOROSCOPE_PERIOD  --period ile aynı: all (varsayılan), daily, weekly, monthly
 """
 
 from __future__ import annotations
@@ -26,19 +33,49 @@ from __future__ import annotations
 import argparse
 import os
 import sys
+from collections.abc import Callable
+from dataclasses import dataclass
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from . import feed, gemini
 from .log import info, log, set_output
-from .prompt import SYSTEM, build_prompt, build_repair_prompt, response_schema
+from .prompt import (
+    FIELD_SPECS,
+    PERIOD_FIELD_SPECS,
+    SYSTEM,
+    build_period_prompt,
+    build_period_repair_prompt,
+    build_prompt,
+    build_repair_prompt,
+    period_system,
+    response_schema,
+)
 from .signs import SIGNS
-from .sky import TURKEY, Sky, compute_sky
+from .sky import TURKEY, compute_period, compute_sky
 
 PUBLIC = Path(__file__).resolve().parent.parent / "public"
 GENERATION_ATTEMPTS = 3
 REPAIR_ROUNDS = 2
 EVENING_HOUR = 18
+PERIODS = ("daily", "weekly", "monthly")
+
+Readings = dict[str, dict[str, str]]
+
+
+@dataclass(frozen=True)
+class Job:
+    """Bir dönemin üretimi için gereken her şey."""
+
+    label: str  # loglarda: "2026-09-14 günlük"
+    exists: bool
+    system: str
+    prompt: str
+    specs: dict[str, str]
+    limits: dict[str, tuple[int, int]]
+    repair_prompt: Callable[[Readings, dict[str, list[str]]], str]
+    write: Callable[[Readings, str], str]  # yazar, log satırını döner
+    refresh_feed: Callable[[], object]
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -46,27 +83,89 @@ def main(argv: list[str] | None = None) -> int:
         sys.stdout.reconfigure(encoding="utf-8")
     args = _parse_args(argv)
     day: date = args.date or _default_day()
-    root: Path = args.out
     set_output("date", day.isoformat())
 
-    if not args.force and not args.dry_run and feed.has_day(root, day):
-        info(f"{day} yorumu zaten var; yeniden üretilmiyor (zorlamak için --force).")
-        feed.write_feed(root)
+    periods = PERIODS if args.period == "all" else (args.period,)
+    failed = [period for period in periods if _run(_job(period, day, args.out), args) != 0]
+    if failed:
+        log("error", "Üretilemeyen: " + ", ".join(failed) + ". Önceki yorumlar yayında kalıyor.")
+        return 1
+    return 0
+
+
+def _job(period: str, day: date, root: Path) -> Job:
+    if period == "daily":
+        sky = compute_sky(day)
+
+        def write_day(readings: Readings, model: str) -> str:
+            path = feed.write_day(root, sky, readings, model)
+            days = feed.write_feed(root)
+            return f"{path.name} yazıldı ({model}). gunluk.json: {', '.join(days)}"
+
+        return Job(
+            label=f"{day} günlük",
+            exists=feed.has_day(root, day),
+            system=SYSTEM,
+            prompt=build_prompt(sky),
+            specs=FIELD_SPECS,
+            limits=feed.LIMITS,
+            repair_prompt=lambda r, i: build_repair_prompt(sky, r, i),
+            write=write_day,
+            refresh_feed=lambda: feed.write_feed(root),
+        )
+
+    start, end = _bounds(period, day)
+    psky = compute_period(period, start, end)
+    name = feed.PERIOD_FOLDERS[period]
+
+    def write_period(readings: Readings, model: str) -> str:
+        path = feed.write_period(root, psky, readings, model)
+        starts = feed.write_period_feed(root, period)
+        return f"{name}/{path.name} yazıldı ({model}). {name}.json: {', '.join(starts)}"
+
+    return Job(
+        label=f"{psky.title} ({'haftalık' if period == 'weekly' else 'aylık'})",
+        exists=feed.has_period(root, period, start),
+        system=period_system(period),
+        prompt=build_period_prompt(psky),
+        specs=PERIOD_FIELD_SPECS[period],
+        limits=feed.PERIOD_LIMITS[period],
+        repair_prompt=lambda r, i: build_period_repair_prompt(psky, r, i),
+        write=write_period,
+        refresh_feed=lambda: feed.write_period_feed(root, period),
+    )
+
+
+def _bounds(period: str, day: date) -> tuple[date, date]:
+    """`day`'in haftası (Pazartesi–Pazar) ya da ayı; iki uç da dahil."""
+    if period == "weekly":
+        start = day - timedelta(days=day.weekday())
+        return start, start + timedelta(days=6)
+    start = day.replace(day=1)
+    following = (start + timedelta(days=32)).replace(day=1)
+    return start, following - timedelta(days=1)
+
+
+def _run(job: Job, args: argparse.Namespace) -> int:
+    if job.exists and not args.force and not args.dry_run:
+        info(f"{job.label} yorumu zaten var; yeniden üretilmiyor (zorlamak için --force).")
+        job.refresh_feed()
         return 0
 
-    sky = compute_sky(day)
-    prompt = build_prompt(sky)
     if args.dry_run:
-        info("=== SİSTEM TALİMATI ===\n" + SYSTEM + "\n=== İSTEM ===\n" + prompt)
+        info(
+            f"=== {job.label.upper()} ===\n=== SİSTEM TALİMATI ===\n{job.system}"
+            f"\n=== İSTEM ===\n{job.prompt}\n"
+        )
         return 0
 
     # Gemini'ye gitmeden önce: yazamayacağımız bir klasör için çağrı harcanmasın.
     try:
-        root.mkdir(parents=True, exist_ok=True)
+        args.out.mkdir(parents=True, exist_ok=True)
     except OSError as error:
         log(
             "error",
-            f"Çıktı klasörü oluşturulamadı: {root} ({error}). Ortam değişkeni "
+            f"Çıktı klasörü oluşturulamadı: {args.out} ({error}). Ortam değişkeni "
             "cmd'de %TEMP%, PowerShell'de $env:TEMP diye yazılır.",
         )
         return 1
@@ -81,44 +180,33 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     models = gemini.models_from_env()
-    info(f"{day} için yorum üretiliyor. Model sırası: {', '.join(models)}")
+    info(f"{job.label} yorumu üretiliyor. Model sırası: {', '.join(models)}")
     for attempt in range(1, GENERATION_ATTEMPTS + 1):
         try:
             reply = gemini.generate(
                 api_key=api_key,
                 models=models,
-                system=SYSTEM,
-                prompt=prompt,
-                schema=response_schema(),
+                system=job.system,
+                prompt=job.prompt,
+                schema=response_schema(SIGNS, job.specs),
             )
-            readings = feed.parse_readings(reply.text)
+            readings = feed.parse_readings(reply.text, limits=job.limits)
             break
         except (gemini.IncompleteReply, feed.InvalidReadings) as error:
-            log("warning", f"Deneme {attempt}/{GENERATION_ATTEMPTS} kullanılamadı: {error}")
+            log("warning", f"{job.label}: deneme {attempt}/{GENERATION_ATTEMPTS} kullanılamadı: {error}")
         except gemini.GeminiError as error:
-            log("error", str(error))
+            log("error", f"{job.label}: {error}")
             return 1
     else:
-        log(
-            "error",
-            f"{GENERATION_ATTEMPTS} denemede de geçerli yorum alınamadı. "
-            "Önceki günler yayında kalıyor.",
-        )
+        log("error", f"{job.label}: {GENERATION_ATTEMPTS} denemede de geçerli yorum alınamadı.")
         return 1
 
-    readings = _repair(api_key, models, sky, readings)
-    path = feed.write_day(root, sky, readings, reply.model)
-    days = feed.write_feed(root)
-    log("notice", f"{path.name} yazıldı ({reply.model}). gunluk.json: {', '.join(days)}")
+    readings = _repair(api_key, models, job, readings)
+    log("notice", job.write(readings, reply.model))
     return 0
 
 
-def _repair(
-    api_key: str,
-    models: list[str],
-    sky: Sky,
-    readings: dict[str, dict[str, str]],
-) -> dict[str, dict[str, str]]:
+def _repair(api_key: str, models: list[str], job: Job, readings: Readings) -> Readings:
     """Üslup kurallarını çiğneyen burçları yeniden yazdırır.
 
     Turların sonunda hâlâ sorun varsa metin uyarıyla yayınlanıyor: kusurlu
@@ -128,32 +216,36 @@ def _repair(
         issues = feed.content_issues(readings)
         if not issues:
             return readings
-        log("warning", f"Düzeltme turu {round_}/{REPAIR_ROUNDS} — {_summary(readings, issues)}")
+        log("warning", f"{job.label}: düzeltme turu {round_}/{REPAIR_ROUNDS} — {_summary(readings, issues)}")
         signs = [s for s in SIGNS if s.slug in issues]
         try:
             reply = gemini.generate(
                 api_key=api_key,
                 models=models,
-                system=SYSTEM,
-                prompt=build_repair_prompt(sky, readings, issues),
-                schema=response_schema(signs),
+                system=job.system,
+                prompt=job.repair_prompt(readings, issues),
+                schema=response_schema(signs, job.specs),
             )
-            fixed = feed.parse_readings(reply.text, expected=signs)
+            fixed = feed.parse_readings(reply.text, expected=signs, limits=job.limits)
         except (gemini.IncompleteReply, feed.InvalidReadings) as error:
-            log("warning", f"Düzeltme turu {round_} kullanılamadı: {error}")
+            log("warning", f"{job.label}: düzeltme turu {round_} kullanılamadı: {error}")
             continue
         except gemini.GeminiError as error:
-            log("warning", f"Düzeltme yapılamadı: {error}")
+            log("warning", f"{job.label}: düzeltme yapılamadı: {error}")
             break
         readings = {slug: fixed.get(slug, entry) for slug, entry in readings.items()}
 
     issues = feed.content_issues(readings)
     if issues:
-        log("warning", f"Kurallara tam uymayan metinlerle yayınlanıyor — {_summary(readings, issues)}")
+        log(
+            "warning",
+            f"{job.label}: kurallara tam uymayan metinlerle yayınlanıyor — "
+            f"{_summary(readings, issues)}",
+        )
     return readings
 
 
-def _summary(readings: dict[str, dict[str, str]], issues: dict[str, list[str]]) -> str:
+def _summary(readings: Readings, issues: dict[str, list[str]]) -> str:
     return " | ".join(
         f"{readings[slug]['ad']}: {', '.join(problems)}" for slug, problems in issues.items()
     )
@@ -162,6 +254,11 @@ def _summary(readings: dict[str, dict[str, str]], issues: dict[str, list[str]]) 
 def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(prog="python -m horoscope")
     parser.add_argument("--date", type=_parse_date, default=_env_date())
+    parser.add_argument(
+        "--period",
+        choices=("all", *PERIODS),
+        default=os.environ.get("HOROSCOPE_PERIOD", "").strip() or "all",
+    )
     parser.add_argument(
         "--force",
         action="store_true",

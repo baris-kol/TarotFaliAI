@@ -4,15 +4,18 @@ Yorumların kalitesi büyük ölçüde bu dosyada. Değiştirirken:
 
 * Gökyüzü modelden istenmiyor, `sky.py` hesaplıyor; talimat modelin yalnızca
   verilen konumları kullanmasını istiyor. Bu kuralı gevşetme.
-* Alan uzunlukları uygulamadaki mektup düzenine göre. `feed.LIMITS` aynı
-  aralıkları (karakter olarak, daha geniş) denetliyor — birini değiştirirsen
-  ötekine de bak.
+* Alan uzunlukları uygulamadaki mektup düzenine göre. `feed.LIMITS` (günlük)
+  ve `feed.PERIOD_LIMITS` (haftalık/aylık) aynı aralıkları (karakter olarak,
+  daha geniş) denetliyor — birini değiştirirsen ötekine de bak.
 * Üslup kurallarının bir kısmı (sağlıkta organ/yiyecek, "Ay" ile başlayan
   giriş, "-malısın", burçlar arası kalıp tekrarı, İngilizce kelime, aşk
   bölümlerinin doğru okura seslenmesi) `feed.content_issues` ile de
   denetleniyor; çiğneyen
   burçlar `build_repair_prompt` ile yeniden yazdırılıyor. Kuralı burada
   değiştirirsen orada da değiştir.
+* Talimat parçalardan kuruluyor: üslup, sınırlar ve çeşitlilik günlük,
+  haftalık ve aylık yorumda ortak; yalnızca giriş ve gökyüzü bölümü dönemine
+  göre değişiyor.
 * Değişikliği Gemini'ye gitmeden görmek için: `python -m horoscope --dry-run`.
 """
 
@@ -23,7 +26,7 @@ from collections.abc import Sequence
 from datetime import timedelta
 
 from .signs import HOUSE_THEMES, SIGNS, Sign, house_of
-from .sky import Sky, day_label
+from .sky import PeriodSky, Sky, day_label
 
 FIELD_SPECS: dict[str, str] = {
     "ozet": "Günün tek cümlelik özü; en fazla 110 karakter. Akılda kalan, "
@@ -40,11 +43,45 @@ FIELD_SPECS: dict[str, str] = {
 
 FIELDS: tuple[str, ...] = tuple(FIELD_SPECS)
 
-SYSTEM = """\
-Sen, Astarot adlı Türkçe tarot ve burç uygulaması için günlük burç yorumları \
-yazan deneyimli bir astrologsun. Okurların, her gün uygulamayı açıp kendi \
-burcunun yorumunu okuyan, astrolojiye meraklı ama uzman olmayan insanlar.
+# Haftalık ve aylık yorumda alanlar aynı (uygulama aynı mektup düzeniyle
+# gösteriyor), yalnızca uzunluk ve bakış farklı.
+PERIOD_FIELD_SPECS: dict[str, dict[str, str]] = {
+    "weekly": {
+        "ozet": "Haftanın tek cümlelik özü; en fazla 120 karakter. Akılda "
+        "kalan bir cümle; emir kipi yok.",
+        "genel": "Haftanın genel havası ve akışı; 5–6 cümle, 90–130 kelime, "
+        "tek paragraf. Haftanın hangi bölümünde neyin öne çıktığını söyle.",
+        "askIliskide": "Partneri ya da sevgilisi olan okur için haftanın aşk "
+        "ve ilişki havası; 2–3 cümle, 30–55 kelime.",
+        "askYalniz": "Partneri olmayan okur için haftanın aşk, flört ve yeni "
+        "tanışmaları; 2–3 cümle, 30–55 kelime.",
+        "kariyer": "Haftanın iş, okul ve para gündemi; 2–3 cümle, 35–60 kelime.",
+        "saglik": "Haftanın enerji, dinlenme ve zihin dengesi; 2 cümle, 25–45 "
+        "kelime. Organ, belirti, yiyecek ya da içecek yok.",
+    },
+    "monthly": {
+        "ozet": "Ayın tek cümlelik özü; en fazla 130 karakter. Akılda kalan "
+        "bir cümle; emir kipi yok.",
+        "genel": "Ayın genel havası ve akışı; 6–8 cümle, 120–170 kelime, tek "
+        "paragraf. Ayın ilk yarısıyla ikinci yarısının farkını anlat.",
+        "askIliskide": "Partneri ya da sevgilisi olan okur için ayın aşk ve "
+        "ilişki havası; 3 cümle, 40–65 kelime.",
+        "askYalniz": "Partneri olmayan okur için ayın aşk, flört ve yeni "
+        "tanışmaları; 3 cümle, 40–65 kelime.",
+        "kariyer": "Ayın iş, okul ve para gündemi; 3 cümle, 45–75 kelime.",
+        "saglik": "Ayın enerji, dinlenme ve zihin dengesi; 2–3 cümle, 30–55 "
+        "kelime. Organ, belirti, yiyecek ya da içecek yok.",
+    },
+}
 
+_ROLE = (
+    "Sen, Arkanay adlı Türkçe tarot ve burç uygulaması için {kind} burç "
+    "yorumları yazan deneyimli bir astrologsun. Okurların, {rhythm} uygulamayı "
+    "açıp kendi burcunun yorumunu okuyan, astrolojiye meraklı ama uzman "
+    "olmayan insanlar.\n"
+)
+
+_STYLE = """
 ÜSLUP
 - Modern, doğal ve akıcı bir Türkçe kullan. Çeviri kokan kalıplardan, \
 klişelerden ve laf kalabalığından kaçın. Araya İngilizce kelime karıştırma.
@@ -61,7 +98,9 @@ başlatma; her burçta başka bir girişle başla (bir imge, günün duygusu, bi
 soru…).
 - Korkutucu, suçlayıcı ya da kaderci cümle kurma. Zorlayıcı bir etkiyi \
 anlatırken onu nasıl iyi kullanabileceğini de söyle.
+"""
 
+_SKY_DAILY = """
 GÖKYÜZÜ
 - Yalnızca istemde verilen gökyüzü bilgilerini kullan. Orada yazmayan bir \
 gezegen konumu, retro, açı, tutulma ya da gök olayı uydurma. Retro olarak \
@@ -91,7 +130,42 @@ göndermesi yeter. "Ev" terimini yığmak yerine çoğu zaman o evin konusunu \
 söyle ("Ay ilişkiler alanında dolaşırken" gibi).
 - Burç ve gezegen adlarına gelen ekleri ses uyumuna göre doğru yaz \
 (Terazi'de, Akrep'te, Yay'da, Oğlak'ta, Merkür'ün).
+"""
 
+_SKY_PERIOD = """
+GÖKYÜZÜ
+- Yalnızca istemde verilen gökyüzü bilgilerini kullan. Orada yazmayan bir \
+gezegen konumu, retro, açı, tutulma ya da gök olayı uydurma. Retro olarak \
+listelenmeyen hiçbir gezegenin retro olduğunu söyleme.
+- Açıların dili: kavuşum iki gezegenin konularını birleştirip yoğunlaştırır; \
+üçgen ve altmışlık akış, kolaylık ve destek getirir; kare gerilim ve harekete \
+geçme baskısı yaratır; karşıt denge arayışı ve başkalarıyla yüzleşme \
+demektir. Zorlayıcı açıları da nasıl iyi kullanılacağıyla birlikte anlat.
+- Bu bir {period} yorum: dönemin akışını anlat. Olayları tarih sırasıyla \
+sayma; her burç için o burca en çok dokunan iki üç olayı seç ve dönemin \
+hangi bölümünde öne çıktığını söyle ("hafta ortasında", "ayın ikinci \
+yarısında", "Perşembe'den itibaren").
+- Belirli bir güne yalnızca listede tarihi verilen olaylar için gönderme \
+yap; günü adıyla ya da tarihiyle yaz ("Salı", "22 Eylül'de"); saati rakamla \
+yazma.
+- Ay her iki üç günde bir burç değiştirir; Ay'ın geçişlerini ancak bir \
+günün havasını anlatırken, ölçülü kullan. Dönemin asıl malzemesi Yeni Ay, \
+Dolunay, gezegenlerin burç geçişleri, retro dönüşleri ve gezegen açıları.
+- Kuşak gezegenlerini (Uranüs, Neptün, Plüton) yalnızca bir açıya ya da \
+dönüşe karıştıklarında an.
+- Başlayan ya da biten bir retroyu o gezegenin konularıyla ilişkilendir \
+(Merkür: iletişim, yolculuk, belgeler; Venüs: ilişkiler, değerler, para; \
+Mars: enerji, girişim; Jüpiter: büyüme, inançlar; Satürn: sorumluluk, yapı).
+- Dönemde bir tutulma varsa, tutulmanın o burcun hangi evine düştüğünü \
+kullan; tutulmayı korkutucu anlatma, bir kapanış ya da yeni başlangıç eşiği \
+olarak anlat.
+- Göndermeleri ölçülü tut. "Ev" terimini yığmak yerine çoğu zaman o evin \
+konusunu söyle ("Dolunay ilişkiler alanını aydınlatırken" gibi).
+- Burç ve gezegen adlarına gelen ekleri ses uyumuna göre doğru yaz \
+(Terazi'de, Akrep'te, Yay'da, Oğlak'ta, Merkür'ün).
+"""
+
+_LIMITS = """
 SINIRLAR
 - Sağlık bölümü yalnızca enerji, dinlenme, uyku, hareket, stres ve günün \
 ritmi üzerine olsun. Organ ya da beden bölgesi (omuz, sırt, boğaz, mide, \
@@ -107,7 +181,9 @@ yalnızca partneri olmayan okura seslensin. Birinde ötekine seslenme \
 tekrar etmesin. İkisinde de okurun cinsiyetini ya da ilişki biçimini varsayma.
 - Şanslı sayı, şanslı renk, emoji, madde işareti, başlık ya da markdown \
 kullanma. Burcun adını metnin içinde tekrar tekrar anma.
+"""
 
+_VARIETY = """
 ÇEŞİTLİLİK
 - On iki yorum birbirinin kopyası gibi okunmasın. Her burca farklı bir \
 açılışla, farklı bir imgeyle ve farklı bir öneriyle yaz; aynı cümle kalıbını \
@@ -119,15 +195,39 @@ gibi) tekrarlama; her burçta başka kelimelerle ve başka bir yerden gir.
 karakteriyle ele al.
 """
 
+SYSTEM = _ROLE.format(kind="günlük", rhythm="her gün") + _STYLE + _SKY_DAILY + _LIMITS + _VARIETY
+
+_PERIOD_WORDS = {
+    "weekly": ("haftalık", "her hafta başında"),
+    "monthly": ("aylık", "her ayın başında"),
+}
+
+
+def period_system(kind: str) -> str:
+    """Haftalık ya da aylık yorumun talimatı."""
+    label, rhythm = _PERIOD_WORDS[kind]
+    return (
+        _ROLE.format(kind=label, rhythm=rhythm)
+        + _STYLE
+        + _SKY_PERIOD.replace("{period}", label)
+        + _LIMITS
+        + _VARIETY
+    )
+
+
 _WEEKDAYS = ("Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar")
+_CLOSING = (
+    "\n\nOn iki burcun hepsini Koç'tan Balık'a sırayla yaz. \"burc\" "
+    "alanına burcun adını yukarıdaki yazımla koy."
+)
 
 
 def build_prompt(sky: Sky) -> str:
-    return (
-        _context(sky)
-        + "\n\nOn iki burcun hepsini Koç'tan Balık'a sırayla yaz. \"burc\" "
-        "alanına burcun adını yukarıdaki yazımla koy."
-    )
+    return _context(sky) + _CLOSING
+
+
+def build_period_prompt(psky: PeriodSky) -> str:
+    return _period_context(psky) + _CLOSING
 
 
 def build_repair_prompt(
@@ -136,8 +236,24 @@ def build_repair_prompt(
     issues: dict[str, list[str]],
 ) -> str:
     """Kuralları çiğneyen burçları, sorunlarıyla birlikte yeniden yazdıran istem."""
+    return _repair(_context(sky), readings, issues)
+
+
+def build_period_repair_prompt(
+    psky: PeriodSky,
+    readings: dict[str, dict[str, str]],
+    issues: dict[str, list[str]],
+) -> str:
+    return _repair(_period_context(psky), readings, issues)
+
+
+def _repair(
+    context: str,
+    readings: dict[str, dict[str, str]],
+    issues: dict[str, list[str]],
+) -> str:
     lines = [
-        _context(sky),
+        context,
         "",
         "DÜZELTME — önceki yanıtında aşağıdaki burçlar kurallara uymadı. Bu kez "
         "on iki burcun hepsini değil, yalnızca bu burçları bütün alanlarıyla "
@@ -152,17 +268,20 @@ def build_repair_prompt(
     return "\n".join(lines)
 
 
-def response_schema(signs: Sequence[Sign] = SIGNS) -> dict:
+def response_schema(
+    signs: Sequence[Sign] = SIGNS,
+    specs: dict[str, str] = FIELD_SPECS,
+) -> dict:
     entry = {
         "type": "object",
         "properties": {
             "burc": {"type": "string", "enum": [s.name for s in signs]},
             **{
                 field: {"type": "string", "description": spec}
-                for field, spec in FIELD_SPECS.items()
+                for field, spec in specs.items()
             },
         },
-        "required": ["burc", *FIELDS],
+        "required": ["burc", *specs],
     }
     return {
         "type": "object",
@@ -197,6 +316,28 @@ def _context(sky: Sky) -> str:
     return "\n".join(lines)
 
 
+def _period_context(psky: PeriodSky) -> str:
+    """Dönem, gökyüzü, burç burç vurgular ve alan tarifleri."""
+    span = (
+        "Pazartesi–Pazar"
+        if psky.kind == "weekly"
+        else f"{psky.start.day}–{psky.end.day} {day_label(psky.end).split()[1]}"
+    )
+    lines = [
+        f"Dönem: {psky.title} ({span}, Türkiye saatiyle).",
+        "",
+        psky.describe(),
+        "",
+        "BURÇ BURÇ DÖNEMİN VURGULARI (her burç kendi burcunu 1. ev sayar; "
+        "parantez içinde o evin konuları):",
+        *(f"- {_period_sign_line(sign, psky)}" for sign in SIGNS),
+        "",
+        "YAZILACAK ALANLAR (her burç için):",
+        *(f"- {field}: {spec}" for field, spec in PERIOD_FIELD_SPECS[psky.kind].items()),
+    ]
+    return "\n".join(lines)
+
+
 def _sign_line(sign: Sign, sky: Sky) -> str:
     notes = [
         _transit("Güneş", sign, sky.sun.sign, sky.sun.ingress),
@@ -222,6 +363,57 @@ def _sign_line(sign: Sign, sky: Sky) -> str:
             f"({HOUSE_THEMES[house - 1]})"
         )
     if sky.sun.sign == sign:
+        notes.append("Güneş kendi burcunda: yaş günü dönemi")
+    return (
+        f"{sign.name} ({sign.element} · {sign.modality} · yöneticisi {sign.ruler}): "
+        + "; ".join(notes)
+        + "."
+    )
+
+
+def _period_sign_line(sign: Sign, psky: PeriodSky) -> str:
+    """Bir burç için dönemin öne çıkanları: Güneş'in evi, Yeni Ay / Dolunay /
+    tutulmanın düştüğü evler, yöneticisinin geçişleri, retroları ve açıları."""
+
+    def house(other: Sign) -> str:
+        number = house_of(sign, other)
+        return f"{number}. evinde ({HOUSE_THEMES[number - 1]})"
+
+    notes: list[str] = []
+    sun = psky.body("Güneş")
+    if sun:
+        notes.append(f"Güneş {house(sun.sign)}")
+    birthday = sun is not None and sun.sign == sign
+
+    for event in psky.events:
+        when = day_label(event.at.date())
+        if event.kind == "gecis" and event.bodies == ("Güneş",) and event.sign:
+            notes.append(f"Güneş {when} tarihinde {house_of(sign, event.sign)}. evine geçiyor")
+            birthday = birthday or event.sign == sign
+        elif event.kind in ("evre", "tutulma") and event.phase in ("Yeni Ay", "Dolunay"):
+            label = event.text.split(" — ")[-1] if event.kind == "tutulma" else event.phase
+            notes.append(f"{label} ({when}) {house(event.sign)}")
+
+    ruler = sign.ruler
+    if ruler == "Ay":
+        notes.append("yöneticisi Ay: dönemin Yeni Ay ve Dolunay'ı bu burç için daha belirgin")
+    elif ruler != "Güneş":
+        body = psky.body(ruler)
+        if body:
+            text = f"yöneticisi {ruler} dönem başında {house(body.sign)}"
+            if body.retrograde:
+                text += ", geri harekette"
+            notes.append(text)
+        for event in psky.events:
+            if ruler not in event.bodies:
+                continue
+            when = day_label(event.at.date())
+            if event.kind in ("gecis", "retro"):
+                notes.append(f"{when}: {event.text}")
+            elif event.kind == "aci":
+                notes.append(f"{when}: {event.text} (yöneticisinin açısı)")
+
+    if birthday:
         notes.append("Güneş kendi burcunda: yaş günü dönemi")
     return (
         f"{sign.name} ({sign.element} · {sign.modality} · yöneticisi {sign.ruler}): "

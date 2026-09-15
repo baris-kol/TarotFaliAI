@@ -1,19 +1,27 @@
-name: Günlük burç yorumu
+name: Burç yorumları
 
+# Tek zamanlama üç dönemi de taşıyor: her gece yarının günlük yorumu; o gün
+# yeni bir haftanın (pazartesi) ya da ayın ilk günüyse haftalık/aylık yorum
+# da (bkz. horoscope/__main__.py). Ayrı cron yok.
 on:
   schedule:
     # Saatler UTC. GitHub zamanlanmış işleri yoğunlukta birkaç dakika (bazen
     # daha fazla) geciktirebiliyor; tam saat başı bilerek seçilmedi.
-    - cron: "17 20 * * *" # 23:17 TR — ertesi günün yorumu
+    - cron: "17 20 * * *" # 23:17 TR — ertesi günün yorumu (+ gerekiyorsa hafta/ay)
     - cron: "47 23 * * *" # 02:47 TR — yedek: gece koşusu başarısızsa bugünün yorumu
   workflow_dispatch:
     inputs:
       date:
-        description: "Tarih (YYYY-MM-DD). Boşsa: TR saatiyle 18:00'den sonra yarın, önce bugün."
+        description: "Tarih (YYYY-MM-DD). Boşsa: TR saatiyle 18:00'den sonra yarın, önce bugün. Haftalık/aylık bu günün haftası ve ayı."
         required: false
         default: ""
+      period:
+        description: "Hangi yorum"
+        type: choice
+        options: [all, daily, weekly, monthly]
+        default: all
       force:
-        description: "O günün yorumu zaten varsa yeniden üret"
+        description: "Zaten varsa yeniden üret"
         type: boolean
         default: false
 
@@ -25,7 +33,8 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # Hafta ve ay başına denk gelen gecelerde üç üretim arka arkaya.
+    timeout-minutes: 45
     permissions:
       contents: write
     steps:
@@ -44,13 +53,16 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           HOROSCOPE_DATE: ${{ inputs.date }}
+          HOROSCOPE_PERIOD: ${{ inputs.period }}
           HOROSCOPE_FORCE: ${{ inputs.force }}
         run: python -m horoscope
 
       # Her gün bir commit: hem arşiv git geçmişinde duruyor hem de repo
       # "aktif" kalıyor — GitHub 60 gün hareketsiz kalan repoların
-      # zamanlanmış işlerini kendiliğinden kapatıyor.
+      # zamanlanmış işlerini kendiliğinden kapatıyor. Bir dönem başarısız
+      # olsa da üretilenler yayına çıksın diye bu adım her durumda çalışıyor.
       - name: Repoya yaz
+        if: ${{ !cancelled() }}
         env:
           DAY: ${{ steps.generate.outputs.date }}
         run: |
@@ -60,17 +72,19 @@ jobs:
           if git diff --cached --quiet; then
             echo "Değişiklik yok."
           else
-            git commit -m "Günlük burç yorumu: $DAY"
+            git commit -m "Burç yorumları: $DAY"
             git pull --rebase origin "$GITHUB_REF_NAME"
             git push origin "HEAD:$GITHUB_REF_NAME"
           fi
 
       - uses: actions/upload-pages-artifact@v5
+        if: ${{ !cancelled() }}
         with:
           path: public
 
   deploy:
     needs: generate
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     permissions:
       pages: write
