@@ -1,7 +1,214 @@
 {
   "surum": 1,
-  "guncellendi": "2026-09-15T19:47:07Z",
+  "guncellendi": "2026-09-20T22:31:27Z",
   "donemler": [
+    {
+      "baslangic": "2026-09-21",
+      "bitis": "2026-09-27",
+      "uretildi": "2026-09-20T22:31:27Z",
+      "model": "gemini-3.6-flash",
+      "gokyuzu": {
+        "konumlar": {
+          "Güneş": {
+            "burc": "Başak",
+            "retro": false
+          },
+          "Merkür": {
+            "burc": "Terazi",
+            "retro": false
+          },
+          "Venüs": {
+            "burc": "Akrep",
+            "retro": false
+          },
+          "Mars": {
+            "burc": "Yengeç",
+            "retro": false
+          },
+          "Jüpiter": {
+            "burc": "Aslan",
+            "retro": false
+          },
+          "Satürn": {
+            "burc": "Koç",
+            "retro": true
+          },
+          "Uranüs": {
+            "burc": "İkizler",
+            "retro": true
+          },
+          "Neptün": {
+            "burc": "Koç",
+            "retro": true
+          },
+          "Plüton": {
+            "burc": "Kova",
+            "retro": true
+          }
+        },
+        "olaylar": [
+          {
+            "tarih": "2026-09-21",
+            "saat": "20:14",
+            "tur": "gecis",
+            "metin": "Ay Kova burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-09-22",
+            "saat": "01:51",
+            "tur": "aci",
+            "metin": "Merkür–Jüpiter altmışlık"
+          },
+          {
+            "tarih": "2026-09-23",
+            "saat": "03:05",
+            "tur": "gecis",
+            "metin": "Güneş Terazi burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-09-24",
+            "saat": "06:24",
+            "tur": "gecis",
+            "metin": "Ay Balık burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-09-26",
+            "saat": "04:37",
+            "tur": "aci",
+            "metin": "Güneş–Neptün karşıt"
+          },
+          {
+            "tarih": "2026-09-26",
+            "saat": "08:31",
+            "tur": "aci",
+            "metin": "Güneş–Plüton üçgen"
+          },
+          {
+            "tarih": "2026-09-26",
+            "saat": "13:23",
+            "tur": "gecis",
+            "metin": "Ay Koç burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-09-26",
+            "saat": "19:49",
+            "tur": "evre",
+            "metin": "Dolunay, Koç 3°",
+            "evre": "Dolunay"
+          }
+        ]
+      },
+      "burclar": {
+        "aries": {
+          "ad": "Koç",
+          "ozet": "Kendini gösterme arzun yükselirken, ilişkilerinde dengeyi korumak ön plana çıkıyor.",
+          "genel": "Ateşin ilk kıvılcımı bu hafta içindeki gücü dışarı yansıtma isteğini kuvvetlendiriyor. Haftanın başında günlük sorumluluklar ve tempolu çalışma rutinleri seni meşgul ederken, ev ve aile hayatındaki duygusal bağlar da gündeminde yer tutabilir. 23 Eylül'de Güneş'in karşıt alanına geçişiyle odağın doğrudan ikili ilişkilere, ortaklıklara ve karşındaki insanlara kayıyor. Cumartesi günü burcunda gerçekleşen Dolunay, kendi kimliğin, bedenin ve hedeflerin hususunda net adımlar atmama imkan verebilir. 26 Eylül'deki Güneş-Neptün karşıtlığı zihninde bazı belirsizlikler yaratabileceğinden, Güneş-Plüton etkisinin getirdiği derin sezgilere güvenmek sana yol gösterecektir. Dönem boyunca kendi sınırlarını korurken başkalarının beklentilerini de hesaba katmayı deneyebilirsin.",
+          "askIliskide": "Birlikteliğinde karşılıklı beklentilerin belirginleştiği bir haftadasın. Birlikte aldığınız kararları gözden geçirmek ve duygusal ihtiyaçlarınızı açıkça konuşmak bağınızı daha sağlam bir zemine taşıyabilir. Cumartesi günkü Dolunay ile aranızdaki iletişime berraklık gelebilir.",
+          "askYalniz": "Kendi değerini ve ne istediğini netleştirdiğin bir süreçtesin. Etrafındaki insanların ilgisini çekerken, aceleci davranmak yerine karşındakini tanımaya zaman ayırman faydalı olabilir. Hafta sonuna doğru sürpriz karşılaşmalar hislerini hareketlendirebilir.",
+          "kariyer": "Çalışma temponun arttığı günlerin ardından, ortaklı projeler ve görüşmeler gündemine oturabilir. İş ortamında dengeli ve uzlaşmacı bir tavır sergilemek hedeflerine ulaşmanı belirgin şekilde kolaylaştıracaktır. Cumartesi günü tamamlanması gereken önemli görevleri başarıyla nihayete erdirebilirsin.",
+          "saglik": "Yoğun temponun getirdiği zihinsel stresi azaltmak adına gün içinde kısa molalar vermek sana iyi gelebilir. Hafta sonuna doğru uyku düzenine özen göstermek enerjini korumanı sağlar."
+        },
+        "taurus": {
+          "ad": "Boğa",
+          "ozet": "Zihnini ve rutinlerini sadeleştirerek içsel huzura adım atacağın bir hafta.",
+          "genel": "Toprağın dinginliği bu günlerde sana sabırla hareket etme gücü veriyor. Hafta başında yaratıcı projelerin ve hayatın keyifli yanlarının tadını çıkarırken yakındaki insanlarla derin bağlar kurabilirsin. 23 Eylül'de Güneş'in düzen alanına geçmesiyle günlük alışkanlıklarını, çalışma ortamını ve yapılacaklar listeni organize etme ihtiyacın artabilir. Cumartesi günü Koç burcundaki Dolunay ise bilinçaltında biriken yükleri serbest bırakman için sana alan açıyor. 26 Eylül'deki Güneş-Neptün etkileşimi zihnini biraz bulandırsa da hemen ardından gelen Güneş-Plüton desteği içsel dönüşümüne güçlü bir zemin hazırlıyor. Kendine zaman ayırmak iç dengeni korumana yardım edecektir.",
+          "askIliskide": "İlişkinde derinlik ve güven arayışının öne çıktığı bir haftadasın. Partnerinle paylaşacağın samimi sohbetler aranızdaki bağları kuvvetlendirirken, günlük koşturmacanın içinde birlikte geçireceğiniz dingin anlar ilişkinize nitelikli bir huzur kazandırabilir.",
+          "askYalniz": "Yakın çevrenden veya günlük rutinlerin esnasında biriyle duygusal bir yakınlaşma hissedebilirsin. Kalbini açmadan önce karşındaki kişinin niyetlerini anlamaya çalışmak ve akışa güvenmek sana kendinizi daha rahat hissettirecektir.",
+          "kariyer": "Detay gerektiren işlerde düzen kurmak ve eksikleri tamamlamak açısından verimli bir dönemden geçiyorsun. Çalışma ortamında sorumluluklarını planlı bir şekilde yürütmek verimini artıracaktır. Hafta sonuna doğru yarım kalmış projeleri sakince nihayete erdirebilirsin.",
+          "saglik": "Ruhsal ve zihinsel olarak dinlenmeye zaman ayırmak bu hafta enerjini yenilemeni kolaylaştırır. Günlük ritmini yavaşlatıp doğayla iç içe vakit geçirmek sana huzur katabilir."
+        },
+        "gemini": {
+          "ad": "İkizler",
+          "ozet": "Fikirlerin akıp gittiği bu günlerde yaratıcılığını arkadaşlıklarınla buluşturabilirsin.",
+          "genel": "Zihnindeki düşünceler rüzgar gibi savrulurken kendini ifade etme arzun güçleniyor. Salı günü yöneticin Merkür ile Jüpiter arasındaki uyumlu açı, iletişimde geniş bir bakış açısı kazanmana katkı sağlıyor. 23 Eylül'de Güneş'in Terazi burcuna geçişi aşk hayatına, hobilerine ve yaratıcı alanlarına canlılık getirebilir. Hafta sonuna doğru, Cumartesi günü gerçekleşen Koç burcundaki Dolunay ile sosyal çevrende ve gelecek planlarında netleşmeler yaşayabilirsin. Aynı gün Güneş'in Neptün ve Plüton ile kurduğu temaslar hayallerin ile gerçekler arasındaki çizgiyi dengede tutmanı gerektiriyor. Dostlarınla bir araya gelmek sana iyi gelecektir.",
+          "askIliskide": "Sevdiğin kişiyle neşeli ve entelektüel paylaşımlarda bulunmak ilişkinizi canlandırabilir. Hafta ortasından itibaren romantik anlara daha fazla yer ayırabilir, birlikte yeni ve keyifli etkinlikler planlayabilirsiniz.",
+          "askYalniz": "Sosyal ortamlarda sergileyeceğin samimi tavırlar yeni insanlarla tanışmana zemin hazırlayabilir. Salı gününden itibaren zekası ve hoş sohbetiyle dikkatini çeken biriyle aranda tatlı bir etkileşim başlayabilir.",
+          "kariyer": "Geleceğe yönelik projelerinde yenilikçi fikirler üretebileceğin bir dönemden geçiyorsun. Ekip çalışmalarında uzlaştırıcı rolünle öne çıkabilir, hedeflerin doğrultusunda adımlar atabilirsin. Hafta sonu gerçekleşen Dolunay gruplarla yürüttüğün işleri netliğe kavuşturabilir.",
+          "saglik": "Zihinsel yoğunluğun arttığı bu süreçte zihnini dinlendirecek aktivitelere yönelmen yararlı olur. Uyku saatlerini düzene sokmak ve gün içinde nefes molaları vermek dengeni korur."
+        },
+        "cancer": {
+          "ad": "Yengeç",
+          "ozet": "İçsel dünyandaki duygusal yoğunluğu kariyerindeki net kararlarla dengeleyebilirsin.",
+          "genel": "Suların derinliği bu hafta duygusal dünyanı ve sezgilerini belirgin biçimde öne çıkarıyor. Hafta başında ev ve aile ortamındaki konularla ilgilenmek sana güven hissi verebilir. 23 Eylül'de Güneş'in yaşam alanının temelini simgeleyen bölgeye geçişiyle odağın tamamen yuvana ve içsel huzuruna kayıyor. Yöneticin Ay'ın rehberliğinde şekillenen bu dönemde, Cumartesi günü Koç burcunda gerçekleşecek Dolunay kariyerin ve toplum önündeki duruşun konusunda önemli bir dönüm noktasına işaret edebilir. Güneş'in Neptün ile karşıt, Plüton ile üçgen yaptığı 26 Eylül günü hayallerin ile iş sorumlulukların arasında sağlam bir denge kurmayı deneyebilirsin.",
+          "askIliskide": "Partnerinle evinizde dingin vakitler geçirmek aranızdaki aidiyet duygusunu güçlendirebilir. Hafta sonuna doğru yoğunlaşan gündem içinde birbirinize zaman ayırmak ve duygusal desteği eksik etmemek aranızdaki bağı pekiştirecektir.",
+          "askYalniz": "Görünürlüğünün arttığı bu dönemde çevrendeki insanların dikkatini kolayca çekebilirsin. Geçmişten gelen duygusal yükleri geride bırakıp yeni tanışmalara şans vermen, kalbine iyi gelecek bir yakınlaşmaya zemin hazırlayabilir.",
+          "kariyer": "Mesleki hedeflerin konusunda uzun zamandır emek verdiğin bir konunun meyvelerini toplayabilirsin. Cumartesi günkü Dolunay, kariyerinde alacağın önemli bir kararı veya yön değişimini görünür kılabilir. Üstlerinle kuracağın net iletişim başarıya ulaşmanı destekler.",
+          "saglik": "Duygusal dalgalanmaların enerjini düşürmesini önlemek adına kendine ait sakin zamanlar yaratabilirsin. Günün sonunda zihnini boşaltacak dingin rutinler uygulamak iç huzurunu korur."
+        },
+        "leo": {
+          "ad": "Aslan",
+          "ozet": "Yakın çevrenle bağlarını güçlendirirken yeni ufuklara yelken açma isteğin artıyor.",
+          "genel": "İçindeki parlak ışık bu hafta zihinsel hareketlilikle birleşerek seni yeni deneyimlere sürüklüyor. Hafta başında parasal konuları ve kişisel değerlerini gözden geçirdikten sonra, 23 Eylül'de Güneş'in iletişim alanına geçmesiyle yakın çevrenle olan diyalogların hız kazanabilir. Cumartesi günü gerçekleşecek Koç burcundaki Dolunay; inançların, eğitimlerin veya uzaklarla ilgili planların konusunda netleşmeler getirebilir. 26 Eylül'deki Güneş-Neptün karşıtlığı bazı bilgileri teyit etmeni gerektirse de Güneş-Plüton üçgeni düşüncelerini güçlü bir şekilde savunmana imkan tanıyacak. Merak ettiğin konularda derinleşmek ufkunu genişletecektir.",
+          "askIliskide": "Sevdiğin kişiyle birlikte yeni şeyler keşfetmek ve seyahat planları yapmak ilişkinize tatlı bir heyecan katabilir. İletişimde fikir ayrılıklarına odaklanmak yerine dinlemeyi seçmek aranızdaki anlayışı artıracaktır.",
+          "askYalniz": "Sohbetlerdeki kendine has üslubun ve birikimin yeni insanların dikkatini çekebilir. Yakın çevren veya katıldığın bir kurs vasıtasıyla tanışacağın biriyle zihinsel olarak güçlü bir etkileşim yakalayabilirsin.",
+          "kariyer": "İletişim, yazışmalar ve anlaşmalar bakımından hareketli bir döneme giriyorsun. İş hayatında vizyonunu genişletecek adımlar atmak adına önemli görüşmeler yapabilirsin. Cumartesi günü sonuçlanacak bir süreç hedeflerini yeniden belirlemene yardım edecektir.",
+          "saglik": "Zihinsel temponun yüksekliği gün sonunda yorgunluk hissettirebilir. Gün içerisinde vereceğin kısa molalar ve açık havada geçireceğin zamanlar zihinsel dengeni korumana yardımcı olur."
+        },
+        "virgo": {
+          "ad": "Başak",
+          "ozet": "Gözlem yeteneğini finansal ve duygusal dengeni yeniden kurmak için kullanabilirsin.",
+          "genel": "Kendi burcundaki Güneş'in son günlerini yaşarken yaş günü dönemini dingin bir değerlendirmeyle tamamlıyorsun. Salı günü yöneticin Merkür ile Jüpiter arasındaki olumlu temas, maddi ve manevi kaynaklarını değerlendirme hususunda sana geniş bir bakış açısı sunuyor. 23 Eylül'de Güneş'in Terazi burcuna geçişiyle odağın öz değerine ve kişisel bütçene yönelecektir. Cumartesi günü gerçekleşen Koç burcundaki Dolunay ise ortaklı kaynaklar, borçlar veya derin duygusal paylaşımlar alanında bir netleşme getirebilir. 26 Eylül'deki Güneş-Plüton üçgeni içsel gücünü ortaya koymanı desteklerken zihinsel berraklığını koruman önem taşıyor.",
+          "askIliskide": "Birlikteliğinde karşılıklı güven ve samimiyet arayışın bu hafta belirginleşiyor. Partnerinle ortak konuları ve duygusal beklentileri açıkça konuşmak, aranızdaki bağın daha sağlam temellere oturmasına katkı sağlayabilir.",
+          "askYalniz": "Kendi değerinin farkına vardıkça hayatına çekeceğin kişilerin niteliği de değişiyor. Duygusal derinliği olan ve sana güven duygusu aşılayan insanlara alan açmak yeni bir yakınlaşma başlatabilir.",
+          "kariyer": "Maddi konularda planlı hareket etmek ve bütçeni düzenlemek isteyebilirsin. Çalışmalarının karşılığını almak ve yeteneklerini sergilemek adına Salı gününden itibaren uygun ortamlar bulabilirsin. Hafta sonu finansal konularda bir karara varman olasıdır.",
+          "saglik": "Günlük koşturmaca arasında kendi ritmini bulmak sana iyi gelecektir. Zihinsel yorgunluğu azaltmak için akşamları kendinle baş başa kalacağın sessiz anlar yaratabilirsin."
+        },
+        "libra": {
+          "ad": "Terazi",
+          "ozet": "Güneş burcuna geçerken ilişkilerinde uyum ve dengeli adımlar öne çıkıyor.",
+          "genel": "İçsel bir kabuğa çekilme sürecinin ardından kendi yaş günü dönemine adım atıyorsun. 23 Eylül'de Güneş'in senin burcuna geçişiyle enerjin yükseliyor ve kendini çok daha açık şekilde ifade etmeye başlıyorsun. Yöneticin Venüs'ün derinlikli duruşu ise değerlerini gözden geçirmene imkan sağlıyor. Cumartesi günü gerçekleşecek Koç burcundaki Dolunay, tam karşıt alanını aydınlatırken ikili ilişkilerde ve ortaklıklarda nihai bir netleşme yaşatabilir. 26 Eylül'deki Güneş-Neptün karşıtlığı beklentilerinde gerçekçi olmanı gerektirse de hemen ardından gelen Güneş-Plüton üçgeni kişisel duruşunu güçlendirecektir. Hayatındaki dengeleri sakince kurabilirsin.",
+          "askIliskide": "İlişkinde dönüm noktası sayılabilecek konuşmaların gündeme gelebileceği bir haftadasın. Partnerinle aranızdaki dengeleri yeniden kurmak ve karşılıklı beklentileri netleştirmek aranızdaki bağı belirgin şekilde tazeleyebilir.",
+          "askYalniz": "Işığının parladığı bu dönemde çevrenin ilgisini kolayca üzerine çekebilirsin. Yeni bir ilişkiye adım atmadan önce karşındaki insanın beklentileriyle kendi isteklerinin ne kadar örtüştüğünü gözlemlemen faydalı olacaktır.",
+          "kariyer": "Kendini ve yeteneklerini ön plana çıkarabileceğin bir süreç başlıyor. Ortaklı projelerde veya bire bir iş ilişkilerinde net kararlar alabilir, Cumartesi günkü Dolunay ile belirsiz süreçleri nihayete erdirebilirsin. Uyumlu tavrın çevrende saygı uyandıracaktır.",
+          "saglik": "Yükselen enerjini doğru kanallara yöneltmek adına tempolu yürüyüşler yapabilirsin. Zihnini dinlendirmek ve içsel dinginliğini muhafaza etmek haftaya uyum sağlamanı kolaylaştırır."
+        },
+        "scorpio": {
+          "ad": "Akrep",
+          "ozet": "Sessizce yürüttüğün çalışmaları olgunlaştırıp günlük yaşam ritmini yeniden düzenleyeceğin bir döneme giriyorsun.",
+          "genel": "Derinlemesine düşünme arzusu ve yüksek sezgiler hafta boyunca adımlarına yön veriyor. Yönetici gezegenin Mars'ın Yengeç burcundaki sezgisel duruşu ufkunu genişletme ve yeni şeyler öğrenme isteğini desteklerken, 23 Eylül'de Güneş'in mahrem alanına geçişi odağını biraz daha kendi kabuğuna çekebilir. Hafta sonuna doğru Koç burcunda meydana gelen Dolunay ise günlük tempon, ertelediğin işler ve rutinlerin konusunda somut kararlar almanı oldukça kolaylaştırabilir. 26 Eylül'deki Güneş-Neptün karşıtlığının getirdiği sisli havayı, aynı gün beliren Güneş-Plüton üçgeninin kazandırdığı kararlılıkla dağıtabilir, içsel gücünü yeniden ortaya koyabilirsin. Kendi sınırlarını koruyarak zihnini dinlendirmeye vakit ayırmak sana çok iyi gelecektir.",
+          "askIliskide": "Birlikteliğinde gözlerden uzak, sakin anlar paylaşma arzun öne çıkabilir. Birlikte baş başa kalabileceğiniz ortamlar yaratmak ve geçmişten gelen kırgınlıkları zihninde büyütmek yerine bugünün huzuruna odaklanmak aranızdaki duygusal bağı güçlendirecektir.",
+          "askYalniz": "Kendi iç dünyanda sakin kalmayı tercih edeceğin bir süreçten geçiyorsun. Gizemli tavırların çevrendekilerin ilgisini çekse de aceleci kararlar vermeden, yeni tanışacağın kişileri zamana yayarak gözlemlemek sana kendinizi daha güvende hissettirecektir.",
+          "kariyer": "Stratejilerini sessizce geliştirmek ve yarım kalan projeleri tamamlamak açısından oldukça verimli bir dönemdesin. Hafta sonundaki Dolunay ile birlikte çalışma ortamındaki belirsizlikler netleşebilir, iş yükünü ve sorumluluklarını daha planlı bir şekilde organize edebilirsin.",
+          "saglik": "Zihinsel dinginliğe ve kaliteli uykuya her zamankinden fazla ihtiyaç duyabilirsin. Gün içindeki koşturmacayı yavaşlatıp kendi ritminde kalmak enerjini tazelemene yardımcı olabilir."
+        },
+        "sagittarius": {
+          "ad": "Yay",
+          "ozet": "Sosyal çevrenle kurduğun güçlü bağlar geleceğe dair hayallerine ışık tutabilir.",
+          "genel": "Ufukta yeni olasılıkların belirdiği bu günlerde coşkun ve meraklı yapın öne çıkıyor. Salı günü yöneticin Jüpiter'in Merkür ile oluşturduğu olumlu temas, dostlarınla yapacağın sohbetlerde büyük resmi görmene yardımcı oluyor. 23 Eylül'de Güneş'in topluluklar ve gelecek planları alanına geçmesiyle sosyal hayatın oldukça hareketlenebilir. Cumartesi günü Koç burcunda gerçekleşecek Dolunay ise yaratıcı projelerin, hobilerin veya aşk hayatınla ilgili netleşmeler getirebilir. 26 Eylül'deki Güneş-Plüton üçgeni derin hedeflerini hayata geçirme noktasında sana içsel bir kararlılık kazandıracaktır. Geleceğe umutla bakabilirsin.",
+          "askIliskide": "Partnerinle birlikte sosyal aktivitelere katılmak ve ortak hayaller üzerine konuşmak bağınızı kuvvetlendirecektir. Cumartesi günü gerçekleşen Dolunay, aranızdaki romantizmi artıracak ve keyifli anlar yaşamanıza zemin hazırlayacaktır.",
+          "askYalniz": "Arkadaş grupların içinde veya katıldığın etkinliklerde ilgini çekecek biriyle tanışabilirsin. Ortak değerlere sahip olduğun bir insanla başlatacağın samimi sohbet, zamanla heyecan verici bir yakınlaşmaya dönüşebilir.",
+          "kariyer": "Ekip çalışmalarında ve grup projelerinde uyumlu yaklaşımınla öne çıkabileceğin bir dönemdesin. Geleceğe dönük hedeflerini hayata geçirmek adına faydalı temaslar kurabilirsin. Hafta sonu gerçekleşen Dolunay ile yaratıcı işlerini başarıyla tamamlayabilirsin.",
+          "saglik": "Hareketli geçen haftada temponu dengede tutmak adına dinlenme aralıkları oluşturman faydalı olur. Zihnini boşaltacak keyifli uğraşlarla ilgilenmek stresini belirgin şekilde azaltacaktır."
+        },
+        "capricorn": {
+          "ad": "Oğlak",
+          "ozet": "Geleceğe dair vizyonunu netleştirirken yaşam alanındaki sorumlulukları dengede tutabileceğin bir haftadasın.",
+          "genel": "Ufkunu genişletme arzusu ve yeni hedefler koyma isteğiyle haftaya kararlı bir adım atıyorsun. Yönetici gezegenin Satürn'ün kökler alanındaki geri hareketi, geçmişte ev veya yerleşim konusunda aldığın kararları yeniden süzgeçten geçirmene imkan tanıyor. 23 Eylül'de Güneş'in haritanın tepe noktasına geçiş yapmasıyla mesleki alandaki görünürlüğün artabilir ve duruşunla çevrendekilerin güvenini kazanabilirsin. Cumartesi günü Koç burcunda gerçekleşen Dolunay, hane hayatına ve ailevi meselelere dair askıda kalan bir konuyu nihayete erdirmene yardımcı oluyor. Aynı zaman diliminde beliren Güneş-Neptün karşıtlığı zihninde kısa süreli kuşkular yaratsa da Güneş-Plüton üçgeninin sunduğu irade sayesinde doğru yönde ilerleyebilirsin.",
+          "askIliskide": "Sorumlulukların getirdiği yoğun temponun içinde partnerine kaliteli zaman ayırmak bağınızı güçlendirebilir. Yaşam alanınız veya ortak geleceğiniz hakkında kuracağınız dürüst iletişim, aranızdaki güven hissini pekiştirecektir. Birlikte alacağınız kararlar partnerinle olan uyumunuzu daha görünür kılabilir.",
+          "askYalniz": "Kendinden emin duruşun ve olgun tavırların çevrendeki insanların ilgisini çekebilir. İş çevrenden veya sosyal ortamlardan tanıdığın biriyle zamana yayılan, sağlam temelli ve seviyeli bir yakınlaşma başlatma ihtimalin yüksek görünüyor.",
+          "kariyer": "Sorumluluk bilincin ve disiplinli çalışma tarzın sayesinde iş ortamında duruşunla dikkatleri üzerine toplayabilirsin. Hafta ortasından itibaren üstlerinle ya da ortaklarınla iletişimini dengeli tutarak uzun süredir emek verdiğin bir projeyi başarıyla şekillendirmen mümkün hale gelebilir.",
+          "saglik": "Zihinsel sorumlulukların yarattığı ağırlığı hafifletmek adına gün aralarında kısa dinlenme molaları oluşturabilirsin. Dengeli bir tempolu yürüyüş ve kaliteli uyku ritmi enerjini korumana imkan tanır."
+        },
+        "aquarius": {
+          "ad": "Kova",
+          "ozet": "Fikirlerini özgürce paylaşırken yeni bakış açılarıyla ufkunu genişletebileceğin bir dönem.",
+          "genel": "Yenilikçi zihnin bu hafta çevrenle kurduğun iletişimde fark yaratmanı sağlıyor. Dönem başında Ay'ın senin burcundan geçişi duygusal farkındalığını yükseltirken, 23 Eylül'de Güneş'in vizyon alanına geçmesiyle öğrenme ve keşfetme arzun güçleniyor. Cumartesi günü Koç burcunda gerçekleşen Dolunay; iletişim projelerinde, yakın çevrenle olan ilişkilerinde veya eğitim süreçlerinde bir sonuca ulaşmanı sağlayabilir. 26 Eylül'deki Güneş-Plüton üçgeni derin fikirlerini güçlü biçimde ifade etmene zemin hazırlarken Güneş-Neptün teması kafa karışıklığı yaratmamak için net durmanı gerektiriyor. Farklı görüşlere açık olmak ufkunu geliştirecektir.",
+          "askIliskide": "Birlikte olduğun kişiyle zihinsel olarak besleneceğiniz sohbetler yapmak ve yeni planlar oluşturmak bağınızı zenginleştirecektir. İletişimde açık bir tutum sergilemek, olası belirsizliklerin önüne geçerek huzur sağlayacaktır.",
+          "askYalniz": "Farklı bakış açın ve özgün duruşunla dikkat çekebileceğin bir zamandasın. Katılacağın bir seyahat, eğitim veya sosyal platform vasıtasıyla tanışacağın biriyle zihinsel anlamda heyecan verici bir etkileşim başlatabilirsin.",
+          "kariyer": "Vizyonunu genişletecek projeler ve görüşmeler bu hafta hız kazanabilir. İletişim trafiğinin yoğun olduğu bu süreçte düşüncelerini uzlaşmacı bir dille sunmak öne çıkmanı sağlayacaktır. Hafta sonu gerçekleşen Dolunay yarım kalmış yazışmaları nihayete erdirecektir.",
+          "saglik": "Zihinsel yoğunluktan uzaklaşmak adına gün içinde ekranlardan uzak kalacağın süreler yaratabilirsin. Kendi ritminde kalmak ve doğada vakit geçirmek zihnini tazelemeni kolaylaştırır."
+        },
+        "pisces": {
+          "ad": "Balık",
+          "ozet": "Sezgilerini gerçeklerle harmanlayarak hem içsel hem de maddi kaynaklarında denge bulabilirsin.",
+          "genel": "Duyguların ve sezgilerin derin sularında yüzerken yaşamına düzen getirme isteğin öne çıkıyor. Salı günü yöneticin Jüpiter ile Merkür arasındaki uyumlu açı, ilişkilerinde ve günlük yaşamında anlaşılmanı kolaylaştırıyor. 23 Eylül'de Güneş'in dönüşüm ve ortak kaynaklar alanına geçişiyle derin duygusal bağları ve bütçeni yeniden yapılandırma ihtiyacı hissedebilirsin. Cumartesi günü Koç burcunda gerçekleşecek Dolunay ise öz değerin, yeteneklerin ve kişisel gelirlerinle ilgili net sonuçlar doğurabilir. 26 Eylül'deki Güneş-Neptün karşıtlığı hayaller ile gerçekleri ayırma sınavı sunarken Güneş-Plüton üçgeni sana içsel bir güç aşılayacaktır. Akışa güvenerek dengeni koruyabilirsin.",
+          "askIliskide": "Birlikteliğinde duygusal derinlik ve paylaşım isteği bu hafta kuvvetleniyor. Aranızdaki güveni pekiştirmek için hislerini açık yüreklilikle ifade edebilir, ortak değerlerinize odaklanarak birlikteliğinizi daha sağlam kılabilirsiniz.",
+          "askYalniz": "Ruhuna dokunan ve seni gerçekten anlayan birini hayatına çekme arzun yüksek. Acele etmeden, karşındakini tüm yönleriyle tanımaya gayret göstermek, hayalini kurduğun sağlıklı ilişkinin temellerini atmanı kolaylaştırır.",
+          "kariyer": "Finansal kaynakların ve ortaklı işlerin konusunda stratejik adımlar atabilirsin. Çalışmalarının karşılığını somut bir şekilde görmek adına planlı hareket etmek fayda sağlayacaktır. Hafta sonu gerçekleşen Dolunay kişisel bütçenle ilgili bir konuyu tamamlamana vesile olabilir.",
+          "saglik": "Duygusal hassasiyetinin yükseldiği bu dönemde zihnini yoran ortamlardan sakınmak iyi gelecektir. Kendine ayıracağın dingin zamanlar ve düzenli uyku ritmi enerjini tazeler."
+        }
+      }
+    },
     {
       "baslangic": "2026-09-14",
       "bitis": "2026-09-20",
