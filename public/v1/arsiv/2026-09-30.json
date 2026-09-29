@@ -1,0 +1,209 @@
+{
+  "tarih": "2026-09-30",
+  "uretildi": "2026-09-29T23:43:11Z",
+  "model": "gemini-3.6-flash",
+  "gokyuzu": {
+    "gunes": {
+      "burc": "Terazi",
+      "gecis": null
+    },
+    "ay": {
+      "burc": "Boğa",
+      "gecis": {
+        "burc": "İkizler",
+        "saat": "20:26"
+      },
+      "evre": "Küçülen Ay",
+      "aydinlik": 84
+    },
+    "olay": null,
+    "gezegenler": {
+      "Merkür": {
+        "burc": "Terazi",
+        "gecis": {
+          "burc": "Akrep",
+          "saat": "14:45"
+        },
+        "retro": false
+      },
+      "Venüs": {
+        "burc": "Akrep",
+        "gecis": null,
+        "retro": false
+      },
+      "Mars": {
+        "burc": "Aslan",
+        "gecis": null,
+        "retro": false
+      },
+      "Jüpiter": {
+        "burc": "Aslan",
+        "gecis": null,
+        "retro": false
+      },
+      "Satürn": {
+        "burc": "Koç",
+        "gecis": null,
+        "retro": true
+      },
+      "Uranüs": {
+        "burc": "İkizler",
+        "gecis": null,
+        "retro": true
+      },
+      "Neptün": {
+        "burc": "Koç",
+        "gecis": null,
+        "retro": true
+      },
+      "Plüton": {
+        "burc": "Kova",
+        "gecis": null,
+        "retro": true
+      }
+    },
+    "ayAcilari": [
+      {
+        "gezegen": "Jüpiter",
+        "aci": "kare",
+        "saat": "02:36"
+      },
+      {
+        "gezegen": "Mars",
+        "aci": "altmışlık",
+        "saat": "23:07"
+      }
+    ],
+    "gezegenAcilari": [
+      {
+        "gezegenler": [
+          "Merkür",
+          "Mars"
+        ],
+        "aci": "kare",
+        "fark": 1.5,
+        "yaklasiyor": true,
+        "saat": null
+      }
+    ],
+    "retroDonusleri": [
+      {
+        "gezegen": "Venüs",
+        "retro": true,
+        "tarih": "2026-10-03",
+        "burc": "Akrep"
+      }
+    ],
+    "tutulmalar": []
+  },
+  "burclar": {
+    "aries": {
+      "ad": "Koç",
+      "ozet": "Sözlerinin hızını adımlarınla dengelediğinde zihnindeki karmaşayı kolayca dağıtabilirsin.",
+      "genel": "Zihninde uçuşan düşünceler ile eylemlerin arasındaki ritmi ayarlamak günün ana vurgusu. Gün boyunca maddi kaynaklarını koruma arzusu ön plandayken, öğleden sonra zihinsel bir hareketlilik hissetmeye başlayabilirsin. İletişimde aceleci davranmak veya ani çıkışlar yapmak gerilime yol açabileceğinden, kelimelerini seçerek ilerlemek fayda sağlar. Akşama doğru yakın çevrenle kuracağın diyaloglar ve fikir paylaşımları, günün yorgunluğunu üzerinden atmana ve hedeflerini netleştirmene yardımcı olabilir.",
+      "askIliskide": "Sevdiklerinle konuşurken tonunu biraz daha yumuşak tutmak aranızdaki bağı güçlendirecektir. Ani tepkiler vermek yerine karşı tarafın dinleme ihtiyacına saygı duyabilirsin.",
+      "askYalniz": "Tanışacağın insanlarla iletişim kurarken beklentilerini hemen ortaya koymak zorunlu değil. Akşam saatlerinde gelişen bir mesajlaşma zihninde merak uyandıran kapılar aralayabilir.",
+      "kariyer": "İş ortamında fikirlerini savunurken dozunda bir ısrar sergilemek faydalı olabilir. Aceleye getirilen kararlar yerine detayları ikinci kez incelemek muhtemel pürüzleri engelleyecektir.",
+      "saglik": "Günün getirdiği zihinsel stresi yürüyüşle ya da nefesini dinlendirerek atabilirsin. Zihnini dinlendirmek gün sonundaki uykunu daha kaliteli kılacaktır."
+    },
+    "taurus": {
+      "ad": "Boğa",
+      "ozet": "Kendi sınırlarına sahip çıkarken hayatın sana sunduğu sakin akışa güvenebilirsin.",
+      "genel": "Güne kendi duygusal ihtiyaçlarını ve duruşunu ön plana alarak adım atıyorsun. Günün büyük kısmında kişisel alanını koruma arzusu hakim olurken, öğleden sonra zihnini meşgul eden düşünceler yerini daha somut konulara bırakabilir. İlişkiler alanında önümüzdeki günlerde yaşanacak yavaşlama öncesinde, ilişkilerini zorlamadan akışına bırakmak sana huzur verir. Akşamın ilerleyen saatleriyle birlikte maddi güvence arayışın artabilir, adımlarını sağlam atmak seni rahatlatacaktır.",
+      "askIliskide": "Birlikte vakit geçirirken sessiz ve dingin anların tadını çıkarmak ikinize de iyi gelecektir. Birbirinizin kişisel alanına saygı gösterdiğinizde uyum kendiliğinden derinleşir.",
+      "askYalniz": "Duygusal dünyanda yeni bir sayfa açmadan önce geçmişte kalan hisleri tamamen serbest bırakmak isteyebilirsin. Ağırbaşlı bir yaklaşım seni daha güvende hissettirecektir.",
+      "kariyer": "Bütçeni planlamak ve kişisel emeklerinin karşılığını değerlendirmek için günün ikinci yarısı oldukça elverişli. Sabırlı tavrın sayesinde karmakarışık görünen bir meseleyi çözüme kavuşturabilirsin.",
+      "saglik": "Bedeninin verdiği küçük yorgunluk sinyallerini görmezden gelmemek günün temposunu dengeler. Sakin bir akşam geçirmek zihnine ve enerjine tazelik katacaktır."
+    },
+    "gemini": {
+      "ad": "İkizler",
+      "ozet": "Zihnindeki düşünce kalabalığını eleyip akşam saatlerinde kendi enerjini hissetmeye başlayabilirsin.",
+      "genel": "Günün ilk yarısında iç dünyana çekilip biriken düşünceleri sindirmek isteyebilirsin. Öğleden sonra yöneticin Merkür'ün burç değiştirmesiyle birlikte, olayların derinindeki nedenleri sorgulama eğilimin güçleniyor. Konuşmalarında sert eleştirilerden kaçınmak, zihinsel gerilimi engellemek adına önemli. Akşam saatlerinden itibaren Ay'ın senin burcuna geçmesiyle kabuğundan sıyrabilir, kendini ifade etmek ve harekete geçmek için çok daha hazır hissedebilirsin.",
+      "askIliskide": "Sevdiğin kişiyle kurduğun diyaloglarda kelimelerini özenle seçmek aranızdaki muhtemel gerginlikleri önler. Düşüncelerini tam netleştirmeden büyük cümleler kurmamaya dikkat edebilirsin.",
+      "askYalniz": "Zihninde geçmişe dair soru işaretleri dönerken yeni bir adıma hemen odaklanamayabilirsin. Akşama doğru artan iletişim trafiği sana sürpriz sohbet fırsatları getirebilir.",
+      "kariyer": "Masa başı işlerini gözden geçirmek ve gözden kaçan ayrıntıları yakalamak için verimli zamanlar var. Sert tartışmalara girmek yerine olaylara tarafsız gözle bakmak işini kolaylaştırır.",
+      "saglik": "Gün boyu zihnini sürekli çalıştırmak yorulmana neden olabilir. Günün sonunda zihinsel akışı yavaşlatacak dingin aktivitelere zaman ayırmak faydalı olur."
+    },
+    "cancer": {
+      "ad": "Yengeç",
+      "ozet": "Geleceğe dair hayallerini dostlarınla paylaşırken akşam saatlerinde kendi sessizliğine çekilmek dengeni korur.",
+      "genel": "Sosyal çevren, ortak hayallerin ve arkadaşlıkların günün ilk yarısında öne çıkıyor. Birlikte hareket ettiğin insanlarla fikir alışverişinde bulunmak zihnini canlandırabilir. Günün ikinci yarısında Güneş'in ev ve aile alanındaki durgun seyriyle birleşen etki, yuva sıcaklığına olan ihtiyacını artırıyor. Akşam saatleriyle birlikte toplumsal koşturmacadan uzaklaşıp kendi kabuğuna çekilmek, günün yorgunluğunu geride bırakmana ve sezgilerini dinlemene yardımcı olacaktır.",
+      "askIliskide": "Partnerinle birlikte geleceğe dönük planlar hakkında konuşmak aranızdaki güven hissini tazeleyebilir. Akşama doğru kalabalıklardan uzaklaşıp baş başa vakit geçirmek ilişkinize yumuşak bir ritim kazandırır.",
+      "askYalniz": "Arkadaş ortamlarında tanışabileceğin biriyle ortak değerler üzerinden sıcak bir sohbet başlayabilir. Süreci aceleye getirmeden, zamana yayarak birbirinizi tanımanız en sağlıklı yol olacaktır.",
+      "kariyer": "Ekip arkadaşlarınla ortaklaşa yürüttüğün projelerde uzlaşmacı tavrın sayesinde işlerin tıkandığı noktaları kolayca açabilirsin. Günün sonuna doğru bireysel görevlerine vakit ayırıp masanı düzenlemek zihinsel netlik sağlar.",
+      "saglik": "Yoğun tempo içinde dinlenme aralıkları yaratmak gün boyu enerjini korumanı kolaylaştırır. Akşam saatlerinde ortamdaki ışığı ve gürültüyü azaltmak zihnini yatıştırmaya yardımcı olur."
+    },
+    "leo": {
+      "ad": "Aslan",
+      "ozet": "Sorumluluklarını kararlılıkla yürütürken çevrendekilerle iletişimde sakinliğini koruyabilirsin.",
+      "genel": "Toplum önündeki duruşun ve üstlendiğin görevler bugün odak noktanı oluşturuyor. Kendi burcundaki Mars'ın getirdiği yüksek motivasyon, hedeflerine doğru kararlı adımlar atmanı sağlıyor. Ancak gün içinde düşüncelerini ifade ederken sert çıkışlar yapmaktan kaçınman, iş birliği kurduğun kişilerle arandaki uyumu koruyacaktır. Akşam saatlerinde sorumluluk baskısı hafiflerken, arkadaşlarınla vakit geçirmek ve geleceğe dair hayallerini paylaşmak gününü keyifle tamamlamanı sağlayabilir.",
+      "askIliskide": "İlişkinde haklı çıkma çabasına girmeden, sevdiğin kişinin fikirlerini de dinlemeye özen gösterebilirsin. Birlikte geleceğe dönük planlar yapmak heyecanınızı artıracaktır.",
+      "askYalniz": "Dikkatleri üzerine çektiğin bir gündesin ancak ikili diyaloglarda sabırsız davranmamak fayda sağlar. Yavaş yavaş gelişen sohbetler çok daha sağlam bağlar kurmanı kolaylaştırır.",
+      "kariyer": "İş ortamında iddialı duruşunla öne çıkabilir, bekleyen projeleri tamamlayabilirsin. Yine de mesai arkadaşlarınla fikir ayrılığı yaşadığında esnekliğini koruman yararına olur.",
+      "saglik": "İçindeki yüksek enerjiyi dengeli kullanmadığında çabuk yorulabilirsin. Günün sonunda zihnini ve bedenini sakinleştirecek bir ritme geçmek sana iyi gelecektir."
+    },
+    "virgo": {
+      "ad": "Başak",
+      "ozet": "Fikirlerini savunurken detaylarda boğulmadan yapıcı çözümlere odaklanmayı seçebilirsin.",
+      "genel": "Hayata bakış açını derinleştirmek ve yeni şeyler öğrenmek istediğin bir gün. Öğleden sonra yöneticin Merkür'ün burç değiştirmesiyle zihinsel odaklanman oldukça güçleniyor, ancak bu durum seni fikirlerinde aşırı ısrarcı kılabilir. İletişimde kırıcı ifadelerden uzak durmak zihinsel huzurunu korumanı sağlar. Akşamın ilerleyen saatlerinde odağın kariyerine ve hedeflerine kayabilir; emek verdiğin işlerin sonuçlarını daha net biçimde değerlendirme fırsatı bulabilirsin.",
+      "askIliskide": "Sevdiğin kişiyle hayata dair derin sohbetler etmek aranızdaki zihinsel bağı güçlendirebilir. Eleştirel tonu bir kenara bırakıp anlayışla yaklaştığında diyaloglarınız derinleşecektir.",
+      "askYalniz": "Yeni tanışacağın insanlarla fikir alışverişinde bulunmak sana ilham verebilir. Ancak karşındakinin görüşlerini sorgularken ölçülü davranmak aranızdaki iletişimi daha sağlıklı kılar.",
+      "kariyer": "Araştırma, planlama ve detay gerektiren belgeler üzerinde çalışmak için verimli zamanlardasın. Üstlerinle ya da çalışma arkadaşlarınla diyaloglarında sakin kalmak projelerini kolaylaştırır.",
+      "saglik": "Gün içindeki yoğun zihinsel tempo enerjini tüketebilir. Akşam saatlerinde zihnini uyaran ekranlardan uzak kalmak kaliteli bir dinlenme olanağı sunar."
+    },
+    "libra": {
+      "ad": "Terazi",
+      "ozet": "İçsel dengeni koruyarak duygusal derinlik gerektiren meseleleri sakince ele alabilirsin.",
+      "genel": "Kendi burcundaki Güneş sana ışık vermeye devam ederken, bugün ortaklaşa paylaşımlar ve duygusal bağlar öne çıkıyor. Gün boyunca hislerini iç dünyanda daha derinden yaşayabilir, güven ihtiyacını sorgulayabilirsin. Birkaç gün sonra yöneticin Venüs'ün başlayacağı retro öncesinde, ilişkilerindeki dengeleri acele kararlarla değiştirmemek en doğrusu. Akşam saatlerinde bakış açını genişletecek okumalar yapmak veya yeni fikirlerle ilgilenmek zihnini hafifletecektir.",
+      "askIliskide": "Birlikte olduğun kişiyle arandaki güveni pekiştirmek için samimi konuşmalar yapabilirsin. Duygusal taleplerini iletirken sakin ve dengeli bir dil kullanmak aranızdaki bağı korur.",
+      "askYalniz": "Birine çekim duyman mümkün ancak duygularını hemen tanımlamaya çalışmamalısın. Süreci zamana yaymak ve karşındaki kişiyi daha iyi tanımak sana güvence sağlayacaktır.",
+      "kariyer": "Finansal planlamalar ve ortak yürütülen projelerde detayları sağlamlaştırmak adına uygun bir zaman. Ani harcamalardan uzak durarak güvenli adımlar atmaya gayret edebilirsin.",
+      "saglik": "Zihnini yoran derin düşünceleri bir kenara bırakmak günün temposunu hafifletir. Akşam vakitlerinde kendi ritmine dönüp sakin kalmak enerjini tazeleyecektir."
+    },
+    "scorpio": {
+      "ad": "Akrep",
+      "ozet": "İlişkilerinde kelimelerin gücünü doğru kullanarak karşılıklı anlayış zeminini güçlendirebilirsin.",
+      "genel": "Karşındaki insanlarla kurduğun diyaloglar bugün yaşamının merkezinde yer alıyor. Öğleden sonra Merkür'ün senin burcuna geçişiyle zihinsel odaklanman epey güçleniyor; ancak yöneticin Mars ile oluşan açı, diyaloglarda sert sözler söyleme eğilimini artırabilir. Güç mücadelelerine girmek yerine empati kurmayı seçtiğinde ilişkilerini koruyabilirsin. Akşam saatlerinde ortak paylaşımlar ve derin bağlar alanına geçen enerji, sevdiklerinle arandaki güveni pekiştirmene olanak sağlayacaktır.",
+      "askIliskide": "Partnerinle konuşurken haklı çıkma arzusunu bir kenara bırakmak ilişkinize huzur getirir. Akşam saatlerinde baş başa kalıp içten paylaşımlarda bulunmak aranızdaki sevgiyi besleyecektir.",
+      "askYalniz": "Zihnini kurcalayan biriyle açıkça konuşmak isteyebilirsin. Tepkilerini kontrol altında tutarak ileteceğin mesajlar, karşı tarafın seni daha doğru anlamasını sağlayacaktır.",
+      "kariyer": "İş ortaklıklarında veya sözleşme gerektiren adımlarda detaycı yönünü devreye sokabilirsin. Tartışmalardan uzak durup somut verilere odaklandığında projelerini başarıyla tamamlayabilirsin.",
+      "saglik": "Günün getirdiği duygusal ve zihinsel yoğunluk bedeninde gerilim yaratabilir. Akşamı sakin müzikler dinleyerek ya da dinlenerek geçirmek zihnini oldukça ferahlatacaktır."
+    },
+    "sagittarius": {
+      "ad": "Yay",
+      "ozet": "Günün getirdiği yoğun temposu içinde hedeflerini gerçekçi bir zeminde tutmak iyi gelebilir.",
+      "genel": "Günlük sorumlulukların ve iş ortamındaki detayların öne çıktığı bir gündesin. Erken saatlerde yöneticin Jüpiter'in yaptığı açı, hedeflerin konusunda aşırı hırslı veya sabırsız davranmana yol açabilir; beklentilerini makul seviyede tutmak seni rahatlatacaktır. Elindeki işleri adım adım tamamlayarak ilerlediğinde günün stresini minimuma indirebilirsin. Akşam saatlerine doğru odağın ikili ilişkilere kayarken, sevdiklerinle geçireceğin vakit zihnindeki yorgunluğu alıp götürecektir.",
+      "askIliskide": "İlişkideki beklentilerini abartmadan paylaşmak ikiniz için de daha sağlıklı bir zemin oluşturur. Akşam saatlerinde birlikte geçireceğiniz sakin anlar aranızdaki neşeyi artırabilir.",
+      "askYalniz": "Günlük koşuşturmaca arasında yeni biriyle tanışma fırsatı doğabilir. Heyecanını korurken adımlarını aceleye getirmemek, ilişkinin daha sağlam ilerlemesine katkı sağlayacaktır.",
+      "kariyer": "Masandaki birikmiş görevleri sırayla tamamlamak ve iş arkadaşlarınla yardımlaşmak günü kolaylaştırır. Büyük vaatler vermek yerine elindeki projelere odaklanmak sonuç getirir.",
+      "saglik": "Temponu yüksek tutarken dinlenme sürelerini ihmal etmemelisin. Gün sonunda yapacağın hafif yürüyüşler veya nefes çalışmaları bedenini rahatlatacaktır."
+    },
+    "capricorn": {
+      "ad": "Oğlak",
+      "ozet": "Yaratıcı projelerine zaman ayırıp günün ilerleyen saatlerinde günlük işlerini sıraya koyabilirsin.",
+      "genel": "Sevdiğin uğraşlara vakit ayırmak ve sanatsal yönünü sergilemek güne daha canlı başlamana yardımcı olabilir. Yöneticin Satürn'ün Koç burcundaki geri hareketi, geçmişte yarım bıraktığın kişisel projelere dönüp eksikleri tamamlaman için sağlam bir zemin sunuyor. Kariyer hedeflerin doğrultusunda adımlar atarken, geceye doğru gündelik rutinlerine ve masandaki birikmiş işlere odaklanma ihtiyacın belirginleşebilir. Yaşamındaki yapıyı korumak içsel dinginliğini artıracaktır.",
+      "askIliskide": "Partnerinle ortak zevklerinize vakit ayırmak aranızdaki bağı canlandırabilir. Birlikte eğlenceli ve sakin bir etkinlik planlamak duygu paylaşımını kolaylaştıracaktır.",
+      "askYalniz": "Kişisel hobilerinle ilgilenirken seninle benzer heyecanları paylaşan biriyle temas kurabilirsin. Samimi bir sohbetin kendiliğinden gelişmesine imkân tanımak güzel gelişmeler getirebilir.",
+      "kariyer": "Yaratıcılık gerektiren işlerde ve sunumlarda özgün yaklaşımınla öne çıkabileceğin bir akış var. Geceye doğru çalışma alanındaki belgeleri düzenlemek ve yapılacaklar listeni tazelemek önündeki günler için zihnini iyice rahatlatacaktır.",
+      "saglik": "Günün hareketli ritmi içinde kendine kısa dinlenme aralıkları yaratmak iyi gelebilir. Bedenini yormadan dengeli bir tempoda kalmaya özen gösterebilirsin."
+    },
+    "aquarius": {
+      "ad": "Kova",
+      "ozet": "Evinin sağladığı güven duygusuyla içsel huzurunu yakalayıp akşamı keyifli konulara ayırabilirsin.",
+      "genel": "Yuvana, ailene ve kişisel alanına odaklanarak güne başlıyorsun. Evindeki düzeni sağlamlaştırmak ve yakınlarınla güvenli bağlar kurmak sana içsel bir rahatlık kazandıracaktır. Yöneticin Satürn'ün retro hareketi sürerken, geçmişten gelen ailevi meseleleri sakinlikle ele almak çözümü kolaylaştırır. Akşamın ilerleyen saatlerinde Ay'ın burç değiştirmesiyle birlikte zihnin neşeli uğraşlara ve hobilerine yönelebilir, günün yorgunluğunu sevdiğin şeylerle ilgilenerek atabilirsin.",
+      "askIliskide": "Evinde sıcak bir ortam yaratıp partnerinle vakit geçirmek aranızdaki güveni artırır. Akşam saatlerinde birlikte eğlenceli bir aktiviteye vakit ayırmak ilişkinize renk katacaktır.",
+      "askYalniz": "Aile ya da yakın tanıdıklar vasıtasıyla zihnine hitap eden biri gündeme gelebilir. İlişki arayışında acele etmeden, duygularının olgunlaşmasına izin vermek seni güvende hissettirir.",
+      "kariyer": "Evden yürütülen işlerde ve altyapı çalışmalarında oldukça verimli adımlar atabilirsin. Temeli sağlam atılmış projeler, ilerleyen süreçte iş hayatında sana kolaylık getirecektir.",
+      "saglik": "Kendini güvende hissettiğin alanlarda bulunmak zihinsel stresini oldukça azaltır. Gün sonunda ruhunu dinlendirecek hobilerle meşgul olmak enerjini tazeleyecektir."
+    },
+    "pisces": {
+      "ad": "Balık",
+      "ozet": "Zihnindeki haberleri süzgeçten geçirerek günün sonunda kendi güvenli alanına çekilebilirsin.",
+      "genel": "Yakın çevrenle olan iletişim trafiğin ve zihnindeki yoğun fikirler gününü hareketlendiriyor. Yöneticin Jüpiter ile kurulan açı nedeniyle duyduğun haberleri abartılı değerlendirme eğilimine karşı soğukkanlı kalmayı seçebilirsin. Karşılıklı diyaloglarda açık ve net bir dil benimsemek muhtemel karışıklıkları önleyecektir. Günün sonuna doğru odağın evine ve ailevi konulara kayarken, kendi alanına çekilip sevdiklerinle sakince vakit geçirmek zihnini yatıştırabilir.",
+      "askIliskide": "Duygularını aktarırken kelimelerini özenle seçmek aranızdaki bağın zedelenmesini önler. Geceye doğru ev ortamında sakince baş başa vakit geçirmek ilişkinize samimiyet kazandıracaktır.",
+      "askYalniz": "Yakın çevrendeki kişilerden gelen mesajlar aracılığıyla zihnini açacak biriyle iletişim başlatabilirsin. Beklentilerini aceleye getirmeden sohbetin doğal bir akışta ilerlemesine zaman tanımak faydalı olabilir.",
+      "kariyer": "Yazışmalar, telefon görüşmeleri ve kısa vadeli görevleri tamamlamak adına tempolu bir işte bulunabilirsin. Bilgi akışını doğru düzenlediğinde karmaşık görünen ayrıntıları hızla netleştirmen kolaylaşır.",
+      "saglik": "Zihinsel koşturmaca günün sonunda tempoyu düşürme ihtiyacı yaratabilir. Sakin bir ortamda dinlenmek ve günün yorgunluğunu geride bırakmak dengeni koruyacaktır."
+    }
+  }
+}
