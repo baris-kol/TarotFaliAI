@@ -1,7 +1,307 @@
 {
   "surum": 1,
-  "guncellendi": "2026-09-15T19:51:30Z",
+  "guncellendi": "2026-09-30T23:50:04Z",
   "donemler": [
+    {
+      "baslangic": "2026-10-01",
+      "bitis": "2026-10-31",
+      "uretildi": "2026-09-30T23:50:04Z",
+      "model": "gemini-3.5-flash",
+      "gokyuzu": {
+        "konumlar": {
+          "Güneş": {
+            "burc": "Terazi",
+            "retro": false
+          },
+          "Merkür": {
+            "burc": "Akrep",
+            "retro": false
+          },
+          "Venüs": {
+            "burc": "Akrep",
+            "retro": false
+          },
+          "Mars": {
+            "burc": "Aslan",
+            "retro": false
+          },
+          "Jüpiter": {
+            "burc": "Aslan",
+            "retro": false
+          },
+          "Satürn": {
+            "burc": "Koç",
+            "retro": true
+          },
+          "Uranüs": {
+            "burc": "İkizler",
+            "retro": true
+          },
+          "Neptün": {
+            "burc": "Koç",
+            "retro": true
+          },
+          "Plüton": {
+            "burc": "Kova",
+            "retro": true
+          }
+        },
+        "olaylar": [
+          {
+            "tarih": "2026-10-02",
+            "saat": "12:15",
+            "tur": "aci",
+            "metin": "Merkür–Mars kare"
+          },
+          {
+            "tarih": "2026-10-02",
+            "saat": "23:40",
+            "tur": "aci",
+            "metin": "Merkür–Plüton kare"
+          },
+          {
+            "tarih": "2026-10-03",
+            "saat": "01:19",
+            "tur": "aci",
+            "metin": "Mars–Neptün üçgen"
+          },
+          {
+            "tarih": "2026-10-03",
+            "saat": "10:15",
+            "tur": "retro",
+            "metin": "Venüs Akrep burcunda geri harekete başlıyor (retro başlıyor)"
+          },
+          {
+            "tarih": "2026-10-03",
+            "saat": "13:33",
+            "tur": "aci",
+            "metin": "Mars–Plüton karşıt"
+          },
+          {
+            "tarih": "2026-10-03",
+            "saat": "16:25",
+            "tur": "evre",
+            "metin": "Son Dördün, Yengeç 10°",
+            "evre": "Son Dördün"
+          },
+          {
+            "tarih": "2026-10-04",
+            "saat": "15:30",
+            "tur": "aci",
+            "metin": "Güneş–Satürn karşıt"
+          },
+          {
+            "tarih": "2026-10-07",
+            "saat": "03:10",
+            "tur": "aci",
+            "metin": "Merkür–Venüs kavuşum"
+          },
+          {
+            "tarih": "2026-10-07",
+            "saat": "13:41",
+            "tur": "aci",
+            "metin": "Mars–Uranüs altmışlık"
+          },
+          {
+            "tarih": "2026-10-10",
+            "saat": "18:50",
+            "tur": "evre",
+            "metin": "Yeni Ay, Terazi 17°",
+            "evre": "Yeni Ay"
+          },
+          {
+            "tarih": "2026-10-11",
+            "saat": "00:31",
+            "tur": "aci",
+            "metin": "Venüs–Mars kare"
+          },
+          {
+            "tarih": "2026-10-15",
+            "saat": "11:22",
+            "tur": "aci",
+            "metin": "Güneş–Jüpiter altmışlık"
+          },
+          {
+            "tarih": "2026-10-16",
+            "saat": "05:37",
+            "tur": "retro",
+            "metin": "Plüton Kova burcunda düz harekete dönüyor (retro bitiyor)"
+          },
+          {
+            "tarih": "2026-10-16",
+            "saat": "11:33",
+            "tur": "aci",
+            "metin": "Mars–Satürn üçgen"
+          },
+          {
+            "tarih": "2026-10-18",
+            "saat": "19:13",
+            "tur": "evre",
+            "metin": "İlk Dördün, Oğlak 25°",
+            "evre": "İlk Dördün"
+          },
+          {
+            "tarih": "2026-10-20",
+            "saat": "10:02",
+            "tur": "aci",
+            "metin": "Venüs–Plüton kare"
+          },
+          {
+            "tarih": "2026-10-23",
+            "saat": "12:38",
+            "tur": "gecis",
+            "metin": "Güneş Akrep burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-10-24",
+            "saat": "06:44",
+            "tur": "aci",
+            "metin": "Güneş–Venüs kavuşum"
+          },
+          {
+            "tarih": "2026-10-24",
+            "saat": "10:09",
+            "tur": "retro",
+            "metin": "Merkür Akrep burcunda geri harekete başlıyor (retro başlıyor)"
+          },
+          {
+            "tarih": "2026-10-25",
+            "saat": "12:10",
+            "tur": "gecis",
+            "metin": "Venüs Terazi burcuna geçiyor (geri hareketle)"
+          },
+          {
+            "tarih": "2026-10-26",
+            "saat": "07:12",
+            "tur": "evre",
+            "metin": "Dolunay, Boğa 2°",
+            "evre": "Dolunay"
+          },
+          {
+            "tarih": "2026-10-26",
+            "saat": "15:08",
+            "tur": "aci",
+            "metin": "Güneş–Plüton kare"
+          },
+          {
+            "tarih": "2026-10-30",
+            "saat": "20:20",
+            "tur": "aci",
+            "metin": "Merkür–Mars kare"
+          }
+        ]
+      },
+      "burclar": {
+        "aries": {
+          "ad": "Koç",
+          "ozet": "İlişkilerinde dengeyi bulurken, maddi kaynaklarını ve kendi değerini yeniden yapılandıracağın bir döneme giriyorsun.",
+          "genel": "Karşındaki insanlarla olan bağların bu ay adeta bir ayna gibi önüne seriliyor. Ekim ayının ilk yarısında, özellikle 10 Ekim'deki Terazi Yeni Ayı civarında, ortaklıklarında ve birlikteliklerinde yeni ve dengeli adımlar atmak isteyebilirsin. Ancak 3 Ekim civarında Mars ile Plüton arasındaki karşıtlık, içindeki yaratıcı gücü ortaya koyarken bazı güç mücadelelerine yol açabilir. Ayın ikinci yarısında ise odak noktan değişiyor; 23 Ekim'de Güneş'in Akrep burcuna geçmesiyle derinleşen mevzular, 26 Ekim'deki Boğa Dolunayı ile birlikte kendi kazançlarına ve bütçene yönelmene neden olabilir. 16 Ekim'deki Mars-Satürn desteği, adımlarını daha sağlam atmana yardım edebilir. Ay sonuna doğru Merkür'ün geri hareketi ve Mars açısı, eski konuşmaları tekrar gündeme getirebilir.",
+          "askIliskide": "Partnerinle olan iletişiminde 11 Ekim'deki Venüs-Mars gerilimi geçici anlaşmazlıklar yaratabilir. Birbirinizi kontrol etmeye çalışmak yerine ortak zemin aramayı seçmek aranızdaki bağı kuvvetlendirecektir. Ayın sonlarına doğru yaşanacak Güneş-Venüs buluşması, aranızdaki sevgiyi daha derin ve samimi bir boyuta taşıyabilir.",
+          "askYalniz": "Flört dünyanda Ekim başında oldukça heyecanlı ve tutkulu bir hava esebilir. Ancak 3 Ekim'de Venüs'ün geri hareketine başlaması, eski aşkların veya çözülmemiş konuların tekrar önüne gelmesine neden olabilir. Acele kararlar vermeden önce karşına çıkan kişilerin niyetini anlamak için kendine biraz zaman tanımalısın.",
+          "kariyer": "Mesleki alanda ortaklaşa yürütülen projeler ayın ilk yarısında hız kazanabilir. 26 Ekim'deki Dolunay ise kendi bütçeni, alacaklarını ve harcamalarını netleştirmek adına önemli bir dönüm noktası olabilir. Ay sonuna doğru başlayacak Merkür retrosu sebebiyle yeni imzalardan ziyade eski projeleri düzenlemek daha güvenli bir yol olabilir.",
+          "saglik": "Ay boyunca koşturmacanın ortasında kendi enerjini dengede tutmak önem kazanıyor. 3 Ekim'deki Mars-Neptün uyumu, ruhsal olarak dinlenmeye ve zihnini sakinleştirmeye ihtiyaç duyduğunu fısıldayabilir. Hareketli günlerin ardından kendine sessiz anlar yaratmak zindeliğini korumana yardım edecektir."
+        },
+        "taurus": {
+          "ad": "Boğa",
+          "ozet": "Günlük rutinlerini sadeleştirirken, ilişkilerinde geçmişten gelen düğümleri çözmeye odaklanacağın bir ay seni bekliyor.",
+          "genel": "Günlük yaşamının ritmini yeniden ayarlamak bu ayın ana temalarından biri haline geliyor. 10 Ekim'deki Terazi Yeni Ayı, iş yükünü ve günlük alışkanlıklarını daha dengeli bir hale getirmen için sana kapı aralayabilir. Ancak yöneticin Venüs'ün 3 Ekim'de geri hareketine başlaması, ay boyunca ikili ilişkilerinde ve ortaklıklarında geçmişe yönelik derin sorgulamalar yapmana yol açabilir. 7 Ekim civarında gerçekleşen Merkür-Venüs buluşması, yarım kalmış konuşmaları tamamlamak adına değerlendirilebilir. Ayın ikinci yarısında, 23 Ekim'den sonra ilişkiler alanı daha da hareketlenirken, 26 Ekim'de kendi burcunda gerçekleşen Dolunay kişisel duruşunu ve isteklerini netleştirmeni sağlayacak bir etki barındırıyor. Bu süreçte karşına çıkabilecek bazı gerilimlere karşı sakin kalmak ve kendi merkezinde durmak işini kolaylaştırabilir.",
+          "askIliskide": "İlişkinizde 3 Ekim'de başlayan Venüs retrosu, eski kırgınlıkların veya konuşulmamış konuların tekrar masaya yatırılmasına neden olabilir. 11 Ekim'deki Venüs-Mars karesi partnerinle aranda ufak güç savaşları yaratabileceğinden, uzlaşmacı bir tavır takınmak fayda sağlayacaktır. Ay sonunda eşinle veya sevgilinle arandaki bağları daha gerçekçi temellere oturtabilirsin.",
+          "askYalniz": "Geçmişte kalan birinin aniden seninle iletişim kurması Ekim ayında şaşırtıcı anlar yaratabilir. Venüs'ün geri hareketi, yeni bir aşka yelken açmak yerine önce eski duygusal bagajları temizlemenin daha sağlıklı olduğunu gösteriyor. Ay ortasındaki karşılaşmalarda aceleci kararlar almamalı, karşı tarafı tanımaya zaman vermelsin.",
+          "kariyer": "Günlük çalışma ortamında üstlendiğin sorumluluklar Yeni Ay ile birlikte yeniden şekillenebilir. İş arkadaşlarınla kurduğun iletişimde 20 Ekim civarında oluşabilecek gerilimleri profesyonel bir yaklaşımla yönetmek en iyisidir. Ayın sonlarında yaşanacak Dolunay, kendi sınırlarını belirlemen ve hedeflerine odaklanman konusunda seni destekleyebilir.",
+          "saglik": "Yoğun iş temposunun getirdiği stresi yönetmek bu ay en önemli önceliğin olabilir. Günlük rutinlerini çok fazla zorlamadan, bedeninin sesini dinleyerek hareket etmek sana iyi gelecektir. Ayın ikinci yarısında uyku düzenine ve dinlenme saatlerine özen göstermek enerjini dengeler."
+        },
+        "gemini": {
+          "ad": "İkizler",
+          "ozet": "Aşkta ve yaratıcı projelerinde yeni dengeler kurarken, iç dünyana dönüp dinlenmeye ihtiyaç duyacağın bir aydasın.",
+          "genel": "Hayatın keyifli yönlerine odaklanmak ve yaratıcılığını sergilemek için ekim ayının ilk yarısı oldukça hareketli geçebilir. 10 Ekim'de gerçekleşecek Terazi Yeni Ayı, hobilerin veya sanatsal çalışmaların konusunda sana taze başlangıçlar getirebilir. Ancak yöneticin Merkür'ün ayın hemen başında Mars ve Plüton ile yapacağı kare açılar, günlük düzeninde bazı fikir ayrılıklarına ve iletişim krizlerine yol açabilir. Bu gerilimleri yapıcı konuşmalarla çözmek mümkündür. Ayın ikinci yarısında, özellikle 23 Ekim'den sonra sorumlulukların ve iş yükün artabilir. 24 Ekim'de Merkür'ün Akrep burcunda geri hareketine başlamasıyla beraber işlerini planlarken daha dikkatli olman gerekebilir. 26 Ekim'deki Boğa Dolunayı ise seni biraz yavaşlamaya, sezgilerine kulak vermeye ve gürültüden uzaklaşarak dinlenmeye davet edebilir.",
+          "askIliskide": "İlişkinizde romantizmin canlanacağı, birlikte keyifli aktiviteler planlayabileceğiniz bir ay başlangıcı yaşanabilir. Ancak partnerinizle günlük sorumluluklar yüzünden yaşanabilecek fikir ayrılıklarını büyütecek fevri konuşmalardan kaçınmalısınız. Ayın sonuna doğru geçmişteki konuların açılması halinde sabırlı ve dinleyici bir tutum sergilemek aranızdaki bağı koruyacaktır.",
+          "askYalniz": "Sosyal çevrenizden veya arkadaş gruplarınızdan biriyle aranızda tatlı bir çekim oluşabilir. Yeni Ay döneminde flörtöz tavırlar öne çıksa da Ekim sonuna doğru başlayacak Merkür retrosu, yeni bir ilişkiye adım atmadan önce adımlarınızı sakinlikle atmanızı öneriyor. Eski sevgililerden gelebilecek mesajlar kafanızı karıştırabilir.",
+          "kariyer": "İş ortamında detaylar ve planlama gerektiren konular Ekim başında sizi biraz zorlayabilir. 24 Ekim'de başlayacak Merkür retrosu öncesinde önemli anlaşmaları tamamlamak ve belgeleri kontrol etmek iyi bir fikir olabilir. Dolunay ise perde arkasında kalmış bazı durumları fark etmenizi sağlayarak projelerinizde netlik sağlayabilir.",
+          "saglik": "Ayın ilk yarısında yüksek olan enerjiniz, ay sonuna doğru yerini daha sakin bir ritme bırakabilir. Zihinsel yorgunluğu azaltmak adına teknolojik aletlerden uzaklaşarak kendinize dinlenme zamanları yaratmak bu dönemde oldukça faydalı olacaktır."
+        },
+        "cancer": {
+          "ad": "Yengeç",
+          "ozet": "Ailen ve evinle ilgili dengeleri kurarken, sosyal çevrenden ve dostlarından destek göreceğin bir aya adım atıyorsun.",
+          "genel": "İç dünyana, evine ve köklerine odaklanarak başlayacağın bu ay, yaşam alanında yapacağın düzenlemeleri ön plana çıkarabilir. 3 Ekim'deki Yengeç Son Dördün'ü, duygusal olarak seni yoran bazı eski kalıpları geride bırakmana yardım edebilir. 10 Ekim'deki Terazi Yeni Ayı ile birlikte aile içinde yeni kararlar alınabilir veya evinde huzurlu bir atmosfer yaratmak için adımlar atabilirsin. Ancak aile içi ilişkilerde dengeyi korumak için bazen sessiz kalmayı seçmek faydalı olabilir. Ayın ikinci yarısında ise odak noktan tamamen değişmeye başlıyor. 23 Ekim'den itibaren yaratıcı enerjin yükselirken, 26 Ekim'de Boğa burcunda gerçekleşecek Dolunay, arkadaş çevren ve gelecek planlarınla ilgili bazı süreçleri görünür kılabilir. Bu dönemde sosyal çevrenden alacağın destekler, hedeflerini gerçekleştirmende sana rehberlik edebilir.",
+          "askIliskide": "Partnerinizle ev hayatınızdaki sorumlulukları paylaşırken daha dengeli ve anlayışlı olmanız gereken bir süreçtesiniz. Ay ortasında çıkabilecek küçük gerilimleri büyütecek tepkiler vermekten kaçınmalısınız. 23 Ekim sonrası ilişkinize daha eğlenceli, romantik ve yaratıcı bir hava hakim olmaya başlayacaktır.",
+          "askYalniz": "Yeni Ay ile birlikte evinizde vakit geçirmek size daha cazip gelebilir ancak ay sonuna doğru sosyalleşme isteğiniz artacaktır. 26 Ekim'deki Dolunay civarında arkadaş ortamlarınızda veya topluluk aktivitelerinde çekim hissedeceğiniz yeni insanlarla tanışabilirsiniz. Eski tanıdıkların da bu dönemde tekrar karşınıza çıkması olasıdır.",
+          "kariyer": "Geleceğe dair hedefleriniz ve projeleriniz konusunda 26 Ekim Dolunayı önemli bir netleşme getirebilir. İşbirlikleri ve ekip çalışmaları bu ayın ikinci yarısında daha verimli hale gelecektir. Maddi konularda ise ay boyunca planlı hareket etmek, bütçenizi kontrol altında tutarak ani harcamalardan uzak durmak size büyük kolaylık sağlayacaktır.",
+          "saglik": "Duygusal dalgalanmaların fiziksel enerjinizi etkilememesi için bu ay kendinize şefkat göstermek önem kazanıyor. Günlük rutininize dahil edeceğiniz hafif yürüyüşler ve meditasyon gibi sakinleştirici pratikler, zihinsel dengenizi korumanıza yardımcı olacaktır."
+        },
+        "leo": {
+          "ad": "Aslan",
+          "ozet": "Yakın çevrenle olan ilişkilerini düzenlerken, kariyerinde ve hedeflerinde netleşeceğin güçlü bir aya adım atıyorsun.",
+          "genel": "İletişim trafiğinin ve fikir alışverişlerinin oldukça yoğun olduğu bir ekim ayına giriş yapıyorsun. 10 Ekim'deki Terazi Yeni Ayı, yakın çevrenle olan ilişkilerini tazelemek ve yeni projeler üzerine konuşmak adına güzel olanaklar sunabilir. Ancak 4 Ekim'de Güneş-Satürn karşıtlığı yaşanırken, bazı sorumluluklar karşısında kendini kısıtlanmış hissetmen mümkündür. Sabırlı olmak bu sürecin anahtarıdır. Ayın ikinci yarısında, 15 Ekim'deki Güneş-Jüpiter altmışlığı sana destekleyici ve umut dolu bakış açıları kazandırabilir. 23 Ekim'de Güneş'in Akrep burcuna geçmesiyle odağın evine ve ailene kayarken, 26 Ekim'deki Boğa Dolunayı kariyerinde ve geleceğe yönelik hedeflerinde bazı durumları netleştirecektir. Üstlerinle kuracağın diyaloglarda sakin ve kararlı kalmak başarıyı getirebilir.",
+          "askIliskide": "İlişkinizde partnerinizle yapacağınız günlük konuşmalar ve kısa seyahatler aranızdaki havayı yumuşatabilir. Ancak 11 Ekim'deki Venüs-Mars karesi, ego savaşlarına girmemeniz konusunda sizi uyarıyor. Sevginizi ifade ederken daha yapıcı bir tutum benimsemeli ve birlikte ortak zeminler yaratmaya özen göstermelisiniz.",
+          "askYalniz": "Yakın çevrenizden veya seyahatler sırasında tanışacağınız biriyle heyecan verici bir diyalog başlayabilir. Ancak Ekim ayındaki Venüs retrosu, yeni ilişkiler konusunda acele etmemeniz gerektiğini hatırlatıyor. Karşınızdaki kişinin gerçek niyetini anlamak için zamana yayarak gözlem yapmak en doğrusudur.",
+          "kariyer": "İş hayatınızda üstlendiğiniz görevler ve sorumluluklar ayın başında sizi biraz yorabilir. Ancak 26 Ekim'deki Boğa Dolunayı, emeklerinizin karşılığını göreceğiniz ve kariyerinizde nerede durduğunuzu anlayacağınız önemli gelişmeleri beraberinde getirebilir. Üstlerinizle olan ilişkilerinizde dengeli ve profesyonel kalmak avantaj sağlayacaktır.",
+          "saglik": "Ay boyunca yüksek bir tempoda hareket etmek zihinsel olarak yorulmanıza neden olabilir. Gün içinde kısa nefes molaları vermek ve zihninizi gereksiz düşüncelerden arındırmak enerjinizi korumanıza yardımcı olacaktır."
+        },
+        "virgo": {
+          "ad": "Başak",
+          "ozet": "Maddi kaynaklarını dengeye oturturken, hayata bakış açını ve inançlarını tazeleyeceğin bir döneme giriyorsun.",
+          "genel": "Parasal konuları ve kendi değerini sorgulayarak başlayacağın bu ay, bütçeni düzenlemek adına önemli gelişmeler getirebilir. 10 Ekim'deki Terazi Yeni Ayı, yeni kazanç kapıları veya bütçe planlamaları konusunda sana destek sunacaktır. Ancak yöneticin Merkür'ün ay başındaki sert kare açıları, yakın çevrenle olan iletişiminde bazı anlaşmazlıklara yol açabilir. Ayın ikinci yarısında ise zihinsel olarak daha derin konulara yönelebilirsin. 23 Ekim'de Güneş'in Akrep burcuna geçmesiyle birlikte kardeşlerinle veya komşularınla olan bağların güçlenebilir. 24 Ekim'de Merkür'ün geri hareketine başlaması, eski fikirleri veya yarım kalmış eğitimleri tekrar masaya yatırmana neden olabilir. 26 Ekim'deki Boğa Dolunayı ise sana hayata daha geniş bir bakış alanı açacaktır.",
+          "askIliskide": "İlişkinizde ortak değerleriniz ve bütçe planlamalarınız üzerine konuşmak ayın ilk yarısında öne çıkabilir. Partnerinizle aranızdaki güven duygusunu tazelemek için samimi ve açık konuşmalar yapmanız gerekebilir. Ay sonuna doğru yaşanacak fikir ayrılıklarını ise anlayışlı bir tavırla aşabilirsiniz.",
+          "askYalniz": "Değer verdiğiniz insanlarla bir arada olmak ve kendinizi güvende hissetmek bu ay her şeyden önemli olabilir. Ekim ayındaki Venüs retrosu sebebiyle eski flörtlerinizin tekrar kapınızı çalması mümkündür. Karar vermeden önce geçmişte yaşanan sorunlerin gerçekten çözülüp çözülmediğini iyi analiz etmelisiniz.",
+          "kariyer": "Maddi durumunuzu iyileştirmek adına yapacağınız planlar Yeni Ay ile birlikte netleşebilir. Ancak 24 Ekim'de başlayacak Merkür retrosu sebebiyle imza atacağınız belgelere ve yapacağınız yazışmalara ekstra dikkat etmeniz gerekebilir. 26 Ekim Dolunayı ise yarım kalmış bir projeyi tamamlamak için uygun bir zamandır.",
+          "saglik": "Yoğun zihinsel aktivitelerin ardından dinlenmeye zaman ayırmak bu ay çok önemlidir. Gününün koşturmacası içinde sakinleştirici hobiler edinmek ve kendinize sessiz bir alan yaratmak zihinsel dengenizi korumanızı kolaylaştıracaktır."
+        },
+        "libra": {
+          "ad": "Terazi",
+          "ozet": "Kendi kimliğini ve isteklerini parlatırken, ortaklaşa kaynaklarında ve bütçende dengeler kuracağın bir aya başlıyorsun.",
+          "genel": "Senin dönemin başladı ve gökyüzü tüm ışığıyla senin üzerinde parlıyor. 10 Ekim'de burcunda gerçekleşecek Yeni Ay, hayatının her alanında yepyeni sayfalar açman için sana güçlü bir başlangıç imkanı verebilir. Ancak yöneticin Venüs'ün 3 Ekim'de Akrep burcunda geri hareketine başlaması, kendi değerini ve maddi kaynaklarını sorguladığın bir süreci de beraberinde getirecektir. Bu süreçte harcamalarını gözden geçirmek faydalı olabilir. Ayın ikinci yarısında, özellikle 23 Ekim'de Güneş'in Akrep burcuna geçmesiyle odak noktan tamamen finansal konulara kayıyor. 25 Ekim'de Venüs'ün geri hareketle burcuna dönmesi, geçmiş ilişkileri tekrar gündeme getirebilir. 26 Ekim'deki Boğa Dolunayı ise ortaklaşa kazançlar, borçlar veya alacaklar konusunda netleşmeler yaşamanı sağlayacaktır.",
+          "askIliskide": "Burcunuzdaki Yeni Ay, ilişkinizde taze bir nefes gibi hissettirebilir. Ancak 11 Ekim'deki Venüs-Mars karesi partnerinizle aranızda değer algısı yüzünden küçük gerilimler yaratabilir. Karşılıklı saygıyı koruyarak hareket etmeli ve geçmişte kalmış kırgınlıkları tekrar açmak yerine şimdiki zamana odaklanmalısınız.",
+          "askYalniz": "Kendinizi her zamankinden daha çekici hissedeceğiniz bu ayda, yeni tanışmalar yaşanabilir. Ancak Venüs'ün geri hareketi sebebiyle eski sevgililerinizin aniden hayatınıza dönmek istemesi kafanızı karıştırabilir. Acele kararlar vermeden önce kalbinizin sesini dinlemek ve sürece zaman tanımak en iyisidir.",
+          "kariyer": "Finansal konularda dengeli adımlar atmanız gereken bir aydasınız. 26 Ekim'deki Dolunay ortaklaşa kazançlar, banka işleri veya beklediğiniz bir ödeme konusunda sonuçlar getirebilir. Ay sonuna doğru başlayacak Merkür retrosu döneminde büyük alım satımlar yapmaktansa mevcut bütçenizi korumaya odaklanmak daha güvenlidir.",
+          "saglik": "Kendi burç döneminizde enerjiniz oldukça yüksek olacaktır ancak kendinizi aşırı yormaktan kaçınmak iyi gelecektir. Günlük ritminizi dengede tutmak adına bedeninize ihtiyaç duyduğu dinlenme sürelerini tanımak, zihinsel ve fiziksel dengenizi korumanızı sağlayacaktır."
+        },
+        "scorpio": {
+          "ad": "Akrep",
+          "ozet": "İç dünyanda derin arınmalar yaşarken, ay sonunda ilişkilerinde güçlü farkındalıklar kazanacağın bir döneme giriyorsun.",
+          "genel": "Ekim ayının ilk yarısında enerjini dış dünyadan çok kendi iç dünyana yönlendirmek isteyebilirsin. 10 Ekim'deki Terazi Yeni Ayı, zihnini meşgul eden bazı yüklerden kurtulman ve ruhsal olarak hafiflemen için sana yardımcı olabilir. Ancak yöneticin Mars'ın ay başında Plüton ile yapacağı karşıtlık, kariyer hedeflerinde veya toplum önündeki duruşunda bazı güç savaşlarını tetikleyebilir. Sakinliğini koruyarak bu dönemi büyük bir dönüşüm imkanına çevirebilirsin. Ayın ikinci yarısında ise sahneye sen çıkıyorsun. 23 Ekim'de Güneş'in kendi burcuna geçmesiyle enerjin ve motivasyonun yükselecektir. 24 Ekim'de Merkür'ün burcunda retroya başlaması ise eski kararları gözden geçirtir. 26 Ekim'de karşıt burcunda gerçekleşecek Boğa Dolunayı ise ikili ilişkilerinde önemli kararlar vermene yol açabilir.",
+          "askIliskide": "26 Ekim'deki Boğa Dolunayı partnerinizle olan ilişkinizde önemli bir dönüm noktası olabilir. Bu süreçte karşı tarafın ihtiyaçlarını anlamaya çalışmak ve güç mücadelelerinden uzak durmak aranızdaki uyumu artıracaktır. Ayın sonlarında yaşanacak Güneş-Venüs buluşması ise sevginizi daha derin ve tutkulu bir şekilde hissetmenizi sağlayabilir.",
+          "askYalniz": "Ay başında geçmişe yönelik duygusal sorgulamalar yapmanız olasıdır. 3 Ekim'de burcunuzda retro hareketine başlayan Venüs, eski sevgililerle ilgili konuları tekrar önünüze getirebilir. Yeni bir ilişkiye başlamadan önce eski yaraların tamamen kapandığından emin olmak için kendinize zaman tanımalısınız.",
+          "kariyer": "Kariyer evinizdeki Mars hareketliliği iş hayatınızda büyük adımlar atma isteği uyandırabilir ancak fevri kararlardan kaçınmak faydalıdır. 24 Ekim'de burcunuzda başlayacak Merkür retrosu, yeni projelere başlamaktansa eski işleri tamamlamanız gerektiğini gösteriyor. Dolunay ise iş ortaklıklarınızı veya anlaşmalarınızı netleştirebilir.",
+          "saglik": "Ruhsal ve zihinsel olarak kendinizi yenileyeceğiniz bir aydasınız. Ayın ilk yarısında kendinize bolca zaman ayırmak, uyku düzeninizi korumak ve zihninizi gereksiz kaygılardan arındırmak genel enerjinizi tazeleyerek sizi ay sonuna hazırlayacaktır."
+        },
+        "sagittarius": {
+          "ad": "Yay",
+          "ozet": "Sosyal çevrende yeni planlar yaparken, ay sonunda günlük yaşamını ve alışkanlıklarını düzene sokacağın bir süreçtesin.",
+          "genel": "Geleceğe dair hedeflerini, projelerini ve arkadaşlık ilişkilerini yapılandıracağın hareketli bir ekim ayına adım atıyorsun. 10 Ekim'deki Terazi Yeni Ayı, sosyal çevrene taze bir soluk getirirken, yeni gruplara dahil olmanı da kolaylaştırabilir. 15 Ekim'de yöneticin Jüpiter'in Güneş ile yapacağı olumlu açı, inançlarını ve hayallerini gerçekleştirmek adına sana büyük bir iyimserlik ve genişleme imkanı sunacaktır. Bu süreçte karşına çıkan yeni fikirleri iyi değerlendirmelisin. Ayın ikinci yarısında ise gökyüzünün enerjisi biraz daha içe dönük bir hal alıyor. 23 Ekim'de Güneş'in Akrep burcuna geçişiyle birlikte dinlenme ve zihinsel olarak arınma ihtiyacın artabilir. 26 Ekim'deki Boğa Dolunayı ise günlük iş yükünü, rutinlerini ve çalışma ortamındaki dengeleri netleştirmen için güçlü bir etki sunacaktır.",
+          "askIliskide": "Partnerinizle birlikte geleceğe yönelik ortak planlar yapmak ve sosyal ortamlarda vakit geçirmek ayın ilk yarısında ilişkinize iyi gelebilir. Ancak ay sonunda günlük hayatın getirdiği koşturmaca aranızda ufak gerilimlere yol açabileceğinden, birbirinize karşı daha anlayışlı olmanızda fayda vardır.",
+          "askYalniz": "Arkadaş ortamlarınızda veya katıldığınız sosyal organizasyonlarda yeni insanlarla tanışmanız mümkündür. Ekim ortasındaki olumlu açılar, aşk hayatınızda şanslı karşılaşmalara zemin hazırlayabilir. Ancak aceleci davranmadan, karşınızdaki kişileri zamana yayarak tanımayı seçmek daha sağlıklı birliktelikler kurmanızı sağlayacaktır.",
+          "kariyer": "Gelecek planlarınız ve işbileriniz Yeni Ay ile birlikte hız kazanabilir. 26 Ekim'deki Dolunay ise günlük çalışma düzeninizde, projelerinizde veya iş yerindeki sorumluluklarınızda beklediğiniz sonuçları almanıza yardımcı olacaktır. Bu dönemde detay gerektiren işleri tamamlamak ve düzen kurmak size avantaj sağlar.",
+          "saglik": "Ay sonunda yaşanacak Dolunay, günlük alışkanlıklarınızı ve yaşam ritminizi düzenlemeniz konusunda sizi teşvik edebilir. Çok fazla koşturmaktan kaynaklanan yorgunluğu azaltmak adına dinlenme saatlerinizi artırmak ve zihninizi sakinleştirecek aktivitelere yönelmek bu süreçte size iyi gelecektir."
+        },
+        "capricorn": {
+          "ad": "Oğlak",
+          "ozet": "Kariyerinde güçlü hedefler belirlerken, aşk hayatında ve yaratıcı projelerinde keyifli netleşmeler yaşayacağın bir aydasın.",
+          "genel": "İş hayatında ve toplum önündeki duruşunda yeni sorumluluklar üstleneceğin önemli bir aya adım atıyorsun. 10 Ekim'deki Terazi Yeni Ayı, kariyerinde yeni adımlar atmak ve hedeflerini netleştirmek adına sana büyük bir destek verebilir. Ancak 4 Ekim'de yöneticin Satürn'ün Güneş ile yapacağı karşıtlık, ev ve iş arasındaki dengeyi kurarken seni biraz zorlayabilir. Bu süreçte sabırlı olmak ve sorumluluklarını planlı bir şekilde yürütmek işini kolaylaştıracaktır. 16 Ekim'deki Mars-Satürn desteği ise adımlarını daha sağlam atmanı sağlayabilir. Ayın ikinci yarısında, 23 Ekim'den sonra sosyal çevren ve arkadaşlıkların ön plana çıkarken, 26 Ekim'deki Boğa Dolunayı aşk hayatında, hobilerinde ve yaratıcı işlerinde beklediğin keyifli sonuçları beraberinde getirecektir.",
+          "askIliskide": "İlişkinizde kariyerinizin getirdiği yoğunluk sebebiyle partnerinizi ihmal etmemeye özen göstermelisiniz. Ayın ikinci yarısında yaşanacak Dolunay, aranızdaki romantizmi canlandırmak ve birlikte keyifli vakit geçirmek için güzel ortamlar sunabilir. Karşılıklı beklentilerinizi netleştirerek bağınızı daha da güçlendirebilirsiniz.",
+          "askYalniz": "Ayın ilk yarısında iş odaklı olsanız da ay sonuna doğru aşk hayatınız hareketlenmeye başlayacaktır. 26 Ekim'deki Dolunay, hobileriniz aracılığıyla veya sosyal ortamlarda çekici biriyle tanışmanıza vesile olabilir. Eski flörtlerinizden gelebilecek bazı haberler ise geçmişteki duygularınızı gözden geçirmenize yol açabilir.",
+          "kariyer": "Kariyerinizde yeni projeler ve anlaşmalar Yeni Ay ile birlikte gündeme gelebilir. Ancak üstlerinizle olan ilişkilerinizde ay başında yaşanabilecek sorumluluk gerilimlerini soğukkanlılıkla yönetmeniz gerekebilir. 16 Ekim sonrasında ise işlerinizin daha akıcı, planlı ve sağlam bir şekilde ilerlediğini fark edebilirsiniz.",
+          "saglik": "Yoğun iş temposu ve ailevi sorumluluklar enerjinizi tüketebilir. Bedeninizin sesini dinlemek, kendinize dinlenme araları vermek ve zihninizi boşaltacak yürüyüşler yapmak bu yoğun dönemde enerjinizi yüksek tutmanıza yardımcı olacaktır."
+        },
+        "aquarius": {
+          "ad": "Kova",
+          "ozet": "Hayata bakış açını genişletirken, kariyerinde hedeflerine odaklanacağın ve evinde dengeler kuracağın bir aya giriyorsun.",
+          "genel": "Yeni fikirler edinmek ve ufkunu genişletmek için ekim ayının ilk yarısı oldukça destekleyici bir atmosfer sunuyor. 10 Ekim'deki Terazi Yeni Ayı, yeni bir eğitim, seyahat veya hayat felsefesi konusunda taze başlangıçlar yapmanı sağlayabilir. Ancak 4 Ekim'deki Güneş-Satürn karşıtlığı, yakın çevrenle olan iletişiminde veya fikirlerini aktarırken bazı engellerle karşılaşabileceğini gösteriyor. Sabırlı ve yapıcı olmak bu engelleri aşmana yardımcı olacaktır. 16 Ekim'de burcundaki Plüton'un geri hareketini sonlandırması ise kendi kişisel gücünü yeniden kazanmanı ve dönüşümünü hızlandırmanı sağlayabilir. Ayın ikinci yarısında, 23 Ekim'de Güneş'in Akrep burcuna geçmesiyle kariyerine daha fazla odaklanırken, 26 Ekim'deki Boğa Dolunayı ev ve aile hayatındaki bazı konuları netleştirecektir.",
+          "askIliskide": "Partnerinizle birlikte yeni yerler keşfetmek ve farklı konular üzerine sohbet etmek ayın başında ilişkinizi canlandırabilir. Ancak ayın sonuna doğru yaşanacak Dolunay, ev ve aile içindeki sorumluluklar yüzünden aranızda gerilim yaratabilir. Birbirinizin özel alanlarına saygı göstererek bu dönemi sakinlikle geçirmelisiniz.",
+          "askYalniz": "Hayata bakış açınızı paylaşabileceğiniz, entelektüel olarak sizi besleyen insanlarla tanışmak bu ay mümkündür. Seyahatler veya eğitim ortamları yeni flört ihtimallerini aralayabilir. Ancak Ekim sonundaki Merkür retrosu öncesinde, yeni bir ilişkiye hemen başlamak yerine karşınızdaki kişiyi iyice tanımayı seçmek daha faydalı olacaktır.",
+          "kariyer": "Eğitim, yayıncılık veya uzaklarla ilgili projeleriniz Yeni Ay ile birlikte hız kazanabilir. 23 Ekim'den sonra ise tüm dikkatinizi iş hayatınıza ve hedeflerinize yönlendirmeniz gerekebilir. Dolunay dönemi, ev ve iş arasındaki dengeyi kurarken geçmişten gelen bazı ailevi durumları da çözmenizi sağlayabilir.",
+          "saglik": "Zihinsel olarak çok yoğun olduğunuz bu ayda, kendinize sessiz dinlenme anları yaratmak büyük önem taşıyor. Enerjinizi dengede tutmak adına hafif egzersizler yapmak ve uykunuza özen göstermek kendinizi daha dinç ve motive hissetmenize yardımcı olacaktır."
+        },
+        "pisces": {
+          "ad": "Balık",
+          "ozet": "Finansal ortaklıklarını ve paylaşımlarını düzenlerken, yakın çevrenle olan iletişiminde netleşeceğin bir aydasın.",
+          "genel": "Ortaklaşa kazançlar, borçlar veya paylaşılan kaynaklar üzerine odaklanarak ekim ayına başlıyorsun. 10 Ekim'de gerçekleşecek Terazi Yeni Ayı, finansal ortaklıklar kurmak veya bütçeni dengeye oturtmak adına sana yeni imkanlar sunabilir. Ancak 4 Ekim civarındaki Güneş-Satürn karşıtlığı, maddi konularda bazı kısıtlanmalar ve sorumluluklar hissedebileceğini gösteriyor. Sabırlı adımlar atmak bu süreçte fayda sağlayacaktır. 15 Ekim'de yöneticin Jüpiter'in Güneş ile yapacağı destekleyici açı, iş yaşamında ve günlük rutinlerinde sana şanslı gelişmeler getirebilir. Ayın ikinci yarısında ise seyahat ve eğitim planların önem kazanıyor. 26 Ekim'deki Boğa Dolunayı yakın çevrenle olan ilişkilerini, kardeşlerinle olan diyaloglarını ve yarım kalmış anlaşmalarını net bir sonuca ulaştıracaktır.",
+          "askIliskide": "İlişkinizde paylaşımlarınız ve maddi konular ayın ilk yarısında ön plana çıkabilir. Güven duygusunu pekiştirmek için partnerinizle derin ve samimi konuşmalar yapmanız gerekebilir. Ay sonundaki Dolunay ise yakın çevrenizle birlikte yapacağınız kısa seyahatlerin aranızdaki iletişimi kuvvetlendireceğini gösteriyor.",
+          "askYalniz": "Bu ay kendinizi duygusal olarak daha derin ve gizemli hissedebilirsiniz. Geçmişten gelen bazı yarım kalmış konuları şifalandırmak adına 3 Ekim'de başlayan Venüs retrosunu kullanabilirsiniz. Aceleyle yeni bir ilişkiye atılmaktansa, kendi içinizdeki sevgi dengesini bulmaya ve geçmişin yüklerini bırakmaya odaklanmalısınız.",
+          "kariyer": "Finansal konularda yeni düzenlemeler ve bütçe planlamaları Yeni Ay civarında gündeme gelebilir. 15 Ekim'deki Jüpiter desteği iş projelerinizde veya günlük görevlerinizde işlerinizi kolaylaştıracaktır. Ay sonuna doğru başlayacak Merkür retrosu sebebiyle yeni sözleşmeler imzalamadan önce her ayrıntıyı dikkatle incelemek önem taşır.",
+          "saglik": "Ay boyunca ruhsal dengenizi korumak adına kendinize sakin zamanlar yaratmak faydalı olacaktır. Günün stresini azaltmak için doğada vakit geçirmek veya meditasyon yapmak içsel huzurunuzu korumanıza ve enerjinizi yüksek tutmanıza yardımcı olur."
+        }
+      }
+    },
     {
       "baslangic": "2026-09-01",
       "bitis": "2026-09-30",
