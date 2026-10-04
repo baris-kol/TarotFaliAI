@@ -1,0 +1,207 @@
+{
+  "baslangic": "2026-10-05",
+  "bitis": "2026-10-11",
+  "uretildi": "2026-10-04T23:12:50Z",
+  "model": "gemini-3.5-flash",
+  "gokyuzu": {
+    "konumlar": {
+      "Güneş": {
+        "burc": "Terazi",
+        "retro": false
+      },
+      "Merkür": {
+        "burc": "Akrep",
+        "retro": false
+      },
+      "Venüs": {
+        "burc": "Akrep",
+        "retro": true
+      },
+      "Mars": {
+        "burc": "Aslan",
+        "retro": false
+      },
+      "Jüpiter": {
+        "burc": "Aslan",
+        "retro": false
+      },
+      "Satürn": {
+        "burc": "Koç",
+        "retro": true
+      },
+      "Uranüs": {
+        "burc": "İkizler",
+        "retro": true
+      },
+      "Neptün": {
+        "burc": "Koç",
+        "retro": true
+      },
+      "Plüton": {
+        "burc": "Kova",
+        "retro": true
+      }
+    },
+    "olaylar": [
+      {
+        "tarih": "2026-10-05",
+        "saat": "01:54",
+        "tur": "gecis",
+        "metin": "Ay Aslan burcuna geçiyor"
+      },
+      {
+        "tarih": "2026-10-07",
+        "saat": "03:10",
+        "tur": "aci",
+        "metin": "Merkür–Venüs kavuşum"
+      },
+      {
+        "tarih": "2026-10-07",
+        "saat": "05:53",
+        "tur": "gecis",
+        "metin": "Ay Başak burcuna geçiyor"
+      },
+      {
+        "tarih": "2026-10-07",
+        "saat": "13:41",
+        "tur": "aci",
+        "metin": "Mars–Uranüs altmışlık"
+      },
+      {
+        "tarih": "2026-10-09",
+        "saat": "11:11",
+        "tur": "gecis",
+        "metin": "Ay Terazi burcuna geçiyor"
+      },
+      {
+        "tarih": "2026-10-10",
+        "saat": "18:50",
+        "tur": "evre",
+        "metin": "Yeni Ay, Terazi 17°",
+        "evre": "Yeni Ay"
+      },
+      {
+        "tarih": "2026-10-11",
+        "saat": "00:31",
+        "tur": "aci",
+        "metin": "Venüs–Mars kare"
+      },
+      {
+        "tarih": "2026-10-11",
+        "saat": "18:21",
+        "tur": "gecis",
+        "metin": "Ay Akrep burcuna geçiyor"
+      }
+    ]
+  },
+  "burclar": {
+    "aries": {
+      "ad": "Koç",
+      "ozet": "İlişkilerinde dengeleri bulmak ve isteklerini dürüstçe ifade etmek için önemli bir eşiktesin.",
+      "genel": "Karşındakini dinlemek ile kendi isteklerinin arkasında durmak arasındaki ince çizgiyi bu hafta daha net görebilirsin. Hafta başında yaratıcı uğraşlar ve hayattan keyif aldığın konular seni meşgul edebilir. Çarşamba günü ise beklenmedik bir sezgiyle aniden harekete geçme isteği duyabilirsin. Cumartesi günü karşıt burcunda gerçekleşecek Yeni Ay, hayatındaki önemli bir iş birliğini ya da birlikteliği yepyeni bir zemine taşımak için taze bir başlangıç sunuyor. Pazar günü ilişkilerde bir süredir biriken gerilimi tatlıya bağlamak ya da içinizdeki tutkuyu dengelemek adına adımlar atabilirsin.",
+      "askIliskide": "Birlikte yeni bir adım atmak, aranızdaki bağı tazelemek için Cumartesi günü doğacak olan Yeni Ay size rehberlik edebilir. Pazar günü ise partnerinle ani tartışmalara girmek yerine, birbirinizin isteklerine kulak vermeyi deneyebilirsin.",
+      "askYalniz": "Sosyal ortamlarda aniden gelişen sohbetler heyecan verici bir flörte dönüşebilir. Hafta sonu gerçekleşecek Yeni Ay, hayatına uzun soluklu birini çekmek için eski ilişki kalıplarını geride bırakmanı kolaylaştırıyor.",
+      "kariyer": "Ortaklı yürütülen projelerde ya da danışmanlık aldığın alanlarda Çarşamba gününden itibaren yeni iş birlikleri gündeme gelebilir. Fikirlerini açıkça savunurken, ekibin ritmine ayak uydurmak bu hafta sana avantaj sağlayacaktır. İş hayatında dengeli adımlar atmak hedeflerine ulaşmanı kolaylaştırabilir.",
+      "saglik": "Haftalık koşuşturmalar arasında kendine ait sakin alanlar yaratmak zihnini dinlendirebilir. Uyku düzenini korumaya ve akşam saatlerinde sakinleştirici aktivitelere yönelmeye çalışmak dengeni koruyacaktır."
+    },
+    "taurus": {
+      "ad": "Boğa",
+      "ozet": "Günlük rutinini sadeleştirirken ilişkilerindeki eski meseleleri tatlıya bağlayabilirsin.",
+      "genel": "Günlük yaşamının ritmini yeniden düzenlemek ve sorumluluklarını gözden geçirmek için bu hafta güzel bir rüzgâr esiyor. İş yükünü azaltmak ve alışkanlıklarını tazelemek adına gökyüzü seni destekliyor. Hafta ortasında yöneticin Venüs'ün Merkür ile yapacağı kavuşum, ilişkilerindeki geçmiş bir konuyu yeniden masaya yatırıp sakin bir dille çözüme kavuşturmanı sağlayabilir. Cumartesi günü gerçekleşecek Yeni Ay ise günlük alışkanlıklarında köklü bir temizlik yapman, iş ortamındaki ilişkileri şifalandırman için zemin hazırlıyor. Pazar günü ilişkiler ve kişisel istekler arasında yaşanabilecek ufak tefek gerilimleri esneklikle aşabilirsin.",
+      "askIliskide": "Partnerinle geçmişte yarım kalmış bir konuyu Çarşamba günü daha yumuşak bir dille konuşup çözebilirsiniz. Hafta sonu ilişkideki sorumluluk paylaşımlarını gözden geçirmek, aranızdaki bağı daha da güçlendirebilir.",
+      "askYalniz": "Geçmişten gelen birinden haber almak ya da eski bir flörtün kapını çalması bu hafta seni düşündürebilir. Yeni bir başlangıç yapmadan önce eski hesapları tamamen kapattığından emin olman yararlı olabilir.",
+      "kariyer": "Günlük iş planını yaparken detayları gözden kaçırmamak Çarşamba gününden itibaren önem kazanıyor. Yeni Ay ile birlikte iş ortamındaki görev dağılımları değişebilir, daha dengeli bir çalışma düzeni kurabilirsin. Bu dönemde sabırlı ve planlı ilerlemek başarıyı getirecektir.",
+      "saglik": "Gün içindeki hareketli tempo ile dinlenme saatlerini dengelemek enerjini korumanı sağlayacaktır. Zihnini yoran detaylardan uzaklaşmak için gün sonunda kendine vakit ayayabilirsin."
+    },
+    "gemini": {
+      "ad": "İkizler",
+      "ozet": "Yaratıcı yönlerini keşfedeceğin ve hayatın eğlenceli yanlarına odaklanacağın bir haftadasın.",
+      "genel": "Kendini ifade etmenin, hobilerine zaman ayırmanın ve hayatın neşeli yönlerini keşfetmenin tam zamanı olabilir. Hafta başında yakın çevrenle olan iletişimin hız kazanırken sosyal açıdan hareketli saatler geçirebilirsin. Çarşamba günü yöneticin Merkür’ün geri hareketteki Venüs ile kavuşumu iş ortamında eski bir konuyu ya da yarım kalmış bir projeyi hatırlatabilir. Cumartesi günü Terazi burcundaki Yeni Ay, aşk hayatında ya da yaratıcı bir projenizde yepyeni bir sayfa açman için seni cesaretlendirebilir. Hafta sonu boyunca içinden gelen yaşam sevincini ve üretkenliği çevrene yansıtmak sana çok iyi gelecektir.",
+      "askIliskide": "Birlikte geçireceğiniz keyifli anlar, aranızdaki romantizmi canlandırabilir. Cumartesi günkü Yeni Ay, ilişkinize yeni bir heyecan ve ortak bir hobi katmak için güzel bir dönemi müjdeliyor. Bu süreçte birbirinize daha açık olabilirsiniz.",
+      "askYalniz": "Sosyal çevrende ya da katıldığın bir etkinlikte ilgini çeken biriyle yolların kesişebilir. Kendini kasmadan, doğal akışta kalmak karşı tarafı etkilemeni kolaylaştıracaktır. Yeni insanlarla tanışmaya açık olmak sana iyi gelebilir.",
+      "kariyer": "Yarım kalmış işleri tamamlamak ve geçmişten gelen düzenlemeleri yapmak adına Çarşamba gününü kullanabilirsin. Yeni Ay sonrasında, yaratıcılığını sergileyebileceğin projelerde liderliği üstlenmek için adımlar atabilirsin. Cesur davranmak seni öne çıkaracaktır.",
+      "saglik": "Enerjinin yükseldiği bu haftayı aktif kalarak ama sınırlarını da zorlamadan geçirmek dengede kalmanı sağlar. Keyifli aktivitelerle zihnini boşaltmak stres seviyeni düşürecektir."
+    },
+    "cancer": {
+      "ad": "Yengeç",
+      "ozet": "Evinde huzuru yakalamak ve köklerinle bağlarını güçlendirmek için derinleşeceğin bir dönem.",
+      "genel": "İç dünyana dönmek, evindeki konforu artırmak ve sevdiklerinle bağlarını güçlendirmek bu haftanın ana temaları arasında yer alıyor. Haftanın ilk günlerinde maddi konulara odaklanırken, Çarşamba gününden itibaren evdeki düzeni değiştirmek isteyebilirsin. Aile içi sohbetleri derinleştirmek ve geçmişten gelen kırgınlıkları onarmak için güzel adımlar atabilirsin. Cumartesi günü yuvayı temsil eden alanda doğacak olan Yeni Ay, yaşam alanında yapacağın yenilikleri ya da aile içi ilişkilerdeki dengeleri yeniden kurma fırsatını beraberinde getiriyor. Kendini güvende hissettiğin alanları güzelleştirmek ruhuna çok iyi gelecektir.",
+      "askIliskide": "Partnerinle baş başa, evinizde geçireceğiniz huzurlu bir akşam aranızdaki güveni tazeleyebilir. Ortak yaşam alanınızda yapacağınız küçük estetik değişiklikler enerjinizi yükseltecektir. Birbirinize zaman ayırmak bağınızı güçlendirecektir.",
+      "askYalniz": "Geçmişteki aile kalıplarını ve ilişki beklentilerini gözden geçirmek, gelecekteki ilişkilerin için daha sağlıklı adımlar atmanı sağlayabilir. Kendini güvende hissettiğin anlarda yeni insanlara açılman kolaylaşacaktır.",
+      "kariyer": "Evden yürüttüğün işler ya da aile şirketleri ile ilgili konularda bu hafta yeni kararlar alınabilir. İş hayatındaki hedeflerini belirlerken öncelikle içsel huzurunu ve dengeni korumayı ön planda tutabilirsin. Planlı hareket etmek işlerini kolaylaştıracaktır.",
+      "saglik": "Evinde dinlenmeye, uyku düzenine ve ruhsal olarak seni sakinleştiren aktivitelere zaman ayırmak bu hafta çok önemli. Zihnini dinlendirmek için kendine sessiz anlar yaratabilirsin."
+    },
+    "leo": {
+      "ad": "Aslan",
+      "ozet": "Yakın çevrenle bağlarını güçlendirirken, yaratıcı fikirlerini eyleme dökme fırsatı bulabilirsin.",
+      "genel": "Kelimelerin gücünü hissedeceğin, yakın çevrenle daha sık bir araya geleceğin hareketli bir haftaya adım atıyorsun. Pazartesi günü Ay'ın burcuna geçişiyle enerjin yükselirken her zamankinden daha dikkat çekici olabilirsin. Çarşamba günü burcundaki Mars’ın Uranüs ile yapacağı uyumlu açı sayesinde beklenmedik, heyecan verici adımlar atabilirsin. Cumartesi günü iletişim alanında gerçekleşecek Yeni Ay, yeni bir eğitime başlamak ya da yarım kalan bir projeyi duyurmak için kapı aralıyor. Pazar günü ise ilişkilerinde bencilce davranmaktan kaçınıp, karşındaki kişinin de arzularını anlamaya çalışman gerekebilir.",
+      "askIliskide": "Partnerinle yapacağınız kısa bir seyahat ya da keyifli bir hafta sonu planı aranızdaki heyecanı artırabilir. Hafta sonu ortaya çıkabilecek ufak tefek fikir ayrılıklarını tatlı dille çözmek elinde. Birbirinize anlayış göstermek bağınızı koruyacaktır.",
+      "askYalniz": "Sosyal medyada ya da yakın çevrende karşına çıkacak yeni bir yüz, merakını uyandırabilir. Kendini göstermekten çekinmediğin bu günlerde, samimi ve doğal tavırların dikkat çekecektir. Yeni flörtler kapını çalabilir.",
+      "kariyer": "Yeni anlaşmalar yapmak, sözleşmeleri gözden geçirmek ya da fikirlerini sunmak için Cumartesi günkü Yeni Ay'ı takip eden günleri değerlendirebilirsin. Çarşamba günü aniden gelişen iş teklifleri yönünü belirlemene yardım edebilir. Cesur adımlar atmak kazandıracaktır.",
+      "saglik": "Gün içindeki yoğun koşturmacalar enerjini tüketebilir; bu yüzden gün ortasında kısa esler vermek iyi gelebilir. Zihnini rahatlatmak için kısa yürüyüşler yapabilirsin."
+    },
+    "virgo": {
+      "ad": "Başak",
+      "ozet": "Maddi değerlerini ve yeteneklerini gözden geçirip hak ettiğin değeri bulabileceğin bir dönemdesin.",
+      "genel": "Kendi kaynaklarını yönetmek ve hayattaki önceliklerini belirlemek bu hafta senin için ön planda olacak. Bütçeni dengelemek ve yeteneklerini kazanca dönüştürmek adına yeni stratejiler geliştirebilirsin. Çarşamba günü yöneticin Merkür’ün retro Venüs ile yakın çevreni anlatan alandaki kavuşumu, geçmişte kalan bir dostla eski bir konuyu tatlıya bağlamana olanak tanıyabilir. Cumartesi günü finansal alanında gerçekleşecek Yeni Ay, bütçeni düzenlemek ya da yeni gelir kaynakları yaratmak adına taze adımlar atmanı destekliyor. Hafta sonuna doğru kendi değerini sorgulamak yerine, sahip olduğun yeteneklere odaklanmak sana güç verecektir.",
+      "askIliskide": "Partnerinle birlikte geleceğe yönelik maddi güvenceler hakkında konuşmak için uygun bir dönemdesiniz. Birbirinize verdiğiniz manevi desteğin ilişkideki güveni artırdığını görebilirsiniz. Bu paylaşımlar aranızı daha da yakınlaştıracaktır.",
+      "askYalniz": "Kendi değerini fark ettikçe, hayatına çekeceğin insanların kalitesi de değişebilir. Çarşamba günü geçmişten gelen bir mesaj ya da arama kafanı biraz karıştırsa da ne istediğini bilmek seni koruyacaktır.",
+      "kariyer": "Bütçeni planlamak ve gelirlerini artıracak yeni yöntemler üzerinde çalışmak için Cumartesi günkü Yeni Ay'ı kullanabilirsin. İş ortamında yeteneklerini daha görünür kılmak için sorumluluk alabilirsin. Bu dönemde planlı ilerlemek finansal dengeni korumanı sağlayacaktır.",
+      "saglik": "Bedeninin ihtiyaçlarını dinlemek ve zihnini sakinleştirecek ritüeller geliştirmek bu hafta sana iyi gelecektir. Kendini çok fazla yormadan, dengeli bir günlük ritim benimsemek yararlı olabilir."
+    },
+    "libra": {
+      "ad": "Terazi",
+      "ozet": "Doğum günü döneminde kendi arzu ve ihtiyaçlarını ön plana alma vakti geliyor.",
+      "genel": "Güneş senin burcunda ilerlerken kişisel duruşunu ve isteklerini yeniden tanımladığın özel bir dönemden geçiyorsun. Çarşamba günü para ve öz değer alanında gerçekleşen Merkür ile retro Venüs kavuşumu, geçmişteki bir alacağı ya da unutulmuş bir bütçe konusunu tekrar masaya getirebilir. Cumartesi günü burcunda doğan Yeni Ay, hayatının her alanında kişisel adımlar atman için taze bir niyet alanı açıyor. Hafta sonuna doğru yaklaşırken Mars ve Venüs arasındaki gerilimli açı, bütçen ile keyfi harcamaların arasında bir denge kurmanı gerektirebilir. Kendine odaklanarak özgüvenini tazeleyebilir, yeni kararlarını sükunetle hayata geçirebilirsin.",
+      "askIliskide": "Birlikteliğinde kendi ihtiyaçlarını daha net ifade etmek isteyeceğin bir süreçtesin. Hafta sonundaki Yeni Ay, ilişkinizde karşılıklı beklentileri yeniden düzenlemek ve bağınızı tazelemek için elverişli zemin sunuyor.",
+      "askYalniz": "Kendi değerini ve çekim gücünü daha güçlü hissettiğin bu günlerde çevrendekilerin ilgisi sana yönelebilir. Cumartesi günkü Yeni Ay ile birlikte, geçmişin gölgesinden sıyrılıp taze bir başlangıca cesaret etmek kolaylaşabilir.",
+      "kariyer": "Geleceğe yönelik hedeflerini netleştirmek için Cumartesi günkü Yeni Ay ivmesini değerlendirebilirsin. Çarşamba günü finansal konularda yapacağın görüşmeler ya da eski projelerin revizesi sana fayda sağlayabilir. İş hayatında kendi yeteneklerine güvenerek hareket etmek başarıyı getirecektir.",
+      "saglik": "Yoğun geçen günlerin ardından zihnini yatıştıracak sakin anlar yaratmak dengeni korumana yardımcı olur. Bedeninin ritmine kulak vererek dinlenme sürelerini aksatmamak sana iyi gelebilir."
+    },
+    "scorpio": {
+      "ad": "Akrep",
+      "ozet": "Zihnini arındırıp iç dünyandaki dengeyi sağlarken hedeflerine odaklanacağın bir dönem.",
+      "genel": "Dış dünyadaki gürültüden uzaklaşıp kendi kabuğuna çekilmek ve iç sesini dinlemek isteyeceğin günlerden geçiyorsun. Çarşamba günü burcundaki retro Venüs ile Merkür’ün buluşması, geçmişte kalan duygusal durumları veya çözülmemiş konuları zihninde netleştirmeni kolaylaştırıyor. Aynı gün Mars ile Uranüs arasındaki uyumlu akış, iş hayatında beklenmedik adımlar atma isteğini tetikleyebilir. Cumartesi günü bilinçaltı alanında gerçekleşen Yeni Ay, seni zihnen yoran yüklerden ve eski alışkanlıklardan özgürleşmen için sakin bir kapı aralıyor. Haftanın son gününde ise kariyerindeki hedeflerinle özel arzuların arasındaki hassas dengeyi korumak önem kazanabilir.",
+      "askIliskide": "Partnerinle arandaki derin bağı hissetmek ve saklı kalmış duyguları paylaşmak aranızdaki samimiyeti artırabilir. Hafta sonuna doğru iletişimde sakin ve anlayışlı kalmak, olası gerginliklerin önüne geçecektir.",
+      "askYalniz": "Geçmiş ilişkilerin üzerindeki duygusal izlerini temizlemek için uygun bir zamandasın. Kendinle baş başa kalıp ne istediğini netleştirmek, ileride atacağın adımlara daha sağlam bir temel hazırlayacaktır. Zamana güvenmek sana iyi gelebilir.",
+      "kariyer": "Kariyer hedeflerini gözden geçirmek ve göz önünde olmayan detayları tamamlamak için bu haftanın ritminden faydalanabilirsin. Çarşamba günü ortaya çıkabilecek fikirler, çalışma hayatında daha özgür hareket etmene imkan sunabilir. Planlarını sessizce olgunlaştırmak başarıyı getirecektir.",
+      "saglik": "Zihinsel yorgunluğu azaltmak adına gün içinde kısa molalar vermek ve uyku düzenine özen göstermek faydalı olur. Ruhunu sakinleştirecek dingin aktiviteler enerjini tazeler."
+    },
+    "sagittarius": {
+      "ad": "Yay",
+      "ozet": "Sosyal çevrenle bağlarını güçlendirirken geleceğe dair hayallerini şekillendireceğin bir hafta.",
+      "genel": "Geleceğe dair umutlarının tazelendiği ve insanlarla bir arada olmaktan keyif alacağın tempolu bir döneme adım atıyorsun. Yöneticin Jüpiter’in desteğiyle ufku genişletme arzun artarken, yeni bakış açıları kazanma tutkun ön plana çıkabilir. Hafta ortasında arkadaş çevrenle yapacağın derin sohbetler, zihnindeki bazı soru işaretlerine yanıt bulmanı kolaylaştıracaktır. Cumartesi günü sosyal çevrende doğan Yeni Ay, hayatına katılacak taze dostlukların ve ortak projelerin ilk adımını oluşturabilir. Çevrenle fikir alışverişinde bulunmak hem motivasyonunu yükseltir hem de hedeflerine doğru keyifle ilerlemeni sağlar. Dönem boyunca topluluklar içinde yer almak sana güç katacaktır.",
+      "askIliskide": "Partnerinle birlikte sosyal aktivitelere katılmak ve ortak ortamlarda vakit geçirmek ilişkinize neşe katabilir. Birlikte geleceğe dair kurduğunuz hayaller üzerine konuşmak aranızdaki duygusal bağı belirgin şekilde pekiştirecektir.",
+      "askYalniz": "Arkadaş grupların veya katıldığın etkinlikler vasıtasıyla zihnen uyum sağlayabileceğin biriyle tanışma olasılığın yüksek. Yeni insanlarla iletişimde kalmak ve samimi sohbetlere alan açmak sana keyif verebilir.",
+      "kariyer": "Ekip çalışmaları ve ortaklaşa yürütülen projelerde aktif sorumluluk almak adına Cumartesi günkü Yeni Ay evresini kullanabilirsin. Gelecek hedeflerini yeniden yapılandırarak daha verimli yollar bulabilir, çevrendeki insanlardan destek görebilirsin. İletişimi güçlü tutmak işlerini kolaylaştırır.",
+      "saglik": "Sosyal hareketliliğin arttığı bu haftada kendi içsel dengeni korumak için kısa dinlenme araları verebilirsin. Akşam saatlerinde zihnini sakinleştirecek dingin ritimlere zaman ayırmak sana huzur verir."
+    },
+    "capricorn": {
+      "ad": "Oğlak",
+      "ozet": "Kariyerindeki hedeflerine odaklanırken ev ve iş hayatın arasında sağlam dengeler kuracağın bir süreç.",
+      "genel": "Toplumsal statün, mesleki duruşun ve geleceğe dönük sorumlulukların bu hafta ana gündem maddeni oluşturuyor. Hafta başında ev ve aile yaşamına dair başlıklar zihnini meşgul ederken, retro konumdaki yöneticin Satürn aile içi eski konuları ve sınırları tekrar düşünmeni isteyabilir. Hafta ortasından itibaren bakışlarını tamamen profesyonel hedeflerine çevirebilirsin. Cumartesi günü kariyer kulvarında doğan Yeni Ay, iş hayatında taze turların başlamasına ve hedeflerini netleştirip kararlılıkla ilerlemene zemin hazırlıyor. Sorumluluk bilinciyle atacağın dengeli adımlar, seni uzun vadede çok daha sağlam bir zemine taşıyacaktır.",
+      "askIliskide": "İş yaşamındaki yoğun temponun getirdiği zihinsel yükü ilişkinin huzurlu atmosferine taşımamaya özen gösterebilirsin. Hafta sonu birlikte vakit geçirmek ve karşılıklı güveni pekiştirecek sohbetler etmek bağınızı güçlendirecektir.",
+      "askYalniz": "İş ortamından ya da profesyonel çevrelerden biriyle aranda seviyeli bir yakınlaşma doğabilir. Adımlarını sakince atmak ve zaman tanıyarak karşı tarafı gözlemlemek sana daha sağlıklı sonuçlar getirecektir.",
+      "kariyer": "Mesleki anlamda taze adımlar atmak veya üstlendiğin görevleri yapılandırmak için Cumartesi günkü Yeni Ay'ın sunduğu imkanları değerlendirebilirsin. Yöneticilerinle veya iş ortaklarınla iletişiminde yapıcı bir dil kullanmak duruşunu güçlendirecektir.",
+      "saglik": "Yoğun çalışma saatlerinin ardından zihnini tamamen boşaltacak aktivitelere zaman ayırmak faydalı olur. Düzenli ve kaliteli bir uyku ritmi yakalamak enerjini yüksek tutmana yardım eder."
+    },
+    "aquarius": {
+      "ad": "Kova",
+      "ozet": "Bakış açını genişleteceğin, yeni şeyler öğrenip hayat vizyonunu tazeleyeceğin hareketli bir hafta.",
+      "genel": "Hayatın anlamını sorguladığın, yeni fikirlerle buluşmak ve ufkunun ötesine bakmak istediğin zihinsel açıdan zengin bir haftaya başlıyorsun. Çarşamba gününden itibaren seyahat planları yapmak, eğitim konularına eğilmek ya da araştırmalara yönelmek zihnini canlandırabilir. Yöneticin Satürn’ün retro pozisyonu, yakın çevrenle olan eski iletişim kalıplarını yeniden düzenlemen adına fırsat sunuyor. Cumartesi günü inançlar, öğrenme ve uzak hedefler kulvarında gerçekleşen Yeni Ay, dünya görüşünü tazeleyecek adımlar atmana zemin hazırlayabilir. Sınırları aşmaktan çekinmeyip yeni deneyimlere açık olmak sana büyük farkındalık kazandıracaktır. Öğrenme tutkun bu süreçte en büyük rehberin olabilir.",
+      "askIliskide": "Partnerinle derin sohbetler etmek, ortak fikirler üretmek ve birlikte keşif gezileri planlamak ilişkinizi canlandırabilir. Farklı bakış açılarına hoşgörüyle yaklaşmak aranızdaki zihinsel bağı daha da güçlendirecektir.",
+      "askYalniz": "Farklı kültürlerden ya da seninle aynı entelektüel merakı paylaşan biriyle tanışma fırsatı yakalayabilirsin. Önyargısız bir tutum sergilemek, hayatına zenginlik katacak yeni bir başlangıcı beraberinde getirebilir.",
+      "kariyer": "Yurt dışı bağlantılı işler, akademik çalışmalar ya da hukuki süreçlerde yeni adımlar atmak adına Cumartesi günkü Yeni Ay evresinden yararlanabilirsin. Fikirlerini geniş kitlelerle paylaşma cesareti göstermek kariyerinde ilerleme sağlamana katkı sunacaktır.",
+      "saglik": "Rutinlerin getirdiği zihinsel durgunluktan sıyrılmak için doğada yürüyüşler yapmak veya açık havada vakit geçirmek iyi gelir. Günün temposunu dengede tutarak kendine dinlenme alanı yaratabilirsin."
+    },
+    "pisces": {
+      "ad": "Balık",
+      "ozet": "İçsel dönüşümünü gerçekleştireceğin ve finansal ortaklıklarını yeniden düzenleyeceğin bir hafta.",
+      "genel": "Hayatındaki krizleri yönetmek ve ortaklaşa paylaşımlarında adaleti sağlamak bu haftanın asıl gündemini oluşturuyor. Hafta başında günlük rutinini düzenlerken, yöneticin Jüpiter’in etkisiyle iş ortamındaki alışkanlıklarını iyileştirmek isteyebilirsin. Cumartesi günü ortak kaynaklar ve dönüşüm alanında gerçekleşecek olan Yeni Ay, banka işlerini düzenlemek ya da borçları yapılandırmak için taze adımlar atmanı destekliyor. Hayatında artık sana hizmet etmeyen bir şeyi tamamen sonlandırmak bu dönemde kolaylaşabilir. İçsel sezgilerine güvenmek ve korkularının üzerine gitmek seni çok daha güçlü kılacaktır.",
+      "askIliskide": "Partnerinle arandaki güveni sorgulayabilir ya da daha derin, gizli kalmış duyguları paylaşmak isteyebilirsin. Hafta sonu ilişkideki maddi ya da manevi paylaşımlarda adil olmak bağınızı güçlendirecektir. Karşılıklı dürüstlük bu dönemde çok değerlidir.",
+      "askYalniz": "Karşındaki insanın sadece dış görünüşüyle değil, ruhunun derinlikleriyle de bağ kurmak isteyebilirsin. Yüzeysel flörtler yerine, seni gerçekten anlayan ve dönüştüren insanlara yönelmek isteyeceksin. Bu süreçte aceleci davranmamak önem taşıyor.",
+      "kariyer": "Finansal ortaklıklar, krediler ya da sponsorluk gibi konularda yeni düzenlemeler yapmak için Cumartesi günkü Yeni Ay'ı takip eden günleri seçebilirsin. Bütçeni dikkatlice analiz etmek geleceğe güvenle bakmanı sağlar. Maddi konularda tedbirli adımlar atmalısın.",
+      "saglik": "İç dünyandaki fırtınaları sakinleştirmek için meditasyon benzeri pratikler yapmak ya da uyku düzenini iyileştirmek bu hafta çok önemli. Zihnini dinlendirmek enerjinin hızla toparlanmasını sağlayacaktır."
+    }
+  }
+}
