@@ -1,7 +1,215 @@
 {
   "surum": 1,
-  "guncellendi": "2026-10-18T22:28:19Z",
+  "guncellendi": "2026-10-25T22:43:17Z",
   "donemler": [
+    {
+      "baslangic": "2026-10-26",
+      "bitis": "2026-11-01",
+      "uretildi": "2026-10-25T22:43:17Z",
+      "model": "gemini-3.6-flash",
+      "gokyuzu": {
+        "konumlar": {
+          "Güneş": {
+            "burc": "Akrep",
+            "retro": false
+          },
+          "Merkür": {
+            "burc": "Akrep",
+            "retro": true
+          },
+          "Venüs": {
+            "burc": "Terazi",
+            "retro": true
+          },
+          "Mars": {
+            "burc": "Aslan",
+            "retro": false
+          },
+          "Jüpiter": {
+            "burc": "Aslan",
+            "retro": false
+          },
+          "Satürn": {
+            "burc": "Koç",
+            "retro": true
+          },
+          "Uranüs": {
+            "burc": "İkizler",
+            "retro": true
+          },
+          "Neptün": {
+            "burc": "Koç",
+            "retro": true
+          },
+          "Plüton": {
+            "burc": "Kova",
+            "retro": false
+          }
+        },
+        "olaylar": [
+          {
+            "tarih": "2026-10-26",
+            "saat": "02:35",
+            "tur": "gecis",
+            "metin": "Ay Boğa burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-10-26",
+            "saat": "07:12",
+            "tur": "evre",
+            "metin": "Dolunay, Boğa 2°",
+            "evre": "Dolunay"
+          },
+          {
+            "tarih": "2026-10-26",
+            "saat": "15:08",
+            "tur": "aci",
+            "metin": "Güneş–Plüton kare"
+          },
+          {
+            "tarih": "2026-10-28",
+            "saat": "04:02",
+            "tur": "gecis",
+            "metin": "Ay İkizler burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-10-30",
+            "saat": "05:06",
+            "tur": "gecis",
+            "metin": "Ay Yengeç burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-10-30",
+            "saat": "20:20",
+            "tur": "aci",
+            "metin": "Merkür–Mars kare"
+          },
+          {
+            "tarih": "2026-11-01",
+            "saat": "07:18",
+            "tur": "gecis",
+            "metin": "Ay Aslan burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-11-01",
+            "saat": "23:28",
+            "tur": "evre",
+            "metin": "Son Dördün, Aslan 9°",
+            "evre": "Son Dördün"
+          }
+        ]
+      },
+      "burclar": {
+        "aries": {
+          "ad": "Koç",
+          "ozet": "Maddi dengeleri gözden geçirirken yakın ilişkilerde derin bağlar kurmaya odaklanabilirsin.",
+          "genel": "Haftaya Pazartesi günü maddi kaynaklarını ilgilendiren alanda gerçekleşen Dolunay ile başlıyorsun. Bütçeni yeniden düzenlemek ve harcamalarını netleştirmek adına somut adımlar atabilirsin. Aynı gün Güneş ile Plüton arasındaki gerilimli açı, başkalarıyla paylaştığın imkanlar konusunda kontrol etme isteğini artırabilir. Hafta ortasında zihinsel hareketlilik öne çıkarken yakın çevrenle sohbetlerin hızı artabilir. Cuma akşamı gerçekleşen Merkür ile Mars arasındaki sert etkileşim, iletişimde sabırsız davranma eğilimini tetikleyebilir. Pazar günü gerçekleşen Son Dördün ise odağını keyif aldığın alanlara çevirmeni kolaylaştırır.",
+          "askIliskide": "Sevgilinle arandaki güven ihtiyacı haftanın ilk günlerinde daha belirgin hale gelebilir. Birlikte aldığınız kararlarda açık davranmak aranızdaki bağı güçlendirecektir. Cuma günü haberleşmede yaşanabilecek ani çıkışlarda sakin kalmayı seçmek ilişkinizdeki uyumu korumanıza yardımcı olur.",
+          "askYalniz": "Yeni bir ilişkiye adım atmadan önce geçmişten taşıdığın beklentileri fark edebilirsin. Hafta sonuna doğru sosyal ortamlarda tanışacağın kişiler ilgini çekebilir. Acele kararlar vermek yerine karşındakini zamanla tanımayı seçebilirsin.",
+          "kariyer": "Bütçe planlaması ve gelirler hususunda net sonuçlar alabileceğin bir dönemden geçiyorsun. İş hayatındaki ortaklı paylaşımlarda baskıcı tavırlardan uzak durmak sürecin rahat ilerlemesine katkı sağlar. Cuma günü yazışmalarda ve görüşmelerde detayları gözden kaçırmamak ileride yaşanacak pürüzleri engelleyebilir.",
+          "saglik": "Temponun giderek yükseldiği bu haftada zihnini ve bedenini dinlendirmeye özen göstermek isteyebilirsin. Hafta sonuna doğru hafif yürüyüşlerle ve düzenli molalarla günün getirdiği gerilimi üzerinden atman daha kolay olur."
+        },
+        "taurus": {
+          "ad": "Boğa",
+          "ozet": "Yaşamında kişisel duruşunu netleştirirken ikili ilişkilerde dengeli adımlar atmayı seçebilirsin.",
+          "genel": "Pazartesi günü kendi burcunda gerçekleşen Dolunay, kişisel hedeflerin ve imajın konusunda önemli bir farkındalık getirebilir. İkili ilişkilerde beklentilerini net bir şekilde dile getirme ihtiyacı hissedebilirsin. Aynı gün gerçekleşen Güneş ile Plüton arasındaki kare açı, ortaklıklarda veya ilişkilerde güç mücadelelerine açık bir zemin yaratabilir. Haftanın ikinci yarısında maddi konuları toparlama fırsatı bulabilirsin. Cuma günü iletişim kanalında Merkür ile Mars arasındaki gerginlik, günlük rutinlerinle ilgili konularda tepkisel davranmana yol açabilir. Pazar günkü Son Dördün ise ev ve aile hayatındaki belirsizlikleri netleştirmen için bir olanak sunar.",
+          "askIliskide": "Partnerinle ilişkinizde kendi sınırlarını çizerken karşı tarafın ihtiyaçlarına da kulak vermen gerekebilir. Pazartesi günü yaşanan farkındalıklar aranızdaki dinamikleri yeniden şekillendirebilir. İletişimde esnek kalarak ortak bir paydada buluşabilirsiniz.",
+          "askYalniz": "Hayatında nasıl biriyle ilerlemek istediğini net bir şekilde kavrayacağın bir dönemdesin. Sosyal çevrenden gelebilecek yaklaşmalara hemen yanıt vermek yerine olayların akışını izlemek isteyebilirsin. Kendi değerini ön plana çıkarmak doğru insanları çekebilir.",
+          "kariyer": "İş yaşamındaki ortaklıklar ve ikili anlaşmalar bu hafta ana gündemini oluşturabilir. Pazartesi günü kendi duruşunu sergilemek isterken iş ortaklarınla güç çatışmalarına girmemeye dikkat edebilirsin. Cuma günü üstlendiğin görevlerde aceleci kararlar almaktan kaçınmak faydalı olur.",
+          "saglik": "Kendine ayıracağın sakin zamanlar hafta boyunca zihinsel yorgunluğunu hafifletmeye yardımcı olabilir. Günün temposunu bilinçli bir şekilde düşürerek dinlenmeye vakit ayırmak enerjini dengede tutmanı kolaylaştırır."
+        },
+        "gemini": {
+          "ad": "İkizler",
+          "ozet": "Zihnini sakinleştirip iç dünyana yönelirken günlük rutinlerini yeniden düzenleyebilirsin.",
+          "genel": "Pazartesi günü zihninin derinliklerini aydınlatan Dolunay, kabuğuna çekilip içsel bir değerlendirme yapma arzunu tetikleyebilir. Temponun getirdiği yorgunlukları fark edip öz bakıma vakit ayırmak isteyebilirsin. Aynı gün Güneş ile Plüton arasındaki sert açı, üstlendiğin görevlerin üzerinde yarattığı baskıyı hissettirebilir. Çarşamba gününden itibaren kendi burcuna geçen Ay ile hareket kazanabilir, düşüncelerini daha rahat dile getirebilirsin. Cuma akşamı yöneticin Merkür ile Mars arasındaki gerilimli temas, zihnini hızlandırsa da diyaloglarda aceleci çıkışlara sebep olabilir. Hafta sonundaki Aslan evresi ise yakın çevrenle olan ilişkilerini derleyip toplamanı sağlar.",
+          "askIliskide": "Birlikte olduğun kişiyle arandaki iletişimi daha derin ve samimi kılmak isteyebilirsin. Cuma günü kelimelerini seçerken özenli davranmak ve anlık öfkeyle hareket etmemek ilişkinin seyri açısından önem taşır. Hafta sonu daha eğlenceli ve hafif bir hava yakalayabilirsiniz.",
+          "askYalniz": "Duygusal anlamda biraz kendi kabuğunda kalmak isteyebileceğin bir süreçtesin. Zihnini kurcalayan geçmiş meseleleri çözüme kavuşturduktan sonra yeni tanışmalara açık hale gelebilirsin. Hafta sonuna doğru çevrenin ilgisi üzerine çekilir.",
+          "kariyer": "Çalışma ortamındaki iş yükünü ve günlük görevlerini planlamak bu haftanın ana teması haline gelebilir. Pazartesi günü üstlerinle ya da çalışma arkadaşlarınla güç yarışına girmekten kaçınmak faydalı olur. Cuma günü haberleşme trafiğindeki pürüzlere karşı sakin kalmayı tercih edebilirsin.",
+          "saglik": "Uyku düzenine özen göstermek ve zihinsel sakinliği korumak bu hafta enerjini korumana imkan verir. Gürültülü ortamlardan uzak kalıp yalnız geçireceğin dakikalar ruhsal açıdan yenilenmeni destekler."
+        },
+        "cancer": {
+          "ad": "Yengeç",
+          "ozet": "Gelecek hedeflerini gözden geçirirken sevdiklerinle arandaki bağları güçlendirmeye odaklanabilirsin.",
+          "genel": "Pazartesi günü sosyal çevreni ve gelecek planlarını simgeleyen alanda doğan Dolunay, arkadaşlıklarında bazı netleşmeler getirebilir. Belli gruplar içindeki konumunu ve hedeflerini yeniden değerlendirmek isteyebilirsin. Aynı gün Güneş ile Plüton arasındaki kare açı, yaratıcı projelerinde veya sevdiklerinle olan paylaşımlarında baskı hissetmene sebep olabilir. Cuma günü gerçekleşen Merkür ile Mars arasındaki gerginlik, harcamalar ve özel ilişkiler hususunda tartışmalara yol açabilir. Hafta sonuna doğru senin burcuna geçen Ay ile duygusal ihtiyaçların ön plana çıkar. Haftanın bitimindeki Aslan fazı ise bütçeni ve kaynaklarını gözden geçirmen için fırsat sunar.",
+          "askIliskide": "Sevgilinle birlikte sosyal aktivitelere katılmak ve ortak hayaller üzerine konuşmak haftanın ilk yarısında iyi gelebilir. Ancak Cuma günü gerçekleşebilecek fikir ayrılıklarında kırıcı olmamaya özen göstermek gerekebilir. Birbirinizi dinlemek sorunları aşmanıza yardımcı olur.",
+          "askYalniz": "Arkadaş ortamlarında yeni biriyle tanışma olasılığın yüksek görünüyor. Karşındaki insanın değerlerine ve sana hissettirdiği güvene odaklanmak isteyebilirsin. Duygusal dünyanı hemen açmak yerine adımları zamana yaymak seni korur.",
+          "kariyer": "Grup çalışmalarında ve ekip projelerinde belirleyici kararlar alabileceğin bir haftadasın. Pazartesi günü hedeflerinle alakalı maddi krizleri yönetmek durumunda kalabilirsin. Cuma günü parasal konularda aceleci davranmayıp detaylı incelemeler yapmak fayda getirir.",
+          "saglik": "Duygusal dalgalanmaların üstesinden gelmek adına gün içerisinde dinlenme araları verebilirsin. Sakin ve güvenli hissettiğin alanlarda bulunmak genel enerjini dengede tutmaya yardımcı olur."
+        },
+        "leo": {
+          "ad": "Aslan",
+          "ozet": "Kariyerinde hedeflerini netleştirirken ev ve iş arasındaki dengeyi korumaya gayret edebilirsin.",
+          "genel": "Pazartesi günü kariyer alanında doğan Dolunay, toplumdaki duruşun ve üstlendiğin sorumluluklarla ilgili bir süreci tamamlamana imkan tanır. Ailevi konular ile mesleki hedeflerin arasında bir denge kurman gerekebilir. Aynı gün Güneş ve Plüton arasındaki kare açı, ev hayatındaki otorite figürleriyle gerilim yaşamana sebep olabilir. Hafta ortasında arkadaşlarınla olan temasların artabilir. Cuma akşamı Merkür ve senin burcundaki Mars arasındaki sert açı, kişisel kararlarında tepkisel davranma eğilimini güçlendirebilir. Pazar günkü kapanış fazı ise kimliğin ve hedeflerin hususunda netleşmeler yaşamana vesile olur.",
+          "askIliskide": "Birlikte olduğun kişiyle kariyer ve gelecek planlarınızı konuşabilirsiniz. Pazartesi günü ailevi gerilimleri ilişkinize yansıtmamaya dikkat etmek faydalı olur. Cuma günü kendinizi savunma içgüdüsüyle sert kelimeler seçmekten uzak durarak aranızdaki bağı koruyabilirsiniz.",
+          "askYalniz": "İş çevrende veya toplum içinde dikkat çekeceğin bir haftadasın. Ancak kendi isteklerin ile karşındaki kişinin beklentileri arasında çatışma yaşanabilir. Cuma günü iletişimde aceleci davranmak yerine olayları akışına bırakmayı seçebilirsin.",
+          "kariyer": "İş hayatında uzun süredir üzerinde çalıştığın bir projenin görünür hale geldiğini fark edebilirsin. Üstlerinle olan ilişkilerinde Güneş ve Plüton karesinin getirdiği baskıyı yönetmek önem kazanabilir. Cuma günü ani kararlar vermeden önce soğukkanlı davranmak kazandırır.",
+          "saglik": "Günlük temponun getirdiği stresi yönetmek için bedenine kulak vermelisin. Dinlenme saatlerini aksatmamak ve zihnini boşaltacak sakin aktivitelere yönelmek hafta boyunca iyi hissettirir."
+        },
+        "virgo": {
+          "ad": "Başak",
+          "ozet": "İletişimde ve fikirlerinde netleşirken yakın çevrenle olan diyaloglarına özen gösterebilirsin.",
+          "genel": "Pazartesi günü netleşen Dolunay, inançların, eğitim konuların veya vizyonunla ilgili bir karara varmanı kolaylaştırır. Bakış açını genişletmek ve uzun vadeli planlar yapmak isteyebilirsin. Aynı gün Güneş ile Plüton karesi, yakın çevrenle yürüttüğün diyaloglarda güç mücadelelerini tetikleyebilir. Yöneticin Merkür geri hareketteyken Cuma günü Mars ile sert bir açı yapıyor. Bu durum zihinsel olarak seni huzursuz edebilir, iletişimde sabırsızca davranmana yol açabilir. Yazışmalarda ve konuşmalarda daha temkinli olmak önem taşır. Pazar gecesi şekillenen Aslan açısı ise iç dünyanda bir temizlik yapıp zihnini sakinleştirmene yardım eder.",
+          "askIliskide": "Sevgilinle iletişim kurarken detaylara fazla takılmak aranızda gerginlik yaratabilir. Cuma günü kelimelerini özenle seçmek ve hemen yargıya varmamak ilişkinizi korur. Hafta sonunu daha dingin ve ortak paylaşımlara açık geçirebilirsiniz.",
+          "askYalniz": "Düşünce yapına uygun insanlarla karşılaşma ihtimalinin yükseldiği bir haftadasın. Sosyal ortamlarda yapacağın sohbetler ilginç diyaloglar doğurabilir. Ancak yeni biriyle tanışırken geçmiş tecrübelerin getirdiği önyargıları bir kenara bırakmayı deneyebilirsin.",
+          "kariyer": "Uzaklarla yürütülen işler, eğitim veya resmi süreçlerle ilgili bir konunun sonlanışına şahit olabilirsin. Cuma günü yöneticin Merkür'ün Mars ile yapacağı kare açı nedeniyle iş diyaloglarında sert ifadelerden kaçınman gerekebilir. Belgeleri ve mesajları iki kez kontrol etmek faydalıdır.",
+          "saglik": "Zihinsel yoğunluğun arttığı bu süreçte düzenli molalar vermek ve dinlenmeyi ihmal etmemek gerekir. Uyku kalitene dikkat ederek gün içindeki gerilimi azaltmayı seçebilirsin."
+        },
+        "libra": {
+          "ad": "Terazi",
+          "ozet": "Ortak paylaşımları ve öz değerini gözden geçirirken dengeli ve sakin kalmayı seçebilirsin.",
+          "genel": "Pazartesi günü ortaklaşa kaynaklar ve finansal konuları aydınlatan alanda bir Dolunay açığa çıkıyor. Borçlar, alacaklar veya paylaşımlı gelirler konusunda somut durumlar ortaya çıkabilir. Aynı gün Güneş ile Plüton arasındaki kare açı, kendi değerlerinle başkalarının beklentileri arasında bocalama yaratabilir. Yöneticin Venüs burcunda geri hareketini sürdürürken kişisel duruşunu ve ilişkilerini sorgulaman doğal hale gelir. Cuma günü Merkür ve Mars arasındaki sert açı, finansal görüşmelerde veya arkadaşlarla diyaloglarda gerilimi tırmandırabilir. Pazar gecesi netleşen Aslan görünümü ise sosyal çevrenle ilgili beklentilerini yeniden şekillendirmene imkan tanır.",
+          "askIliskide": "Partnerinle arandaki maddi ve manevi dengeleri yeniden konuşma ihtiyacı doğabilir. Kendi isteklerini ifade ederken karşı tarafın hislerini de dikkate almak bağınızı korur. Cuma günü tartışmalı konularda ısrarcı olmayıp olayları zamana yaymak doğru bir tercih olur.",
+          "askYalniz": "Kendi değerini yeniden tanımladığın bir süreçten geçiyorsun. Geçmişteki ilişkilerin izlerini silmeye odaklanırken yeni insanları tanıma hususunda daha seçici davranabilirsin. İletişimde aceleci olmamak ve sınırlarını korumak kendini güvende hissettirir.",
+          "kariyer": "Finansal konularda net adımlar atabileceğin bir hafta başı seni bekliyor. İş ortaklıklarında veya anlaşmalarda Güneş-Plüton etkisine karşı esnek kalmak fayda sağlar. Cuma günü iş ortamındaki iletişimde ani kararlar almaktan ve tartışmalara girmekten sakınmak yerinde olur.",
+          "saglik": "Günün koşturmacası içerisinde zihnini rahatlatacak aktivitelere vakit ayırmayı ihmal etmemelisin. Temponu düşürüp kendine zaman ayırmak hafta genelinde enerjini korumanı sağlar."
+        },
+        "scorpio": {
+          "ad": "Akrep",
+          "ozet": "İlişkilerde ve kariyerinde önemli kararlar alırken sakin kalıp dengeni korumaya çalışabilirsin.",
+          "genel": "Pazartesi günü karşıt burcunda parlayan Dolunay, ikili ilişkilerin ve ortaklıkların üzerinde bir netleşme getirebilir. Birlikteliklerinde ne istediğini açıkça fark edebilirsin. Kendi burcundaki Güneş'in Plüton ile yaptığı kare açı, otorite figürleriyle veya iş hayatında güç çekişmelerine zemin hazırlayabilir. Cuma akşamı yöneticin Mars'ın Merkür ile gerilimli açısı, mesleki konuşmalarda ve yazışmalarda fevri tepkiler vermene neden olabilir. Sözlerinin gücünü bilerek hareket etmek önem kazanır. Pazar gecesi Aslan burcundaki evre ise kariyer hedeflerini ve toplumdaki yerini yeniden değerlendirmene yardımcı olur.",
+          "askIliskide": "Sevgilinizle aranızdaki dinamikleri yeniden yapılandırabileceğiniz bir Dolunay haftasındasınız. Karşılıklı beklentilerinizi açıkça dile getirmek ilişkiyi sağlamlaştırır. Cuma günü iletişimde kırıcı ifadeler kullanmamaya özen göstererek aranızdaki sevgi bağını muhafaza edebilirsiniz.",
+          "askYalniz": "İkili ilişkiler konusunda önemli kararların eşiğindesin. Hayatına girecek kişilerin güvenilirliğine odaklanabilirsin. Cuma günü yaşanabilecek iletişim kazalarına karşı temkinli yaklaşarak yeni adımlar atmak için biraz beklemeyi tercih edebilirsin.",
+          "kariyer": "Doğum günü döneminde kariyer hedeflerin ve yöneticilerinle diyalogların öne çıkıyor. Pazartesi günü üstlerinle güç savaşlarına girmek yerine yapıcı kalmayı deneyebilirsin. Cuma günü iş yazışmalarında sabırsızlık gösterip detayları atlamamak adına sakin davranman gerekir.",
+          "saglik": "Yoğun duygusal ve zihinsel temponun ardından bedenini dinlendirmeye alan açmak iyi gelebilir. Günlük rutinlerini çok ağırlaştırmadan yürütmek genel esenliğini olumlu yönde etkiler ve gerginliğini azaltır."
+        },
+        "sagittarius": {
+          "ad": "Yay",
+          "ozet": "Günlük rutinlerini ve iç dünyanı düzenlerken bakış açını tazelemeye odaklanabilirsin.",
+          "genel": "Pazartesi günü çalışma alanında beliren Dolunay, günlük düzenin ve tamamlanması gereken işler hususunda somut sonuçlar almanı sağlar. İş yükünü hafifletmek adına yeni planlar yapabilirsin. Aynı gün Güneş ve Plüton arasındaki kare açı, zihnini kurcalayan korkularla yüzleşmene neden olabilir. Yöneticin Jüpiter Aslan burcunda ilerlerken vizyonunu genişletmek istersin. Cuma günü Merkür ile Mars arasındaki sert açı, uzaklarla veya inançlarınla ilgili konularda fikir ayrılıklarına yol açabilir. Pazar günkü Aslan açılanması ise hayata dair inançlarını ve hedeflerini gözden geçirip gereksiz yüklerden arınmana imkan verir.",
+          "askIliskide": "Sevgilinle günlük hayatın koşturmacası arasında kaliteli zaman geçirmeye özen gösterebilirsin. Cuma günü tartışmalı fikri konularda kendi görüşünü dayatmak yerine dinlemeyi seçmek ilişkinin huzurunu korur. Birbirinize destek olmak bağınızı güçlendirir.",
+          "askYalniz": "Günlük temponun içinde yeni insanlarla temas kurman mümkün. Ancak bakış açın veya hayat felsefen uyuşmadığında hızlı yargılara varmak yerine karşı tarafı tanımaya zaman tanıyabilirsin. Hafta sonu daha ferah bir zihin yapısına kavuşursun.",
+          "kariyer": "Süregelen projelerin tamamlanma aşamasına geldiği bir döneme giriyorsun. İş ortamındaki sorumlulukları organize etmek kolaylaşırken Cuma günü yapılacak görüşmelerde fikir çatışmalarından kaçınmak gerekir. İletişimde esnek davranmak ve detayları gözden kaçırmamak süreci kolaylaştırır.",
+          "saglik": "Yoğun tempoda bedeninin verdiği sinyalleri dinlemek faydalı olur. Zihnini yoracak düşüncelerden uzaklaşıp kaliteli bir uyku düzeni oluşturmak haftayı dinç geçirmeni sağlar."
+        },
+        "capricorn": {
+          "ad": "Oğlak",
+          "ozet": "Yaratıcı taraflarını öne çıkarırken sosyal çevrenle olan diyaloglarında sakin kalabilirsin.",
+          "genel": "Pazartesi günü aydınlanan Dolunay, yaratıcılığını ve keyif aldığın alanları hareketlendiriyor. Hobilerine vakit ayırmak veya yarım kalan bir projeyi bitirmek isteyebilirsin. Aynı gün Güneş-Plüton karesi, arkadaş çevren ve gelecek planların konusunda kontrol kurma isteğini yükseltebilir. Yöneticin Satürn geri hareketteyken ev ve aile konularında sabırlı olmanı hatırlatıyor. Cuma günü Merkür ile Mars arasındaki gergin açı, finansal paylaşımlarda ve arkadaşlık diyaloglarında pürüz çıkarabilir. Pazar gecesi Aslan burcundaki faz ise ortaklaşa gelirler ve harcamalar alanında dengeleri yeniden kurmana yardımcı olur.",
+          "askIliskide": "Partnerinle birlikte keyifli aktiviteler planlamak haftanın ilk günlerinde ilişkinize canlılık getirecektir. Cuma günü harcamalar veya ortak bütçe hususunda yaşanabilecek fikir ayrılıklarında sakinliği korumak önem taşır. Hoşgörülü davranmak aranızdaki huzuru destekler.",
+          "askYalniz": "Sosyal çevrenden veya hobilerin vasıtasıyla yeni biriyle tanışma imkanı yakalayabilirsin. Karşındaki insanın yaklaşımında içtenlik arayabilirsin. İletişimde çok aceleci olmadan, duygularını zamanla tartarak ilerlemek kendinizi daha konforlu hissettirecektir.",
+          "kariyer": "Ekip çalışmalarında ve yaratıcı projelerde öne çıkabileceğin bir haftadasın. Pazartesi günü sosyal gruplar içindeki güç mücadelelerine dahil olmaktan kaçınman önem taşır. Cuma günü bütçe ve yatırım planlarında anlık kararlar vermeyip detayları incelemek fayda getirir.",
+          "saglik": "Yoğun sorumlulukların getirdiği stresi azaltmak için kendine mola zamanları yaratabilirsin. Hafta sonuna doğru temposu düşük yürüyüşler yapmak ve zihnini boşaltmak iyi gelebilir."
+        },
+        "aquarius": {
+          "ad": "Kova",
+          "ozet": "Yuvanı ve iş dengeni kurmaya çalışırken ilişkilerinde fevri adımlardan kaçınabilirsin.",
+          "genel": "Pazartesi günü köklerini ve yaşam alanını simgeleyen alanda doğan Dolunay, hanenle ilgili tamamlanması gereken durumları gündeme getirebilir. Kariyer hedeflerin ile özel hayatın arasında kalabilirsin. Aynı gün Güneş ile Plüton arasındaki kare açı, iş yaşamında veya üstlerinle diyaloglarda baskı hissettirebilir. Yöneticin Satürn geri hareketini sürdürürken yakın çevrenle iletişimini yeniden düzenlemen gerekebilir. Cuma günü Merkür ile Mars arasındaki sert etkileşim, ikili ilişkilerde veya ortaklıklarda tartışmalara zemin hazırlayabilir. Pazar gecesi tamamlanan Aslan açılanması ise birlikteliklerinde ne istediğini netleştirmeni sağlar.",
+          "askIliskide": "Birlikte olduğun kişiyle ev yaşamı veya ortak kararlar üzerine konuşabilirsiniz. Cuma günü aranızda çıkabilecek fikir ayrılıklarında kırıcı ifadeler kullanmamaya gayret etmek gerekir. Dinlemeyi seçerek sorunları kolayca çözebilirsiniz.",
+          "askYalniz": "Yeni bir ilişkiye başlama fikri zihnini meşgul etse de aceleci davranmak istemeyebilirsin. Hafta sonuna doğru karşılaşacağın diyaloglarda açık olmak fayda sağlar. Zamanla gelişen bağlara şans vermek seni mutlu edebilir.",
+          "kariyer": "İş hayatında veya kariyer hedeflerinde net adımlar atmak isteyeceğin bir döneme giriyorsun. Pazartesi günü üstlerinle güç savaşlarına girmek yerine yapıcı kalarak süreci yönetebilirsin. Cuma günü ortaklı işlerde sözleşmeleri özenle incelemek önem taşır.",
+          "saglik": "Zihinsel yoğunluğun yüksek olduğu günlerde gevşeme egzersizleri veya sakin aktiviteler yapmayı seçebilirsin. Bedenini aşırı yormadan dengeli bir yaşam ritmi tutturmak haftayı huzurlu tamamlamanı sağlar."
+        },
+        "pisces": {
+          "ad": "Balık",
+          "ozet": "Fikirlerini net bir şekilde ifade ederken günlük temposunun getirdiği gerilimi yönetmeye odaklanabilirsin.",
+          "genel": "Pazartesi günü yakın çevre ve iletişim hattında parlayan Dolunay, yarım kalmış diyalogları tamamlamanı sağlar. Kısa yolculuklar veya eğitimle ilgili süreçlerde netleşmeler yaşanabilir. Aynı gün Güneş ve Plüton karesi, uzak bağlantılı işlerde veya hukuki süreçlerde güç çatışmaları yaratabilir. Yöneticin Jüpiter çalışma alanında ilerlerken iş yükünü artırabilir. Cuma akşamı Merkür ile Mars arasındaki gerilimli açı, iş ortamındaki diyaloglarda veya günlük koşturmacalarda sabırsız davranmana neden olabilir. Pazar günkü Aslan etkileşimi ise günlük düzenini ve çalışma alışkanlıklarını yeniden şekillendirmene imkan verir.",
+          "askIliskide": "Partnerinle yakın çevreniz ve ortak planlarınız üzerine verimli sohbetler yapabilirsiniz. Cuma günü günlük rutinlerin yarattığı yorgunlukla birbirinize kırıcı çıkışlar yapmamaya dikkat etmeniz gerekir. Sevgi dolu diyaloglar aranızdaki uyumu besler.",
+          "askYalniz": "İletişim trafiğinin hareketli olduğu bu haftada yeni insanlarla fikir alışverişi yapabilirsin. Ancak hemen derin duygusal bağlar kurmak yerine karşındakini zihinsel açıdan tanımayı tercih edebilirsin. Hafta sonu daha sakin bir akış yakalayabilirsin.",
+          "kariyer": "İletişim, yazışmalar ve projeler açısından hareketli bir hafta başı seni bekliyor. Pazartesi günü fikirlerini kabul ettirmeye çalışırken esnek kalmayı tercih edebilirsin. Cuma günü çalışma arkadaşlarınla haberleşmede yaşanabilecek pürüzleri soğukkanlılıkla çözmek faydalı olur.",
+          "saglik": "Gün içindeki yoğun temponun getirdiği stresi azaltmak için sakin ortamlarda vakit geçirmelisin. Dinlenme saatlerini düzenleyip zihnini dinlendirerek haftayı çok daha dengeli geçirebilirsin."
+        }
+      }
+    },
     {
       "baslangic": "2026-10-19",
       "bitis": "2026-10-25",
@@ -205,201 +413,6 @@
           "askYalniz": "Uzaklarda bulunan veya geçmişte hayatında yer almış biriyle yeniden iletişime geçebilirsin. Sezgilerinin sana fısıldadığı ipuçlarını değerlendirerek hareket etmek duygusal kafa karışıklıklarının önüne geçer. Kendine zaman tanımak iyidir.",
           "kariyer": "Akademik işler veya yurt dışı bağlantılı projelerde geçmiş dosyalar tekrar açılabilir. Cumartesi günü başlayan retro hareketi sebebiyle yazışmalarda ve seyahat planlarında esnek davranmak fayda sağlayacaktır. Kontrollü ilerlemek yararlıdır.",
           "saglik": "Ruhsal dengeni ve iç huzurunu korumak adına dingin ortamlarda bulunmak sana çok iyi gelir. Günün sonunda zihnini boşaltmayı ve sakinleşmeyi tercih edebilirsin."
-        }
-      }
-    },
-    {
-      "baslangic": "2026-10-12",
-      "bitis": "2026-10-18",
-      "uretildi": "2026-10-11T23:41:33Z",
-      "model": "gemini-3.6-flash",
-      "gokyuzu": {
-        "konumlar": {
-          "Güneş": {
-            "burc": "Terazi",
-            "retro": false
-          },
-          "Merkür": {
-            "burc": "Akrep",
-            "retro": false
-          },
-          "Venüs": {
-            "burc": "Akrep",
-            "retro": true
-          },
-          "Mars": {
-            "burc": "Aslan",
-            "retro": false
-          },
-          "Jüpiter": {
-            "burc": "Aslan",
-            "retro": false
-          },
-          "Satürn": {
-            "burc": "Koç",
-            "retro": true
-          },
-          "Uranüs": {
-            "burc": "İkizler",
-            "retro": true
-          },
-          "Neptün": {
-            "burc": "Koç",
-            "retro": true
-          },
-          "Plüton": {
-            "burc": "Kova",
-            "retro": true
-          }
-        },
-        "olaylar": [
-          {
-            "tarih": "2026-10-14",
-            "saat": "03:59",
-            "tur": "gecis",
-            "metin": "Ay Yay burcuna geçiyor"
-          },
-          {
-            "tarih": "2026-10-15",
-            "saat": "11:22",
-            "tur": "aci",
-            "metin": "Güneş–Jüpiter altmışlık"
-          },
-          {
-            "tarih": "2026-10-16",
-            "saat": "05:37",
-            "tur": "retro",
-            "metin": "Plüton Kova burcunda düz harekete dönüyor (retro bitiyor)"
-          },
-          {
-            "tarih": "2026-10-16",
-            "saat": "11:33",
-            "tur": "aci",
-            "metin": "Mars–Satürn üçgen"
-          },
-          {
-            "tarih": "2026-10-16",
-            "saat": "15:57",
-            "tur": "gecis",
-            "metin": "Ay Oğlak burcuna geçiyor"
-          },
-          {
-            "tarih": "2026-10-18",
-            "saat": "19:13",
-            "tur": "evre",
-            "metin": "İlk Dördün, Oğlak 25°",
-            "evre": "İlk Dördün"
-          }
-        ]
-      },
-      "burclar": {
-        "aries": {
-          "ad": "Koç",
-          "ozet": "İlişkilerinize odaklanırken yaratıcı gücünüzü sağlam adımlarla hayata geçirebileceğiniz bir haftadasınız.",
-          "genel": "Karşındaki insanlarla kurduğun diyaloglar bu dönemin ana eksenini oluşturuyor. Güneş'in Terazi burcundaki seyri dikkatini ikili ilişkilere çekerken, yönetici gezegenin Mars'ın yaratıcılık alanındaki varlığı sana kendinizi ifade etme isteği aşılıyor. Perşembe günü gerçekleşen Güneş-Jüpiter açısı, arkadaş çevrenle veya gelecek hedeflerinle ilgili ufkunu genişleten diyaloglar getirebilir. Cuma günü Mars ile Satürn arasındaki uyumlu açı sayesinde coşkunu disiplinli bir çabaya dönüştürebilirsin. Yine Cuma günü Plüton'un düz harekete geçmesi toplumsal konulardaki bakışını netleştiriyor. Pazar günkü İlk Dördün ise sorumluluklarınla hedeflerin arasında sağlam bir denge kurmanı kolaylaştırabilir.",
-          "askIliskide": "Birlikteliğinde dengeli bir iletişim kurmak ve karşındaki insanın hissiyatını anlamak ön plana çıkıyor. Cuma günkü olumlu gezegen açısı, ilişkinizde uzun vadeli kararlar almayı ve karşılıklı güven duygusunu pekiştirmeyi kolaylaştırabilir. Birlikte ortak hedeflere odaklanabilirsiniz.",
-          "askYalniz": "İletişim trafiğinin hareketlendiği bu günlerde çevrendeki insanlarla daha derin bağlar kurabilirsin. Hafta ortasından itibaren sosyal ortamlarda tanışacağın biri ilgini çekebilir. Acele etmeden karşındakini tanımaya zaman ayırmak sana iyi gelecektir.",
-          "kariyer": "Ortaklı projeler ve iş birliği gerektiren adımlar haftanın ilk yarısında öne çıkıyor. Cuma günü kesinleşen Mars-Satürn açısı, yarım kalmış işleri kararlılıkla bitirmen ve uzun vadeli planlarını yapılandırman için uygun bir zemin sunuyor. Sorumluluklarını disiplinle ele alabilirsin.",
-          "saglik": "Hafta boyunca yüksek seyreden enerjini dengeli bir tempoyla yürütmeye özen göstermen faydalı olabilir. Günün sonunda zihnini dinlendirecek sakin rutinler oluşturmak haftayı zinde kapatmanı sağlayacaktır."
-        },
-        "taurus": {
-          "ad": "Boğa",
-          "ozet": "Günlük temponuzu düzenlerken ikili ilişkilerde geçmişten gelen meseleleri sükunetle ele alabilirsiniz.",
-          "genel": "Gündelik sorumlulukların ve çalışma tempon bu dönemin odak noktasını oluşturuyor. Güneş'in Terazi burcundaki konumu hayatındaki düzeni sağlama arzusunu artırıyor. Yönetici gezegenin Venüs'ün karşıt burcundaki geri hareketi, geçmişte kalmış iletişim veya ilişki konularını yeniden gündeme getirebilir. Perşembe günü kesinleşen Güneş-Jüpiter etkileşimi, günlük akışında daha ferah bir alan açmana ve bakış açını genişletmene imkan tanıyor. Cuma günü Plüton'un düz seyre geçmesiyle birlikte toplumsal duruşun ve kariyer hedeflerin netlik kazanmaya başlıyor. Pazar günü gerçekleşen İlk Dördün ise uzun vadeli planlarında kararlılıkla ilerleme fırsatı veriyor.",
-          "askIliskide": "İlişkinde geçmişte tam olarak çözülmemiş konular su yüzüne çıkabilir. Karşındaki insanı dinlerken sabırlı olmak ve sükuneti korumak aranızdaki iletişimi güçlendirecektir. İçten konuşmalar ilişkinize yeni bir denge kazandırabilir.",
-          "askYalniz": "Eski tanıdıklarla veya geçmişten gelen iletişimlerle karşılaşma ihtimalin yüksek seyrediyor. Yeni bir ilişki adımı atmadan önce kendi duygusal beklentilerini dikkatle analiz etmek ve aceleci davranmamak sana iyi gelebilir.",
-          "kariyer": "Günlük görevlerin ve detay gerektiren işlerin haftanın ilk yarısında zamanını alabilir. Cuma günü gerçekleşen olumlu gezegen destekleri, uzun süredir üzerinde çalıştığın projeleri somutlaştırmana katkı sunacaktır. Planlı hareket etmek verimini artırır.",
-          "saglik": "Yoğun çalışma temposu içinde kendi iç dengeni muhafaza etmeye gayret etmelisin. Uyku düzenine özen göstermek ve gün içi molaları aksatmamak zihinsel dinçliğini korumanı kolaylaştırır."
-        },
-        "gemini": {
-          "ad": "İkizler",
-          "ozet": "Yaratıcı yönlerinizi öne çıkarırken günlük sorumluluklarınız ile istekleriniz arasında denge kurabilirsiniz.",
-          "genel": "Aşk, yaratıcılık ve keyif aldığın konular Güneş'in Terazi seyriyle birlikte gününün merkezine yerleşiyor. Yönetici gezegenin Merkür'ün Akrep burcundaki duruşu ise günlük işlerde ve detaylarda derinleşme ihtiyacı doğuruyor. Çarşamba günü Ay'ın karşıt burcuna geçişiyle ilişkiler öne çıkarken, Perşembe günkü Güneş-Jüpiter açısı zihnini özgürleştiren düşünceler getirebilir. Cuma günü Plüton'un ileri harekete geçmesi ve Mars ile Satürn arasındaki destekleyici açı, sorumluluklarını sağlam adımlarla yerine getirmeni kolaylaştırıyor. Pazar günkü İlk Dördün aşamasında ise bütçeni ve kaynaklarını daha kararlı yönetebilirsin.",
-          "askIliskide": "Birlikteliğinde keyifli ve romantik anlar paylaşma isteğin bu hafta öne çıkıyor. Ortak hobilerinize zaman ayırmak veya içten sohbetler etmek aranızdaki duygusal yakınlığı artıracaktır. Birlikte geleceğe yönelik tatlı hayaller kurabilirsiniz.",
-          "askYalniz": "Çevrenle kurduğun iletişim trafiği artarken yeni insanlarla tanışma şansın yükseliyor. Kendini rahatça ifade edebildiğin ortamlarda bakış açısı seninkiyle örtüşen biriyle karşılaşabilirsin. İçten yaklaşımın ilgi uyandıracaktır.",
-          "kariyer": "Yaratıcılığını işine yansıtmak ve projelerine özgün bir dokunuş katmak için uygun koşullar mevcut. Cuma günü güçlenen olumlu gezegen açıları, ertelenmiş görevleri sistemli bir şekilde tamamlamana ve iş arkadaşlarınla uyum içinde çalışmana olanak tanıyor.",
-          "saglik": "Zihinsel hareketliliğin yüksek olduğu bu günlerde bedensel dinlenmeye de gereken zamanı ayırmak fayda sağlayacaktır. Gün içinde kısa molalar vermek ve sakin kalmak zihnini berrak tutmanı kolaylaştırır."
-        },
-        "cancer": {
-          "ad": "Yengeç",
-          "ozet": "Ev ve aile konularına odaklanırken ikili ilişkilerinizde sorumluluk alarak ilerleyebilirsiniz.",
-          "genel": "Yuva, aile ve içsel huzur arayışın bu dönemin ana teması haline geliyor. Yönetici gezegenin Ay'ın hafta boyunca burç değiştirmesi hislerini ve algını canlı tutuyor. Perşembe günü gerçekleşen Güneş-Jüpiter açısı, ailevi konularda veya yaşam alanında ferahlık hissi yaşatabilir. Cuma günü Plüton'un ortaklaşa kaynaklar alanında düz seyre geçmesi ve Mars ile Satürn arasındaki uyum, hedeflerinde somut ilerleme kaydetmeni destekliyor. Pazar günü karşıt burcun Oğlak'ta yaşanacak İlk Dördün ise ilişkilerindeki sorumlulukları ve sınırları net bir şekilde gözler önüne getirebilir.",
-          "askIliskide": "İlişkinde güven ve aidiyet duygusu ön plana çıkıyor. Partnerinle baş başa geçireceğiniz huzurlu zamanlar veya evinizle ilgili ortak kararlar almak aranızdaki duygusal bağı sağlamlaştıracaktır. Birbirinize destek olmanın huzurunu hissedebilirsiniz.",
-          "askYalniz": "Duygusal olarak korunma ve anlaşılma ihtiyacın öne çıkıyor. Yakın çevren ya da aile ortamın aracılığıyla tanışacağın sakin ve güven veren bir insanla diyalog geliştirmek sana kendini çok daha rahat hissettirebilir.",
-          "kariyer": "Ev ile iş hayatın arasındaki dengeyi kurmak haftanın temel odak noktası olabilir. Cuma günkü olumlu gezegen etkileri, kariyerinde uzun vadeli ve kalıcı adımlar atmana imkan sağlarken sorumluluk bilincini öne çıkarıyor. Pazar günkü İlk Dördün hedeflerini netleştirir.",
-          "saglik": "Duygusal dalgalanmaların enerjini düşürmesine izin vermemeye gayret etmelisin. Gün sonunda kendi kabuğuna çekilip dinlenmek ve sakin kalmak zihinsel dengeni korumana yardımcı olacaktır."
-        },
-        "leo": {
-          "ad": "Aslan",
-          "ozet": "İletişim ağınızı güçlendirirken hedefleriniz doğrultusunda disiplinli adımlar atabilirsiniz.",
-          "genel": "Yakın çevrenle iletişim ve yeni şeyler öğrenme arzusu haftaya damgasını vuruyor. Burcunda ilerleyen Mars ve Jüpiter sana yüksek bir yaşama sevinci sağlarken, yönetici gezegenin Güneş'in Perşembe günü Jüpiter ile kurduğu uyumlu açı vizyonunu genişletiyor. Cuma günü Kova burcunda Plüton'un düz harekete dönmesi, ikili ilişkilerinde dönüşüm yaratan süreçleri daha net algılamana yardım ediyor. Aynı gün kesinleşen Mars-Satürn üçgeni ise enerjini uzun soluklu ve somut projelere aktarman için sağlam bir disiplin sunuyor. Pazar günkü İlk Dördün ile günlük rutinlerini düzene sokabilirsin.",
-          "askIliskide": "İlişkinde açık iletişim kurmak ve duygularını içtenlikle paylaşmak aranızdaki bağı güçlendirecektir. Cuma günkü olumlu gezegen açıları partnerinle ortak hayalleriniz doğrultusunda güvenli ve kararlı adımlar atmanıza imkan tanıyor.",
-          "askYalniz": "Çekim gücünün ve özgüveninin belirginleştiği bir dönemden geçiyorsun. Çevrenle kurduğun iletişimde samimiyetini koruman, yeni ve etkileyici tanışmalara zemin hazırlayabilir. İletişim trafiğin hareketlendikçe yeni duygusal fırsatlar doğabilir.",
-          "kariyer": "Fikirlerini netlikle dile getirmek ve projelerini sunmak için uygun koşullar mevcut. Cuma günü Mars ile Satürn arasındaki destekleyici açı, hedeflerine ulaşmak için gereken sabrı ve çalışma disiplinini sana kazandıracaktır. Planlarını adım adım uygulayabilirsin.",
-          "saglik": "Temponun hızlandığı bu dönemde yüksek enerjini verimli kullanmaya özen göstermelisin. Gün içinde bedenini aşırı yormadan düzenli aralıklarla dinlenmek zihinsel ve fiziksel dengeni korumanı sağlayacaktır."
-        },
-        "virgo": {
-          "ad": "Başak",
-          "ozet": "Maddi kaynaklarınızı düzenlerken yaratıcılığınızı somut başarılara dönüştürebilirsiniz.",
-          "genel": "Maddi değerlerin ve kendi yeteneklerine olan güvenin bu dönemin merkezinde yer alıyor. Yönetici gezegenin Merkür'ün Akrep burcundaki seyri, zihnini derin analizlere ve stratejik düşünmeye yönlendiriyor. Perşembe günü gerçekleşen Güneş-Jüpiter açısı, kişisel kaynakların ve yeteneklerin hususunda ufkunu genişletecek haberler getirebilir. Cuma günü Plüton'un düz seyre geçmesi çalışma ortamındaki belirsizlikleri ortadan kaldırırken, Mars-Satürn üçgeni uzun süredir planladığın işleri hayata geçirme gücü veriyor. Pazar günü gerçekleşen Oğlak İlk Dördünü ise yaratıcı projelerinde ve sevdiklerinle olan ilişkilerinde sağlam kararlar almanı destekliyor.",
-          "askIliskide": "İlişkinde güven ve kararlılık arayışın öne çıkıyor. Birlikte geleceğe yönelik somut hedefler koymak ve ortak değerleriniz üzerine konuşmak partnerinle aranızdaki duygusal bağı ve karşılıklı güveni pekiştirecektir.",
-          "askYalniz": "Duygusal hayatında netlik ve ciddiyet aradığın bir dönemdesin. Yeni tanışacağın kişilerin duruşu ve güvenilirliği senin için ilk sırada yer alacaktır; yüzeysel diyaloglar yerine derin bağlar kurmayı seçebilirsin.",
-          "kariyer": "Bütçeni düzenlemek ve yeteneklerini kazanca dönüştürmek adına yapıcı bir haftadasın. Cuma günkü olumlu gezegen açıları, projelerinde disiplinli bir şekilde ilerlemeni ve iş hayatındaki konumunu sağlamlaştırmanı kolaylaştırır. Planlı çalışmak başarı getirecektir.",
-          "saglik": "Zihinsel olarak yoğun bir detay trafiği yönettiğin için zihnini boşaltacak aktivitelere yönelmelisin. Uyku saatlerine özen göstermek ve gün içi stresi yönetmek enerjini koruyacaktır."
-        },
-        "libra": {
-          "ad": "Terazi",
-          "ozet": "Kişisel hedeflerinize odaklanırken yakın çevrenizle sağlam bağlar kurabilirsiniz.",
-          "genel": "Güneş'in senin burcundaki seyri ve yaş günü dönemin, kişisel enerjini ve kendini ifade etme isteğini en üst seviyeye çıkarıyor. Yönetici gezegenin Venüs'ün para alanındaki geri hareketi harcamalarında temkinli olmanı hatırlatırken, Perşembe günkü Güneş-Jüpiter açısı geleceğe dair umutlarını tazeleyebilir. Cuma günü Plüton'un aşk ve yaratıcılık alanında düz harekete geçmesi içsel gücünü ortaya çıkarıyor. Aynı gün gerçekleşen Mars-Satürn üçgeni ise yakın çevren ve ailenle olan ilişkilerinde köklü ve güvenli adımlar atmandan yana destek sunuyor. Pazar günü Oğlak'taki İlk Dördün ev yaşamında düzen kurmanı kolaylaştıracak.",
-          "askIliskide": "Kendi isteklerinle ilişkinin gereklilikleri arasında denge kurman gereken bir zamandasın. Partnerinle hissettiklerini samimiyetle paylaşmak ve onun beklentilerini dinlemek, aranızdaki sevgiyi ve saygıyı daha da derinleştirecektir.",
-          "askYalniz": "Işıltının ve çekiciliğinin fark edildiği özel bir dönemden geçiyorsun. Yeni insanlarla iletişim kurarken acele kararlar vermeden, karşındakini tanıymaya zaman tanımak duygusal açıdan daha tatmin edici sonuçlar doğurabilir.",
-          "kariyer": "Kişisel projelerini hayata geçirmek ve kendini göstermek için uygun koşullar oluşuyor. Cuma günü kesinleşen olumlu gezegen açısı, planlarını disiplinli bir şekilde uygulamana ve iş ortamında kalıcı başarılar elde etmene yardım edebilir.",
-          "saglik": "Kendi bedensel ve zihinsel ihtiyaçlarına öncelik vermen gereken bir haftadasın. Gün içinde kısa dinlenme süreleri ayırmak ve temponu dengede tutmak zindeliğini koruyacaktır."
-        },
-        "scorpio": {
-          "ad": "Akrep",
-          "ozet": "İç dünyanızda netleşirken geleceğe yönelik kararlarınızı kararlılıkla uygulayabilirsiniz.",
-          "genel": "İç dünyana dönmek, zihnini dinlendirmek ve sezgilerine kulak vermek bu dönemin ruhunu oluşturuyor. Burcunda ilerleyen Merkür ve retro hareketteki Venüs, geçmiş deneyimleri yeniden süzgeçten geçirmene imkan tanıyor. Perşembe günü Güneş ile Jüpiter arasındaki olumlu açı içsel bir ferahlık duygusu verirken, Cuma günü burcunun yöneticisi Plüton'un düz seyre geçmesi ev ve aile konularında uzun süredir devam eden belirsizlikleri sonlandırıyor. Yine Cuma günü diğer yöneticisi Mars ile Satürn'ün kurduğu üçgen açı, maddi konularda kararlı adımlar atmanı kolaylaştırıyor. Pazar günkü İlk Dördün iletişimde netleşme getirecek.",
-          "askIliskide": "İlişkinde geçmişten gelen duygu birikimlerini sükunetle çözme şansı bulabilirsin. Partnerinle baş başa kalacağınız sakin anlar yaratmak, aranızdaki duygusal bağı derinleştirmek ve karşılıklı güven tazelemek için oldukça uygun koşullar sunuyor.",
-          "askYalniz": "Yalnız kalıp kendi hislerini anlamak bu hafta sana daha cazip gelebilir. Yine de sezgilerinin güçlü olduğu bu dönemde, düşünsel anlamda seni besleyen biriyle karşılaşabilir ve derin diyaloglar başlatabilirsin.",
-          "kariyer": "Geri planda yürütülen projeler ve stratejik hazırlık çalışmaları için son derece yapıcı bir zaman dilimindesin. Cuma günkü Mars-Satürn açısı, finansal hedeflerin ve mesleki planların doğrultusunda disiplinli ve kalıcı adımlar atmanı destekliyor.",
-          "saglik": "Zihnini kurcalayan düşüncelerden arınmak ve kaliteli bir uyku çekmek önceliğin olmalı. Günün stresini geride bırakacak sakin aktiviteler yapmak ruhsal dengene katkı sunacaktır."
-        },
-        "sagittarius": {
-          "ad": "Yay",
-          "ozet": "Gelecek hedeflerinizi gözden geçirirken arkadaş çevrenizden destek alabilirsiniz.",
-          "genel": "Geleceğe dair hayallerin, arkadaşlıkların ve içinde bulunduğun sosyal topluluklar bu haftanın ana gündemini oluşturuyor. Çarşamba günü Ay'ın senin burcuna geçmesiyle birlikte kişisel tempon ve görünürlüğün yükseliyor. Perşembe günü yönetici gezegenin Jüpiter ile Güneş arasında oluşan olumlu açı, ufkunu genişleten düşünceler ve yeni umutlar sunuyor. Cuma günü Plüton'un iletişim alanında düz harekete dönmesi düşüncelerini daha kararlı ifade etmeni sağlıyor. Aynı gün kesinleşen Mars-Satürn üçgeni ise kişisel projelerini disiplinli bir şekilde yürütmeni kolaylaştırıyor. Pazar günü Oğlak burcunda yaşanacak İlk Dördün ise bütçeni yapılandırmana yardımcı olacaktır.",
-          "askIliskide": "Partnerinle birlikte sosyal ortamlara katılmak ve geleceğe dair heyecan verici hayaller kurmak aranızdaki bağı canlandıracaktır. Karşılıklı özgürlüklere saygı duyarak paylaştığınız nitelikli zamanlar ilişkinize taze bir hava katabilir.",
-          "askYalniz": "Arkadaş grupların veya katıldığın sosyal etkinlikler aracılığıyla yeni insanlarla tanışma olasılığın yüksek. Hayat görüşü ve değerleri seninkiyle örtüşen biriyle kuracağın samimi sohbetler zamanla güzel bir yakınlığa evrilebilir.",
-          "kariyer": "Ekip çalışmaları ve ortak projelerde yapıcı yönlerini öne çıkarmak için uygun koşullar mevcut. Cuma günkü gezegen açısı, uzun vadeli kariyer hedeflerine ulaşmak adına planlı ve sabırlı çalışmanın meyvelerini toplayabileceğini gösteriyor.",
-          "saglik": "Hareketli tempon içinde bedeninin ihtiyacı olan dinlenme sürelerini ihmal etmemelisin. Gün içinde zihinsel sakinliği korumak ve tempoyu aşırı yükseltmemek enerjini dengede tutacaktır."
-        },
-        "capricorn": {
-          "ad": "Oğlak",
-          "ozet": "Kariyer hedeflerinize odaklanırken haftanın sonunda kendi yolunuzda kararlılıkla ilerleyebilirsiniz.",
-          "genel": "Kariyerin, toplum içindeki duruşun ve hedeflerin bu haftanın ana odak noktasını oluşturuyor. Güneş'in Terazi burcundaki konumu iş hayatındaki dengeleri korumanı isterken, yönetici gezegenin Satürn'ün retro konumda olması geçmiş sorumluluklarını tamamlamanı gerektiriyor. Perşembe günkü Güneş-Jüpiter açısı üstlerinle veya otoritelerle diyaloglarını rahatlatabilir. Cuma günü Plüton'un para alanında düz seyre geçmesi finansal süreçlerde netleşme getiriyor. Aynı gün yöneticin Satürn ile Mars arasında gerçekleşen üçgen açı, projelerini disiplinli bir şekilde somutlaştırma gücü sunuyor. Pazar günü senin burcunda gerçekleşecek İlk Dördün ise duruşunu ve kararlarını netleştirecektir.",
-          "askIliskide": "Sorumlulukların yoğunluğu içinde partnerine vakit ayırmaya özen göstermelisin. İlişkide ciddi, dürüst ve güven veren adımlar atmak, ortak hedeflerinizi konuşmak aranızdaki bağın sağlamlaşmasına büyük katkı sunacaktır.",
-          "askYalniz": "Hayatına girecek kişilerin olgun ve ne istediğini bilen bireyler olmasını tercih edebilirsin. Çalışma ortamı veya resmi kanallar aracılığıyla tanışabileceğin biriyle seviyeli ve güvenli bir iletişim başlatman mümkün duruyor.",
-          "kariyer": "Mesleki hedeflerinde kararlılıkla ilerleyebileceğin bir haftadasın. Cuma günü yöneticin Satürn'ün Mars ile yapacağı olumlu açı, uzun süredir emek verdiğin projelerde somut başarılar elde etmeni ve planlarını sağlamlaştırmanı destekliyor. Adımlarını özgüvenle atabilirsin.",
-          "saglik": "İş temponun getirdiği sorumluluk yükünü hafifletmek için zihnini dinlendirmeye özen göstermelisin. Gün sonunda kendine ayıracağın sakin zamanlar fiziksel ve zihinsel zindeliğini korumana yardımcı olacaktır."
-        },
-        "aquarius": {
-          "ad": "Kova",
-          "ozet": "Hayat görüşünüzü genişletirken kişisel dönüşümünüzü kararlılıkla sürdürebilirsiniz.",
-          "genel": "Ufkunu genişletmek, yeni şeyler öğrenmek ve farklı bakış açıları kazanmak bu dönemin ana ruhunu yansıtıyor. Güneş'in Terazi burcundaki seyri zihnini özgürleştirirken, Perşembe günkü Güneş-Jüpiter açısı seyahatler veya eğitimle ilgili olumlu kapılar açabilir. Cuma günü burcunda uzun süredir retro harekette olan Plüton'un düz seyre dönmesi, kişisel duruşun ve kimliğin üzerindeki dönüşüm baskısını hafifletip sana netlik kazandırıyor. Aynı gün yönetici gezegenin Satürn ile Mars arasındaki üçgen açı, sosyal projelerini ve gelecek planlarını disiplinle yürütmeni destekliyor. Pazar günkü İlk Dördün ise iç dünyanda dinginlik arayışı getirebilir.",
-          "askIliskide": "Partnerinle hayata dair derin konuları konuşmak ve ortak bir vizyon geliştirmek ilişkinizi tazeleyebilir. Birlikte planlayacağınız zihinsel veya kültürel aktiviteler aranızdaki yakınlığı ve anlayışı artırmanıza yardımcı olur.",
-          "askYalniz": "Farklı düşünce yapılarından insanlarla karşılaşma ihtimalin bu dönemde yüksek seyrediyor. Bakış açını genişleten ve fikirleriyle sana dokunan biriyle kuracağın samimi diyaloglar zamanla anlamlı bir duygusal yakınlığa evrilebilir.",
-          "kariyer": "Uzun vadeli planlarını ve projelerini yapılandırmak için uygun bir dönemdesin. Cuma günü Plüton'un burcunda düzelmesi ve Satürn'ün Mars ile yapacağı destekleyici açı, hedeflerini kararlılıkla ve disiplinle hayata geçirmeni kolaylaştırır. Kendinden emin hareket edebilirsin.",
-          "saglik": "Zihinsel aşırı yüklenmelerden kaçınmak ve günün akışı içinde sakin kalmak önem taşıyor. Düzenli uyku ve zihnini boşaltacak hobilere vakit ayırmak zindeliğini destekleyecektir."
-        },
-        "pisces": {
-          "ad": "Balık",
-          "ozet": "Duygusal ve maddi paylaşımlarınızda denge kurarken günlük düzeninizi sağlamlaştırabilirsiniz.",
-          "genel": "Dönüşüm, derin duygusal bağlar ve ortak paylaşımlar bu haftanın ana temalarını oluşturuyor. Güneş'in Terazi burcundaki seyri ortaklaşa kaynakları öne çıkarırken, yönetici gezegenin Jüpiter'in Güneş ile Perşembe günü kurduğu olumlu açı günlük iş temponda ferahlık hissi yaratıyor. Cuma günü Plüton'un sezgiler alanında düz harekete geçmesi, içsel tereddütlerini geride bırakıp zihnini berraklaştırmana yardım ediyor. Aynı gün gerçekleşen Mars-Satürn üçgeni ise çalışma hayatında ve sorumluluk alanlarında disiplinli adımlar atmanı destekliyor. Pazar günü Oğlak burcunda yaşanacak İlk Dördün sosyal çevrenle ilgili netleşmeler getirebilir.",
-          "askIliskide": "Partnerinle aranızdaki duygusal ve zihinsel yakınlığı artırma arzusundasın. İçten paylaşımlar yapmak, hislerini dürüstçe dile getirmek ve karşılıklı güveni pekiştirmek ilişkinizi daha derin ve huzurlu bir boyuta taşıyabilir.",
-          "askYalniz": "Gizemli ve derinliği olan insanlara çekilebileceğin bir dönemden geçiyorsun. Çevrendeki diyaloglarda duygusal anlamda güvende hissettiğin ve seni anlayan biriyle yakınlaşma ve içten bir ilişki başlatma fırsatı yakalayabilirsin.",
-          "kariyer": "Ortaklı işler veya kaynak yönetimi konusunda dengeli adımlar atman gereken bir dönemdesin. Cuma günkü Mars-Satürn açısı, sorumluluklarını yerine getirirken planlı davranmanı ve uzun vadeli iş hedeflerinde kararlılıkla ilerlemeni sağlayacaktır. İş disiplinin sonuç verir.",
-          "saglik": "Ruhsal dengeni korumak için gün içinde kendine sakin alanlar yaratmalı ve dinlenmeye vakit ayırmalısın. Zihnini dinlendirmek enerjini tazelemene ve daha dinç kalmana destek olur."
         }
       }
     }

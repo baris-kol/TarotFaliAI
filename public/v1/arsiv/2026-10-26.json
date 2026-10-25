@@ -1,0 +1,214 @@
+{
+  "tarih": "2026-10-26",
+  "uretildi": "2026-10-25T22:37:12Z",
+  "model": "gemini-3.6-flash",
+  "gokyuzu": {
+    "gunes": {
+      "burc": "Akrep",
+      "gecis": null
+    },
+    "ay": {
+      "burc": "Koç",
+      "gecis": {
+        "burc": "Boğa",
+        "saat": "02:35"
+      },
+      "evre": "Dolunay",
+      "aydinlik": 100
+    },
+    "olay": {
+      "ad": "Dolunay",
+      "saat": "07:12"
+    },
+    "gezegenler": {
+      "Merkür": {
+        "burc": "Akrep",
+        "gecis": null,
+        "retro": true
+      },
+      "Venüs": {
+        "burc": "Terazi",
+        "gecis": null,
+        "retro": true
+      },
+      "Mars": {
+        "burc": "Aslan",
+        "gecis": null,
+        "retro": false
+      },
+      "Jüpiter": {
+        "burc": "Aslan",
+        "gecis": null,
+        "retro": false
+      },
+      "Satürn": {
+        "burc": "Koç",
+        "gecis": null,
+        "retro": true
+      },
+      "Uranüs": {
+        "burc": "İkizler",
+        "gecis": null,
+        "retro": true
+      },
+      "Neptün": {
+        "burc": "Koç",
+        "gecis": null,
+        "retro": true
+      },
+      "Plüton": {
+        "burc": "Kova",
+        "gecis": null,
+        "retro": false
+      }
+    },
+    "ayAcilari": [
+      {
+        "gezegen": "Venüs",
+        "aci": "karşıt",
+        "saat": "02:00"
+      },
+      {
+        "gezegen": "Güneş",
+        "aci": "karşıt",
+        "saat": "07:12"
+      },
+      {
+        "gezegen": "Plüton",
+        "aci": "kare",
+        "saat": "07:45"
+      }
+    ],
+    "gezegenAcilari": [
+      {
+        "gezegenler": [
+          "Güneş",
+          "Plüton"
+        ],
+        "aci": "kare",
+        "fark": 0.1,
+        "yaklasiyor": true,
+        "saat": "15:08"
+      }
+    ],
+    "retroDonusleri": [
+      {
+        "gezegen": "Merkür",
+        "retro": true,
+        "tarih": "2026-10-24",
+        "burc": "Akrep"
+      }
+    ],
+    "tutulmalar": []
+  },
+  "burclar": {
+    "aries": {
+      "ad": "Koç",
+      "ozet": "Maddi kaynakların ve kişisel değerlerin üzerine düşüneceğin netleşmelerle dolu bir gün seni bekliyor.",
+      "genel": "Günün ilk saatlerinde burcundan Boğa'ya geçen Ay ve sabahın erken vaktinde gerçekleşen Dolunay, dikkatini sahip olduğun değerlere çekebilir. Tutkuların ve güven arayışın arasında denge kurmak isterken içsel bir muhasebe yaşaman olası. Öğleden sonra Güneş ile Plüton arasındaki zorlayıcı açı, ortaklaşa konularda bazı gerilimleri görünür kılabilir. Baskı hissettiğin anlarda esnek kalmayı tercih ederek kontrol etme arzunu biraz serbest bırakabilirsin.",
+      "askIliskide": "Partnerinle aranızdaki ortak paylaşımlar ve güven konuları sabahın erken vakitlerinde netlik kazanabilir. Duygusal derinliği korurken birbirinizin kişisel alanına saygı göstermek ilişkinizi güçlendirecektir.",
+      "askYalniz": "Kendi değerinin ve beklentilerinin farkına vardığın bir gündesin. Sırf yalnızlığı bitirmek adına sınırlarından taviz vermeden ilerlemek, sana gerçekten uyan insanları yaşamına çekecektir.",
+      "kariyer": "Bütçeni gözden geçirmek ve harcamalarını düzenlemek adına Dolunay'ın getirdiği netleşmeden faydalanabilirsin. Akrep'teki Merkür gerilemesi sebebiyle banka işlemlerinde ve sözleşme detaylarında ekstra dikkatli davranman yerinde olur.",
+      "saglik": "Günün getirdiği zihinsel yoğunluğu hafifletmek adına temponu biraz yavaşlatabilirsin. Akşam saatlerinde dinlenmeye zaman ayırmak ve bedeninin ritmine kulak vermek enerjini tazeler."
+    },
+    "taurus": {
+      "ad": "Boğa",
+      "ozet": "İlişkilerin ve kendi isteklerin arasında sıkışmadan iç sesine güvenerek adımlarına yön verebilirsin.",
+      "genel": "Gece yarısından sonra burcuna geçen Ay ile birlikte enerjin ve görünürlüğün belirgin şekilde yükseliyor. Sabahın ilk saatlerinde karşıt burcundaki Güneş ile gerçekleşen Dolunay, ikili ilişkilerinde önemli bir farkındalık eşiği yaratabilir. Yöneticin Venüs'ün gerilemesi ve Ay ile kurduğu karşıtlık, geçmiş bağları ve değer anlayışını tekrar düşünmene neden olabilir. Karşındaki insanlarla güç savaşına girmek yerine kendi çizgini koruyarak ilerlemek sana iyi gelebilir.",
+      "askIliskide": "Birlikteliğinde uzun süredir halı altına süpürülen konular Dolunay'ın ışığıyla su yüzüne çıkabilir. Karşılıklı beklentileri sakin bir dille konuşarak aranızdaki bağı daha sağlam bir zemine oturtma şansı bulabilirsin.",
+      "askYalniz": "Eski ilişkilerden gelen alışkanlıklar zihnini meşgul etse de kendi duruşunu netleştirmek sana güç verecektir. Ne istediğini bildiğinde yeni karşılaşmalara daha sağlıklı bir pencereden bakabilirsin.",
+      "kariyer": "İş ortaklıklarında ve birebir ilişkilerde net sınırlar belirlemek verimliliğini artıracaktır. Merkür retrosunun etkisiyle partnerli projelerde iletişim kazalarına karşı onay mekanizmalarını çalıştırmakta fayda var.",
+      "saglik": "Kendi bedenine ve ihtiyaçlarına yönelebileceğin bir zaman dilimindesin. Gün içinde kısa molalar vermek ve zihnini sakin tutacak sakin aktivitelere zaman ayırmak ruhunu dinlendirir."
+    },
+    "gemini": {
+      "ad": "İkizler",
+      "ozet": "Zihnini yoran kalabalıklardan uzaklaşıp kendi kabuğuna çekilmek sana derin bir ferahlık getirebilir.",
+      "genel": "Gece saatlerinde bilinçaltı alanına geçen Ay, gün boyunca seni daha içsel ve dingin bir moda davet ediyor. Sabahın erken vaktinde yaşanan Dolunay, günlük koşturmacanın ardındaki yorgunluğu ve tamamlanması gereken işleri görünür kılabilir. Yöneticin Merkür'ün iki gün önce başlayan geri hareketi, çalışma ortamındaki detayları tekrar incelemen gerektiğini hatırlatıyor. Bugün temponu biraz düşürüp zihnini toparlamaya zaman ayırmak sana çok iyi gelebilir.",
+      "askIliskide": "İlişkinde duygularını hemen kelimelere dökmek yerine biraz izlemeyi tercih edebilirsin. Partnerine karşı anlayışlı yaklaşmak ve gürültülü tartışmalardan kaçınmak aranızdaki huzuru korumanıza yardımcı olur.",
+      "askYalniz": "İç dünyanda yaşadığın sorgulamalar, geçmişte kalan duygusal yükleri serbest bırakman için bir alan açıyor. Kendi kendine kalıp ne hissettiğini anlamak gelecekteki bağların için sağlam bir zemin hazırlar.",
+      "kariyer": "Göz önünde olmak yerine yarım kalmış görevleri tamamlamaya ve dosyaları düzenlemeye odaklanabilirsin. İş yerindeki yazışmalarda ve mesajlaşmalarda Merkür gerilemesinin getirebileceği yanlış anlaşılmalara dikkat etmelisin.",
+      "saglik": "Zihinsel karmaşadan uzak durmak için sessiz ortamlarda vakit geçirmek dengeni korur. Uyku düzenine özen göstermek ve akşam saatlerinde ekran süresini azaltmak dinlenmene katkı sağlar."
+    },
+    "cancer": {
+      "ad": "Yengeç",
+      "ozet": "Gelecek hedeflerin ve dostlukların odağında olduğu bu günde duygusal netleşmelere açık olabilirsin.",
+      "genel": "Yöneticin Ay’ın gece Boğa burcuna geçmesiyle birlikte sosyal çevren ve uzun vadeli planların öne çıkıyor. Sabah gerçekleşen Dolunay, arkadaş gruplarındaki dengeleri ve aşk hayatınla geleceğin arasındaki bağları aydınlatabilir. Sabah saatlerindeki Plüton karesi, bazı arkadaşlıklarında gizli kalmış gerilimleri su yüzüne çıkarabilir. Olayları kişiselleştirmeden sakin kalmayı başardığında, çevrendeki gerçek desteği daha net fark edebilirsin.",
+      "askIliskide": "Sevdiğin kişiyle birlikte geleceğe dair ortak hayallerinizi konuşmak aranızdaki bağı güçlendirecektir. Sosyal çevrenizden gelen dış etkenlerin ilişkinize yansımasına izin vermeden baş başa zaman geçirebilirsiniz.",
+      "askYalniz": "Arkadaş ortamlarında ya da katıldığın gruplarda dikkatini çeken biriyle karşılaşman olası. Duygularını hemen tanımlamak yerine sohbetin doğal akışına izin vermek daha sağlıklı adımlar atmanı sağlar.",
+      "kariyer": "Ekip çalışmalarında ve grup projelerinde rolün belirginleşebilir. Akşamüstü Güneş-Plüton etkileşimi sebebiyle otorite figürleriyle iletişimde iddialı kelimelerden kaçınarak yapıcı bir tutum sergilemek faydalı olur.",
+      "saglik": "Kalabalıkların getirdiği duygusal yükü üzerinizden atmak için doğayla temas etmek iyi gelebilir. Günün ritmine uyum sağlarken zihnini dinlendirecek hobilere vakit ayırabilirsin."
+    },
+    "leo": {
+      "ad": "Aslan",
+      "ozet": "Kariyerin ile yuvan arasındaki dengeyi korurken esnek davranmak içsel gücünü rahatça açığa çıkarabilir.",
+      "genel": "Gece saatlerinde Boğa burcuna geçen Ay, toplumsal hedeflerini ve sorumluluklarını ön plana taşıyor. Tamamlanan Dolunay evresi, ev yaşamın ile görünür olma isteğin arasındaki hassas çizgiyi belirgin kılabilir. Yönetici gezegenin Güneş’in öğleden sonra Plüton ile yapacağı sert temas, yerleşik düzeninde dönüştürücü bir baskı yaratabilir. Kendi otoriteni kanıtlama çabasına girmeden, olaylara daha kapsayıcı bir yerden bakarak ilerlemeyi seçebilirsin.",
+      "askIliskide": "İş hayatının getirdiği koşturmaca veya evdeki görevler partnerinle diyaloglarını etkileyebilir. Haklı çıkmaya çalışmak yerine duygusal destek vermeyi seçmek aranızdaki bağın sıcaklığını korur.",
+      "askYalniz": "Kendine olan güvenin ve duruşun çevrendekilerin ilgisini çekebilir. Ailevi konuların zihnini meşgul ettiği bu evrede, yeni bir ilişkiye adım atmadan önce kendi ritmini yakalamak iyi gelebilir.",
+      "kariyer": "Sorumluluk üstlendiğin işlerde ve görünür projelerinde karar alma aşamasına gelebilirsin. Akrep'teki Merkür retrosu geçmiş mesleki konuları önüne getirebileceğinden, üstlerinle diyalog kurarken kelimelerini özenle seçmelisin.",
+      "saglik": "Yoğun günün getirdiği gerginliği azaltmak adına temponu dengelemeye özen gösterebilirsin. Bedenini zorlamayacak esneme hareketleri ve hafif tempolu yürüyüşler zihnini rahatlatabilir."
+    },
+    "virgo": {
+      "ad": "Başak",
+      "ozet": "Hayat görüşünü esnetmek ve yeni perspektiflere açılmak zihnindeki kuşkuları dağıtabilir.",
+      "genel": "Gece yarısından sonra akademi, seyahat ve inançlar alanına geçen Ay, ufku genişleten duygularla güne başlamana yardımcı oluyor. Sabah vaktinde gerçekleşen Dolunay, yakın çevrenle yürüttüğün diyaloglarda ve zihnini kurcalayan fikirlerde net bir sonuca ulaşmanı sağlayabilir. Yöneticin Merkür’ün geri harekette olması, iletişim hatlarında bazı pürüzler yaratsa da olaylara daha geniş bir açıdan bakmak seni rahatlatacaktır. Detaylarda kaybolmak yerine büyük resmi görmeyi deneyebilirsin.",
+      "askIliskide": "Partnerinle hayata ve geleceğe dair farklı bakış açılarını paylaşabileceğiniz bir gündesiniz. Fikir ayrılıklarını bir çatışma değil, birbirinizi zenginleştiren birer zenginlik olarak görmek ilişkinize derinlik katar.",
+      "askYalniz": "Uzaklarla ilgili bağlantılar ya da öğrenme süreçlerinde karşına çıkacak fikirler ufkunu açabilir. Zihinsel olarak seni besleyen ve olaylara farklı bakabilen insanlarla diyalog kurmak sana iyi gelecektir.",
+      "kariyer": "Yazışmalar, belge takipleri ve eğitimle ilgili konularda netleşmeler yaşayabilirsin. Merkür gerilemesi nedeniyle ilettiğin mesajların doğru anlaşıldığından emin olmak için çift kontrol yapman yararlıdır.",
+      "saglik": "Zihnini sürekli çalışır halde tutmak yorulmana neden olabilir. Günün sonunda zihinsel akışı yavaşlatacak okumalar yapmak veya sessizce dinlenmek zihnini tazeleyecektir."
+    },
+    "libra": {
+      "ad": "Terazi",
+      "ozet": "Paylaşılan kaynaklar ve içsel dönüşüm konularında kalıcı dengeler kurmaya odaklanabilirsin.",
+      "genel": "Gece saatlerinde ortaklaşa kaynaklar ve derin duygular alanına geçen Ay, güne dönüşüm odaklı bir hava katıyor. Gece yarısı gerçekleşen Ay-Venüs karşıtlığı ve sabahki Dolunay, hem ilişkilerindeki değer bağını hem de maddi paylaşımları netleştirebilir. Burcunda gerileyen yöneticin Venüs, öz değerini sorgulatırken kendi ihtiyaçlarınla başkalarının beklentileri arasında bocalama riski taşıyor. Duygusal bağlarında aşırı kontrolcü olmadan akışa güvenmek huzur getirecektir.",
+      "askIliskide": "Birlikteliğinde samimiyet ve güven arayışı ön plana çıkıyor. İki tarafın da hissettiklerini dürüstçe ortaya koyması, ilişkinizde uzun süredir belirsiz kalan konuların çözülmesine imkan tanıyabilir.",
+      "askYalniz": "Kendi içindeki derin tutkularla yüzleştiğin bir dönemdesin. Geçmiş ilişkilerden taşıdığın kırgınlıkları serbest bıraktığında, kalbinde yeni ve sağlıklı bağlara yer açıldığını görebilirsin.",
+      "kariyer": "Ortak bütçeler, borçlar veya alacaklarla ilgili konularda net tablolarla karşılaşabilirsin. Venüs retrosu sürerken yeni bir finansal taahhüde girmek yerine var olan hesapları düzenlemeyi tercih edebilirsin.",
+      "saglik": "Duygusal iniş çıkışların bedenindeki etkisini hafifletmek için sakin bir gün ritmi belirlemelisin. Kendine şefkat göstermek ve içsel huzuru önceliklendirmek enerjini dengeler."
+    },
+    "scorpio": {
+      "ad": "Akrep",
+      "ozet": "İkili ilişkilerinde karşına çıkan yansımaları sakince gözlemlemek gününü dengede tutabilir.",
+      "genel": "Doğum günü dönemini yaşarken karşıt burcuna geçen Ay, odağını birlikteliklerine ve ortaklıklarına kaydırıyor. Dolunay zamanı, ilişkilerinde süregelen belirsizlikleri tamamlanma noktasına getirebilir. Burcundaki Güneş’in öğleden sonra Plüton ile kuracağı kare açı, kişisel duruşun ile karşı tarafla kurduğun bağ arasında bir güç mücadelesi hissettirebilir. Esnek kalmayı başardığında, ilişkilerindeki dönüştürücü gücü kendi yararına çevirmen kolaylaşır.",
+      "askIliskide": "Partnerinle arandaki iletişimde karşılıklı beklentiler netleşiyor. Güç savaşlarına girmek yerine birbirinizin kişisel alanına saygı gösterdiğinizde birlikteliğiniz çok daha sağlam bir zemine oturabilir.",
+      "askYalniz": "Karşındaki insanların tutumları sana kendi ihtiyaçlarını hatırlatabilir. Yalnızlığını sonlandırmak adına kontrolü elde tutma arzunu esnetip olayların doğal akışına güvenmeyi deneyebilirsin.",
+      "kariyer": "Ortak yürütülen işlerde veya danışmanlık alanlarında somut sonuçlar alabilirsin. Burcundaki Merkür retrosu sebebiyle sözleşmelerde ve ikili görüşmelerde ifadelerini açıkça belirtmek yanlış anlaşılmaları engeller.",
+      "saglik": "Yoğun duygusal dönüşümlerin getirdiği stresi azaltmak adına gün içinde sakin kalmaya özen gösterebilirsin. Kısa yürüyüşler yapmak ve nefese odaklanmak zihinsel dengeni destekler."
+    },
+    "sagittarius": {
+      "ad": "Yay",
+      "ozet": "Günlük koşturmacanın içinde sadeleşmeye gitmek ve temponu düzenlemek sana hafiflik kazandırabilir.",
+      "genel": "Günün erken saatlerinde Boğa burcuna geçen Ay, rutin işlerini ve sorumluluklarını ön plana taşıyor. Gökyüzünde beliren Dolunay, çalışma ortamın, günlük alışkanlıkların ve tamamlanması gereken görevler üzerinde somut bir farkındalık yaratabilir. Arka planda Akrep'teki Güneş zihnini dinlendirme ihtiyacını artırırken, üst üste binen detaylar yorucu gelebilir. İşlerini öncelik sırasına koyarak paniklemeden ilerlemek gününü kolaylaştıracaktır.",
+      "askIliskide": "Günlük hayatın getirdiği pratik meseleler partnerinle ortak gündeminizi oluşturabilir. Küçük jestlerle birbirinizin yükünü hafifletmek aranızdaki duygusal bağı belirgin biçimde destekleyecektir.",
+      "askYalniz": "Çalışma ortamında ya da günlük koşturmacan sırasında sıradan bir anı paylaşacağın biri ilgini çekebilir. Büyük beklentilere girmeden samimi diyaloglar geliştirmek sana keyif verebilir.",
+      "kariyer": "Masanda biriken detaylı işleri bitirmek ve çalışma düzenini iyileştirmek için uygun adımlar atabilirsin. Merkür retrosunun getirebileceği bilgi karışıklığına karşı verileri ve belgeleri özenle kontrol etmelisin.",
+      "saglik": "Günün yoğunluğu içinde zihninin dinlenme sinyallerini göz ardı etmemek önemlidir. Kısa molalar vermek ve uyku düzenine özen göstermek gün boyu canlı kalmanı sağlar."
+    },
+    "capricorn": {
+      "ad": "Oğlak",
+      "ozet": "Yaratıcılığını ve içinden gelen neşeyi öne çıkararak günü daha hafif bir ritimle karşılayabilirsin.",
+      "genel": "Sabaha karşı Boğa burcuna geçen Ay, ilgini sanat, hobiler ve hayatın keyifli taraflarına yöneltiyor. Sabah saatlerinde belirginleşen Dolunay, kalbinden geçen bir arzuyu ya da üretken bir projeyi görünür kılabilir. Yöneticin Satürn gerilerken geçmiş adımlarını düşündürse de içindeki coşkuyu sergilemek sana iyi gelecektir. Günlük sorumluluklara kısa bir ara verip anın tadını çıkarmayı seçebilirsin.",
+      "askIliskide": "Sevdiğin insanla yan yana gelip içten paylaşımlarda bulunmak aranızdaki bağı canlandırabilir. Duygularını saklamadan ifade etmek birlikteliğinize samimi bir ivme kazandıracaktır.",
+      "askYalniz": "Yeni insanlarla karşılaşabileceğin ortamlarda kendi doğallığınla var olman dikkat çekmeni sağlayabilir. Kalbinin sesini dinleyerek eğlenceli sohbetlere açık durmak güzel başlangıçlar getirebilir.",
+      "kariyer": "Yaratıcılık gerektiren işlerde somut sonuçlar elde edebileceğin bir akış var. Sosyal çevrende etkili olan Merkür retrosunu gözeterek iş birliği yaptığın kişilerle net iletişim kurmalısın.",
+      "saglik": "Gün içinde odağını iş stresinden uzaklaştırıp daha dinlendirici aktivitelere çevirebilirsin. Kendi tempona uygun hafif hareketler zihinsel olarak ferahlamana katkı sağlar."
+    },
+    "aquarius": {
+      "ad": "Kova",
+      "ozet": "Yuva ve aile hayatında aradığın içsel dengenin izini sürerek kendi alanında huzur bulabilirsin.",
+      "genel": "Gece saatlerinde Boğa burcuna geçen Ay, odağını evine, ailene ve kişisel alanına kaydırıyor. Sabah gerçekleşen Dolunay, iş hayatın ile yerleşik yaşamın arasındaki dengeyi gözden geçirmene imkan tanıyabilir. Burcundaki Plüton'un öğleden sonra Güneş ile yapacağı sert açı, hedeflerin konusunda derin bir dönüşüm hissettirebilir. Kendi iç dünyanda sakin kaldığında dışarıdaki yoğunluğu yönetmek daha kolay hale gelecektir.",
+      "askIliskide": "Ev yaşamındaki konular ve geleceğe dair düşünceler partnerinle arandaki diyaloglara yön verebilir. Birbirinize güven hissettirecek samimi konuşmalar ilişkinizdeki bağı pekiştirir.",
+      "askYalniz": "Kendi iç dünyana çekilip duygusal gereksinimlerini anlama isteği duyabilirsin. Yalnız kalma korkusuyla aceleci adımlar atmak yerine kendi yaşam alanında huzurlu vakit geçirmeye odaklanabilirsin.",
+      "kariyer": "Mesleki hedeflerinle evdeki sorumlulukların arasında makul bir denge gözetmen gerekebilir. İş alanındaki Merkür gerilemesi nedeniyle görüşmelerinde yazışmaları özenle kontrol etmek faydalı olur.",
+      "saglik": "Yaşam alanında kuracağın düzen zihinsel dinginliğini doğrudan destekleyebilir. Günün ikinci yarısını daha sakin geçirip zihnini dinlendiren aktivitelere vakit ayırabilirsin."
+    },
+    "pisces": {
+      "ad": "Balık",
+      "ozet": "Düşüncelerini samimiyetle paylaşmak ve yakın çevrenle bağ kurmak zihnine ferahlık getirebilir.",
+      "genel": "Sabaha karşı Boğa burcuna ilerleyen Ay, iletişim trafiğini ve yakın çevre ilişkilerini hareketlendiriyor. Sabah saatlerinde yaşanan Dolunay, süregelen bir projenizde, eğitimde veya yakınlarınla diyaloglarında netleşmeler getirebilir. Akrep burcundaki Güneş ufkunuzu genişletirken, gerileyen Merkür zihnindeki fikirleri süzgeçten geçirmeni istiyor. Yaklaşımlarında kararlı ve sakin kalarak ilerlemek düşüncelerini doğru aktarmanı kolaylaştıracaktır.",
+      "askIliskide": "Sevgilinle kuracağın açık diyaloglar olası yanlış anlaşılmaları gidermene yardım edebilir. Düşüncelerini net bir şekilde aktarman ilişkinizdeki güven duygusunu tazeleyecektir.",
+      "askYalniz": "Günlük rotalarında ya da yakın çevrenden birinin ilgisi dikkatini çekebilir. Sohbet ederken acele etmeden, kendi dengeni koruyarak ilerlemek güzel etkileşimler doğurabilir.",
+      "kariyer": "Tamamlanma aşamasına gelen sözlü veya yazılı projelerde güzel bir ivme yakalayabilirsin. Merkür gerilemesi sebebiyle iletilerinde ve paylaşacağın belgelerde çift kontrol yapmayı ihmal etmemelisin.",
+      "saglik": "Düşünce yoğunluğunun arttığı anlarda kısa yürüyüşler yapmak zihnini yatıştırabilir. Temponu aşırı zorlamadan günün doğal akışına uyum sağlamak enerjini dengeler."
+    }
+  }
+}
