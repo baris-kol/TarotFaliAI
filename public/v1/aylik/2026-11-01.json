@@ -1,0 +1,276 @@
+{
+  "baslangic": "2026-11-01",
+  "bitis": "2026-11-30",
+  "uretildi": "2026-10-31T23:26:15Z",
+  "model": "gemini-3.6-flash",
+  "gokyuzu": {
+    "konumlar": {
+      "Güneş": {
+        "burc": "Akrep",
+        "retro": false
+      },
+      "Merkür": {
+        "burc": "Akrep",
+        "retro": true
+      },
+      "Venüs": {
+        "burc": "Terazi",
+        "retro": true
+      },
+      "Mars": {
+        "burc": "Aslan",
+        "retro": false
+      },
+      "Jüpiter": {
+        "burc": "Aslan",
+        "retro": false
+      },
+      "Satürn": {
+        "burc": "Koç",
+        "retro": true
+      },
+      "Uranüs": {
+        "burc": "İkizler",
+        "retro": true
+      },
+      "Neptün": {
+        "burc": "Koç",
+        "retro": true
+      },
+      "Plüton": {
+        "burc": "Kova",
+        "retro": false
+      }
+    },
+    "olaylar": [
+      {
+        "tarih": "2026-11-01",
+        "saat": "23:28",
+        "tur": "evre",
+        "metin": "Son Dördün, Aslan 9°",
+        "evre": "Son Dördün"
+      },
+      {
+        "tarih": "2026-11-04",
+        "saat": "13:31",
+        "tur": "aci",
+        "metin": "Venüs–Jüpiter altmışlık"
+      },
+      {
+        "tarih": "2026-11-04",
+        "saat": "17:24",
+        "tur": "aci",
+        "metin": "Güneş–Merkür kavuşum"
+      },
+      {
+        "tarih": "2026-11-09",
+        "saat": "10:02",
+        "tur": "evre",
+        "metin": "Yeni Ay, Akrep 16°",
+        "evre": "Yeni Ay"
+      },
+      {
+        "tarih": "2026-11-10",
+        "saat": "09:48",
+        "tur": "aci",
+        "metin": "Venüs–Mars altmışlık"
+      },
+      {
+        "tarih": "2026-11-13",
+        "saat": "18:57",
+        "tur": "retro",
+        "metin": "Merkür Akrep burcunda düz harekete dönüyor (retro bitiyor)"
+      },
+      {
+        "tarih": "2026-11-14",
+        "saat": "03:28",
+        "tur": "retro",
+        "metin": "Venüs Terazi burcunda düz harekete dönüyor (retro bitiyor)"
+      },
+      {
+        "tarih": "2026-11-16",
+        "saat": "09:24",
+        "tur": "aci",
+        "metin": "Mars–Jüpiter kavuşum"
+      },
+      {
+        "tarih": "2026-11-17",
+        "saat": "14:48",
+        "tur": "evre",
+        "metin": "İlk Dördün, Kova 25°",
+        "evre": "İlk Dördün"
+      },
+      {
+        "tarih": "2026-11-18",
+        "saat": "12:39",
+        "tur": "aci",
+        "metin": "Güneş–Jüpiter kare"
+      },
+      {
+        "tarih": "2026-11-19",
+        "saat": "20:49",
+        "tur": "aci",
+        "metin": "Güneş–Mars kare"
+      },
+      {
+        "tarih": "2026-11-22",
+        "saat": "10:23",
+        "tur": "gecis",
+        "metin": "Güneş Yay burcuna geçiyor"
+      },
+      {
+        "tarih": "2026-11-24",
+        "saat": "03:08",
+        "tur": "aci",
+        "metin": "Güneş–Neptün üçgen"
+      },
+      {
+        "tarih": "2026-11-24",
+        "saat": "17:53",
+        "tur": "evre",
+        "metin": "Dolunay, İkizler 2°",
+        "evre": "Dolunay"
+      },
+      {
+        "tarih": "2026-11-25",
+        "saat": "20:24",
+        "tur": "aci",
+        "metin": "Güneş–Plüton altmışlık"
+      },
+      {
+        "tarih": "2026-11-26",
+        "saat": "01:41",
+        "tur": "aci",
+        "metin": "Güneş–Uranüs karşıt"
+      },
+      {
+        "tarih": "2026-11-26",
+        "saat": "02:36",
+        "tur": "gecis",
+        "metin": "Mars Başak burcuna geçiyor"
+      },
+      {
+        "tarih": "2026-11-28",
+        "saat": "15:05",
+        "tur": "aci",
+        "metin": "Venüs–Jüpiter altmışlık"
+      },
+      {
+        "tarih": "2026-11-30",
+        "saat": "09:06",
+        "tur": "aci",
+        "metin": "Güneş–Satürn üçgen"
+      }
+    ]
+  },
+  "burclar": {
+    "aries": {
+      "ad": "Koç",
+      "ozet": "Derin bağlar ve ortak kaynaklarla başlayan ay, ufkunu genişleten taze bir merakla tamamlanıyor.",
+      "genel": "Kasım ayının ilk iki haftasında ortaklaşa bütçeler, paylaşılan kaynaklar ve duygusal yakınlık konuları ön planda yer alıyor. Yöneticin Mars'ın Aslan burcundaki hareketi yaratıcı projelere ve cesur adımlara ivme katarken, 9 Kasım Akrep Yeni Ay'ı bütçe dengeni yeniden kurmana imkan tanıyor. Ayın ortasından itibaren Merkür ve Venüs'ün rötarlarını bitirmesiyle iletişimde ve ilişkilerdeki belirsizlikler dağılmaya başlıyor. 16 Kasım civarında Mars ile Jüpiter'in buluşması özgüvenini yükseltiyor; fakat 19 Kasım'daki Güneş-Mars karesi ani kararlarda dikkatli olmayı gerektiriyor. 22 Kasım'da Güneş'in Yay burcuna geçişi ve 24 Kasım İkizler Dolunay'ı ile birlikte odak noktan yakın çevren, eğitim ve seyahat planlarına kayıyor. Dönem sonuna doğru Mars'ın Başak burcuna geçmesi, günlük rutinlerini daha düzenli kılmana destek veriyor.",
+      "askIliskide": "Partnerinle ortak bütçe veya güven arayışı üzerine odaklanarak aya başlıyorsun. 14 Kasım sonrası Venüs'ün düz seyrine geçmesiyle aranızdaki uyum derinleşebilir ve sohbetler daha rahat akabilir. Ay sonuna doğru ufak tefek pürüzleri geride bırakarak ortak hayallerinize alan açabilirsiniz.",
+      "askYalniz": "Dönemin başında geçmiş ilişkilerden kalan hesaplaşmaları zihninde tamamlamak isteyebilirsin. Ayın ortasından itibaren sosyal çevrenin hareketlenmesiyle beraber zihnini uyaran heyecanlı karşılaşmalar yaşanabilir. Kendini olduğun gibi ifade ettikçe doğal çekim gücün öne çıkıyor.",
+      "kariyer": "Finansal konulardaki tıkanıklıklar ayın ilk yarısında yavaş yavaş çözüme kavuşuyor. 16 Kasım'daki güçlü kavuşum özgün projelerini öne çıkarma konusunda cesaret veriyor. Ayın ikinci yarısında ise yeni anlaşmalar ve kısa yolculuklar iş temponu hareketlendirebilir.",
+      "saglik": "Ayın başında yüksek tempolu süreçler zihnini yorabileceği için uyku düzenine özen gösterebilirsin. İkinci yarıda odağını günlük rutinlerine getirmek enerjini dengede tutmana katkı sağlar."
+    },
+    "taurus": {
+      "ad": "Boğa",
+      "ozet": "Birebir ilişkilerde netlik kazandığın bu ay, odağını yavaşça kendi değerlerine ve üretkenliğine çeviriyor.",
+      "genel": "Ayın başında Güneş ve retro Merkür ikili ilişkiler alanında ilerlerken, geçmişten gelen sohbetler ve yarım kalmış konular tekrar gündeme gelebilir. Yöneticin Venüs'ün de geri harekette olması, ilişkilerdeki dengeyi yeniden gözden geçirmene neden oluyor. 9 Kasım Akrep Yeni Ay'ı ortaklıklarda taze bir sayfa açma imkanı sunarken, 14 Kasım'da Venüs'ün düzelmesiyle yaşam ritmin rahatlıyor. Ayın ortasında Mars ve Jüpiter'in kurduğu temaslar, ev ve aile içi konularda cömert adımlar atmanı kolaylaştırıyor. 22 Kasım'da Güneş'in Yay burcuna geçişi finansal paylaşımlara vurgu yaparken, 24 Kasım İkizler Dolunay'ı kişisel kaynaklarını ve kazançlarını aydınlatıyor. Ay sonunda Venüs'ün Jüpiter ile yapacağı olumlu açı, içsel bir huzur duygusunu beraberinde getiriyor.",
+      "askIliskide": "Partnerinle ilişkinizdeki eşitlik ve karşılıklı beklentileri ayın başında yeniden değerlendirebilirsiniz. Venüs'ün 14 Kasım'da düz seyre geçmesiyle birlikte aranızdaki şefkat ve anlayış hissi güçleniyor. Ayın sonuna doğru ortak kararlar almak çok daha kolaylaşıyor.",
+      "askYalniz": "İkili ilişkilerde geçmişe dönük düşünceler ayın ilk günlerinde zihnini meşgul edebilir. Ayın ortasından itibaren kendini daha açık hissettiğin yeni diyaloglar kapını çalabilir. Dengeli ve huzurlu bir akış arayışın sana uygun insanları çekebilir.",
+      "kariyer": "Ortaklaşa işlerde iletişim aksaklıkları 13 Kasım'da Merkür'ün düzelmesiyle sona eriyor. Maddi konularda net adımlar atmak için 24 Kasım Dolunay dönemi uygun bir zemin hazırlıyor. Çalışma ortamında sorumlulukları paylaştıkça üretkenliğin artıyor.",
+      "saglik": "Günlük yoğunluğun arttığı günlerde dinlenmeye zaman ayırmak zihnini taze tutabilir. Ay sonuna doğru ritmini yavaşlatıp bedeninin ihtiyacı olan sakinliği verebilirsin."
+    },
+    "gemini": {
+      "ad": "İkizler",
+      "ozet": "Çalışma temponu düzenlediğin bu dönem, kendinle ve hedeflerinle yeniden hizalanma fırsatı veriyor.",
+      "genel": "Kasım ayına girerken yöneticin Merkür'ün Akrep burcundaki retrosu, günlük düzeninde ve iş ortamındaki iletişimde aksaklıklara yol açabilir. 9 Kasım Akrep Yeni Ay'ı, ertelediğin işleri organize etmek ve düzen oturtmak için net bir zemin hazırlıyor. 13 Kasım'da Merkür'ün düz harekete geçmesiyle zihinsel karmaşa yerini berraklığa bırakıyor. Ayın ikinci yarısında enerjin belirgin biçimde yükselirken, 22 Kasım'da Güneş'in karşıt burcun Yay'a geçişi ikili ilişkilerini renklendiriyor. 24 Kasım'da senin burcunda gerçekleşen Dolunay ise kişisel hedeflerini, imajını ve ne istediğini görünür kılıyor. 26 Kasım'daki Güneş-Uranüs karşıtlığı beklenmedik farkındalıklar yaratabilir.",
+      "askIliskide": "Ayın başında günlük koşuşturmaca nedeniyle birbirinize ayırdığınız zaman kısıtlı kalabilir. 22 Kasım sonrasında Güneş'in ilişki alanına geçişiyle aranızdaki diyalog yeniden canlanıyor. Dolunay zamanı kendi hislerini açıkça paylaşarak bağınızı güçlendirebilirsiniz.",
+      "askYalniz": "Dönemin ilk yarısında kendi iç dünyana ve günlük işlerine odaklanmayı seçebilirsin. Ayın sonlarına doğru kendi burcundaki Dolunay'ın yarattığı görünürlük, çevrenin dikkatini çekmeni sağlayabilir. Sıradışı zihinsel uyum yakaladığın kişilerle karşılaşabilirsin.",
+      "kariyer": "İş listendeki pürüzleri temizlemek için ayın ilk on günü oldukça elverişli adımlar sunuyor. 13 Kasım sonrasında projelerini hızlandırabilir ve ertelediğin görüşmeleri tamamlayabilirsin. Dolunay ile birlikte kariyerine dair kişisel bir kararı netleştirebilirsin.",
+      "saglik": "Yoğun zihinsel çalışma temposu dönem dönem yorgunluk hissi yaratabilir. Gün içinde kısa mola aralıkları yaratmak ve uykunu düzene sokmak enerjini korumana yardımcı olur."
+    },
+    "cancer": {
+      "ad": "Yengeç",
+      "ozet": "Yaratıcılığını ve kalbinin sesini öne çıkaran ay, zihinsel bir dinlenme ve içsel netlikle tamamlanıyor.",
+      "genel": "Ayın ilk günlerinde Güneş'in Akrep burcundaki varlığı, hobilerine ve sana keyif veren konulara odaklanmanı sağlıyor. 9 Kasım Akrep Yeni Ay'ı sanatsal üretimler ve hayattan tat alma konusunda taze başlangıçlar getiriyor. Ayın ortasına kadar retro gezegenlerin etkisiyle geçmiş arzularını yeniden sorgulayabilirsin. 13 ve 14 Kasım tarihlerinde Merkür ve Venüs'ün düzelmesiyle duygusal süreçlerin netlik kazanıyor. 22 Kasım'da Güneş'in Yay burcuna geçişi günlük sorumluluklarını öne çıkarırken, 24 Kasım İkizler Dolunay'ı iç dünyanda bir tamamlanma hissi yaratıyor. Ayın son günlerinde Güneş'in Neptün ve Satürn ile kurduğu olumlu temalar, sezgilerine olan güvenini pekiştiriyor.",
+      "askIliskide": "Sevgilinizle romantik anlar paylaşmak ve ortak zevklere vakit ayırmak ayın başında ön plana çıkıyor. İletişim gezegenlerinin düzelmesiyle varsa aranızdaki yanlış anlaşılmaları rahatlıkla çözebilirsiniz. Ayın ikinci yarısında daha huzurlu ve yapıcı bir tutum yakalayabilirsiniz.",
+      "askYalniz": "Aşka dair beklentilerini sorguladığın bir dönemin ardından kalbini taze duygulara açabilirsin. Ayın ortasından itibaren samimi ve derinlikli diyaloglar ilgini çekebilir. Kendini rahat hissettiğin ortamlarda doğal çekiciliğinle öne çıkabilirsin.",
+      "kariyer": "Yaratıcı projelerde tıkanan noktalar ayın ortasından sonra hızla açılmaya başlıyor. 22 Kasım sonrasında günlük çalışma tempon hareketlenirken sorumluluklarını daha kolay planlayabilirsin. Ay sonundaki destekleyici açılar uzun vadeli iş adımları için sağlam bir zemin sunuyor.",
+      "saglik": "Duygusal dalgalanmaların beden ritmini etkilememesi için kendine sakin anlar yaratmalısın. Zihnini dinlendirecek meditasyon veya yürüyüşler iç dengeni korumanı sağlar."
+    },
+    "leo": {
+      "ad": "Aslan",
+      "ozet": "Ev ve aile odaklı başlayan Kasım ayı, sosyal çevrende parladığın dinamik bir süreçle devam ediyor.",
+      "genel": "Kasım ayının ilk yarısında Güneş'in ve retro Merkür'ün Akrep burcundaki konumu, ev, aile ve yerleşim konularını öne çıkarıyor. 9 Kasım Akrep Yeni Ay'ı, yaşam alanında yapmayı düşündüğün düzenlemeler için uygun adımlar sunuyor. Burcundaki Mars ve Jüpiter'in varlığı sana yüksek bir özgüven ve hareket alanı kazandırıyor. 16 Kasım'da gerçekleşen Mars-Jüpiter kavuşumu yaşam enerjini doruğa çıkarırken, 19 Kasım'daki Güneş-Mars karesi sabırsız davranmama konusunda uyarıyor. 22 Kasım'da Güneş'in Yay burcuna geçmesiyle yaratıcı yönün ve hayattan aldığın keyif katlanıyor. 24 Kasım İkizler Dolunay'ı ise arkadaş çevren ve gelecek hedeflerinle ilgili bir konuyu netleştiriyor.",
+      "askIliskide": "Ayın başında ev içi sorumluluklar ve ailevi konular gündeminizde yer alabilir. 16 Kasım civarında yükselen enerjinle birlikte partnerinle heyecanlı planlar yapabilirsiniz. Ayın son haftasında ilişkinizdeki neşe ve paylaşım hissi gözle görülür şekilde artabilir.",
+      "askYalniz": "Kendi alanına çekildiğin ilk günlerin ardından, ayın ortasından itibaren çekim gücün artış gösteriyor. Sosyal çevrende sergilediğin özgüvenli duruş yeni insanların ilgisini çekebilir. Ayın ikinci yarısında kalbini kıpırdatan hareketli diyaloglara açık olacaksın.",
+      "kariyer": "Ailevi projeler veya evden yürütülen işler ayın başında odağında bulunuyor. Burcundaki hareketlilik iş hayatında cesur hamleler yapmanı sağlasa da acele kararlardan kaçınmak faydalı olabilir. 24 Kasım Dolunay'ı ortak projelerdeki durumunu netleştiriyor.",
+      "saglik": "Yüksek temponun yarattığı aşırı enerjiyi spor veya fiziksel aktivitelerle dengelemek iyi gelebilir. Dinlenme zamanlarını aksatmamak gün içindeki canlılığını korur."
+    },
+    "virgo": {
+      "ad": "Başak",
+      "ozet": "Zihinsel yoğunluk ve yakın çevre iletişimiyle açılan dönem, kariyerinde alacağın belirgin kararlarla şekilleniyor.",
+      "genel": "Dönemin ilk günlerinde yöneticin Merkür Akrep burcunda geri harekette ilerlerken, iletişim trafiğinde ve yakın çevre diyaloglarında temkinli bir üslup benimsemek önem kazanıyor. 4 Kasım tarihinde gerçekleşen Güneş-Merkür kavuşumu, zihnini meşgul eden eski bir konuyu yeniden masaya yatırmana imkan tanıyor. 9 Kasım Akrep Yeni Ay'ı zihinsel berraklık getiren yeni bir öğrenme sürecini veya projeyi hayatına dahil edebilir. 13 Kasım'da Merkür'ün retrosunu tamamlamasıyla birlikte üzerindeki kararsızlık dağılarak yerini berrak bir bakış açısına bırakıyor. 22 Kasım'da Güneş'in Yay burcuna geçişi odağını hane yaşamına, köklerine ve kişisel alanındaki düzenlemelere kaydırıyor. 24 Kasım İkizler Dolunay'ı kariyer kulvarında ve üstlendiğin sorumluluklarda belirgin netleşmeler getirebilir. Dönem sonunda Mars'ın senin burcuna yerleşmesi, ertelediğin adımları atmak için ihtiyacın olan motivasyonu ve eylem gücünü kuvvetlendiriyor.",
+      "askIliskide": "Dönemin başında diyaloglardaki ufak pürüzleri anlayışla karşılamak aranızdaki uyumu koruyabilir. Merkür'ün retro sürecini tamamladığı 13 Kasım sonrasında partnerinle ertelediğiniz konuları daha açık ve yapıcı bir dille konuşabilirsiniz. Ayın ikinci yarısında yaşam alanınızda huzurlu bir ortam oluşturmak duygusal yakınlığı pekiştirecektir.",
+      "askYalniz": "İletişim trafiğinin hareketli olduğu ilk haftalarda eski tanışıklıklar zihnini yeniden kurcalayabilir. Kararsızlıkların bittiği ay ortasından itibaren ne aradığını daha net kavrayarak yeni adımlar atabilirsin. Çevrendeki insanlarla zihinsel olarak derin bir uyum yakalamak duygusal ilgini belirgin şekilde artırabilir.",
+      "kariyer": "Dönem başındaki yazışmalarda ve detay gerektiren yazılı belgelerde gözden kaçan noktalara dikkat etmek yararlı olabilir. 24 Kasım İkizler Dolunay'ı yürüttüğün projelerin sonuçlanmasını veya mesleki duruşunda önemli bir dönüm noktasını beraberinde getiriyor. Mars'ın burcuna geçiş yaptığı ay sonundan itibaren çalışma disiplinin yükselirken projelerinde çok daha kararlı adımlar atabilirsin.",
+      "saglik": "Zihinsel temponun yükseldiği günlerde gün sonlarında zihnini yavaşlatacak dingin aktivitelere vakit ayırabilirsin. Açık havada yapacağın ritmik yürüyüşler ve akşam saatlerindeki düzenli dinlenme süreleri genel ritmini korumana yardımcı olur."
+    },
+    "libra": {
+      "ad": "Terazi",
+      "ozet": "Öz değer ve finansal dengeleri yapılandırdığın ay, bakış açını genişleten taze fikirlerle sürüyor.",
+      "genel": "Kasım ayına girerken Güneş 2. evinde parıldarken, yöneticin Venüs kendi burcunda retro harekette bulunuyor. Kişisel duruşun, ilişkilerin ve maddi kaynakların üzerine düşünmek durumunda kalabilirsin. 9 Kasım Akrep Yeni Ay'ı gelirlerini düzenlemek adına sağlam bir adım imkanı sunuyor. 14 Kasım'da Venüs'ün düz harekete geçmesiyle kendine olan güvenin ve çekiciliğin güçleniyor. 22 Kasım'da Güneş'in Yay burcuna geçişi yakın çevrenle olan iletişimi hızlandırıyor. 24 Kasım İkizler Dolunay'ı ise eğitim, seyahat veya hukuki bir gündeminde netleşme sağlıyor. Ay sonunda Venüs'ün Jüpiter ile kurduğu olumlu temas hayattan aldığın keyfi ve uyumu artırıyor.",
+      "askIliskide": "Ayın ilk iki haftasında kendi isteklerin ile partnerinin beklentileri arasında denge kurmak isteyebilirsin. Venüs'ün düzelmesiyle aranızdaki romantik çekim ve anlayış kuvvetleniyor. Ayın sonuna doğru birlikte kısa seyahatler veya keyifli aktiviteler planlayabilirsiniz.",
+      "askYalniz": "Kendi değerini ve ilişkilerden ne beklediğini tarttığın bir sürecin sonuna geliyorsun. 14 Kasım sonrasında tazelenen enerjinle çevrendekilerin ilgisini üzerine çekebilirsin. Farklı kültürlerden veya fikir dünyana hitap eden insanlarla tanışabilirsin.",
+      "kariyer": "Bütçeni gözden geçirmek ve harcamalarını kontrol altına almak ayın başında öncelik kazanıyor. 13 ve 14 Kasım sonrası tıkandığını hissettiğin finansal ve mesleki konularda çözümler belirmeye başlıyor. Dolunay dönemi uzak bağlantılı işlerde netlik getiriyor.",
+      "saglik": "Kendine şefkat göstermek ve bedenin ritmine saygı duymak bu ayın anahtarı. Günlük hareket aralığını korumak içsel dengeni destekler."
+    },
+    "scorpio": {
+      "ad": "Akrep",
+      "ozet": "Kendi burcundaki Güneş ve Yeni Ay ile tazelenirken, ayın ikinci yarısında hedeflerinde kararlı adımlar atıyorsun.",
+      "genel": "Kendi burcunda ilerleyen Güneş ile kişisel motivasyonunun yükseldiği heyecan verici bir yaş günü dönemine adım atıyorsun. Ayın başlarında geri hareketteki Merkür, geçmiş hedeflerini ve kararlarını zihninde detaylıca süzgeçten geçirmeni sağlıyor. 9 Kasım'da gerçekleşen Akrep Yeni Ay'ı, taze başlangıçlar yapman ve yaşamında yeni bir sayfa açman için güçlü bir zemin sunuyor. 13 Kasım'da Merkür'ün retro sürecini bitirip ileri seyrine başlamasıyla kafandaki tasarılar net bir biçimde hız kazanıyor. Yöneticin Mars'ın Aslan burcundaki konumu ve 16 Kasım'daki Mars-Jüpiter kavuşumu hedeflerinde cesurca öne çıkmanı destekliyor. 19 Kasım'daki Güneş-Mars karesi ise güç mücadelelerinden kaçınarak öz enerjini yapıcı işlere yöneltmen gerektiğini hatırlatıyor. 22 Kasım'da Güneş'in Yay burcuna geçmesi mali kaynaklara odaklanmanı sağlarken, 24 Kasım İkizler Dolunay'ı ortaklaşa bütçe paylaşımlarını netleştiriyor.",
+      "askIliskide": "Kendi yaş günü döneminde arzularına odaklanırken partnerinle arandaki duygusal bağı tazelemek isteyebilirsin. İletişim pürüzlerinin geride kaldığı ayın ikinci yarısında aranızdaki tutku ve samimiyet belirgin şekilde artabilir. Dönem sonuna doğru birlikte geleceğe dair kararlar almak ve ortak planlar yapmak kolaylaşacaktır.",
+      "askYalniz": "Çekim gücünün yükseldiği bir dönemden geçerken çevrendekilerin dikkatini kolayca üzerine çekebilirsin. Kendini yeniledikçe ve kişisel hedeflerine odaklandıkça çekiciliğin doğal bir akış kazanıyor. Ayın ortasından itibaren zihinsel olarak seni etkileyen derin, tutkulu ve samimi temaslar gündemine dahil olabilir.",
+      "kariyer": "Kariyer kulvarında iddialı adımlar atabileceğin hareketli bir zaman dilimindesin. 16 Kasım civarında üstlendiğin projelerde cesaretini sergileyerek öne çıkabilir ve yöneticilerin dikkatini çekebilirsin. Ayın ikinci yarısında ise emeğinin karşılığını alma ve bütçe planlamalarını netleştirme süreçleri hız kazanıyor.",
+      "saglik": "Yoğun fiziksel ve zihinsel enerjini düzenli spora veya yaratıcı uğraşlara yönlendirmek çok iyi gelebilir. Gün içindeki hareketli temponu dengeli dinlenme zamanlarıyla destekleyerek genel canlılığını ay boyunca muhafaza edebilirsin."
+    },
+    "sagittarius": {
+      "ad": "Yay",
+      "ozet": "İçsel hazırlıklarla başlayan dönem, Güneş'in senin burcuna geçişi ve ikili ilişkilerdeki netleşmelerle hareketleniyor.",
+      "genel": "Dönemin başlangıcında Güneş mahrem alanında ilerlerken temponu biraz düşürmek ve zihnini dinlendirmek sana çok iyi gelebilir. 9 Kasım Akrep Yeni Ay'ı eski kalıpları geride bırakmak ve ruhsal olarak arınmak adına içsel bir imkan tanıyor. Yöneticin Jüpiter'in Aslan burcundaki ilham verici duruşu ve 16 Kasım'daki Mars-Jüpiter kavuşumu ufukta genişleme arzusunu belirgin biçimde tetikliyor. 18 Kasım'daki Güneş-Jüpiter karesi ise abartılı beklentilere veya kontrolsüz heveslere karşı temkinli durmayı gerektiriyor. 22 Kasım'da Güneş'in senin burcuna geçmesiyle yaş günü dönemin başlıyor ve yaşam enerjin yüksek bir ivme kazanıyor. 24 Kasım İkizler Dolunay'ı ikili ilişkilerini ve birebir ortaklıklarını aydınlatarak ertelenmiş konuları netleştirmeni sağlıyor. Ay sonundaki Güneş-Satürn üçgeni ise geleceğe dönük planlarına kalıcı ve sağlam temeller kazandırıyor.",
+      "askIliskide": "Ayın ilk yarısında partnerinle daha sakin ve baş başa zaman geçirmek aranızdaki bağı güçlendirebilir. 22 Kasım sonrasında burcuna geçen Güneş neşeni ve enerjini ilişkiye yansıtmanı kolaylaştırıyor. 24 Kasım Dolunay'ı süregelen bir konuyu netleştirerek ilişkinizi daha sağlam bir zemine taşıyabilir.",
+      "askYalniz": "Dönemin başlarında yalnız kalıp kendi hislerinle kalmak ve iç dünyanı düzenlemek isteyebilirsin. Güneş'in senin burcuna geçişiyle beraber sosyal ortamlardaki çekiciliğin yükseliyor ve diyalogların hız kazanıyor. Karşıt burcundaki Dolunay beklenmedik ama heyecan verici yeni tanışmalara zemin hazırlayabilir.",
+      "kariyer": "Mutfakta yürüttüğün hazırlıklar ve arka plandaki projelerin ayın ortasından itibaren görünürlük kazanmaya başlıyor. Yöneticinin coşkulu açısıyla büyük vizyonlar koyabilir, ancak ayakları yere basan adımlarla ilerlemeye dikkat etmelisin. Yaş günü döneminle beraber iş hayatında daha fazla inisiyatif alabilir ve hedeflerine odaklanabilirsin.",
+      "saglik": "Ayın başlarında zihnini dinlendirecek dingin aktiviteler ve kaliteli uyku ritmi sana iyi bir denge sağlar. Güneş senin burcuna geçtiğinde belirgin şekilde artan hareket ihtiyacını ritmik açık hava yürüyüşleriyle destekleyebilirsin."
+    },
+    "capricorn": {
+      "ad": "Oğlak",
+      "ozet": "Topluluklar ve gelecek planlarıyla başlayan dönem, ay sonunda zihinsel berraklık ve içsel bir düzen getiriyor.",
+      "genel": "Dönemin ilk yarısında Güneş sosyal çevreni aydınlatırken, dahil olduğun topluluklar ve arkadaş grupları gündeminde ön plana çıkıyor. 9 Kasım Akrep Yeni Ay'ı uzun vadeli hedeflerin için sağlam ve taze adımlar atma imkanı sunabilir. Yöneticin Satürn'ün Koç burcundaki retrosu, köklerin, yaşam alanın ve hane konularında aceleci olmadan hareket etmeni gerektiriyor. 13 ve 14 Kasım tarihlerinde Merkür ile Venüs'ün retrolarını bitirmesiyle sosyal diyaloglardaki tıkanıklıklar çözüme kavuşuyor. 22 Kasım'da Güneş'in Yay burcuna geçişiyle birlikte odağın daha sakin, kabuğuna çekildiğin dinlendirici bir alana kayıyor. 24 Kasım İkizler Dolunay'ı günlük çalışma tempon ve üstlendiğin görevlerle ilgili somut netleşmeleri beraberinde getiriyor. 30 Kasım'da Güneş'in Satürn ile yaptığı destekleyici üçgen açı, içsel huzurunu ve kişisel disiplinini sağlam bir zemine oturtuyor.",
+      "askIliskide": "Ayın ilk haftalarında sosyal çevrelerde partnerinle keyifli vakitler geçirebilirsiniz. Dönemin ikinci yarısında ise daha baş başa ve gürültüden uzak kalmayı tercih etmek size iyi gelecektir. Ay sonundaki yapıcı gökyüzü etkileri aranızdaki güven duygusunu ve bağlılığı belirgin şekilde pekiştiriyor.",
+      "askYalniz": "Sosyal grupların hareketli olduğu dönem başında yeni insanlarla tanışma olasılığın yüksek. Ayın sonlarına doğru daha seçici davranıp kendi kişisel alanında kalmayı tercih edebilirsin. Zamana yayılan ve temkinli ilerleyen diyaloglar sana çok daha cazip ve güven verici gelecektir.",
+      "kariyer": "Ekip çalışmalarında veya projelerde yaşanan iletişim aksaklıkları ay ortasında retroların bitmesiyle tamamen sona eriyor. 24 Kasım İkizler Dolunay'ı iş ortamındaki sorumluluk dağılımını veya süregelen bir görevi tamamlamanı belirgin biçimde kolaylaştırabilir. Uzun vadeli hedeflerine sadık kalarak disiplinli hareket etmek sana çok daha büyük güç kazandırıyor.",
+      "saglik": "Yoğun sosyal temponun ardından ayın ikinci yarısında dinlenmeye ve zihnini boşaltmaya vakit ayırmak iyi gelebilir. Yeterli uyku ve dengeli bir günlük yaşam ritmi enerjini korumana imkan verir."
+    },
+    "aquarius": {
+      "ad": "Kova",
+      "ozet": "Kariyer hedeflerinin öne çıktığı Kasım ayı, sosyal çevrende yaratıcı adımlarla renkleniyor.",
+      "genel": "Ayın ilk yarısında Güneş 10. evinde ilerlerken, kariyerin ve toplum önündeki duruşun ön plana çıkıyor. 9 Kasım Akrep Yeni Ay'ı, iş hayatında taze bir yön çizmen için destek veriyor. Retro Merkür'ün yönettiği diyaloglar ayın ortasından sonra netlik kazanıyor. 17 Kasım'daki senin burcundaki İlk Dördün, kişisel kararlarında eyleme geçme cesareti sunuyor. 22 Kasım'da Güneş'in Yay burcuna geçişiyle birlikte odağın sosyal gruplara, arkadaşlıklara ve hayallerine kayıyor. 24 Kasım İkizler Dolunay'ı aşk, hobiler ve yaratıcılık alanını aydınlatarak sana ilham veriyor. Ay sonunda Plüton ve Güneş arasındaki olumlu temas, toplumsal vizyonunu güçlendiriyor.",
+      "askIliskide": "Ayın başında iş yoğunluğu nedeniyle partnerine zaman ayırmakta zorlanabilirsin. 22 Kasım sonrasında arkadaş grubunuzla sosyalleşmek ilişkinize taze bir hava katabilir. Dolunay zamanı birlikte eğlenceli aktivitelere katılmak bağınızı güçlendirir.",
+      "askYalniz": "İş ortamında veya mesleki etkinliklerde dikkat çekebileceğin bir aydasın. Ayın ikinci yarısında sosyal çevrenin genişlemesiyle entelektüel anlamda seni tatmin edecek insanlarla tanışabilirsin. Dolunay dönemi romantik heyecanlara açık olacaksın.",
+      "kariyer": "Mesleki alanda ertelediğin kararları ayın ortasından sonra rahatlıkla hayata geçirebilirsin. İlk Dördün ile birlikte sorumluluk almaktan çekinmeyeceksin. 24 Kasım civarı yaratıcı projelerin sonuçlarını almak sana doyum sağlayabilir.",
+      "saglik": "Yoğun tempoda stres seviyeni dengede tutmak için gevşeme egzersizleri yapabilirsin. Zihnini boşaltacak açık hava yürüyüşleri enerjini yükseltir."
+    },
+    "pisces": {
+      "ad": "Balık",
+      "ozet": "Ufkunu genişleten fikirlerle açılan dönem, kariyerinde alacağın net kararlar ve güçlenen sezgilerinle şekilleniyor.",
+      "genel": "Dönemin ilk bölümünde Güneş vizyonunu, öğrenme merakını ve bakış açını aydınlatmaya devam ediyor. 9 Kasım Akrep Yeni Ay'ı taze bir eğitim süreci veya seyahat planı için zihinsel adımlar sunabilir. Yöneticin Jüpiter'in Aslan burcundaki duruşu günlük iş temponda sana geniş bir alan açıyor. 18 Kasım'daki Güneş-Jüpiter karesi boyunu aşan sözler vermekten veya kontrolsüz kararlar almaktan kaçınmanı hatırlatıyor. 22 Kasım'da Güneş'in Yay burcuna geçişi kariyer kulvarını ısıtarak mesleki hedeflerini görünür kılıyor. 24 Kasım İkizler Dolunay'ı ise hane, yerleşim ve köklerinle ilgili ertelediğin konulara net çözümler getiriyor. Ay sonunda Güneş'in Neptün ve Satürn ile gerçekleştirdiği destekleyici açılar, sezgilerini somut başarılara dönüştürmene güçlü bir imkan sağlıyor.",
+      "askIliskide": "Partnerinle hayata bakış açınızı paylaştığınız, derin diyaloglar kurduğunuz bir dönemdesiniz. İletişim pürüzlerinin geride kaldığı ay ortasından sonra geleceğe dair ortak kararlar alabilirsiniz. Ayın sonlarına doğru yaşam alanınızdaki huzur ve güven hissi belirgin şekilde artabilir.",
+      "askYalniz": "Zihinsel olarak uyuştuğun ve sana yeni bakış açıları katan insanlara çekilebilirsin. Ayın ikinci yarısında kariyer ortamında veya katıldığın etkinliklerde dikkat çeken diyaloglar başlayabilir. Kendini olduğun gibi samimiyetle ortaya koyman çevrende oldukça güven verici bir etki yaratır.",
+      "kariyer": "Vizyonunu büyütmek ve yeni çalışma alanları keşfetmek adına ayın başları oldukça uygun görünüyor. 22 Kasım sonrasında kariyerinde daha görünür hale gelebilir, üstlerinle yapıcı diyaloglar kurabilirsin. Dolunay dönemi ise iş ve hane arasındaki dengeyi kurmanı kolaylaştıracak kararlar getirebilir.",
+      "saglik": "Zihinsel olarak oldukça açıldığın bu dönemde meditasyon veya sakin yürüyüşler yapmak sana çok iyi gelebilir. Düzenli uyku ritmine özen göstermek gün içindeki odaklanmanı ve genel enerjini dengede tutacaktır."
+    }
+  }
+}
