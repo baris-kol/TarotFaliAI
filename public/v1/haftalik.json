@@ -1,7 +1,195 @@
 {
   "surum": 1,
-  "guncellendi": "2026-10-25T22:43:17Z",
+  "guncellendi": "2026-11-01T23:37:00Z",
   "donemler": [
+    {
+      "baslangic": "2026-11-02",
+      "bitis": "2026-11-08",
+      "uretildi": "2026-11-01T23:37:00Z",
+      "model": "gemini-3.6-flash",
+      "gokyuzu": {
+        "konumlar": {
+          "Güneş": {
+            "burc": "Akrep",
+            "retro": false
+          },
+          "Merkür": {
+            "burc": "Akrep",
+            "retro": true
+          },
+          "Venüs": {
+            "burc": "Terazi",
+            "retro": true
+          },
+          "Mars": {
+            "burc": "Aslan",
+            "retro": false
+          },
+          "Jüpiter": {
+            "burc": "Aslan",
+            "retro": false
+          },
+          "Satürn": {
+            "burc": "Koç",
+            "retro": true
+          },
+          "Uranüs": {
+            "burc": "İkizler",
+            "retro": true
+          },
+          "Neptün": {
+            "burc": "Koç",
+            "retro": true
+          },
+          "Plüton": {
+            "burc": "Kova",
+            "retro": false
+          }
+        },
+        "olaylar": [
+          {
+            "tarih": "2026-11-03",
+            "saat": "11:28",
+            "tur": "gecis",
+            "metin": "Ay Başak burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-11-04",
+            "saat": "13:31",
+            "tur": "aci",
+            "metin": "Venüs–Jüpiter altmışlık"
+          },
+          {
+            "tarih": "2026-11-04",
+            "saat": "17:24",
+            "tur": "aci",
+            "metin": "Güneş–Merkür kavuşum"
+          },
+          {
+            "tarih": "2026-11-05",
+            "saat": "17:39",
+            "tur": "gecis",
+            "metin": "Ay Terazi burcuna geçiyor"
+          },
+          {
+            "tarih": "2026-11-08",
+            "saat": "01:40",
+            "tur": "gecis",
+            "metin": "Ay Akrep burcuna geçiyor"
+          }
+        ]
+      },
+      "burclar": {
+        "aries": {
+          "ad": "Koç",
+          "ozet": "Derin bağlara ve yaratıcı enerjine odaklanırken geçmiş pürüzleri çözüme kavuşturabilirsin.",
+          "genel": "Haftaya iç dünyandaki dönüşüm arzusuyla adım atıyorsun. Mars'ın yaratıcı alandaki duruşu sana cesaret verirken, geçmişten gelen konuları masaya yatırmak isteyebilirsin. 4 Kasım Çarşamba günü Güneş ile geri hareketteki Merkür'ün buluşması, ertelenmiş finansal veya duygusal paylaşımları yeniden gündeme getirebilir. Perşembe gününden itibaren dengeleri gözetme ihtiyacın artıyor. Hafta sonuna doğru yaklaşırken odağın tamamen güvende olma ve derinleşme arzusu etrafında şekillenebilir. Yaşanan iletişim aksaklıklarını bir sakinleşme molası olarak değerlendirebilirsin.",
+          "askIliskide": "Partnerinle arandaki tutku yükselirken eski bir konunun yeniden konuşulması gerekebilir. Çarşamba civarında açık bir dille ifade edilen duygular aranızdaki bağı tazeleyebilir. Ortak kararlarda aceleci olmamaya dikkat etmelisin.",
+          "askYalniz": "Eski bir flörtün kapını çalması ya da geçmişte kalmış duyguların zihnini meşgul etmesi mümkün. Yeni bir adımdan ziyade geçmişin hesabını kapatmaya odaklanabilirsin. Hafta ortasındaki karşılaşmalar zihninde yeni sorular uyandırabilir.",
+          "kariyer": "Yarım kalmış projeleri tamamlamak ve finansal ayrıntıları gözden geçirmek için uygun bir zamandasın. Yeni sözleşmeler yerine eldeki işleri toparlamaya yönelebilirsin. Perşembe gününden sonra iş birliklerinde denge kurmak kolaylaşabilir.",
+          "saglik": "Tempon yükselirken akşam saatlerinde kendine zihnini boşaltacak sakin anlar yaratabilirsin. Uyku ritmine dikkat etmek haftanın getirdiği zihinsel yükü hafifletmene yardım edebilir."
+        },
+        "taurus": {
+          "ad": "Boğa",
+          "ozet": "İlişkilerde geçmiş hesapları kapatırken günlük tempona zarafet ve denge getirebilirsin.",
+          "genel": "İkili ilişkilerin ve ortaklıkların ön planda olduğu bir haftaya başlıyorsun. Yöneticin Venüs'ün geri hareketi, günlük alışkanlıklarını ve iş ortamındaki diyaloglarını gözden geçirmene neden olabilir. 4 Kasım Çarşamba günü Venüs ile Jüpiter arasındaki olumlu temas, sana içsel bir rahatlama ve işlerinde kolaylık getirebilir. Aynı gün gerçekleşen Güneş-Merkür kavuşumu ise partnerinle geçmişte kalan meseleleri konuşma imkanı sunuyor. Perşembe sonrasında karar alırken acele etmek yerine akışa uyum sağlamak faydalı olabilir. Hafta sonunda odağın tamamıyla ortak hedeflere yönelecek.",
+          "askIliskide": "Birlikteliğinde uyum arayışı öne çıkarken geçmişteki küçük kırgınlıklar tatlıya bağlanabilir. Çarşamba günü yapacağınız samimi bir konuşma aranızdaki güveni güçlendirebilir. Birlikte vakit geçirmek ruhunuza iyi gelecektir.",
+          "askYalniz": "İş ortamından veya günlük koşturmacalarından tanıdığın biriyle geçmişe dayalı bir yakınlaşma doğabilir. Karşındaki insanın niyetini anlamak için biraz zamana ihtiyaç duyabilirsin. Hafta ortasında duygusal açıdan desteklendiğini hissedebilirsin.",
+          "kariyer": "Günlük görevlerinde ve sorumluluklarında düzenleme yapmak isteyebilirsin. Çarşamba günü üstlerinle veya iş arkadaşlarınla kuracağın yapıcı diyaloglar işlerini kolaylaştırabilir. Yeni adımlar yerine süregelen projeleri iyileştirmeye odaklanmak yerinde olur.",
+          "saglik": "Gün içindeki koşturmacanın enerjini tüketmesine izin vermemek için küçük molalar verebilirsin. Zihnini dinlendirmek ve stresi yönetmek için akşam saatlerini kendinle kalmaya ayırabilirsin."
+        },
+        "gemini": {
+          "ad": "İkizler",
+          "ozet": "Günlük koşturmacada zihnini kurcalayan detayları toparlayıp işlerini sıraya koyabilirsin.",
+          "genel": "Günlük düzenin ve biriken sorumlulukların haftanın başında ana gündemini oluşturuyor. Yöneticin Merkür'ün Akrep burcundaki geri hareketi, gözden kaçan pürüzleri tekrar önüne getirebilir. Salı günü Ay'ın Başak geçişiyle birlikte detaylı ve planlı bir çalışma temposuna girebilirsin. Çarşamba günü gerçekleşen Güneş ile Merkür kavuşumu, zihnini netleştirmene ve uzun süredir askıda kalan işleri tamamlamana yardım ediyor. Perşembe günkü Ay geçişinden itibaren ikili ilişkilerde daha sakin ve uyumlu bir yaklaşım benimseyebilirsin. Dönemin sonuna doğru yaklaşırken eksikleri kapatmış olmanın rahatlığını hissedebilirsin.",
+          "askIliskide": "Partnerinle aranızdaki günlük iletişimde bazı yanlış anlaşılmalar oluşsa da bunları açıkça konuşabilirsiniz. Çarşamba günkü gök olayı yarım kalmış sohbetleri tamamlamak adına uygun bir akış yaratıyor. Birlikte ortak rutinler geliştirmek bağınızı güçlendirebilir.",
+          "askYalniz": "Günlük koşturmaca arasında geçmişten biriyle iletişim kurma ihtimalin doğabilir. Zihnin eski anılara kayabileceği için yeni adımlarda acele etmeyebilirsin. Zamana yayılan sohbetler hislerini anlamana yardımcı olacaktır.",
+          "kariyer": "İş ortamındaki yoğunluk ve kontrol edilmesi gereken detaylar haftanın ilk günlerinde öne çıkıyor. Çarşamba gerçekleşen kavuşum sayesinde karmaşık dosyaları çözüme kavuşturabilirsin. Yeni projelere atılmak yerine eldeki işleri bitirmeye odaklanmak daha verimli olabilir.",
+          "saglik": "Zihinsel temponun getirdiği yorgunluğu akşamları dinlenmeye vakit ayırarak dengeleyebilirsin. Düzenli bir uyku ritmi tutturmak ve zihnini sakinleştirmek enerjini korumana destek sağlar."
+        },
+        "cancer": {
+          "ad": "Yengeç",
+          "ozet": "Yaratıcı yönünü öne çıkarıp hayatın keyifli yanlarına ve sevdiklerine zaman ayırabilirsin.",
+          "genel": "Yaratıcılığın ve hayattan keyif alma arzunun öne çıktığı bir haftaya adım atıyorsun. Salı günü Ay'ın Başak burcuna geçişiyle birlikte yakın çevrenle iletişim trafiğin hareketlenebilir. 4 Kasım'da gökyüzündeki etkileşimler, yarım kalmış bir hobini veya eski bir merakını yeniden gündeme getirecektir. Perşembe günü Ay'ın Terazi burcuna ilerlemesi, odağını evine ve ailevi meselelerin dengesine kaydırabilir. Pazar günü Ay Akrep burcuna geçtiğinde ise sezgilerin güçlenip duygusal derinliğin artabilir. Haftayı içsel uyumunu koruyarak ve kendine küçük keyifler yaratarak geçirebilirsin.",
+          "askIliskide": "Partnerinle romantik anları paylaşmak ve eski güzel anıları yad etmek aranızdaki bağı tazeleyebilir. Çarşamba günü duygularını içtenlikle paylaşmak ilişkindeki samimiyeti artırabilir. Birlikte yaratıcı bir işle ilgilenmek aranızdaki neşeyi yükseltir.",
+          "askYalniz": "Eski bir flörtün tekrar seninle temas kurması söz konusu olabilir. Şartları hemen kabullenmek yerine karşındaki kişinin tutumunu gözlemlemek isteyebilirsin. Hafta ortasında duygusal dünyanda hareketli ve merak uyandırıcı gelişmeler yaşanabilir.",
+          "kariyer": "Yaratıcı projelerde eski fikirleri güncelleyerek oldukça verimli sonuçlar elde edebilirsin. Çarşamba günkü görüşmelerde ifadelerini net tutmak iş akışını kolaylaştıracaktır. Perşembe sonrasında çalışma ortamındaki dengeleri gözeterek planlı bir şekilde adımlarını atabilirsin.",
+          "saglik": "Duygusal dalgalanmaları dengelemek adına gün içinde açık havada kısa yürüyüşler yapabilirsin. Bedeninin ihtiyacı olan dinlenme sürelerine uymak ve uykunu almak enerjini korumanı sağlar."
+        },
+        "leo": {
+          "ad": "Aslan",
+          "ozet": "Evindeki huzuru korurken içsel gücünü doğru hedeflere yönlendirmeye odaklanabilirsin.",
+          "genel": "Aileni, evini ve köklerini ilgilendiren konular dönemin ana çizgisini oluşturuyor. Burcunda hareket eden Mars ve Jüpiter sana belirgin bir hareket alanı sağlarken, Güneş'in yuva alanındaki duruşu bir miktar içe çekilme arzusu getirebilir. Çarşamba günü gerçekleşecek Güneş ile Merkür kavuşumu, hane içinde geçmişten kalan meselelerin konuşulup netleşmesine zemin hazırlıyor. Perşembe sonrasında yaratıcı uğraşlara ve kişisel meraklarına zaman ayırmak isteyebilirsin. Hafta sonu yaklaşırken sevdiklerinle güvenli alanında bulunmak sana güç verecektir. Enerjini kontrollü harcamaya özen gösterebilirsin.",
+          "askIliskide": "Partnerinle ev ortamında sakin zaman geçirmek ve geçmişi anmak bağınızı sağlamlaştırabilir. Çarşamba günü evle ilgili planlarda ortak kararlar alabilirsiniz. Anlayışlı bir tutum sergilendiğinde aranızdaki uyum kendiliğinden artacaktır.",
+          "askYalniz": "Kendini daha güvende hissetmek istediğin bir dönemden geçiyorsun. Geçmişteki bir ilişkinin etkilerinden arınmak adına yalnız kalmayı seçebilirsin. Pazar gününe doğru yaklaşırken sosyal alandan samimi davetler alabilirsin.",
+          "kariyer": "İş hayatında taşların yerine oturması için acele etmeden beklemen gerekebilir. Çarşamba günkü diyaloglar sayesinde askıda kalmış kararları netleştirme fırsatı bulabilirsin. Enerjini tek bir projeye odaklayarak bitirmek çok daha verimli sonuçlar doğuracaktır.",
+          "saglik": "Burcundaki yoğun etkiler yüksek bir günlük tempo yaratsa da yeterli dinlenmeyi unutmamalısın. Düzenli uyumak ve ritmini korumak gün içindeki canlılığını sürdürmene yardımcı olur."
+        },
+        "virgo": {
+          "ad": "Başak",
+          "ozet": "Zihnindeki ayrıntıları sabırla düzenlerken yakın çevrenle bağlarını tazeleyebilirsin.",
+          "genel": "İletişim trafiği, yakın çevre diyalogları ve kısa planlar dönemin başında ön plana çıkıyor. Salı günü Ay'ın senin burcuna geçmesiyle kendi ihtiyaçlarına daha fazla odaklanmak isteyebilirsin. Yöneticin Merkür'ün Akrep burcundaki geri hareketi, ifadelerinde ve yazışmalarında temkinli olmanı gerektirebilir. 4 Kasım'daki Güneş-Merkür kavuşumu, zihnini meşgul eden bir konuyu netleştirmene ve eski belgeleri düzenlemene imkan tanıyor. Perşembe sonrasında yaşam alanında ve evinde huzur arayışın artabilir. Temponun yavaşladığı bu süreci eksiklerini tamamlamak için değerlendirebilirsin.",
+          "askIliskide": "Partnerinle diyalog kurarken kelimeleri özenle seçmek önem kazanıyor. Çarşamba günü geçmişten gelen bir pürüzü tatlıya bağlayarak aranızdaki mesafeyi kapatabilirsiniz. Birlikte kısa yürüyüşler yapmak ilişkinizin havasını tazeleyebilir.",
+          "askYalniz": "Eski bir arkadaşınla ya da yakın çevrenden biriyle beklenmedik sohbetler gelişebilir. Geçmişteki duygusal yakınlaşmaların tekrar konuşulması gündeme gelebilir. Acele adımlar atmak yerine hislerini anlamaya vakit ayırabilirsin.",
+          "kariyer": "Yazışmalar ve haberleşmeler haftanın ilk yarısında yoğunlaşabilir. Çarşamba günkü kavuşum sayesinde unutulmuş ayrıntıları fark edip olası karmaşaların önüne geçebilirsin. İmzalanacak resmi metinleri dikkatle incelemen senin için daha güvenli olacaktır.",
+          "saglik": "Aşırı detaylara odaklanmak zihinsel gerilimi yükseltebilir. Gün içinde nefes egzersizleriyle mola vermek ve zihni boşaltacak sakin uğraşlar seçmek rahatlamana yardımcı olur."
+        },
+        "libra": {
+          "ad": "Terazi",
+          "ozet": "Kendi değerinin farkına varıp kaynaklarını planlarken ilişkilerinde zarafeti koruyabilirsin.",
+          "genel": "Maddi konular, öz değer duygusu ve kişisel kaynakların dönemin temelini oluşturuyor. Burcunda geri hareket eden Venüs, kendini sunuş biçimini ve dış dünyayla ilişkilerini yeniden gözden geçirmene zemin hazırlıyor. 4 Kasım'da gerçekleşecek Venüs-Jüpiter altmışlığı, moralini yükseltecek ve sosyal ilişkilerinde tatlı bir akış yaratacaktır. Perşembe günü Ay'ın burcuna geçiş yapmasıyla tazelenmiş hissedecek, içsel dengeni yeniden bulacaksın. Hafta sonu yaklaşırken bütçeni ve gelecek adımlarını netleştirebilirsin. Süreci zorlamadan, kendinle barışık bir tempoda yönetebilirsin.",
+          "askIliskide": "İlişkide kendi değerini sorguladığın anlar yaşayabilir, partnerinden daha çok ilgi bekleyebilirsin. Çarşamba günkü olumlu açı sayesinde aranızdaki sevgi bağını belirgin şekilde hissedebilirsiniz. Perşembe sonrasında paylaşımcı tutumun uyumu pekiştirecektir.",
+          "askYalniz": "Kendi kabuğuna çekildiğin bu günlerde geçmişte bıraktığın biri tekrar iletişime geçmek isteyebilir. İçsel güzelliğinin farkına vardıkça çevrendekilerin ilgisini çekmen kolaylaşacaktır. Ancak kararlarını zamana yayarak vermelisin.",
+          "kariyer": "Bütçeni planlamak ve finansal dengeleri korumak dönemin ana gündemi oluyor. Çarşamba günü iş çevrenden alacağın desteklerle ertelediğin konuları yoluna koyabilirsin. Ani kararlar almak yerine var olan kaynaklarını muhafaza etmeye öncelik verebilirsin.",
+          "saglik": "Kendi temponu yakalamak ve gün içindeki dengeyi korumak sana iyi gelecektir. Yorgunluk hissettiğinde kısa molalar verip dinlenmek enerjini yeniden yükseltir."
+        },
+        "scorpio": {
+          "ad": "Akrep",
+          "ozet": "Kendi alanına çekilip hedeflerini gözden geçirirken içsel dengeni yeniden kurabilirsin.",
+          "genel": "Güneş'in senin burcundaki seyriyle kendi varlığını ve isteklerini ön plana taşıdığın bir zamandasın. Burcunda gerileyen Merkür ise geçmişte aldığın kararları ve iletişim dilini yeniden tartmana zemin hazırlıyor. 4 Kasım Çarşamba günü yaşanacak Güneş-Merkür kavuşumu, zihnindeki belirsizlikleri dağıtarak aksayan işleri kolayca toparlamana yardım edebilir. Kariyer alanındaki yöneticin Mars'ın güçlü duruşu hedeflerinde kararlı kalmanı destekliyor. Perşembe gününden itibaren ikili ilişkilerde sakin kalmayı seçebilir, dinlenmeye daha çok vakit ayırabilirsin. 8 Kasım Pazar günü Ay'ın burcuna geçişiyle birlikte içsel anlamda belirgin bir tazelenme hissetmen olasıdır.",
+          "askIliskide": "İlişkinde netlik arayışında olabilir, duygularını açıkça paylaşmak isteyebilirsin. Çarşamba günkü diyaloglar aranızdaki olası pürüzleri gidermenize yardımcı olabilir. Dinlemeye vakit ayırmak aranızdaki bağı besler.",
+          "askYalniz": "Kendi kabuğuna çekildiğin bu süreçte eski ilişkilerin muhasebesini yapabilirsin. Zihnini meşgul eden bitmemiş hikayeleri kapatmak rahatlamanı sağlar. Kendinle baş başa kalmak yeni adımlar öncesinde sana iyi gelecektir.",
+          "kariyer": "Bireysel projelerin ve uzun vadeli hedeflerin ön planda olduğu bir dönemden geçiyorsun. Çarşamba günkü gökyüzü etkileriyle yarım kalmış evrakları veya görüşmeleri tamamlayabilirsin. Yeni sorumluluklar almadan önce şartları titizlikle incelemelisin.",
+          "saglik": "Yoğun zihinsel temponu dengelemek için akşam saatlerinde sessiz ortamlarda kalmayı seçebilirsin. Uyku ritmine dikkat etmek gün içindeki dayanıklılığını artırır."
+        },
+        "sagittarius": {
+          "ad": "Yay",
+          "ozet": "Zihnini dinlendirip iç dünyana zaman ayırarak yeni bakış açıları kazanabilirsin.",
+          "genel": "Haftaya daha sakin, kabuğuna çekilmiş ve iç dünyanı düzenleyen bir ruh haliyle başlıyorsun. Yöneticin Jüpiter'in Aslan burcundaki konumu sana geniş bir bakış açısı sunarken, Güneş'in dinlenme alanındaki varlığı bir miktar yavaşlama ihtiyacı yaratabilir. Çarşamba günü gerçekleşen Venüs-Jüpiter altmışlığı, içsel bir huzur ve yakın çevrenden tatlı bir destek getirecektir. Aynı gün zihnini meşgul eden bir gizemi çözebilir ya da bir farkındalık yaşayabilirsin. Perşembe sonrasında sosyal ilişkilerin hareketlenmeye başlıyor. Dönemi akışına bırakarak geçirmek ruhuna iyi gelecektir.",
+          "askIliskide": "Partnerinle gözlerden uzak ve baş başa zaman geçirmeyi tercih edebilirsin. Çarşamba günü hislerinizi sakince paylaşmak aranızdaki anlayışı yükseltecektir. Birbirinize kişisel alan tanımak bu dönemde ilişkinizi korur.",
+          "askYalniz": "Duygusal anlamda kendi kabuğunda kalmak ve yalnızlığın keyfini çıkarmak isteyebilirsin. Hafta ortasında gelişebilecek sürpriz haberleşmeler zihninde tatlı bir merak uyandırabilir. Olayları zamana yaymak daha sağlıklı olacaktır.",
+          "kariyer": "Arka planda yürütülen çalışmalar ve hazırlık aşamasındaki projeler için oldukça uygun bir dönemdesin. Çarşamba günü yapacağın değerlendirmeler geleceğe yönelik stratejilerini netleştirebilir. Öne çıkmak yerine eksikleri tamamlamaya odaklanmak uzun vadede kazandırır.",
+          "saglik": "Zihinsel yükleri bir kenara bırakmak için gün içinde sakin yürüyüşleri tercih edebilirsin. Bedenini yormadan ruhunu dinlendirecek rutinler oluşturmak tazelenmeni sağlar."
+        },
+        "capricorn": {
+          "ad": "Oğlak",
+          "ozet": "Gelecek planlarını gözden geçirirken dostluklarında içtenliği ve esnekliği ön plana alabilirsin.",
+          "genel": "Sosyal çevren, arkadaşlık bağların ve geleceğe dönük hedeflerin haftanın ana ritmini belirliyor. Yöneticin Satürn'ün ev ve aile alanındaki geri hareketi, yerleşik düzeninde zaman zaman yavaşlama hissettirebilir. 4 Kasım Çarşamba günü gerçekleşecek Güneş-Merkür kavuşumu, eski bir dostla yeniden iletişim kurmana veya yarım kalmış bir grup projesini tamamlamana olanak tanır. Perşembe öğleden sonra ilişkilerde ve ortaklıklarda denge arayışın öne çıkabilir. Pazar gününe doğru ilerlerken duygusal yoğunluğu daha sakin bir kabulle karşılayabilir, dostlarından destek alabilirsin. Adımlarını atarken planlarında esnek kalmaya özen gösterebilirsin.",
+          "askIliskide": "Birlikteliğinde ortak geleceğe yönelik kararları aceleye getirmeden konuşabilirsiniz. Çarşamba günü arkadaş grupları içinde geçireceğiniz vakit aranızdaki neşeyi artırabilir. Birbirinize zaman tanımak ilişkiyi rahatlatır.",
+          "askYalniz": "Eski bir arkadaşlığın beklenmedik bir sohbetle farklı bir yöne evrilmesi mümkündür. Geçmiş anıları paylaşmak ruhuna iyi gelebilir. Akışı zorlamadan olayların kendi ritminde gelişmesine izin verebilirsin.",
+          "kariyer": "Ekip çalışmaları ve ortaklaşa yürütülen projeler haftanın ilk yarısında öne çıkıyor. Çarşamba günü tıkanmış bir iletişim kanalını açabilir, geçmiş anlaşmaları gözden geçirebilirsin. Büyük yatırımlar yerine eldeki işleri sağlamlaştırmak kazançlı olur.",
+          "saglik": "Sosyal hareketliliğin getirdiği zihinsel yorgunluğu dinlenme saatlerini artırarak dengede tutabilirsin. Sakin bir tempoda kalmak gün boyunca enerjini korumanı sağlar."
+        },
+        "aquarius": {
+          "ad": "Kova",
+          "ozet": "Kariyer yolculuğunda adımlarını dikkatle atarak geleceğe dair duruşunu netleştirebilirsin.",
+          "genel": "Kariyerin, hedeflerin ve toplum önündeki duruşun dönemin odak noktasında yer alıyor. Yöneticin Satürn'ün geri hareketi, yakın çevrenle olan diyaloglarında sabırlı bir tutum gerektirebilir. Çarşamba günü Güneş ve Merkür'ün kariyer alanında kavuşması, geçmişte kalmış bir projeyi veya teklifi tekrar gündeme getirecektir. Perşembe sonrasında olaylara daha geniş bir açıdan bakmak isteyecek, yeni şeyler öğrenmeye merak duyacaksın. Pazar gününe doğru yaklaşırken hedeflerini gözden geçirmek sana güven verecektir. Dengeli ve sabırlı ilerlemek uzun vadeli başarı getirir.",
+          "askIliskide": "İş temposu sebebiyle partnerine zaman ayırmakta zorlansan da karşılıklı anlayışla dengede kalabilirsiniz. Çarşamba günü geleceğe yönelik ciddi bir konuyu konuşmak aranızdaki güveni pekiştirecektir. Birlikte hedef koymak ilişkinizi destekler.",
+          "askYalniz": "Profesyonel çevrelerde eski bir tanıdıkla karşılaşma olasılığın yüksek görünüyor. Ciddi ve sağlam adımlar aradığın bu dönemde karşındaki kişinin samimiyetini tartmak isteyebilirsin. Zamana yayarak hareket etmek en iyisidir.",
+          "kariyer": "Üstlerinle olan diyaloglar ve yarım kalan görevler öne çıkıyor. Çarşamba günü geçmişte kalmış bir çalışmayı revize ederek tekrar sunma fırsatı bulabilirsin. Radikal kararları bir süre erteleyip elindeki mevcut sorumlulukları tamamlamaya yönelebilirsin.",
+          "saglik": "Günün getirdiği yoğunluğu akşam saatlerinde zihnini boşaltarak hafifletebilirsin. Kısa yürüyüşler yapmak ve dinlenmeye zaman ayırmak stres seviyeni düşürmene her zaman yardımcı olur."
+        },
+        "pisces": {
+          "ad": "Balık",
+          "ozet": "Vizyonunu genişletirken günlük yaşamında huzurlu ve dengeli bir ritim tutturabilirsin.",
+          "genel": "Hayata bakış açın, öğrenme merakın ve uzaklarla ilgili gündemler haftanın ilk günlerinde öne çıkıyor. Yöneticin Jüpiter'in günlük düzen alanındaki varlığı temponu hafifletirken, 4 Kasım Çarşamba günü Venüs ile kuracağı uyumlu açı moralini yükseltecektir. Aynı gün gerçekleşen Güneş-Merkür kavuşumu, ertelenmiş bir eğitimi veya eksik kalmış resmi belgeleri tamamlamana yardım edebilir. Perşembe gününden itibaren diyaloglarında denge ve nezaket arayışın belirginleşebilir. Haftanın son günlerinde zihnindeki karmaşa yerini içsel bir dinginliğe bırakabilir. Kendi sezgilerine güvenerek günlük temponu ayarlayabilirsin.",
+          "askIliskide": "Partnerinle hayata dair derin konularda sohbet etmek aranızdaki yakınlığı artırabilir. Çarşamba günü ortak hayaller üzerine konuşmak ilişkinize tazelik katabilir. Birbirinizin özgür alanlarına saygı göstermek uyumu pekiştirir.",
+          "askYalniz": "Uzak şehirlerden veya öğrenim ortamlarından eski bir tanıdıkla diyalog yeniden canlanabilir. Benzer dünya görüşlerini paylaşmak aranızda samimi bir yakınlık doğurabilir. Acele etmeden duyguların netleşmesini bekleyebilirsin.",
+          "kariyer": "İletişim, yazışmalar ve planlamalar haftanın odak noktasında yer alıyor. Çarşamba günü Venüs-Jüpiter desteği iş ortamındaki pürüzleri gidermeni kolaylaştırırken, Güneş-Merkür buluşması eksikleri tamamlamana destek olur. Yeni adımlar yerine mevcut işleri toparlamaya odaklanabilirsin.",
+          "saglik": "Günün koşturmacası arasında zihnine dinlenme molaları ayırmak sana iyi gelecektir. Akşamları dingin bir ortam oluşturmak uyku kaliteni olumlu yönde etkiler."
+        }
+      }
+    },
     {
       "baslangic": "2026-10-26",
       "bitis": "2026-11-01",
@@ -207,212 +395,6 @@
           "askYalniz": "İletişim trafiğinin hareketli olduğu bu haftada yeni insanlarla fikir alışverişi yapabilirsin. Ancak hemen derin duygusal bağlar kurmak yerine karşındakini zihinsel açıdan tanımayı tercih edebilirsin. Hafta sonu daha sakin bir akış yakalayabilirsin.",
           "kariyer": "İletişim, yazışmalar ve projeler açısından hareketli bir hafta başı seni bekliyor. Pazartesi günü fikirlerini kabul ettirmeye çalışırken esnek kalmayı tercih edebilirsin. Cuma günü çalışma arkadaşlarınla haberleşmede yaşanabilecek pürüzleri soğukkanlılıkla çözmek faydalı olur.",
           "saglik": "Gün içindeki yoğun temponun getirdiği stresi azaltmak için sakin ortamlarda vakit geçirmelisin. Dinlenme saatlerini düzenleyip zihnini dinlendirerek haftayı çok daha dengeli geçirebilirsin."
-        }
-      }
-    },
-    {
-      "baslangic": "2026-10-19",
-      "bitis": "2026-10-25",
-      "uretildi": "2026-10-18T22:28:19Z",
-      "model": "gemini-3.6-flash",
-      "gokyuzu": {
-        "konumlar": {
-          "Güneş": {
-            "burc": "Terazi",
-            "retro": false
-          },
-          "Merkür": {
-            "burc": "Akrep",
-            "retro": false
-          },
-          "Venüs": {
-            "burc": "Akrep",
-            "retro": true
-          },
-          "Mars": {
-            "burc": "Aslan",
-            "retro": false
-          },
-          "Jüpiter": {
-            "burc": "Aslan",
-            "retro": false
-          },
-          "Satürn": {
-            "burc": "Koç",
-            "retro": true
-          },
-          "Uranüs": {
-            "burc": "İkizler",
-            "retro": true
-          },
-          "Neptün": {
-            "burc": "Koç",
-            "retro": true
-          },
-          "Plüton": {
-            "burc": "Kova",
-            "retro": false
-          }
-        },
-        "olaylar": [
-          {
-            "tarih": "2026-10-19",
-            "saat": "04:40",
-            "tur": "gecis",
-            "metin": "Ay Kova burcuna geçiyor"
-          },
-          {
-            "tarih": "2026-10-20",
-            "saat": "10:02",
-            "tur": "aci",
-            "metin": "Venüs–Plüton kare"
-          },
-          {
-            "tarih": "2026-10-21",
-            "saat": "15:35",
-            "tur": "gecis",
-            "metin": "Ay Balık burcuna geçiyor"
-          },
-          {
-            "tarih": "2026-10-23",
-            "saat": "12:38",
-            "tur": "gecis",
-            "metin": "Güneş Akrep burcuna geçiyor"
-          },
-          {
-            "tarih": "2026-10-23",
-            "saat": "22:54",
-            "tur": "gecis",
-            "metin": "Ay Koç burcuna geçiyor"
-          },
-          {
-            "tarih": "2026-10-24",
-            "saat": "06:44",
-            "tur": "aci",
-            "metin": "Güneş–Venüs kavuşum"
-          },
-          {
-            "tarih": "2026-10-24",
-            "saat": "10:09",
-            "tur": "retro",
-            "metin": "Merkür Akrep burcunda geri harekete başlıyor (retro başlıyor)"
-          },
-          {
-            "tarih": "2026-10-25",
-            "saat": "12:10",
-            "tur": "gecis",
-            "metin": "Venüs Terazi burcuna geçiyor (geri hareketle)"
-          }
-        ]
-      },
-      "burclar": {
-        "aries": {
-          "ad": "Koç",
-          "ozet": "İlişkilerdeki dengeleri gözden geçirirken, haftanın ikinci yarısında odağını kendi derinliklerine çevirebilirsin.",
-          "genel": "İlişkilerin getirdiği yükümlülüklerle yüzleştiğin bir tempolu haftaya başlıyorsun. Pazartesi günü sosyal çevrendeki insanlarla iletişim kurmak zihnini rahatlatabilir. Salı günü ikili ilişkilerde güç dengelerini sorgulama ihtiyacı hissederken, Çarşamba gününden itibaren daha dingin bir akışa geçebilirsin. 23 Ekim Cuma günü Güneş'in Akrep burcuna geçişiyle birlikte odağın ortaklaşa paylaşımlara ve içsel dönüşüm süreçlerine kayıyor. Cumartesi günü Merkür'ün Akrep burcundaki geri hareketi, geçmişte yarım kalmış finansal konuları ve duygusal bağları yeniden masaya yatırmana zemin hazırlayabilir. Hafta sonu kendi alanını ve sınırlarını korumak senin için çok daha belirgin hale gelebilir.",
-          "askIliskide": "Birlikteliğinde gizli kalmış duyguların su yüzüne çıkabileceği bir süreçtesin. Cumartesi günü gerçekleşen buluşma, aranızdaki bağı yeniden tanımlamak için bir alan açabilir. Sözlerinin yaratacağı etkiyi tartarak hareket etmek ilişkinize huzur getirebilir.",
-          "askYalniz": "Geçmişten gelen bir iletişim ya da eski bir tanışıklık haftanın ikinci yarısında zihnini meşgul edebilir. Acele kararlar vermek yerine karşındaki kişinin niyetini anlamaya çalışmak daha sağlıklı olabilir. Kendi değerini hatırlamak sana rehberlik edebilir.",
-          "kariyer": "İş hayatında ortaklı projeler ve finansal düzenlemeler bu hafta öne çıkıyor. Cumartesi başlayacak olan Merkür retrosu, sözleşmeleri ve ödemeleri dikkatle incelemen gerektiğini gösteriyor. Yeni adımlar atmadan önce elindeki işleri tamamlamayı seçebilirsin.",
-          "saglik": "Zihinsel yoğunluğun arttığı bu günlerde temponu yavaşlatmak sana iyi gelebilir. Akşam saatlerinde sakin aktivitelere zaman ayırıp uyku düzenine özen göstererek içsel dengeni rahatlıkla koruyabilirsin."
-        },
-        "taurus": {
-          "ad": "Boğa",
-          "ozet": "İlişkilerinde ve günlük rutininde geçmişin izlerini temizleyip dengeni yeniden bulabileceğin bir dönemdesin.",
-          "genel": "Haftaya günlük sorumluluklarına ve hedeflerine odaklanarak adım atıyorsun. Salı günü yönetici gezegenin Venüs ile Plüton arasındaki gerilimli açı, ikili ilişkilerinde saklı kalmış bazı meseleleri görünür kılabilir. Çarşamba gününden itibaren yakın çevrenle daha yumuşak ve anlayışlı bir bağ kurabilirsin. 23 Ekim Cuma günü Güneş'in Akrep burcuna geçişi, odağını tamamen birlikteliklerine ve ortaklıklarına yöneltiyor. Cumartesi günü Güneş ile Venüs'ün kavuşumu ve Merkür'ün geri harekete başlaması, geçmiş iletişimleri tekrar gündeme getirebilir. Pazar günü Venüs'ün Terazi burcuna geçmesiyle çalışma ortamındaki dengeleri ve günlük yaşam ritmini yeniden düzenleme imkanı yakalayabilirsin.",
-          "askIliskide": "İlişkinde güç mücadelelerinden uzak durmak ve partnerinle empati kurmak bu haftanın anahtarı olabilir. Cumartesi günkü kavuşum, geçmişte çözülmemiş bir meseleyi tatlıya bağlamanıza yardımcı olabilir. Birlikte sakin zaman geçirmeyi tercih edebilirsiniz.",
-          "askYalniz": "Eski bir flörtün tekrar seninle iletişime geçme ihtimali bu hafta oldukça yüksek görünüyor. Zihnini karıştıran duyguları aceleyle karara bağlamak yerine akışta kalmayı deneyebilirsin. Kendine zaman tanımak doğru hissetmeni kolaylaştırabilir.",
-          "kariyer": "Çalışma hayatında yarım kalan projeleri tamamlamak için oldukça uygun bir dönemdesin. Hafta sonuna doğru başlayan Merkür retrosu, iş ortaklıklarında sözleşmeleri iki kez kontrol etmeni gerektirebilir. Finansal konularda temkinli davranmak faydalı olabilir.",
-          "saglik": "Günlük koşturmaca içinde bedeninin verdiği ritim sinyallerini dinlemeyi ihmal etmemek gerekiyor. Temponu dengede tutacak kısa dinlenme molaları vermek ve zihnini boşaltmak enerjini tazelemeni kolaylaştıracaktır."
-        },
-        "gemini": {
-          "ad": "İkizler",
-          "ozet": "Zihinsel üretkenliği günlük işlere yansıtırken planlardaki ayrıntılara dikkat etmek gereken bir dönem.",
-          "genel": "Haftaya başlarken zihnini geleceğe dönük tasarılar ve yaratıcı düşünceler kaplayabilir. Salı civarında günlük koşturmacanın getirdiği pürüzleri pratik yöntemlerle aşabilirsin. Hafta ortasında Ay'ın konumu sayesinde içsel dengeni yakalaman kolaylaşıyor. Cuma günü Güneş'in Akrep burcuna adım atmasıyla beraber çalışma ortamın, rutinlerin ve yapılması gerekenler ön sıraya yerleşiyor. Cumartesi günü yöneticin Merkür'ün Akrep burcundaki geri hareketi başladığında iletişimdeki ufak aksamaları sabırla yönetmek önem kazanıyor. Hafta sonunu yarım kalmış detayları toparlayıp sakinleşmek için değerlendirmek iyi gelebilir.",
-          "askIliskide": "Sevgilinle gündelik işlerin paylaşımı üzerine konuşurken net bir dil kullanmak faydalı olabilir. Cuma gününden sonra ortak rutinlerinize yenilik katmak aranızdaki iletişimi canlandırabilir. Birbirinizi sakince dinlemek aradaki bağı destekler.",
-          "askYalniz": "Günlük temponun içinde beklenmedik bir sohbet filizlenebilir ancak adımları yavaş atmakta yarar var. Haftanın son günlerinde geçmişe ait hisler zihnini kurcalayabilir. Kendi duygularını tarafsızca gözlemlemek doğru kararlar almana yardım eder.",
-          "kariyer": "Çalışma hayatında detayların öne çıktığı ve odaklanma gerektiren bir süreçten geçiyorsun. Cumartesi günü Merkür retrosunun başlaması sebebiyle e-postaları ve iletileri göndermeden evvel kontrol etmek faydalı olur. İşlerin akışını planlı yürütmek üzerindeki yükü belirgin şekilde hafifletir.",
-          "saglik": "Zihindeki düşünce yoğunluğu gün sonunda dinlenmeyi geciktirebilir. Günlük hareket ritmini dengede tutmak ve akşamları zihni sakinleştirecek sessiz anlar yaratmak iyi bir huzur sağlar."
-        },
-        "cancer": {
-          "ad": "Yengeç",
-          "ozet": "Yuvandaki huzuru korurken haftanın sonuna doğru yaratıcı yönlerini ve yaşam neşeni öne çıkarabilirsin.",
-          "genel": "Dönemin başlangıcında dikkatin daha çok ev yaşamı, ailevi bağlar ve kişisel alanın etrafında şekilleniyor. Salı günü yakın ilişkilerde yaşanabilecek kısa süreli gerginliklerde sakin kalmayı seçebilirsin. Çarşamba günü Ay'ın Balık geçişiyle birlikte içsel sezgilerin güçleniyor ve zihnin ferahlıyor. 23 Ekim'de Güneş'in burç değiştirmesiyle hayattan keyif alma arzun ve yaratıcı süreçlerin ivme kazanıyor. Cumartesi günü başlayan Merkür retrosu, daha önce rafa kaldırdığın bir hobiyi veya yarım kalan bir fikri tekrar gündeme getirebilir. Hafta sonu boyunca sevdiklerinle kuracağın sıcak diyaloglar içindeki dinginliği artırabilir.",
-          "askIliskide": "Partnerinle evinizde dingin vakit geçirmek ve samimi sohbetleri çoğaltmak ilişkinize derinlik katabilir. İletişimde geçmişe takılmadan yapıcı bir tutum sergilemek aranızdaki sevgiyi güçlendirecektir. Birbirinize zaman ayırmak bağınızı besler.",
-          "askYalniz": "İç dünyanda eski bir duygunun yankılarını yeniden hissedebilirsin. Haftanın sonlarına doğru yaşanacak bir haberleşme zihnini meşgul etse de acele kararlar vermeyip duygularının olgunlaşmasını beklemek daha sağlıklı sonuçlar verir.",
-          "kariyer": "Üretkenliğinin yükseldiği ve özgün fikirlerin öne çıktığı bir dönemdesin. Cumartesi başlayan geri hareket nedeniyle yeni bir sözleşmeye imza atmadan evvel metinleri dikkatle incelemek önem taşıyor. Mevcut projelerin eksiklerini tamamlamak için uygun bir zamandasın.",
-          "saglik": "Yaşam alanında geçireceğin sakin zamanlar zihinsel dengeni korumana belirgin katkı sağlar. Akşam saatlerinde zihni yoran uyarıcılardan uzak durarak dinlenmeye vakit ayırmak tazelenmene yardımcı olur."
-        },
-        "leo": {
-          "ad": "Aslan",
-          "ozet": "Yoğun iletişim trafiğinin ardından odağını yuvanın sıcaklığına ve içsel dengene çevireceğin bir hafta.",
-          "genel": "Haftaya çevrenle iletişim kurarak ve fikir alışverişlerini hızlandırarak adım atıyorsun. Salı günü yakın ilişkilerde görüş ayrılıkları belirse de yapıcı tutumunu koruyabilirsin. Çarşamba günü sezgilerinin derinleştiğini ve olaylara daha geniş bir açıdan baktığını hissedebilirsin. 23 Ekim'de Güneş'in Su grubuna geçmesiyle tüm dikkatin ailevi konulara ve evdeki huzuruna yöneliyor. Cumartesi günü Güneş ile Venüs'ün buluşması ve Merkür retrosunun başlaması, evle ilgili geçmiş meseleleri tatlılıkla çözme imkanı sunabilir. Hafta sonunu kendi alanında dinlenerek geçirmek zihnini tamamen toparlamana yardım eder.",
-          "askIliskide": "Birlikteliğinde ev yaşamına ve ortak geleceğe dair başlıklar öne çıkabilir. Sevgilinle geçmişten kalan ufak pürüzleri konuşurken sakin ve anlayışlı bir dil benimsemek aranızdaki bağı kuvvetlendirir. Anlayışlı olmak uyumu beraberinde getirir.",
-          "askYalniz": "Aile ortamlarında veya eski tanıdıkların bulunduğu meclislerde geçmişten biriyle karşılaşma ihtimalin var. Zihninde netleşmemiş hisler varsa bu süreçte onları tartıp ne istediğini anlamak sana güç verecektir. Temkinli ilerlemek iyidir.",
-          "kariyer": "Çalışma hayatında ailevi sorumluluklar ile mesleki hedefler arasında denge kurman gerekebilir. Cumartesi günü başlayan retro süreci, taşınma veya çalışma alanı düzenlemelerinde acele etmemen gerektiğini hatırlatıyor. Ayrıntıları sakince gözden geçirmelisin.",
-          "saglik": "Kendi kabuğuna çekilip dinlenmeye vakit ayırmak enerjini tazelemen için elverişli bir zemin hazırlar. Temponun düştüğü anlarda zihnini dinlendirecek pratiklerle kendine zaman tanıyabilirsin."
-        },
-        "virgo": {
-          "ad": "Başak",
-          "ozet": "Maddi dengeleri gözetirken iletişim dilinde ve yakın çevre ilişkilerinde özenli davranma zamanı.",
-          "genel": "Haftanın başında yapılacaklar listen ve gündelik koşturmacan çalışma temponu belirliyor. Salı günü bütçen ve kişisel harcamaların konusunda bazı sorgulamalar zihnini meşgul edebilir. Çarşamba günü ikili diyaloglarda anlayışlı tutumunu korumak sana rahatlık sağlayacaktır. 23 Ekim'de Güneş'in Akrep burcuna geçişiyle odağın yakın çevren, kardeşlerin ve öğrenim süreçlerine kayıyor. Yöneticin Merkür'ün Cumartesi günü başlayan geri hareketi, mesajlaşmalarda ve yazışmalarda ekstra dikkatli olman gerektiğine işaret ediyor. Hafta sonunu ertelenmiş işleri bitirmek ve zihnini derleyip toplamak için sakince değerlendirebilirsin.",
-          "askIliskide": "Partnerinle kurduğun iletişimde doğrudan ve açık ifadeler seçmek yanlış anlaşılmaları engeller. Cumartesi gününden itibaren geçmişte kalmış pürüzleri tatlıya bağlamak adına samimi konuşmalar yapabilirsiniz. Birbirinize zaman ayırmak iyi gelir.",
-          "askYalniz": "Yakın çevrenden veya eski bir arkadaş grubundan birinin yaklaşımını fark edebilirsin. Adım atmadan önce karşındaki insanı daha derinden tanımaya zaman ayırmak olası kafa karışıklıklarını önler. Dürüst gözlemler sana rehberlik eder.",
-          "kariyer": "Yazışmalar, sunumlar ve bilgi akışında pürüz çıkmaması için planlı hareket etmen önem kazanıyor. Merkür retrosu boyunca belgeleri göndermeden evvel kontrol etmek fayda sağlar. Yarıda kalmış projeleri tamamlamak sana güven kazandıracaktır.",
-          "saglik": "Zihnindeki fikir yoğunluğunu yatıştırmak adına gün içinde kısa duraksamalar yaratabilirsin. Tempolu yürüyüşler yapıp ritmini korumak ve zihinsel sakinliği aramak enerjini dengede tutar."
-        },
-        "libra": {
-          "ad": "Terazi",
-          "ozet": "Kendi merkezinde durup öz değerini pekiştirirken finansal dengelerini yeniden yapılandırabileceğin bir hafta.",
-          "genel": "Haftaya kişisel hedeflerin ve kendi isteklerinle ilgilenerek adım atıyorsun. Salı günü yönetici gezegenin Venüs'ün Plüton ile oluşturduğu sert açı, içsel öz değer konularını zihninde canlandırabilir. Çarşamba günü günlük işlerini sıraya koymak zihinsel bir rahatlama getirecektir. 23 Ekim'de Güneş'in burç değiştirmesiyle maddi konular ve kaynakların gündeminin ana başlığı haline geliyor. Cumartesi günü Güneş ile Venüs kavuşumu içsel bir farkındalık sunarken, Merkür retrosu bütçeni kontrol etmeni öneriyor. Pazar günü Venüs'ün tekrar senin burcuna dönmesiyle kendine olan güvenin ve dışa yansıyan duruşun belirginleşiyor.",
-          "askIliskide": "Birlikteliğinde kendi beklentilerini ve değerini tarttığın bir dönemden geçiyorsun. Cumartesi günkü Güneş-Venüs kavuşumu, sevgilinle arandaki sevgiyi tazelemek ve içten bir diyalog kurmak için elverişli bir zemin yaratır. Paylaşımda kalmayı seçebilirsiniz.",
-          "askYalniz": "Pazar günü Venüs'ün senin burcuna geçişiyle beraber çekim gücün öne çıkıyor. Geçmişten gelen birinin yeniden iletişime geçme ihtimali var; yaşanan tecrübeleri dikkate alarak ilerlemek senin için en sağlıklı yol olacaktır.",
-          "kariyer": "Bütçeni planlamak ve parasal konularda temkinli adımlar atmak bu dönemin önceliği. Cumartesi başlayan retro süreci, büyük harcamaları ertelemeni ve mevcut kaynaklarını korumanı fısıldıyor. Hesabını bilerek ilerlemek sana kazanç sağlar.",
-          "saglik": "İçsel dalgalanmaların günlük ritmini etkilemesine izin vermemek değer taşır. Kendine vakit ayırıp zihinsel dinginliğini koruyacak sakin uğraşlara yönelmek sana belirgin bir ferahlık katar."
-        },
-        "scorpio": {
-          "ad": "Akrep",
-          "ozet": "İç dünyandaki sorgulamaları geride bırakıp kendi döneminizi başlatırken yenilenmenin tadını çıkarabilirsin.",
-          "genel": "Haftanın ilk günlerinde kendi alanına çekilip zihnini sakince dinlendirmeyi tercih edebilirsin. Salı günü Venüs ile Plüton arasındaki gerilimli görünüm, derinlerde saklı duyguları yüzeye çıkarabilir. Çarşamba günü yaratıcı uğraşlar ve hobiler sana huzur verir. 23 Ekim'de Güneş'in senin burcuna geçişiyle yeni bir dönem açılıyor ve enerjin tazeleniyor. Cumartesi günü burcunda gerçekleşen Güneş-Venüs kavuşumu ve Merkür'ün geri harekete başlaması, geçmiş adımlarını sakince gözden geçirmene imkan tanıyor. Bu süreçte kendini ifade ederken aceleci davranmayıp sezgilerine güvenmek sana güç katacaktır.",
-          "askIliskide": "Güneş'in senin burcuna gelişiyle ilişkinde daha etkileyici bir duruş sergileyebilirsin. Merkür retrosu sebebiyle sevgilinle konuşurken ifadelerine özen göstermek, eski kırgınlıkları sevgiyle sarmalamak ilişkinizi sağlamlaştırır.",
-          "askYalniz": "Yaş günü döneminin başlamasıyla bakışları üzerine topluyorsun. Cumartesi günü yaşanacak gelişmeler geçmişte kalan birinin yeniden seninle iletişim kurmasına imkan verebilir. Kalbinin ne istediğini anlamak adına adımlarını yavaş atabilirsin.",
-          "kariyer": "İş hayatında kendi gücünü ve kararlılığını sergileyebileceğin bir sürece giriyorsun. Ancak burcunda başlayan retro hareketi, yeni adımlardan ziyade yarım kalmış projeleri tamamlamanın ve stratejilerini yenilemenin daha faydalı olacağını gösteriyor.",
-          "saglik": "Tazelenen enerjinle birlikte kendine hak ettiği özeni göstermek isteyebilirsin. Zihnini yoracak karmaşık düşüncelerden uzak durup dinlenmeye yeterince zaman ayırmak genel ritmini dengede tutar."
-        },
-        "sagittarius": {
-          "ad": "Yay",
-          "ozet": "Sosyal bağlarını güçlendirirken haftanın ikinci yarısında zihnini ve ruhunu dinlendirmeye vakit ayırabilirsin.",
-          "genel": "Haftaya gelecek hedeflerine ve arkadaş çevrene odaklanarak güçlü bir adım atıyorsun. Salı günü sosyal ortamındaki fikir ayrılıkları zihnini meşgul etse de dengeni koruyabilirsin. Çarşamba günü ev ve aile konularında daha yumuşak bir atmosfer hakim oluyor. 23 Ekim'de Güneş'in Akrep burcuna geçişiyle odağın iç dünyana, kabuğuna çekilmeye ve zihinsel dinginliğe kayıyor. Cumartesi günü Merkür retrosunun başlaması, geçmişte ertelediğin duygusal yükleri hafifletmen için imkan sağlıyor. Hafta sonunu kalabalıklardan uzaklaşıp zihnini arındırarak geçirmek sana çok iyi gelebilir.",
-          "askIliskide": "Partnerinle gözlerden uzak kalıp sakin vakit geçirmek ilişkinize huzur katar. Geleceğe dair planları konuşurken esnek olmalı ve birbirinizin kişisel alanına saygı göstermelisiniz. Sakin iletişim bağınızı korur.",
-          "askYalniz": "Arkadaş ortamlarında veya ortak grupta eski bir tanıdık yeniden belirebilir. Hislerini hemen eyleme dönüştürmek yerine akışa bırakmak ve kendi iç dengeni muhafaza etmek daha sağlıklı bir yol sunar.",
-          "kariyer": "Ekip çalışmalarında ve projelerde planlama aşamasına ağırlık vermen gereken bir süreçtesin. Retro dönemi başlarken arka planda yürüttüğün işleri tamamlamak ve olası hataları düzeltmek kariyerinde sağlam adımlar atmanı sağlar.",
-          "saglik": "İçsel dinginliği yakalamak adına yalnız kalabileceğin zaman aralıkları yaratmak faydalı olur. Zihnini dinlendirecek sakin pratikler yapmak ve uyku saatlerini düzenlemek ruhuna iyi gelir."
-        },
-        "capricorn": {
-          "ad": "Oğlak",
-          "ozet": "Kariyer hedeflerini gözden geçirip haftanın sonuna doğru arkadaş çevrenle bağlarını tazeleyebilirsin.",
-          "genel": "Haftanın başlangıcında mesleki hedeflerin ve toplum içindeki duruşun ön planda yer alıyor. Salı günü yönetici gezegenin Satürn'ün geri hareketini sürdürdüğü bu günlerde, üstlerinle veya iş ortamınla ilgili konularda sabır göstermeyi seçebilirsin. Çarşamba gününden itibaren yakın çevrenle iletişimin daha ılıman bir hal alıyor. 23 Ekim'de Güneş'in Akrep burcuna geçmesiyle sosyal gruplar ve dostluklar odağın haline geliyor. Cumartesi günü başlayan Merkür retrosu, eski dostlarla bir araya gelme fırsatı sunarken projelerdeki pürüzleri de gündeme getirebilir. Hafta sonunu uzun vadeli planlarını revize ederek geçirebilirsin.",
-          "askIliskide": "Birlikteliğinizde gelecek hayallerinizi ve ortak hedeflerinizi yeniden değerlendirmek isteyebilirsiniz. Cumartesi günkü etkilerle geçmişte çözülememiş bir konuyu dostane bir sohbetle tatlıya bağlayabilirsiniz. Birbirinize destek vermek güveni artırır.",
-          "askYalniz": "Sosyal çevrenden veya eski iş ortamından biriyle yolların tekrar kesişebilir. Hemen bir ilişki beklentisine girmeden önce arkadaşlık zeminini güçlü tutmayı tercih edebilirsin. Zamana yayılan diyaloglar güven inşa eder.",
-          "kariyer": "Üstlendiğin sorumlulukları düzene sokmak ve stratejilerini yenilemek isteyeceğin bir dönemdesin. Cumartesi günü başlayan retro süreci, ortaklaşa projelerde haberleşme aksaklıkları yaratabileceğinden planları esnek tutmak yararlı olur. Eksik işleri bitirmek rahatlatır.",
-          "saglik": "Sorumluluk hissinin getirdiği yükü hafifletmek adına kısa molalar verebilirsin. Gün içinde dengeli yürüyüşler yapmak ve zihnini boşaltacak anlar yaratmak enerjini korumana yardım eder."
-        },
-        "aquarius": {
-          "ad": "Kova",
-          "ozet": "Ufkunu genişleten düşüncelere odaklanırken iş hayatında geçmiş tecrübelerinden faydalanabileceğin bir dönem.",
-          "genel": "Pazartesi günü Ay'ın senin burcuna geçişiyle haftaya yüksek farkındalık ve güçlü bir motivasyonla adım atıyorsun. Salı günü inançlar ve kişisel görüşler konusunda ısrarcı tutumlardan uzak durmaya özen göstermelisin. Çarşamba gününden itibaren finansal ve manevi konularda daha sezgisel adımlar atabilirsin. 23 Ekim'de Güneş'in Akrep burcuna geçmesiyle birlikte kariyer alanın aydınlanıyor ve mesleki amaçların öncelikli konun haline geliyor. Cumartesi günü başlayan Merkür retrosu, iş hayatındaki eski projeleri ve ertelenmiş konuşmaları tekrar masaya getirebilir. Hafta sonu toplum içindeki duruşunu ve uzun vadeli planlarını sakince gözden geçirmeyi seçebilirsin.",
-          "askIliskide": "İlişkinde partnerinle aynı vizyonu paylaşmak ve ortak hedeflere yönelmek önem kazanıyor. Hafta sonu yaşanacak gelişmeler geçmiş deneyimlerden ders çıkarmanıza yardımcıabilir. Anlayışlı bir tutum aranızdaki bağı güçlendirir.",
-          "askYalniz": "İş ortamında veya resmi alanlarda dikkatini çekecek biriyle karşılaşabilirsin. Retro sürecinde tanışılan kişileri zaman içinde tanımaya çalışmak daha sağlıklı olacaktır. Adımları yavaş atmak sana netlik kazandırır.",
-          "kariyer": "Kariyer basamaklarında ilerlerken geçmişte yarım kalmış işleri tamamlamak önceliğin olmalı. Cumartesi başlayan Merkür retrosu, iletişimde özellikle net olman gerektiğine işaret ediyor. Detaylı planlar yapmak olası karmaşayı önler.",
-          "saglik": "Günün koşturmacası içinde zihinsel yorgunluğu engellemek adına duraklama noktaları belirleyebilirsin. Sakin müzikler dinlemek ve dinlenme aralıkları vermek zihinsel dengeni korumana yardımcı olur."
-        },
-        "pisces": {
-          "ad": "Balık",
-          "ozet": "İçsel dönüşümünü sürdürürken ufkunu genişletecek yepyeni bakış açıları kazanabileceğin bir hafta.",
-          "genel": "Haftanın başlangıcında ortaklaşa kaynaklar ve derin duygusal paylaşımlar gündemini meşgul edebilir. Salı günü yakın bağlarında gerginliklerden kaçınarak içsel huzuru seçebilirsin. Çarşamba günü Ay'ın senin burcuna geçmesiyle birlikte sezgilerin güçleniyor ve kendini çok daha akışta hissediyorsun. 23 Ekim'de Güneş'in Akrep burcuna geçişi, ufkunu genişletecek öğrenme, seyahat ve düşünce konularını öne çıkarıyor. Cumartesi günü başlayan Merkür retrosu, geçmişte planlanmış yolculukları ya da yarım kalmış eğitimleri tekrar değerlendirmene imkan sağlıyor. Hafta sonunu zihinsel olarak özgürleşip sezgilerine kulak vererek geçirmek sana ferahlık getirir.",
-          "askIliskide": "Partnerinle duygusal anlamda derin bağlar kurabileceğiniz bir dönemdesiniz. Cuma gününden itibaren birlikte yeni yerler keşfetmek veya ortak fikirler üzerine sohbet etmek aranızdaki romantizmi canlandırabilir. İçten davranmak uyumu artırır.",
-          "askYalniz": "Uzaklarda bulunan veya geçmişte hayatında yer almış biriyle yeniden iletişime geçebilirsin. Sezgilerinin sana fısıldadığı ipuçlarını değerlendirerek hareket etmek duygusal kafa karışıklıklarının önüne geçer. Kendine zaman tanımak iyidir.",
-          "kariyer": "Akademik işler veya yurt dışı bağlantılı projelerde geçmiş dosyalar tekrar açılabilir. Cumartesi günü başlayan retro hareketi sebebiyle yazışmalarda ve seyahat planlarında esnek davranmak fayda sağlayacaktır. Kontrollü ilerlemek yararlıdır.",
-          "saglik": "Ruhsal dengeni ve iç huzurunu korumak adına dingin ortamlarda bulunmak sana çok iyi gelir. Günün sonunda zihnini boşaltmayı ve sakinleşmeyi tercih edebilirsin."
         }
       }
     }
