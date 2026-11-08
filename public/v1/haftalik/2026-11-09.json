@@ -1,0 +1,201 @@
+{
+  "baslangic": "2026-11-09",
+  "bitis": "2026-11-15",
+  "uretildi": "2026-11-08T15:05:19Z",
+  "model": "gemini-3.6-flash",
+  "gokyuzu": {
+    "konumlar": {
+      "Güneş": {
+        "burc": "Akrep",
+        "retro": false
+      },
+      "Merkür": {
+        "burc": "Akrep",
+        "retro": true
+      },
+      "Venüs": {
+        "burc": "Terazi",
+        "retro": true
+      },
+      "Mars": {
+        "burc": "Aslan",
+        "retro": false
+      },
+      "Jüpiter": {
+        "burc": "Aslan",
+        "retro": false
+      },
+      "Satürn": {
+        "burc": "Koç",
+        "retro": true
+      },
+      "Uranüs": {
+        "burc": "İkizler",
+        "retro": true
+      },
+      "Neptün": {
+        "burc": "Koç",
+        "retro": true
+      },
+      "Plüton": {
+        "burc": "Kova",
+        "retro": false
+      }
+    },
+    "olaylar": [
+      {
+        "tarih": "2026-11-09",
+        "saat": "10:02",
+        "tur": "evre",
+        "metin": "Yeni Ay, Akrep 16°",
+        "evre": "Yeni Ay"
+      },
+      {
+        "tarih": "2026-11-10",
+        "saat": "09:48",
+        "tur": "aci",
+        "metin": "Venüs–Mars altmışlık"
+      },
+      {
+        "tarih": "2026-11-10",
+        "saat": "11:36",
+        "tur": "gecis",
+        "metin": "Ay Yay burcuna geçiyor"
+      },
+      {
+        "tarih": "2026-11-12",
+        "saat": "23:27",
+        "tur": "gecis",
+        "metin": "Ay Oğlak burcuna geçiyor"
+      },
+      {
+        "tarih": "2026-11-13",
+        "saat": "18:57",
+        "tur": "retro",
+        "metin": "Merkür Akrep burcunda düz harekete dönüyor (retro bitiyor)"
+      },
+      {
+        "tarih": "2026-11-14",
+        "saat": "03:28",
+        "tur": "retro",
+        "metin": "Venüs Terazi burcunda düz harekete dönüyor (retro bitiyor)"
+      },
+      {
+        "tarih": "2026-11-15",
+        "saat": "12:24",
+        "tur": "gecis",
+        "metin": "Ay Kova burcuna geçiyor"
+      }
+    ]
+  },
+  "burclar": {
+    "aries": {
+      "ad": "Koç",
+      "ozet": "Güven ve paylaşımların derinleştiği bu haftada, ertelediğin kararları netleştirmek sana güç kazandırabilir.",
+      "genel": "Haftaya 9 Kasım'daki Akrep Yeni Ayı ile adım atıyorsun; bu durum ortak kaynaklar ve yakınlık alanında derin bir yenilenme arzusu uyandırıyor. Yöneticin Mars'ın Aslan burcundaki canlılığı ve Salı günü Venüs ile kurduğu olumlu açı, yaratıcı gücünü öne çıkarıyor. Hafta ortasında geçmişten kalan bazı pürüzler zihnini kurcalayabilir. Ancak Cuma günü Merkür'ün ve Cumartesi günü Venüs'ün retrolarının bitişiyle birlikte aksayan iletişim trafiğin rahatlıyor. Dönemin sonuna doğru duygusal yüklerini hafifletip adımlarını daha sağlam atabilirsin.",
+      "askIliskide": "Birlikteliğinde samimiyet ve güven arayışı öne çıkıyor. Salı günü oluşan uyumlu etki, aranızdaki tutkuyu ve paylaşımı artırabilir. Şeffaf bir iletişim kurarak aranızdaki bağları kuvvetlendirebilirsin.",
+      "askYalniz": "Kendini ifade etme arzunun yükseldiği bir dönemdesin. Sosyal çevrende ya da sanatsal ortamlarda dikkat çekebilirsin. Hafta sonuna doğru geride kalan belirsizliklerin dağılmasıyla yeni adımlar atabilirsin.",
+      "kariyer": "Ortaklı işler ve bütçe planlamasında yeni kararlar gündeme gelebilir. Hafta başında adım atmaktansa hafta sonunu beklemek kararlarını daha net kılacaktır. Merkür retrosunun bitimiyle yarım kalan projeleri tamamlayabilirsin.",
+      "saglik": "İçsel temponu dengelemek için kendine alan yaratman faydalı olabilir. Tempolu günlerin ardından zihnini dinlendirecek rutinlere vakit ayırabilirsin."
+    },
+    "taurus": {
+      "ad": "Boğa",
+      "ozet": "İlişkiler ve ortaklıklarda tazelenme getiren bir hafta seni bekliyor.",
+      "genel": "9 Kasım'daki Yeni Ay, birebir ilişkilerinin olduğu alanı aydınlatırken birlikteliklerinde yeni kararların eşiğine gelebilirsin. Yöneticin Venüs'ün geri hareketi Salı günü Mars ile kurduğu uyumlu açıyla dengeleniyor; bu da günlük akışındaki pürüzleri çözmene yardımcı oluyor. Hafta boyunca ikili diyaloglarda sakin kalmak önem taşıyor. Cumartesi günü Venüs'ün düz seyrine geçmesiyle birlikte kendini ve beklentilerini çok daha berrak biçimde ifade edebilirsin. Pazar gününe doğru adımların daha kararlı hale gelecektir.",
+      "askIliskide": "Beraberliğinde uzun süredir konuşulmayan konular su yüzüne çıkabilir. Salı gününün yapıcı atmosferi, aranızdaki çekimi ve uyumu artırıyor. Hafta sonu retrosu biten gezegenler sayesinde duygusal zemininiz sağlamlaşabilir.",
+      "askYalniz": "Karşındakini daha derinlemesine tanımak isteyeceğin bir süreçtesin. Geçmiş deneyimlerin getirdiği tereddütler hafta sonunda dağılmaya başlıyor. Yeni tanışmalara daha açık hale gelebilirsin.",
+      "kariyer": "İş birliği yaptığın kişilerle ilişkilerini yeniden düzenlemek isteyebilirsin. Sorumlulukların yoğunlaşsa da planlı hareket etmek işini kolaylaştıracaktır. Cuma ve Cumartesi günlerinden itibaren projelerinde daha hızlı ilerleme kaydedebilirsin.",
+      "saglik": "Günlük koşturmacanın arasında kendi ritmini korumaya özen göstermelisin. Zihinsel olarak yorulduğunda sessiz vakit geçirmek enerjini tazeleyebilir."
+    },
+    "gemini": {
+      "ad": "İkizler",
+      "ozet": "Günlük düzenini sadeleştirmek ve aksayan işleri yoluna koymak için uygun bir dönem.",
+      "genel": "9 Kasım Akrep Yeni Ayı, günlük çalışma tempon ve alışkanlıkların üzerinde bir yenilenme rüzgarı estiriyor. Haftanın ilk günlerinde yöneticin Merkür'ün geri hareketi nedeniyle ufak aksaklıklar yaşansa da düzen kurma isteğin ağır basıyor. Hafta ortasında Yay burcuna geçen Ay ile birlikte iletişim trafiğin biraz daha hızlanabilir. Cuma günü Merkür'ün retro dönemini tamamlamasıyla zihnindeki bulanıklık dağılıyor. Hafta sonu gelirken yarım kalan işlerini kolaylıkla tamamlayıp rahat bir nefes alabilirsin.",
+      "askIliskide": "Sevgilinle günlük rutinlerinizi paylaşmak ve birbirinize destek olmak aranızdaki bağı güçlendiriyor. İletişimdeki yanlış anlamaları Cuma gününden sonra çok daha rahat tatlıya bağlayabilirsin.",
+      "askYalniz": "Günlük hayatın koşturmacası içinde tanışacağın kişiler ilgini çekebilir. Zihnindeki kriterleri netleştirdikçe kimin sana gerçekten hitap ettiğini göreceksin. Hafta sonu sohbetlerin seyri değişebilir.",
+      "kariyer": "İş ortamındaki planlamaları gözden geçirmek adına verimli bir zaman dilimindesin. Retro sürecinde aksayan dosyalar ve görüşmeler Cuma gününden itibaren hız kazanıyor. Yeni sorumluluklar alırken detayları atlamamak önem taşıyor.",
+      "saglik": "Zihnini sürekli meşgul eden düşüncelerden sıyrılmak için kısa mola zamanları yaratabilirsin. Dinlenme saatlerine sadık kalmak genel dengeni korumana yardım eder."
+    },
+    "cancer": {
+      "ad": "Yengeç",
+      "ozet": "Yaratıcılığını ve duygusal derinliğini yaşamına yansıtacağın bir hafta geçirebilirsin.",
+      "genel": "9 Kasım'da gerçekleşen Akrep Yeni Ayı, aşk hayatını ve içsel neşeni canlandıran etkilere sahip. Yöneticin Ay'ın hafta boyunca burç değiştiren seyri, duygusal dalgalanmaları dengede tutma ihtiyacı yaratıyor. Salı günü kesinleşen Venüs-Mars etkileşimi, kendin için keyifli adımlar atmana zemin hazırlıyor. Cuma ve Cumartesi günleri gerilemesi biten gezegenler, iç dünyandaki karmaşayı sona erdiriyor. Hafta sonuna doğru sevdiklerinle daha nitelikli zaman geçirebilir, üretkenliğini artırabilirsin.",
+      "askIliskide": "İkili ilişkilerinde romantizmin ve derin bağların ön plana çıktığı bir zaman. Ortak hobilerinize zaman ayırmak aranızdaki sıcaklığı artırabilir. Karşılıklı anlayışla sorunları geride bırakabilirsiniz.",
+      "askYalniz": "Duygusal dünyanı kımıldatan yeni karşılaşmalar gündeme gelebilir. Samimiyet arayışında olduğun için yüzeysel ilişkilerden uzak durmak isteyeceksin. Hafta sonuna doğru hislerin seni doğru yöne iletebilir.",
+      "kariyer": "Yaratıcılık gerektiren projelerde özgün fikirlerini ortaya koyabilirsin. Hafta ortasında detaylar üzerinde çalışmak daha verimli olabilir. İletişim pürüzlerinin bitmesiyle üstlendiğin görevlerde daha rahat yol alacaksın.",
+      "saglik": "Duygusal yoğunluğunu dengede tutmak için kendine sakin anlar yaratabilirsin. Doğa yürüyüşleri ya da sessiz dinlenme vakitleri ruhuna dinginlik katacaktır."
+    },
+    "leo": {
+      "ad": "Aslan",
+      "ozet": "Evinde ve iç dünyanda dengeni bulmak için sakin adımlar atabilirsin.",
+      "genel": "Yuvanı, ailenle ilişkilerini ve içsel köklerini ilgilendiren yaşam alanların Pazartesi gerçekleşen Akrep Yeni Ayı ile taze bir döneme giriyor. Burcunda ilerleyen Mars ve Jüpiter sana yüksek bir yaşama sevinci ve özgüven katarken Salı günkü Venüs-Mars altmışlığı bu canlılığı ilişkilerine de yansıtıyor. Hafta başında retro sürecinde olan iletişim ve ilişki gezegenleri, geçmişte kalan ailevi konuları veya kararları zihninde tekrar gözden geçirmene zemin hazırlayabilir. Cuma günü Merkür'ün Akrep burcunda, Cumartesi günü ise Venüs'ün Terazi burcunda gerilemeyi bitirmesiyle belirsizlikler ve aksaklıklar dağılmaya başlayabilir. Pazar gününe doğru ev ortamında yapacağın ufak düzenlemeler içsel dengeni yeniden kurmanı kolaylaştırabilir.",
+      "askIliskide": "Partnerinle ortak alanlarınız veya ev yaşamınız üzerine daha derin konuşmalar yapabilirsiniz. Salı günü aranızdaki çekim artabilir ve paylaşımlarınız renklenebilir. Haftanın son günlerinde geçmişten gelen pürüzleri daha rahat çözebilirsiniz.",
+      "askYalniz": "İçsel özgüveninin ve karizmanın yüksek olduğu günlerden geçiyorsun. Çevrendekilerin ilgisini çekmen kolaylaşırken aceleci kararlar almaktan kaçınabilirsin. Retro bitimleriyle birlikte kiminle ne şekilde ilerlemek istediğini daha net görebilirsin.",
+      "kariyer": "Kişisel projelerinde öne çıkmak isteyebilirsin ancak haftanın ilk günlerinde planlarını gözden geçirmek faydalı olabilir. Cuma gününden itibaren iletişim kanallarının açılmasıyla yarım kalan işlerini hızla tamamlayabilirsin. Kararlı tutumun mesleki hedeflerine ulaşmanı kolaylaştırabilir.",
+      "saglik": "Hafta boyunca yüksek enerjini doğru odaklara yönlendirip aşırı zorlamalardan uzak durabilirsin. Gün sonunda zihnini sakinleştiren aktivitelere zaman ayırmak bedensel ve ruhsal dengeni korumana yardımcı olabilir."
+    },
+    "virgo": {
+      "ad": "Başak",
+      "ozet": "İletişim ağını güçlendireceğin, zihnindeki sorulara yanıt bulacağın bir süreçtesin.",
+      "genel": "9 Kasım Akrep Yeni Ayı, yakın çevrenle olan diyaloglarına ve öğrenme süreçlerine ivme kazandırıyor. Yöneticin Merkür'ün Akrep burcundaki geri hareketi hafta başında bazı iletişim kafa karışıklıklarına yol açsa da Cuma günü bu durum sona eriyor. Salı günü Venüs ve Mars arasındaki olumlu açı, fikirlerini uyumlu biçimde paylaşmana katkı sağlıyor. Hafta sonuna doğru Venüs'ün de düz seyre geçmesiyle birlikte organizasyonlarını ve yazışmalarını daha akıcı hale getirebilirsin.",
+      "askIliskide": "İletişim kanallarının açık tutulması gereken bir hafta. Duygularını net kelimelerle ifade etmek aranızdaki küçük pürüzleri giderecektir. Cuma gününden itibaren ilişkinizde daha huzurlu bir akış sağlayabilirsiniz.",
+      "askYalniz": "Çevrenle yaptığın sohbetler sırasında zihinsel bir çekim hissettiğin birileriyle karşılaşabilirsin. Geçmişe takılmak yerine anı yaşamaya odaklandığında daha rahat ilişki kuracaksın. Hafta sonu daha açık bir iletişim yakalayabilirsin.",
+      "kariyer": "Yazışmalar, sözleşmeler ve kısa vadeli planlar gündeminde yer kaplayabilir. Merkür retrosunun Cuma günü bitmesiyle birlikte takılan projeler ve bekleyen yanıtlar hızla netleşecektir. Adımlarını planlarken hafta sonunu beklemek avantaj sağlar.",
+      "saglik": "Zihninin sürekli çalışması yorgunluk hissi yaratabilir. Gün içinde vereceğin kısa mola zamanları zihinsel netliğini korumana yardımcı olacaktır."
+    },
+    "libra": {
+      "ad": "Terazi",
+      "ozet": "Öz değerini ve kaynaklarını koruyup geliştireceğin bir döneme giriyorsun.",
+      "genel": "9 Kasım'da gerçekleşen Yeni Ay, kişisel kaynakların ve bütçen üzerine yeniden düşünmen gerektiğini gösteriyor. Burcunda gerileyen yöneticin Venüs, Salı günü Mars ile kurduğu tatlı açıyla sana moral ve destek aşılıyor. Hafta ortasında içsel dengeni kurmakta zorlansan da Cumartesi günü Venüs'ün düz harekete geçmesiyle tam bir rahatlama yaşayacaksın. Cuma günü Merkür'ün de retrosunu bitirmesiyle karar alma süreçlerin netleşiyor. Kendine verdiğin değeri sorgulayıp daha sağlam adımlar atabilirsin.",
+      "askIliskide": "Beraberliğinde değer gördüğünü hissetmek bu hafta senin için önem kazanıyor. Salı günü partnerinle yakalayacağınız uyum aranızdaki romantizmi tazeleyebilir. Cumartesi sonrasında ilişkinize dair kaygılar geride kalıyor.",
+      "askYalniz": "Kendini nasıl sunduğun ve nasıl algılandığın üzerine düşündüğün bir süreçtesin. Retro bitimleriyle birlikte çekiciliğinin farkına varıp yeni ilişkilere daha hazır hissedebilirsin. Hafta sonu sürpriz diyaloglar gelişebilir.",
+      "kariyer": "Bütçe dengeni gözden geçirmek ve kaynaklarını verimli kullanmak adına uygun bir hafta. Hafta başındaki belirsizlikler Cuma ve Cumartesi günlerinden itibaren dağılmaya başlayacak. İleriye dönük tasarılarını hayata geçirmek için zemin hazırlayabilirsin.",
+      "saglik": "Temponu aşırı zorlamadan dengeli hareket etmeye çalışmalısın. Zihnini dinlendirecek ve sana kendini iyi hissettirecek kişisel bakım rutinlerine vakit ayırabilirsin."
+    },
+    "scorpio": {
+      "ad": "Akrep",
+      "ozet": "Yaşamında yeni bir sayfa açarken ertelediğin kararları netleştirebilirsin.",
+      "genel": "Yaş günü döneminde gerçekleşen 9 Kasım Akrep Yeni Ayı, kişisel kararların ve toplumsal duruşun açısından yenileyici bir eşik sunuyor. Burcundaki Güneş ve gerileyen Merkür zihninde geçmiş hesaplaşmaları tetiklese de Salı günkü Venüs-Mars altmışlığı mesleki ve sosyal hedeflerinde sana güçlü bir ivme katabilir. Hafta boyunca süren içsel sorgulamalar, Cuma günü burcunda Merkür'ün gerilemeyi bitirmesiyle yerini zihinsel berraklığa bırakıyor. Cumartesi günü Venüs'ün de hareketi düzeldiğinde ikili ilişkilerde tıkanan iletişim kanalları hızla açılmaya başlıyor. Haftanın ikinci yarısından itibaren geleceğe yönelik adımlarını daha sağlam atabilir ve isteklerini net biçimde ortaya koyabilirsin.",
+      "askIliskide": "Birlikteliğinde daha derin bir bağ kurma isteğin öne çıkabilir. Salı günkü etkileşim aranızdaki tutkulu paylaşımı artırabilir. Haftanın son iki gününde pürüzler kalktıkça duygu ve düşüncelerini daha net ifade edebilirsin.",
+      "askYalniz": "Kendine olan güvenin ve etrafında oluşturduğun etki bu dönemde artış gösterebilir. Yeni bir ilişkiye adım atmadan önce haftanın sonunu beklemek kararlarını netleştirebilir. Retro bitişleriyle kiminle yakınlaşmak istediğini daha iyi anlayabilirsin.",
+      "kariyer": "Kişisel hedeflerin ve mesleki duruşunla ilgili yenilikler yapabileceğin bir dönemdesin. Hafta başında ertelemek zorunda kaldığın görüşmeleri veya yazışmaları Cuma gününden sonra hızla sonuca bağlayabilirsin. Kararlı duruşun ve net vizyonun sayesinde iş hayatında dikkat çekici adımlar atabilirsin.",
+      "saglik": "Yenilenme hissiyle dolarken gün içindeki temponu ve dinlenme sürelerini dengeli ayarlamak iyi gelecektir. Akşam saatlerinde zihnini yoran düşüncelerden uzaklaşmak ve kendinle kalmak ruhsal enerjini tazeleyebilir."
+    },
+    "sagittarius": {
+      "ad": "Yay",
+      "ozet": "İç dünyana dönüp zihnini arındırabileceğin ve güç toplayacağın bir süreçtesin.",
+      "genel": "9 Kasım Akrep Yeni Ayı, senin 12. evinde gerçekleşerek sezgilerini artırıyor ve biraz dinlenme ihtiyacı doğuruyor. Yöneticin Jüpiter'in Aslan burcundaki destekleyici duruşu, ufkunu geniş tutmana yardım ediyor. Hafta ortasında Ay'ın burcuna geçişiyle hareketlilik artsa da Cuma gününe kadar zihinsel olarak geçmişi geride bırakma süreci yaşayabilirsin. Cuma günü Merkür'ün, Cumartesi ise Venüs'ün retrolarının bitmesiyle içsel kaygıların yerini berraklığa bırakıyor. Hafta sonu yenilenmiş bir ruh haliyle öne çıkabilirsin.",
+      "askIliskide": "Sevgilinle yalnız kalıp baş başa vakit geçirmek size çok iyi gelecektir. İçsel dünyanda sakladığın duyguları paylaşmak aranızdaki samimiyeti artırır. Hafta sonu romantik anlar yaşayabilirsiniz.",
+      "askYalniz": "Geçmişte kalan durumları zihninde tamamlamak için uygun bir haftadasın. İçsel kabule geçtiğinde yeni bir aşka yer açabileceksin. Hafta sonuna doğru bakış açın daha olumlu hale gelecek.",
+      "kariyer": "Arka planda yürüteceğin projeler ve stratejik hazırlıklar için ideal bir zaman. Retro süreçlerinin tamamlanmasıyla ertelediğin işleri netleştirebilirsin. Cuma gününden itibaren yeni planlar için adım atabilirsin.",
+      "saglik": "Ruhsal ve bedensel olarak dinlenmeye vakit ayırman faydalı olabilir. Meditasyon benzeri zihnini yavaşlatacak çalışmalar dengeni koruyabilir."
+    },
+    "capricorn": {
+      "ad": "Oğlak",
+      "ozet": "Gelecek planlarını gözden geçirip sosyal çevrenden güç alabileceğin bir hafta.",
+      "genel": "Akrep burcundaki 9 Kasım Yeni Ayı, gelecek hayallerini ve dâhil olduğun toplulukları ilgilendiren konularda taze bir sayfa açıyor. Yöneticin Satürn Koç burcunda gerilerken ev ve aile hayatındaki sorumlulukları yeniden tartmana sebep olsa da sosyal çevrenden alacağın destek motivasyonunu koruyor. Perşembe günü Ay'ın burcuna geçiş yapmasıyla kişisel sınırların, kararların ve duruşun çok daha belirgin bir hal alıyor. Cuma günü Merkür'ün, Cumartesi günü ise Venüs'ün gerileme dönemini noktalaması askıda kalan diyalogları ve projeleri rahatlatıyor. Hafta bitiminde dostlarınla yapacağın samimi paylaşımlar içsel gücünü artırabilir ve önünü daha net görmeni sağlayabilir.",
+      "askIliskide": "Partnerinle ortak geleceğiniz üzerine konuşmak ve planlar yapmak isteyebilirsiniz. Perşembe gününden itibaren sergileyeceğin yapıcı tutum aranızdaki güveni pekiştirebilir. Şüphe duyduğun konular haftanın son günlerinde netleşebilir.",
+      "askYalniz": "Arkadaş grubun veya katıldığın organizasyonlar aracılığıyla ilgini çekecek biriyle karşılaşabilirsin. Geçmişten kalan iletişim aksaklıkları geride kalırken duygusal anlamda ne istediğini daha net kavrayabilirsin. Kendini akışa bırakmak iyi gelebilir.",
+      "kariyer": "Ekip çalışmaları ve geleceğe yönelik projeler boyutunda önemli adımlar atabilirsin. Perşembe gününden itibaren üstlendiğin sorumluluklar görünürlüğünü artırırken Cuma gününden sonra aksayan planları ve onayları kolayca tamamlayabilirsin. Disiplinli ve kararlı duruşun çevrene güven verecektir.",
+      "saglik": "Yoğun sorumluluklar arasında zihinsel molalar vermeyi ihmal etmemelisin. Temponu dengede tutarak akşamları huzurlu ortamlarda vakit geçirmek ruhsal olarak rahatlamana katkı sağlayacaktır."
+    },
+    "aquarius": {
+      "ad": "Kova",
+      "ozet": "Kariyer hedeflerinde net adımlar atabileceğin ve görünürlüğünün artacağı bir dönem.",
+      "genel": "Akrep burcundaki 9 Kasım Yeni Ayı, kariyerin ve toplum önündeki duruşun açısından yenileyici adımlar atacağın bir dönemi başlatıyor. Yöneticin Satürn'ün gerilemesi yakın çevrenle olan diyaloglarını gözden geçirmene neden olsa da Salı günü Venüs ile Mars arasındaki olumlu açı ikili ilişkilerinde denge yakalamanı kolaylaştırıyor. Hafta başında zihnini meşgul eden aksamalar ve belirsizlikler, Cuma günü Merkür'ün ve Cumartesi günü Venüs'ün gerilemesini tamamlamasıyla yerini zihinsel netliğe bırakıyor. Pazar günü Ay'ın burcuna geçiş yapmasıyla kişisel motivasyonun ve görünürlüğün üst seviyeye çıkabilir. Hedeflerine kararlılıkla odaklandığında haftanın ikinci yarısında kişisel etkini artırabilirsin.",
+      "askIliskide": "Sevgilinle birlikte ortak hedefler koyabilir, sosyal çevrenizde keyifli zaman geçirebilirsiniz. Salı günkü uyumlu açı aranızı ısıtırken haftanın son iki gününde diyaloglar çok daha akıcı hale gelebilir. Birlikte hareket etmek ilişkinizi pekiştirecektir.",
+      "askYalniz": "İletişim kurduğun kişilerin vizyonu ve duruşu senin için daha belirleyici hale gelebilir. Gerileme süreçlerinin bitmesiyle kafandaki soru işaretleri çözülebilir ve duygu dünyanda net bir doğrultu belirleyebilirsin. Sezgilerine güvenerek adım atabilirsin.",
+      "kariyer": "Mesleki yaşamında uzun süredir bekletilen projelere ve hedeflere yönelmek için uygun bir dönemdesin. Cuma gününden itibaren iletişimdeki aksaklıklar çözüldükçe iş görüşmelerinde ve sunumlarda beklediğin akışı yakalayabilirsin. Kararlı tutumun mesleki konumunu güçlendirecektir.",
+      "saglik": "Günlük koşturmaca arasında kendine dinlenme aralıkları yaratmayı ihmal etmemelisin. Zihinsel yorgunluğun önüne geçmek adına sessiz ortamlarda vakit geçirmek ve temponu düşürmek iyi gelebilir."
+    },
+    "pisces": {
+      "ad": "Balık",
+      "ozet": "Ufkunu genişleten düşüncelerle yaşamına yeni bir anlam katabileceğin, içsel arayışların netleştiği bir haftaya giriyorsun.",
+      "genel": "9 Kasım'da Akrep burcunda gerçekleşen Yeni Ay, hayata bakış açını, uzun vadeli vizyonunu ve öğrenme arzunu ön plana taşıyarak zihninde taze bir sayfa açıyor. Yöneticin Jüpiter'in Aslan burcundaki konumu günlük akışında ve çalışma ortamında hareketliliği artırırken Salı günkü Venüs ile Mars arasındaki etkileşim bu tempo içinde işlerini kolaylaştırıyor. Hafta ortasına kadar süren retro hareketler sebebiyle yolculuk planlarında veya akademik hedeflerinde bazı duraksamalar hissedebilirsin. Cuma akşamı Merkür'ün ve hafta sonuna girerken Venüs'ün düz seyrine dönmesiyle zihnini kurcalayan belirsizlikler tamamen dağılıyor. Haftanın son günlerinde geleceğe yönelik hayallerini çok daha berrak ve güvenli bir zemin üzerine oturtarak adımlarını atabilirsin.",
+      "askIliskide": "Birlikte vakit geçirdiğin insanla ortak hayalleriniz ve geleceğe bakış açınız üzerine sohbetler derinleşebilir. Retroların son bulmasıyla birlikte aranızdaki olası yanlış anlaşılmalar yerini anlayışa bırakıyor. Hafta sonuna doğru ortak kararlar almanız kolaylaşacaktır.",
+      "askYalniz": "Farklı mekânlarda ya da öğrenme ortamlarında ufkunu genişletecek birisiyle karşılaşma olasılığın bulunuyor. Cuma gününden sonra iletişim trafiğinin rahatlamasıyla duygularını ifade etmek çok daha doğal bir hal alabilir. İç sezgilerine güvenerek akışa teslim olman sana iyi gelecektir.",
+      "kariyer": "Eğitim, yurtdışı bağlantılı işler veya hukuki süreçlerde yeni adımlar gündeme gelebilir. Hafta sonuna doğru retroların bitişiyle birlikte bekleyen onaylar ve duraksayan projeler ivme kazanıyor. Vizyonunu açıkça ortaya koyarak uzun vadeli hedeflerine yönelebilirsin.",
+      "saglik": "Zihnindeki yoğun düşünce akışını dengelemek adına kendine sakinleştirici zaman dilimleri yaratabilirsin. Günün tempolu anlarında kısa molalar vermek içsel huzurunu korumana yardımcı olabilir."
+    }
+  }
+}
