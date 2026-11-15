@@ -1,0 +1,207 @@
+{
+  "baslangic": "2026-11-16",
+  "bitis": "2026-11-22",
+  "uretildi": "2026-11-15T15:39:57Z",
+  "model": "gemini-3.6-flash",
+  "gokyuzu": {
+    "konumlar": {
+      "Güneş": {
+        "burc": "Akrep",
+        "retro": false
+      },
+      "Merkür": {
+        "burc": "Akrep",
+        "retro": false
+      },
+      "Venüs": {
+        "burc": "Terazi",
+        "retro": false
+      },
+      "Mars": {
+        "burc": "Aslan",
+        "retro": false
+      },
+      "Jüpiter": {
+        "burc": "Aslan",
+        "retro": false
+      },
+      "Satürn": {
+        "burc": "Koç",
+        "retro": true
+      },
+      "Uranüs": {
+        "burc": "İkizler",
+        "retro": true
+      },
+      "Neptün": {
+        "burc": "Koç",
+        "retro": true
+      },
+      "Plüton": {
+        "burc": "Kova",
+        "retro": false
+      }
+    },
+    "olaylar": [
+      {
+        "tarih": "2026-11-16",
+        "saat": "09:24",
+        "tur": "aci",
+        "metin": "Mars–Jüpiter kavuşum"
+      },
+      {
+        "tarih": "2026-11-17",
+        "saat": "14:48",
+        "tur": "evre",
+        "metin": "İlk Dördün, Kova 25°",
+        "evre": "İlk Dördün"
+      },
+      {
+        "tarih": "2026-11-18",
+        "saat": "00:20",
+        "tur": "gecis",
+        "metin": "Ay Balık burcuna geçiyor"
+      },
+      {
+        "tarih": "2026-11-18",
+        "saat": "12:39",
+        "tur": "aci",
+        "metin": "Güneş–Jüpiter kare"
+      },
+      {
+        "tarih": "2026-11-19",
+        "saat": "20:49",
+        "tur": "aci",
+        "metin": "Güneş–Mars kare"
+      },
+      {
+        "tarih": "2026-11-20",
+        "saat": "08:52",
+        "tur": "gecis",
+        "metin": "Ay Koç burcuna geçiyor"
+      },
+      {
+        "tarih": "2026-11-22",
+        "saat": "10:23",
+        "tur": "gecis",
+        "metin": "Güneş Yay burcuna geçiyor"
+      },
+      {
+        "tarih": "2026-11-22",
+        "saat": "13:10",
+        "tur": "gecis",
+        "metin": "Ay Boğa burcuna geçiyor"
+      }
+    ]
+  },
+  "burclar": {
+    "aries": {
+      "ad": "Koç",
+      "ozet": "İçsel coşkunu yaratıcı projelere ve derin bağlara dönüştürebileceğin hareketli bir haftadasın.",
+      "genel": "Pazartesi günü yönetici gezegenin Mars'ın Jüpiter ile kurduğu yakınlık, yaratıcı alanlarda ve sevinç duyduğun konularda cesaretini artırıyor. Hafta ortasında Salı günkü Kova İlk Dördün'ü sosyal çevrenle ilgili net adımlar atmanı isteyebilir. Perşembe günü Güneş ile Mars arasındaki gerilimli açı, başkalarıyla paylaştığın kaynaklar veya duygusal yakınlık konularında sabırlı kalmanı gerektiriyor. Cuma günü Ay'ın senin burcuna geçişiyle kişisel ivmen belirginleşirken kendi isteklerine odaklanabilirsin. 22 Kasım Pazar günü Güneş'in Yay burcuna geçmesiyle birlikte ufkunu genişletme arzun öne çıkıyor.",
+      "askIliskide": "Sevgilinle birlikte heyecan duyacağınız ortak planlar yapmak aranızdaki bağı güçlendirebilir. Hafta ortasındaki gerilimlerde tepkilerini sakinlikle dengelemeyi seçebilirsin. Pazar gününe doğru daha özgür ve ferah bir paylaşım zemini bulabilirsin.",
+      "askYalniz": "Yaratıcılığının ve canlılığının yüksek olduğu hafta başında dikkatleri üzerine çekmen oldukça kolay. Sosyal ortamlarda ya da hobilerin etrafında tanışacağın kişilerle hızlı bir çekim oluşabilir. Hafta sonuna doğru yaklaşırken daha coşkulu ve açık bir iletişim kurabilirsin.",
+      "kariyer": "Pazartesi günü cesur fikirlerini görünür kılmak isteyebilirsin. Perşembe günü bütçe veya ortaklaşa yürütülen işlerde ani kararlar vermekten kaçınmak fayda sağlar. Pazar gününden itibaren yeni eğitimler, vizyoner projeler ve uzun vadeli hedefler için daha elverişli bir zemin bulabilirsin.",
+      "saglik": "Haftanın ilk günlerinde yüksek enerji temposunu dengeli bir hareket rutiniyle yönetebilirsin. Hafta ortasındaki yoğunluğu akşam saatlerinde zihnini sakinleştirerek tamamlamak uykuna katkı sağlar."
+    },
+    "taurus": {
+      "ad": "Boğa",
+      "ozet": "İlişkilerde dengeyi gözetirken günlük hayatının akışını ve ortaklaşa konuları düzenleme zamanı.",
+      "genel": "Haftaya yuva ve aile konularındaki hareketlilikle başlıyorsun. Salı günü gerçekleşen Kova İlk Dördün'ü, geleceğe dair hedeflerinle günlük sorumlulukların arasında bir karar noktası getirebilir. Çarşamba günü Ay Balık burcuna ilerlerken dostlarınla paylaşımda bulunmak zihnini rahatlatabilir. Perşembe günü Güneş ile Mars arasındaki kare açı, ikili ilişkilerde veya ev içi ortak kararlarda bir anlık sertlik yaratabilir. 22 Kasım Pazar günü Güneş'in Yay burcuna geçişiyle odağın daha derin paylaşımlara ve finansal dengelere kayıyor.",
+      "askIliskide": "Birlikte yaşadığınız alanlarda ya da ortak kararlarda esnek kalabilmek ilişkinize huzur getirecektir. Hafta ortasında partnerinin ihtiyaçlarına kulak verirken kendi sınırlarını korumayı unutmamalısın. Pazar gününden itibaren aranızdaki duygusal bağ daha samimi bir nitelik kazanabilir.",
+      "askYalniz": "Yakın çevrendeki insanlarla iletişim kurarken kendi değerlerinden ödün vermeden ilerleyebilirsin. İş ya da günlük koşturmaca arasında tanışacağın birisiyle sakin ama kalıcı bir diyalog başlayabilir. Hafta sonuna doğru yüzeysel sohbetler yerine samimi paylaşımları tercih edebilirsin.",
+      "kariyer": "Salı günü kariyerinde belirginleşen bir netlik, üstlendiğin sorumlulukları yeniden sıralamanı sağlayabilir. Günlük çalışma düzeninde yönetici gezegenin Venüs'ün getirdiği uyum sayesinde işlerini daha rahat tamamlayabilirsin. Pazar günü başlayan süreç, bütçeni ve ortaklaşa kaynakları incelemek için zemin hazırlar.",
+      "saglik": "Günlük koşturmacanın getirdiği yorgunluğu dinlenme sürelerini uzatarak dengeleyebilirsin. Akşam saatlerinde zihnini gündelik kaygılardan arındırmak genel iyilik haline katkı sunar."
+    },
+    "gemini": {
+      "ad": "İkizler",
+      "ozet": "Günlük ritmini düzenleyip detayları toparlarken haftanın sonuna doğru ilişkilerde odağın netleşebilir.",
+      "genel": "Pazartesi günü yakın çevrenle sürdürdüğün diyaloglar ve düşünce paylaşımları oldukça canlı başlayabilir. Salı günü Kova burcundaki İlk Dördün açısı, geleceğe dönük planlarında ve öğrenme süreçlerinde net adımlar atmanı kolaylaştırıyor. Hafta ortasında çalışma ortamındaki detaylar ve üstlendiğin görevler zamanının büyük kısmını alırken tempon yükselebilir. Perşembe günü Güneş ile Mars arasında şekillenen kare açı, aceleci kararlar almaktan kaçınmanı ve zihinsel sakinliğini korumanı hatırlatıyor. Cuma günü çevrenle temas kurmak düşüncelerini tazeleyebilir. Pazar günü Güneş'in Yay burcuna geçişiyle odağın tamamen ikili ilişkilere ve ortak yürüttüğün işlere kayıyor.",
+      "askIliskide": "Birlikte zaman geçirirken günlük koşturmacanın gerilimini ilişkinize yansıtmamaya özen gösterebilirsin. Haftanın son günlerinde Güneş'in karşıt burcuna ilerlemesiyle partnerinle birbirinize zaman ayırmak aranızdaki bağı belirgin şekilde kuvvetlendirecektir. İletişimde yapıcı bir dil kullanmak anlayışı artırır.",
+      "askYalniz": "Günlük hayatın akışı içinde sürpriz tanışmalar gündeme gelebilir. Hafta başında zihinsel uyum yakaladığın kişilerle sohbetler başlatabilir, ortak zevkleri keşfedebilirsin. Haftanın son günü itibarıyla ikili ilişkiler alanın hareketlendiği için karşına yeni seçenekler çıkabilir.",
+      "kariyer": "Çalışma masanda biriken işleri hafta boyunca planlı bir şekilde tamamlayabilirsin. Perşembe günü iş arkadaşlarınla iletişimde ani tepkiler vermek yerine sakin kalmayı seçebilirsin. Haftanın kapanışında yeni ortaklıklar veya sözleşmeler üzerine düşünmek için uygun koşullar oluşabilir.",
+      "saglik": "Zihinsel hareketliliğin yüksek olduğu bu günlerde bedenini dinlendirecek kısa molalar vermek sana oldukça iyi gelecektir. Akşam saatlerinde dinlenme ritmini korumak ve uyku öncesinde ekranlardan uzak kalmak zihnini yatıştırmanı kolaylaştırır."
+    },
+    "cancer": {
+      "ad": "Yengeç",
+      "ozet": "Duygusal derinliğini yaratıcı alanlara yansıtırken haftanın kapanışıyla birlikte günlük düzenine odaklanabilirsin.",
+      "genel": "Pazartesi günü bütçen veya öz değer alanınla ilgili konularda cesur adımlar atarak haftaya başlayabilirsin. Salı günü Kova burcundaki İlk Dördün, ortaklaşa paylaşımlar ve birikimler konusunda net bir karar almanı kolaylaştırabilir. Çarşamba günü yönetici planetin Ay'ın Balık burcuna geçmesi duygusal hassasiyetini ve sezgilerini yükseltiyor. Perşembe günü Güneş ve Mars arasındaki sert açı, keyif aldığın işler ile bütçen arasındaki hassas dengeyi korumanı gerektiriyor. Cuma günü temposu artan günler zihnine hareket getiriyor. Pazar günü Güneş'in Yay burcuna geçişiyle birlikte günlük sorumluluklarına ve çalışma rutinine tamamen yöneliyorsun.",
+      "askIliskide": "Sevdiğin kişiye karşı duygularını açıkça ifade etmek aranızdaki samimiyeti artırabilir. Hafta ortasında beklentilerini dile getirirken kırıcı olmamaya dikkat etmen huzuru korur. Pazar gününden itibaren birlikte günlük rutinlerinizi planlamak ilişkinize keyif katabilir.",
+      "askYalniz": "Kendini rahatça ifade edebildiğin bu dönemde hobilerin vasıtasıyla yeni insanlarla karşılaşabilirsin. Çarşamba günü duygusal olarak daha açık ve sezgisel bir yaklaşım benimseyebilirsin. Haftanın sonuna doğru yaklaşırken beklentilerinde daha gerçekçi adımlar atabilirsin.",
+      "kariyer": "Bütçeni yönetirken Pazartesi günkü cesur etkileri temkinle harmanlaman faydalı olur. Hafta ortasında yaratıcı projelerini öne çıkarabilir ve işlerinde fark yaratabilirsin. Haftanın son gününden itibaren çalışma ortamındaki düzeni yenilemek ve verimliliğini artırmak için adımlar atabilirsin.",
+      "saglik": "Gün içindeki duygusal dalgalanmaları açık havada yavaş yürüyüşler yaparak dengeleyebilirsin. Hafta sonuna doğru dinlenme ritmine özen göstermek haftalık enerjini yenilemene yardımcı olur."
+    },
+    "leo": {
+      "ad": "Aslan",
+      "ozet": "Kendini gösterme arzunla ev yaşamın arasında denge kurup haftanın kapanışında yaratıcılığını öne çıkarabilirsin.",
+      "genel": "Pazartesi günü burcundaki Mars ve Jüpiter kavuşumu sana yüksek bir hareketlilik ve özgüven kazandırıyor. Salı günü karşıt burcun Kova'daki İlk Dördün, ikili ilişkilerde netleşme ihtiyacını belirgin bir şekilde getirebilir. Çarşamba ve Perşembe günleri yönetici gezegenin Güneş'in Jüpiter ve Mars ile oluşturduğu kare açılar, ailevi konular ile kişisel isteklerin arasında gerilim yaratabilir; sakin kalmak önem kazanıyor. Cuma günü Ay Koç burcuna geçtiğinde içsel enerjin tekrar yükseliyor. Pazar günü Güneş'in Yay burcuna ilerlemesiyle aşka, yaratıcılığa ve hayattan keyif almaya odaklandığın bir evre başlıyor.",
+      "askIliskide": "İkili ilişkilerde kendi isteklerini vurgularken partnerinin ihtiyaçlarını da göz önünde bulundurabilirsin. Hafta ortasındaki gerginliklerde aşırı tepkiler vermekten kaçınmak aradaki bağı korur. Pazar gününden itibaren ilişkinize eğlence ve neşe katacak adımlar atabilirsiniz.",
+      "askYalniz": "Haftanın ilk günlerinde güçlü bir çekim gücüne sahipsin ve çevrendekilerin dikkatini rahatça çekebilirsin. Hafta ortasında benmerkezci duruşlardan uzak durarak daha sağlıklı diyaloglar geliştirebilirsin. Pazar gününden sonra romantik tanışmalar için canlı bir dönem başlıyor.",
+      "kariyer": "İnisiyatif alma ve liderlik etme arzun Pazartesi günü üst seviyeye çıkabilir. Ancak Perşembe günkü açılar altında üstlerinle veya ailevi sorumluluklarınla çatışmamaya gayret edebilirsin. Pazar gününden sonra yaratıcı projelerde ve yeteneklerinin sergileneceği alanlarda öne çıkabilirsin.",
+      "saglik": "Temponun çok yüksek olduğu bu haftada aşırı yüklenmelerden kaçınarak bedenini özenle koruyabilirsin. Gün içinde kısa dinlenme aralıkları vermek zihinsel berraklığını sürdürmene destek olur."
+    },
+    "virgo": {
+      "ad": "Başak",
+      "ozet": "Yakın çevrenle iletişimi güçlendirirken haftanın kapanışıyla birlikte yuva ve aile konularına zaman ayırabilirsin.",
+      "genel": "Pazartesi günü iç dünyanda biriken fikirleri ve zihinsel projeleri olgunlaştırmak isteyebilirsin. Salı günü Kova burcundaki İlk Dördün açısı, günlük alışkanlıklarını veya çalışma ortamındaki bir konuyu netleştirmeni sağlayabilir. Çarşamba ve Perşembe günleri Güneş'in sert açıları, yakın çevrenle veya kardeşlerinle yürüttüğün diyaloglarda yanlış anlaşılmalara zemin hazırlayabilir. Yönetici gezegenin Merkür Akrep burcundayken araştırmacı ve detaycı yapın iyice belirginleşiyor. Cuma günü günlük tempon hareket kazanabilir. Pazar günü Güneş'in Yay burcuna geçişiyle odağın tamamen evine, ailene ve içsel huzuruna kayıyor.",
+      "askIliskide": "İletişimde detaylara fazla takılmak yerine büyük resmi görmeyi deneyebilirsin. Hafta ortasında partnerinle yapacağın konuşmalarda yapıcı bir tutum sergilemek aradaki güveni artırır. Pazar gününden itibaren evinizde huzurlu bir ortam yaratmaya odaklanabilirsiniz.",
+      "askYalniz": "İletişim trafiğinin yoğun olduğu bu dönemde düşüncelerini paylaşabileceğin kişilerle tanışabilirsin. Yakın çevrenden birinin aracılığıyla başlayan bir diyalog derinleşebilir. Haftanın sonuna doğru yalnız kalıp duygularını tartmak sana daha iyi gelebilir.",
+      "kariyer": "Zihinsel verimliliğinin yüksek olduğu bir haftadasın ancak Perşembe günü yazışmalarda ve konuşmalarda daha özenli hareket edebilirsin. Fikirlerini net ve sakin ifade etmek işlerini kolaylaştırır. Pazar gününden sonra çalışma temponu evden veya daha sakin ortamlardan sürdürmeyi tercih edebilirsin.",
+      "saglik": "Yoğun düşünce trafiği zihnini yorabileceği için akşam saatlerinde zihnini boşaltacak huzurlu aktiviteler yapabilirsin. Uyku kalitene özen göstermek haftalık enerjini korumana büyük yardımcı olur."
+    },
+    "libra": {
+      "ad": "Terazi",
+      "ozet": "Öz değerini ve kaynaklarını güçlendirirken haftanın kapanışında yakın çevrenle olan iletişimin hız kazanabilir.",
+      "genel": "Pazartesi günü sosyal çevrende ve gelecek planlarında oldukça enerjik bir akışla haftaya başlıyorsun. Salı günü Kova burcunda şekillenen İlk Dördün, yaratıcı bir projede veya romantik bir konuda netleşme getirebilir. Burcunda ilerleyen yönetici gezegenin Venüs, çevrene zarafet ve uyum yaymanı sağlıyor. Perşembe günü Güneş ile Mars arasındaki kare açı, finansal konularda veya arkadaş çevrenle yapacağın harcamalarda temkinli adımlar atmanı gerektirebilir. Cuma günü günlük hareketliliğin artıyor. Pazar günü Güneş'in Yay burcuna geçmesiyle birlikte öğrenme, yazışma ve yakın çevre ilişkilerin ön plana çıkıyor.",
+      "askIliskide": "Kişisel çekiminin yüksek olduğu bu süreçte partnerinle uyumlu bir akış yakalayabilirsin. Hafta ortasında arkadaş grubu içindeki harcamalar veya planlar nedeniyle yaşanabilecek gerilimleri sakinlikle çözebilirsin. Pazar gününden sonra daha çok konuşup paylaşacağınız bir dönem başlıyor.",
+      "askYalniz": "Venüs'ün burcundaki duruşu çevrendekilerin ilgisini üzerine çekiyor. Sosyal etkinliklerde ya da arkadaş ortamlarında yeni biriyle tanışma ihtimalin yüksek. Haftanın sonuna doğru zihinsel olarak seni besleyen insanlara yönelmek isteyebilirsin.",
+      "kariyer": "Gelecek hedeflerin doğrultusunda adımlar atarken bütçe dengeni korumaya özen göstermelisin. Perşembe günü gruplarla yapılan işlerde fikir ayrılıklarına karşı esnek kalabilirsin. Pazar günü Güneş'in Yay burcuna geçişiyle birlikte yeni anlaşmalar ve iletişim odaklı projeler ivme kazanabilir.",
+      "saglik": "Kendine zaman ayırmak ve bedeninin ritmine saygı duymak enerjini yükseltir. Gün içindeki tempo değişimlerinde dengede kalabilmek için sakin nefes alıp verme rutinlerine odaklanabilirsin."
+    },
+    "scorpio": {
+      "ad": "Akrep",
+      "ozet": "Kendi duruşunu ve hedeflerini ön plana çıkarırken dönemin sonuna doğru bütçeni düzenlemeye geçebilirsin.",
+      "genel": "Haftaya başlarken yönetici gezegenin Mars'ın Jüpiter ile kurduğu ortaklık, iş hayatında ve toplumsal rolünde güçlü bir cesaret hissettirebilir. Salı günü Kova burcundaki İlk Dördün hamlesi, aile içi beklentiler ile iş yaşamın arasında bir denge arayışı doğuruyor. Güneş kendi burcunda ilerlerken Perşembe günkü Güneş ve Mars gerilimi, kişisel isteklerin ile üstlendiğin sorumluluklar arasında bocalama yaratabilir; bu baskıyı sabırla yönetmeyi deneyebilirsin. Cuma günü Ay'ın Koç seyrine geçişiyle günlük işlerin hız kazanıyor. Pazar günü Güneş'in Yay burcuna yerleşmesi ise odağını kazançlarına ve kişisel kaynaklarına kaydırıyor. Bu süreçte yapıcı davranmak uzun vadeli adımlarını destekler.",
+      "askIliskide": "Yoğun tempon nedeniyle partnerinle arandaki iletişime ekstra özen göstermen gerekebilir. Perşembe günkü hassasiyetlerde kırıcı olmaktan kaçınıp empatiyi seçtiğinde aranızdaki bağı koruyabilirsin. Hafta sonu daha huzurlu ve güvende hissettiren paylaşımlar yaşanabilir.",
+      "askYalniz": "Güçlü karizman ve kararlı tutumunla çevrenin dikkatini çektiğin günlerden geçiyorsun. İş ortamından ya da sosyal duruşundan etkilendiğin biriyle diyalog başlayabilir. Hafta sonuna doğru ne istediğini bilerek acele etmeden adım atmayı seçebilirsin.",
+      "kariyer": "Pazartesi günü mesleki alanındaki iddialı adımlarınla dikkat çekebilirsin. Perşembe günü otorite figürleriyle yaşanabilecek çekişmelerde sakin kalmak ve profesyonel çizgiyi korumak sana kazandırır. Pazar gününden itibaren emeklerinin karşılığını almak üzere bütçene odaklanabilirsin.",
+      "saglik": "Yoğun duygusal ve zihinsel temponun ardından gün sonunda zihnini boşaltacak sakin aktivitelere alan açabilirsin. Uyku kaliteni artırmak haftalık direncini gözle görülür şekilde destekler."
+    },
+    "sagittarius": {
+      "ad": "Yay",
+      "ozet": "İç dünyanda demlenen fikirlerle hazırlanıp haftanın kapanışında kendi burç dönemine coşkuyla adım atabilirsin.",
+      "genel": "Pazartesi günü yönetici gezegenin Jüpiter'in Mars ile kavuşumu ufkunu genişletme ve yeni şeyler öğrenme arzunu oldukça coşturuyor. Salı günü Kova burcundaki İlk Dördün açısı, zihninde olgunlaşan bir düşünceyi uygulamaya geçirmeni isteyebilir. Hafta ortasında Güneş'in Jüpiter ile yapacağı kare açı, büyük beklentilerin yarattığı zihinsel yorgunluğa işaret ediyor; adımlarını ölçülü atabilirsin. Cuma günü Ay Koç burcuna ilerlediğinde yaratıcılığın ve yaşama sevincin belirgin şekilde artıyor. Pazar günü Güneş'in senin burcuna geçmesiyle kişisel yıl döngün başlıyor ve hayatında taze bir dönem açılıyor.",
+      "askIliskide": "Hafta boyunca içsel alanında yaşadığın dönüşümleri partnerinle paylaşmak anlayışı artırır. Hafta ortasında beklentilerini abartmamaya özen göstererek ilişkinin doğal akışını koruyabilirsin. Pazar gününden itibaren ilişkiye yön veren taraf sen olacaksın.",
+      "askYalniz": "İçe dönük geçirdiğin günlerin ardından haftanın sonuna doğru enerjin tamamen dışa dönüyor. İnançlarını ve hayat görüşünü paylaştığın kişilerle ilgi çekici temaslar kurabilirsin. Pazar gününden sonra kendi burç döneminin başlamasıyla çekim gücün yükseliyor.",
+      "kariyer": "Uzun vadeli projeler ve vizyoner fikirler üzerinde çalışmak için hafta başı dinamik bir zemin sunuyor. Perşembe gününe kadar olan süreçte aşırı iyimser kararlar vermek yerine detayları kontrol etmek faydalı olur. Pazar günü Güneş burcuna geçtiğinde projelerini cesaretle sergileyebilirsin.",
+      "saglik": "Zihinsel olarak aşırı uyarılma yaşadığın günlerde doğada sakince zaman geçirmek sana iyi gelebilir. Haftayı tamamlamadan önce bedeni dinlendirmek yeni döneme taze bir başlangıç yapmanı sağlar."
+    },
+    "capricorn": {
+      "ad": "Oğlak",
+      "ozet": "Geleceğe dair hedeflerini gözden geçirirken dönemin son günlerinde kendi alanına çekilip dinlenebilirsin.",
+      "genel": "Pazartesi günü ortak kazançlar veya paylaşımlar konusunda hareketli bir başlangıç söz konusu. Salı günü Kova burcundaki İlk Dördün, bütçen ve kişisel harcamaların hususunda somut kararlar almanı gerektirebilir. Hafta ortasında arkadaş gruplarınla diyalogların artarken, Perşembe günkü Güneş ve Mars gerilimi sosyal ortamlar ile harcama dengen arasında ince bir çizgi çekebilir. Yönetici gezegenin Satürn Koç burcunda geri hareketindeyken ev ve aileye dair işlerde temkinli ilerlemek fayda sağlar. Cuma günü temposu değişen gökyüzünün ardından Pazar günü Güneş Yay burcuna geçiyor. Böylece iç dünyana dönme ve enerjini toplama dönemi başlıyor. Bu dinginlik zihnini tazelemene katkı sunabilir.",
+      "askIliskide": "Sevgilinle birlikte sosyal çevreniz içinde keyifli zaman geçirebilirsiniz. Hafta ortasında arkadaş ortamlarında çıkabilecek fikir ayrılıklarını hoşgörüyle karşılaman gerekebilir. Hafta sonundan itibaren ise baş başa kalacağınız sakin anların tadını çıkarabilirsiniz.",
+      "askYalniz": "Kalabalık gruplar veya yeni girdiğin topluluklar içinde sana hitap eden biriyle karşılaşma şansın var. Ancak Perşembe günü hissettiğin acelecilikle hareket etmek yerine akışı izlemek yararlı olabilir. Dönem biterken kendinle kalmak ve ne istediğini tartmak iyi gelecektir.",
+      "kariyer": "Ekip çalışmaları ve uzun vadeli planlar açısından verimli adımlar atabilirsin. Hafta ortasında bütçe ve ortaklaşa harcamalarla ilgili gerilimlerden sakınarak netliğini koruman önem taşıyor. Pazar gününden itibaren projelerini arka planda olgunlaştırma evresine girebilirsin.",
+      "saglik": "Temponun yükseldiği anlarda zihinsel olarak kendini frenlemeyi öğrenmek yorgunluğunu azaltır. Günün sonunda teknolojiyle arana mesafe koyup sessizlikle kalmak uykunu kaliteli kılar."
+    },
+    "aquarius": {
+      "ad": "Kova",
+      "ozet": "Kararlı duruşunla hedeflerine yönelirken dönemin sonuna doğru sosyal çevrenle daha çok kaynaşabilirsin.",
+      "genel": "Pazartesi günü ikili ilişkilerde ve ortak yürütülen işlerde canlı bir hareketlilik gözleniyor. Salı günü burcunda gerçekleşen İlk Dördün, hayatının gidişatı ve kişisel duruşunla ilgili net adımlar atmanı teşvik ediyor. Hafta ortasında Güneş'in Jüpiter ve Mars ile yaptığı sert etkileşimler, mesleki sorumlulukların ile partnerinin ya da muhataplarının beklentileri arasında denge kurmayı zorlaştırabilir. Sınırlarını korurken esnek kalmayı tercih edebilirsin. Cuma günü Ay'ın Koç geçişiyle birlikte zihinsel trafiğin ve iletişimin ivme kazanıyor. Pazar günü Güneş Yay burcuna adım attığında sosyal gruplar, dostlar ve gelecek planları odağının merkezine yerleşiyor. Yeni fikirlere açık olmak seni rahatlatacaktır.",
+      "askIliskide": "Salı günkü İlk Dördün ile ilişkine dair kendi isteklerini belirgin bir şekilde ifade edebilirsin. Perşembe günü yaşanabilecek fikir çatışmalarında haklı çıkmaya çalışmak yerine sakinliği korumak ilişkiyi yıpratmaktan korur. Pazar gününden sonra ortak arkadaşlarla geçireceğiniz zamanlar ilişkiye canlılık getirebilir.",
+      "askYalniz": "Bireysel duruşun ve özgün tavırlarınla çevrenin ilgisini çekebileceğin bir haftadasın. İkili ilişkiler alanındaki Mars etkisi yeni karşılaşmalar getirebilir ancak hemen bağ kurmak yerine zaman tanımak iyi olabilir. Hafta sonu ortak ilgi alanına sahip olduğun ortamlarda yeni diyaloglar gelişebilir.",
+      "kariyer": "Kariyer hedeflerin doğrultusunda karar almak için Salı günkü gökyüzü konumunu değerlendirebilirsin. Perşembe günü üstlerinle ya da iş ortaklarınla olan konuşmalarda güç mücadelesine girmekten kaçınmak fayda sağlar. Pazar gününden itibaren ekip çalışmaları ve ağ kurma süreçleri hızlanabilir.",
+      "saglik": "Yoğun fikir trafiği ve zihinsel tempon gün içinde seni biraz yorabilir. Açık havada kısa yürüyüşler yapmak ve zihnini boşaltmak akşam uykusuna geçişini kolaylaştırır."
+    },
+    "pisces": {
+      "ad": "Balık",
+      "ozet": "Hayat vizyonunu genişletip çalışma temposunu yönetirken haftanın kapanışında kariyerinde parlayabilirsin.",
+      "genel": "Pazartesi günü günlük işlerinde ve çalışma ortamında oldukça yüksek bir enerji temposuyla haftaya giriş yapıyorsun. Salı günü Kova burcundaki İlk Dördün açısı, iç dünyanda biriktirdiğin bir konuyu serbest bırakmanı kolaylaştırabilir. Çarşamba günü Ay'ın senin burcuna geçmesiyle duygusal duyarlılığın ve sezgilerin yükseliyor. Ancak aynı günlerde Güneş'in Jüpiter ve Mars ile oluşturduğu kare açılar, günlük koşturmaca ile büyük hedeflerin arasında denge kurmanı zorlaştırabilir. Cuma günü içsel enerjin yenileniyor. Pazar günü Güneş Yay burcuna geçerek kariyer ve toplum önündeki duruşunu aydınlatmaya başlıyor.",
+      "askIliskide": "Çarşamba gününden itibaren duygularını daha derinden hissedip ifade etmek isteyebilirsin. Hafta ortasındaki yoğunluk içinde partnerine zaman ayırmaya özen gösterebilir, günlük stresleri ilişkiye taşımaktan kaçınabilirsin. Pazar gününden itibaren ilişkinizi daha görünür kılacak adımlar atabilirsiniz.",
+      "askYalniz": "Hafta ortasında Ay burcundan geçerken sezgisel çekim gücün ve empatin artıyor. Yakınlaşacağın kişilerle derin ve anlamlı bağlar kurma eğilimindesin. Haftanın sonuna doğru yaklaşırken toplumsal ortamlarda veya iş çevresinde dikkat çekici tanışmalar yaşanabilir.",
+      "kariyer": "Günlük yapılacaklar listesinin kabarık olduğu bu haftada işlerini öncelik sırasına koyabilirsin. Perşembe günü aşırı detaylarda kaybolmak veya kapasitenin üzerinde iş üstlenmek seni yorabilir. Pazar gününden sonra kariyerinde hedeflerine ulaşmak ve üst yöneticilerinle uyum yakalamak kolaylaşacaktır.",
+      "saglik": "Günlük yoğunluğun getirdiği stresi hafifletmek için Çarşamba günü kendini suyun ve dinginliğin akışına bırakabilirsin. Uyku düzenini özenle koruyarak zihinsel yıpranmanın önüne geçmelisin."
+    }
+  }
+}
