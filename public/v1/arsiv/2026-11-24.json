@@ -1,0 +1,232 @@
+{
+  "tarih": "2026-11-24",
+  "uretildi": "2026-11-23T20:08:17Z",
+  "model": "gemini-3.6-flash",
+  "gokyuzu": {
+    "gunes": {
+      "burc": "Yay",
+      "gecis": null
+    },
+    "ay": {
+      "burc": "Boğa",
+      "gecis": {
+        "burc": "İkizler",
+        "saat": "14:10"
+      },
+      "evre": "Dolunay",
+      "aydinlik": 100
+    },
+    "olay": {
+      "ad": "Dolunay",
+      "saat": "17:53"
+    },
+    "gezegenler": {
+      "Merkür": {
+        "burc": "Akrep",
+        "gecis": null,
+        "retro": false
+      },
+      "Venüs": {
+        "burc": "Terazi",
+        "gecis": null,
+        "retro": false
+      },
+      "Mars": {
+        "burc": "Aslan",
+        "gecis": null,
+        "retro": false
+      },
+      "Jüpiter": {
+        "burc": "Aslan",
+        "gecis": null,
+        "retro": false
+      },
+      "Satürn": {
+        "burc": "Koç",
+        "gecis": null,
+        "retro": true
+      },
+      "Uranüs": {
+        "burc": "İkizler",
+        "gecis": null,
+        "retro": true
+      },
+      "Neptün": {
+        "burc": "Koç",
+        "gecis": null,
+        "retro": true
+      },
+      "Plüton": {
+        "burc": "Kova",
+        "gecis": null,
+        "retro": false
+      }
+    },
+    "ayAcilari": [
+      {
+        "gezegen": "Jüpiter",
+        "aci": "kare",
+        "saat": "08:29"
+      },
+      {
+        "gezegen": "Mars",
+        "aci": "kare",
+        "saat": "13:09"
+      },
+      {
+        "gezegen": "Neptün",
+        "aci": "altmışlık",
+        "saat": "16:53"
+      },
+      {
+        "gezegen": "Güneş",
+        "aci": "karşıt",
+        "saat": "17:54"
+      },
+      {
+        "gezegen": "Plüton",
+        "aci": "üçgen",
+        "saat": "19:39"
+      },
+      {
+        "gezegen": "Uranüs",
+        "aci": "kavuşum",
+        "saat": "20:07"
+      }
+    ],
+    "gezegenAcilari": [
+      {
+        "gezegenler": [
+          "Güneş",
+          "Neptün"
+        ],
+        "aci": "üçgen",
+        "fark": 0.4,
+        "yaklasiyor": false,
+        "saat": "03:08"
+      },
+      {
+        "gezegenler": [
+          "Güneş",
+          "Plüton"
+        ],
+        "aci": "altmışlık",
+        "fark": 1.3,
+        "yaklasiyor": true,
+        "saat": null
+      }
+    ],
+    "retroDonusleri": [],
+    "tutulmalar": []
+  },
+  "burclar": {
+    "aries": {
+      "ad": "Koç",
+      "ozet": "Harcamalarını gözden geçirip akşamüstü zihnini hafifletmeye alan açabilirsin.",
+      "genel": "Maddi güvence arayışıyla başlayan saatler, öğleden sonra yerini meraklı ve hareketli bir iletişime bırakıyor. Günün ilk yarısında harcamalarında bütçenin sınırlarını zorlama eğilimi hissedilebilir. Akşama doğru Yay burcundaki Güneş ile Boğa ve İkizler hattındaki Dolunay tamamlanırken, zihnindeki soruların yanıtları netleşmeye başlıyor. Fikir alışverişlerinde sakin kaldığında yakın çevrenle bağların daha sağlam kurulacaktır.",
+      "askIliskide": "Birlikte zaman geçirirken küçük bütçe planları üstünde durmak gündeme gelebilir. Akşam saatlerinde sohbeti eğlenceli ve hafif konulara taşımak ikinize de iyi gelecektir.",
+      "askYalniz": "Çevrendeki insanlarla diyalogların öğleden sonra ivme kazanabilir. Bir mesaj ya da tesadüfi bir karşılaşma, bakış açını tazeleyecek tatlı bir merak uyandırabilir.",
+      "kariyer": "Finansal konularda sabırsız çıkışlar yapmaktan kaçınmak önem kazanıyor. Öğleden sonra yazışmalar ve kısa görüşmeler hızlanırken önemli detayları gözden kaçırmamak fayda sağlar.",
+      "saglik": "Günün ilk yarısındaki gerginliği yürüyüşle atabilirsin. Akşama doğru zihinsel tempon artarken dinlenmeye vakit ayırmayı unutma."
+    },
+    "taurus": {
+      "ad": "Boğa",
+      "ozet": "Bedeninin sesini duyup akşamüstü öz değerini yeniden tanımlayabilirsin.",
+      "genel": "Kendinle baş başa kalıp içindeki sesi dinlemek günün ilk yarısında sana yön veriyor. Öğleden sonra kişisel kaynaklar ve bütçe alanına geçen odak, Dolunay netliğiyle birleşerek bir süredir belirsiz kalan bir konuyu aydınlatabilir. Karşındaki insanlarla paylaştığın sorumluluklarda dengeli bir duruş sergilemek iç huzurunu korur. Akşama doğru ani kararlar vermek yerine zemini sağlamlaştırmak sana iyi gelecektir.",
+      "askIliskide": "Sevgilinle aranızdaki ortak değerleri ve beklentileri açıkça konuşma fırsatı bulabilirsin. Karşılıklı anlayış gösterdiğinizde ilişkiniz derinlik kazanacaktır.",
+      "askYalniz": "Kendine verdiğin değeri hissettikçe çevrenin sana yaklaşımı da değişiyor. Akşamüstü beklenmedik bir farkındalık, ilişkilerden ne beklediğini netleştirebilir.",
+      "kariyer": "Bireysel duruşunu sergilemek için öğleden önceki saatler oldukça elverişli. Finansal dengeni korumak adına alım satım işlerinde aceleci adımlar atmamalısın.",
+      "saglik": "Yavaş ve temkinli bir hareket ritmi enerjini korur. Günün getirdiği duygusal yoğunluğu akşam saatlerinde gevşeme egzersizleriyle hafifletebilirsin."
+    },
+    "gemini": {
+      "ad": "İkizler",
+      "ozet": "İçindeki kabuktan çıkıp akşam saatlerinde kendi ışığını öne çıkarabilirsin.",
+      "genel": "Günün ilk saatlerinde kendi dünyanda kalıp düşüncelerini süzgeçten geçirmek isteyebilirsin. Öğleden sonra burcuna geçen tempolu akışla birlikte enerjin birden yükseliyor. İlişkiler ekseninde gerçekleşen Dolunay, birlikteliklerde ya da ortaklıklarda eksik kalan parçaları görünür kılıyor. Akşama doğru sürpriz gelişmelere açık bir zihinle hareket etmek yeni bir pencere açabilir.",
+      "askIliskide": "Karşındaki kişinin hislerini ve beklentilerini anlamak için akşamüstü güzel bir zaman. Açık bir iletişimle aranızdaki ufak pürüzleri kolayca giderebilirsiniz.",
+      "askYalniz": "Öğleden sonra artan çekim gücünle çevrenin dikkatini çekebilirsin. Akşam saatlerinde aniden gelişen sohbetler sana hiç beklemediğin bir heyecan katabilir.",
+      "kariyer": "Yarım kalmış işleri öğleye kadar tamamlayıp ardından kendi projelerine odaklanabilirsin. Akşamüstü zihnine düşen sıra dışı fikirleri hemen not etmen yararlı olur.",
+      "saglik": "Gün ortasına kadar sakin bir tempoda kalmak zihnini rahatlatır. Akşama doğru yükselen hareket ihtiyacını ritmik egzersizlerle karşılayabilirsin."
+    },
+    "cancer": {
+      "ad": "Yengeç",
+      "ozet": "Sosyal çevrenin temposundan sıyrılıp akşam saatlerinde kendi iç huzuruna çekilebilirsin.",
+      "genel": "Sabah saatlerinde arkadaşlarından gelen haberler veya grup planları gündemini meşgul edebilir. Öğleden sonra kabuğuna çekilme arzusu ağır bastıkça, yalnız kalmanın getirdiği ferahlığı hissedebilirsin. Günlük rutinlerin ile iç dünyan arasında gerçekleşen Dolunay, tamamlaman gereken sorumlulukları netleştiriyor. Akşamüstü sezgilerine güvenmek, karar vermekte zorlandığın noktalarda sana rehberlik edecektir.",
+      "askIliskide": "Birlikte kalabalıklardan uzaklaşıp baş başa vakit geçirmek aranızdaki bağı güçlendirir. Ufak jestlerle duygusal yakınlığı artırmanız mümkün.",
+      "askYalniz": "İç sesini dinlemek ve geçmiş tecrübeleri sakince değerlendirmek adına anlamlı bir gündesin. Kendini hazır hissettiğinde yeni adımlar zaten kendiliğinden şekillenecektir.",
+      "kariyer": "İş ortamındaki detayları toparlamak için öğleden sonraki saatleri değerlendirebilirsin. Arka planda yürüttüğün projeleri sakin bir zihinle gözden geçirmek verimini artırır.",
+      "saglik": "Temponu düşürüp kaliteli bir uykuya zemin hazırlamak iyi gelecektir. Zihnini yoran düşüncelerden arınmak için akşamı sessizlikle karşılayabilirsin."
+    },
+    "leo": {
+      "ad": "Aslan",
+      "ozet": "Hedeflerini gözden geçirip akşamüstü geleceğe dair adımlarını netleştirebilirsin.",
+      "genel": "Sorumlulukların ve toplum önündeki görünürlüğün sabah saatlerinde odağında yer buluyor. Öğleden sonra arkadaş grupları ve sosyal çevre alanına geçen enerji, üzerindeki baskıyı hafifletebilir. Aşk ve yaratıcılık evindeki Güneş ile yaşanan Dolunay, hem keyif aldığın konuları hem de uzun vadeli hedeflerini dengede tutmanı istiyor. Akşamüstü çevrenden alacağın destekle gücünü daha net hissedebilirsin.",
+      "askIliskide": "Sevdiğin kişiyle birlikte sosyal aktivitelere katılmak ilişkinize neşe katabilir. Duygularını cömertçe ifade etmek aranızdaki samimiyeti pekiştirir.",
+      "askYalniz": "Sosyal ortamlarda ya da arkadaş vasıtasıyla yeni biriyle tanışma ihtimalin yüksek. Çevrenin sana olan ilgisini akşama doğru daha bariz fark edebilirsin.",
+      "kariyer": "İş hayatındaki görünürlüğün öğleye kadar ön planda kalıyor. Öğleden sonra gelecek projelerine odaklanarak ekip çalışmalarında yön verici bir rol üstlenebilirsin.",
+      "saglik": "Günün getirdiği yoğun temponun ardından akşam hareketli ortamlarda stres atabilirsin. Zihinsel rahatlama için arkadaşlarınla vakit geçirmek iyi gelecektir."
+    },
+    "virgo": {
+      "ad": "Başak",
+      "ozet": "Hayat vizyonunu tazelerken akşamüstü sorumluluklarına kararlılıkla odaklanabilirsin.",
+      "genel": "Sabah saatlerinde yeni şeyler öğrenme veya uzaklarla ilgili konular zihninde yer kaplıyor. Öğleden sonra kariyer ve hedefler alanına geçen hareketlilik, dikkatini somut başarılara yöneltecektir. Ev ve aile alanındaki Güneş ile gerçekleşen Dolunay, içsel köklerinle dış dünyadaki hedeflerin arasındaki dengeyi bulmanı kolaylaştırıyor. Akşamüstü planlarını adım adım hayata geçirmek sana özgüven kazandıracaktır.",
+      "askIliskide": "Eviniz ve ortak geleceğiniz hakkında önemli kararlar almanın eşiğine gelebilirsiniz. Sakin ve mantıklı yaklaşımlar sergilediğinizde her şey yoluna girer.",
+      "askYalniz": "İki ayrı dünya arasında kalmış hissinden sıyrılıp ne istediğine karar vereceğin bir zamandasın. Akşama doğru tanışacağın biri, duruşuyla dikkatini çekebilir.",
+      "kariyer": "Üstlendiğin görevlerde sorumluluk alma vakti geldi. Öğleden sonra işindeki detayları düzenleyerek üstlerinin takdirini kazanabilirsin.",
+      "saglik": "Çalışma temponu dengede tutarak zihinsel yorgunluğun önüne geçebilirsin. Akşam saatlerinde nefes egzersizleriyle günü noktalamak rahatlatıcı olur."
+    },
+    "libra": {
+      "ad": "Terazi",
+      "ozet": "İçsel dönüşümünü kucaklayıp akşamüstü ufkunu genişletecek konulara yönelebilirsin.",
+      "genel": "Paylaşılan kaynaklar ve derin duygusal bağlar sabah saatlerinde gündemini şekillendiriyor. Öğleden sonra zihnini tazeleyen inançlar ve öğrenme arzusu öne çıkıyor. İletişim alanındaki Güneş ile yaşanan Dolunay, söylenmemiş şeyleri su yüzüne çıkarırken bakış açını da genişletecektir. Akşamüstü alacağın bir haber veya yapacağın bir sohbet, kararsız kaldığın konularda yolunu aydınlatabilir.",
+      "askIliskide": "Duygusal derinliği olan konuları konuşmaktan çekinmemelisin. Düşüncelerini samimiyetle paylaştığında partnerinle aranızdaki bağ güçlenecektir.",
+      "askYalniz": "Farklı kültürlerden ya da uzaklardan biriyle diyalog kurma imkanı doğabilir. Akşam saatlerinde zihnen seni uyaran biriyle heyecanlı bir sohbet başlatabilirsin.",
+      "kariyer": "Ortaklı bütçeleri toparlama evresinden çıkıp vizyoner fikirlere yöneliyorsun. Öğleden sonra yapacağın yazışmalarda açık bir dil kullanmak süreçleri hızlandırır.",
+      "saglik": "Aşırı düşünmenin yarattığı gerginliği açık havada kısa bir yürüyüşle atabilirsin. Akşama doğru zihnini sakin tutacak aktivitelere vakit ayır."
+    },
+    "scorpio": {
+      "ad": "Akrep",
+      "ozet": "İkili ilişkilerdeki hareketlilik öğleden sonra yerini ortak değerlerin ve hislerin derinliğine bırakabilir.",
+      "genel": "Sabahın erken saatlerinde karşındaki insanla kurduğun diyaloglar odağındayken, öğleden sonra zihnini ve hislerini daha derin konulara yönlendirebilirsin. Yönetici gezegenin Mars ile Ay arasındaki sert temas, günün ortasında sabırsız tepkiler vermene yol açabilir; sakince beklemek ilişkilere denge getirir. Dolunay saatlerinde Güneş'in kendi kaynaklar alanından yaptığı ışık, paylaştığın değerlerle kişisel alanın arasındaki çizgiyi netleştirmeni kolaylaştırır.",
+      "askIliskide": "Karşılıklı güveni tazelemek için samimi sohbetler kurabilirsin. Birlikte karar alırken güç mücadelesine girmek yerine birbirinizin hislerini anlamaya vakit ayırmak bağınızı güçlendirir.",
+      "askYalniz": "Biriyle tanışma fikri zihnini kurcalarken aceleci adımlar atmaktan kaçınabilirsin. Akşam saatlerinde gelişen sürpriz bir diyalog, duygusal mesafeni yumuşatmana imkan verebilir.",
+      "kariyer": "Bütçe planlamaları ve ortak yürütülen projelerde detayları dikkatle incelemek isteyebilirsin. Masadaki anlaşmaları aceleye getirmeden akşam saatlerine doğru karara bağlamak daha sağlıklı sonuçlar verir.",
+      "saglik": "Günün getirdiği duygusal yoğunluğu yürüyüş ya da hafif hareketlerle dengeleyebilirsin. Akşam saatlerinde zihnini tamamen dinlenmeye bırakmak uyku kaliteni artıracaktır."
+    },
+    "sagittarius": {
+      "ad": "Yay",
+      "ozet": "Günlük işlerini tamamladıktan sonra ikili ilişkilerinde denge ve ortak zemin bulmaya odaklanabilirsin.",
+      "genel": "Günün erken vakitlerinde yapılacaklar listenle ilgilenirken yönetici gezegenin Jüpiter'in yaptığı açı sebebiyle biraz abartılı kararlar almaya meyilli olabilirsin. Öğleden sonra odağın tamamen karşındaki insanlara kayıyor. Burcundaki Güneş ile karşıt konuma gelen Dolunay, bireysel hedeflerinle birlikteliklerinin getirdiği sorumlulukları aynı potada eritmeni bekliyor. İletişimde neşeli ve esnek bir tutum sergilemek akşam saatlerinde uyumu yakalamanı sağlar.",
+      "askIliskide": "Kendini ifade ederken partnerinin de beklentilerine alan açabilirsin. Ortak bir noktada buluşmak ve akşamı sakin sohbetlerle geçirmek aranızdaki bağı tazeler.",
+      "askYalniz": "Yeni diyalogların ve karşılaşmaların önü açılabilir. Akşam saatlerinde karşına çıkabilecek sıra dışı bir aday, neşeli tavırlarıyla ilgini çekebilir.",
+      "kariyer": "Sabah saatlerinde rutin görevlerini tamamlayıp öğleden sonra iş ortaklıklarına zaman ayırabilirsin. Görüşmelerde esnek kalmak ve fikir alışverişlerine açık durmak süreçleri hızlandırır.",
+      "saglik": "Temponun yükseldiği zamanlarda kısa dinlenme aralıkları vermek enerjini korumanı sağlar. Akşam saatlerinde bedeni yormayan ritmik hareketler zihnini boşaltmana yardımcı olur."
+    },
+    "capricorn": {
+      "ad": "Oğlak",
+      "ozet": "Yaratıcı enerjini kullanıp akşamüstü günlük düzenine pratiklik katabilirsin.",
+      "genel": "Keyif aldığın konular ve yaratıcılığın sabah saatlerinde neşeni artırabilir. Öğleden sonra günlük sorumluluklar ve düzen alanına geçen akış, somut detaylara odaklanmanı gerektiriyor. İç dünya alanındaki Güneş ile gerçekleşen Dolunay, zihninde biriktirdiğin kaygıları geride bırakıp düzene girmeni kolaylaştırıyor. Akşamüstü planlı adımlarla hareket etmek kontrol hissini yeniden kazandıracaktır.",
+      "askIliskide": "Birlikte küçük sorumlulukları paylaşmak aranızdaki dayanışmayı güçlendirebilir. Akşam saatlerinde huzurlu ve sade bir ortam yaratmak ikinize de iyi gelecektir.",
+      "askYalniz": "Hayatına giren insanlarda güven ve düzen arayışın öne çıkabilir. Çalışma ortamında ya da günlük koşturmacalar esnasında ilgini çekecek biri belirebilir.",
+      "kariyer": "Öğleden sonra masandaki ayrıntıları toparlamak ve iş listeni güncellemek adına elverişli saatler var. Sorumluluk bilinciyle hareket ettiğinde işlerin kolayca tamamlanır.",
+      "saglik": "Gün içindeki zihinsel stresi azaltmak için düzenli aralar vermelisin. Akşam saatlerinde dinlenmeye zaman ayırmak enerjini toparlar."
+    },
+    "aquarius": {
+      "ad": "Kova",
+      "ozet": "Evindeki sakinliği tamamlayıp öğleden sonra yaratıcı arzularına ve keyif aldığın konulara alan açabilirsin.",
+      "genel": "Günün ilk saatlerinde evindeki işleri tamamlamak ya da kişisel alanında kalmak sana iyi gelebilir. Öğleden sonra kendini ifade etme ve hobilerine zaman ayırma arzun öne çıkıyor. Topluluklar alanındaki Güneş karşısında beliren Dolunay, sosyal çevrenin beklentileriyle kişisel isteklerin arasındaki dengeyi kurmanı kolaylaştırıyor. Akşama doğru Uranüs ile Ay birleşirken zihninde beliren özgün fikirleri hayata geçirme isteği duyabilirsin.",
+      "askIliskide": "Birlikte zaman geçirirken alışılmışın dışına çıkmak ilişkinize canlılık kazandırabilir. Akşam saatlerinde partnerinle paylaşacağın sürpriz bir fikir aranızdaki neşeyle birleşebilir.",
+      "askYalniz": "İlgini çeken ortamlarda kendi doğal halinle bulunmak fark edilmeni sağlar. Akşamüstü spontane gelişen bir diyalog beklentilerinin ötesinde bir iletişime dönüşebilir.",
+      "kariyer": "Özgün yaklaşımlarını projelere yansıtmak için elverişli bir ritim var. Ekip çalışmalarında farklı bakış açını paylaştığında çevrendekilerin ilgisini kolayca toplayabilirsin.",
+      "saglik": "Zihinsel hareketliliğin arttığı saatlerde açık havada yürümek ya da kısa molalar vermek zihnini yatıştırır. Sevdiğin uğraşlarla zaman geçirmek günün stresini atmana yardım eder."
+    },
+    "pisces": {
+      "ad": "Balık",
+      "ozet": "İş hayatınla evindeki huzur arasında denge kurarken günün akışı seni iç dünyana çağırabilir.",
+      "genel": "Zihnini meşgul eden mesajlar ve kısa sohbetlerle başlayan ritim, günün ortasından sonra odağını evine ve ailevi meselelere kaydırıyor. Yönetici gezegenin Jüpiter ile sabah saatlerinde kurulan sert etkileşim, bazı sorumlulukları gözünde büyütme eğilimi yaratabilir. Günün ikinci yarısında gerçekleşen Dolunay ise mesleki hedeflerinle özel yaşamın arasındaki dengeyi bulmanı kolaylaştırıyor. Akşam saatlerini daha sakin, güvende hissettiğin alanlarda geçirmek zihinsel berraklık kazanmanı sağlayabilir.",
+      "askIliskide": "Evinde partnerinle birlikte vakit geçirmek, günün getirdiği yorgunluğu hafifletmeye yardımcı olabilir. Ortak kararlar alırken gösterdiğiniz esneklik, aranızdaki güven duygusunu daha da sağlamlaştırır.",
+      "askYalniz": "Kendi alanında kalmak ve duygu dünyanı toparlamak bugün sana daha cazip gelebilir. Yakın çevrenin önerisiyle dahil olacağın sohbetlerde beklenmedik diyaloglar gelişebilir.",
+      "kariyer": "İş hayatındaki uzun vadeli hedeflerinle masandaki görevler arasında gerçekçi bir sıralama yapmak gerekebilir. Günün ilerleyen vakitlerinde evden sürdürülebilecek projelere odaklanmak ve yarım kalan işleri tamamlamak düzenini rahatlatır.",
+      "saglik": "Zihinsel yoğunluğun ardından günün sonuna doğru tempoyu düşürmek zihnini dinlendirebilir. Sessiz bir ortamda kalmak gün boyu biriken stresi uzaklaştırmana yardım eder."
+    }
+  }
+}
