@@ -1,0 +1,206 @@
+{
+  "tarih": "2026-11-29",
+  "uretildi": "2026-11-28T17:06:07Z",
+  "model": "gemini-3.6-flash",
+  "gokyuzu": {
+    "gunes": {
+      "burc": "Yay",
+      "gecis": null
+    },
+    "ay": {
+      "burc": "Aslan",
+      "gecis": null,
+      "evre": "Küçülen Ay",
+      "aydinlik": 70
+    },
+    "olay": null,
+    "gezegenler": {
+      "Merkür": {
+        "burc": "Akrep",
+        "gecis": null,
+        "retro": false
+      },
+      "Venüs": {
+        "burc": "Terazi",
+        "gecis": null,
+        "retro": false
+      },
+      "Mars": {
+        "burc": "Başak",
+        "gecis": null,
+        "retro": false
+      },
+      "Jüpiter": {
+        "burc": "Aslan",
+        "gecis": null,
+        "retro": false
+      },
+      "Satürn": {
+        "burc": "Koç",
+        "gecis": null,
+        "retro": true
+      },
+      "Uranüs": {
+        "burc": "İkizler",
+        "gecis": null,
+        "retro": true
+      },
+      "Neptün": {
+        "burc": "Koç",
+        "gecis": null,
+        "retro": true
+      },
+      "Plüton": {
+        "burc": "Kova",
+        "gecis": null,
+        "retro": false
+      }
+    },
+    "ayAcilari": [
+      {
+        "gezegen": "Güneş",
+        "aci": "üçgen",
+        "saat": "01:28"
+      },
+      {
+        "gezegen": "Satürn",
+        "aci": "üçgen",
+        "saat": "03:44"
+      }
+    ],
+    "gezegenAcilari": [
+      {
+        "gezegenler": [
+          "Venüs",
+          "Jüpiter"
+        ],
+        "aci": "altmışlık",
+        "fark": 0.4,
+        "yaklasiyor": false,
+        "saat": null
+      },
+      {
+        "gezegenler": [
+          "Güneş",
+          "Satürn"
+        ],
+        "aci": "üçgen",
+        "fark": 0.9,
+        "yaklasiyor": true,
+        "saat": null
+      }
+    ],
+    "retroDonusleri": [],
+    "tutulmalar": []
+  },
+  "burclar": {
+    "aries": {
+      "ad": "Koç",
+      "ozet": "Neşen ve yaratıcılığın bugün hayata daha özgüvenli bakmanı sağlıyor.",
+      "genel": "Gece yarısından hemen sonra gökyüzünde gerçekleşen tatlı uyum, güne başlarken içinde sağlam bir özgüven ve rahatlık hissi bırakabilir. Kendi isteklerine odaklanmak ve yaratıcı taraflarını özgürce beslemek bugün ruhuna çok iyi geliyor. Güneş'in Yay burcundaki yürüyüşü ve Satürn ile kurduğu sağlam köprü, bir yandan ufkunu genişletirken diğer yandan adımlarını yere çok daha sağlam basmanı destekliyor.",
+      "askIliskide": "Sevgilinle birlikte ortak bir hobiden keyif alabilir ya da geleceğe dair heyecanlı planlar yapabilirsin. Birlikte geçirdiğiniz anların tadını çıkarmak aranızdaki bağı güçlendirir.",
+      "askYalniz": "Kendini rahatça ifade edebildiğin ortamlar dikkat çekmeni kolaylaştırıyor. İçinden geldiği gibi davrandığında seninle aynı frekanstaki insanlarla karşılaşabilirsin.",
+      "kariyer": "Zihnini kurcalayan projelerde yaratıcı çözümler üretebilirsin. Ufuktaki uzun vadeli planları sabırla biçimlendirmek ve özgün fikirlerini sunmak başarı getirir.",
+      "saglik": "Günün hareketli temposu zihnini canlandırıyor. Kısa molalar vererek dinlenme aralıkları yaratmak dengeni korumana yardımcı olur."
+    },
+    "taurus": {
+      "ad": "Boğa",
+      "ozet": "Kendi iç alanına çekilip sevdiklerinle güvenli bir bağ kurmak ruhunu besliyor.",
+      "genel": "Yaşam alanında aradığın huzur ve sıcaklık bugün odağının tam merkezine yerleşiyor. Yönetici gezegenin Venüs'ün Jüpiter ile sürdürdüğü uyumlu diyalog, ilişkilerinde zarafeti ve paylaşım duygusunu belirgin şekilde güçlendiriyor. Evinde toparlanmalar yapmak ya da ailevi konuşmalarda geçmişten gelen bir meseleye anlayışla yaklaşmak, içsel dengeni yeniden bulmanı sağlayarak sana derin bir rahatlama getirebilir.",
+      "askIliskide": "Evde baş başa vakit geçirmek ve sakince sohbet etmek aranızdaki samimiyeti artırır. Küçük jestlerle sevgine alan açabilirsin.",
+      "askYalniz": "Yakın çevrenin ya da dostlarının vesilesiyle tanışacağın biriyle yakın bir iletişim başlayabilir. Güven duyduğun zeminlerde adım atmak sana iyi gelir.",
+      "kariyer": "Bütçeni ve ortak kaynakları gözden geçirmek adına sakin bir gün geçirebilirsin. Arka plandaki ayrıntıları düzenlemek önündeki haftayı kolaylaştırır.",
+      "saglik": "Zihnini yoran karmaşadan uzak durmak enerji seviyeni korur. Kendi kişisel alanında vakit geçirmek ruhsal bir tazelenme sağlar."
+    },
+    "gemini": {
+      "ad": "İkizler",
+      "ozet": "Sözlerin ve düşüncelerinle çevrene ışık tutabileceğin, canlı bir diyalog günü.",
+      "genel": "Yakın çevrenle yürüttüğün yoğun iletişim bugün günün ana temasını oluşturuyor. Düşüncelerini ve merak ettiklerini açıkça ifade etmekten çekinmediğin oldukça hareketli bir zihinsel akış var. İkili ilişkiler alanında ilerleyen Güneş, kurduğun diyaloglara derinlik ve ciddiyet kazandırıyor. Gün boyunca alacağın kısa haberler veya karşılaşacağın ufak sürprizler zihnini diri tutabilir.",
+      "askIliskide": "Partnerinle açık ve dürüst bir iletişim kurmak aranızdaki soru işaretlerini giderecektir. Birlikte kısa bir yürüyüş yapmak zihninizi boşaltmaya yardımcı olur.",
+      "askYalniz": "İletişiminin güçlü olduğu bir gündesin; mesajlaşmalar ve spontane sohbetler heyecanlı bir etkileşimin kapısını aralayabilir.",
+      "kariyer": "Görüşmelerin ve yazışmaların yoğunlaşabileceği bir tempo söz konusu. Anlaşmalarda ve paylaşımlarda net ifadeler kullanmak işlerini hızlandırır.",
+      "saglik": "Gün içindeki yoğun bilgi akışı zihnini yorabilir. Akşam saatlerinde ekrandan uzaklaşmak ve sakin kalmak dengeni bulmanı kolaylaştırır."
+    },
+    "cancer": {
+      "ad": "Yengeç",
+      "ozet": "Kendi değerine ve somut birikimlerine odaklanarak içsel güvenini tazeleyebilirsin.",
+      "genel": "Gece saatlerinde yöneticin Ay'ın kurduğu uyumlu açılar, güne kendi öz değerini derinden hissederek adım atmanı sağlıyor. Maddi konuları, birikimlerini ve kişisel yeteneklerini gözden geçirmek, kaynaklarını nereye aktarman gerektiği konusunda berraklık sunabilir. Günlük hayatında kurmak istediğin istikrar ve düzen, gün boyu kendini çok daha güvende ve huzurlu hissetmeni doğrudan destekliyor.",
+      "askIliskide": "İlişkide emek verdiğin konuların karşılığını hissetmek sana huzur verir. Sıcak bir jestle duygularını partnerine belli edebilirsin.",
+      "askYalniz": "Kendi ayakları üzerinde duran duruşun çevrendekilerin ilgisini çekiyor. Kendine verdiğin değer arttıkça hayatına çekeceğin insan niteliği de değişebilir.",
+      "kariyer": "Ürettiğin işlerin kalitesine odaklanmak ve iş yükünü düzenlemek için elverişli bir zaman akışı var. Bütçe dengeni gözeterek hareket etmek seni rahatlatır.",
+      "saglik": "Temponu kendi ihtiyacına göre ayarlamak zihinsel yükünü hafifletir. Yavaşlayıp kendi ritminde kalmak sana iyi gelecektir."
+    },
+    "leo": {
+      "ad": "Aslan",
+      "ozet": "Doğal bir özgüven ve kararlılıkla kendi varlığını ve isteklerini öne çıkarıyorsun.",
+      "genel": "Burcunda ilerleyen Ay'ın yöneticin Güneş ve Satürn ile kurduğu yapıcı temaslar, kendi duruşunu netlikle sergilemeni kolaylaştırıyor. İçindeki özgün duruşu ve yaşama sevgisini etrafına yansıtmak konusunda oldukça akıcı bir zemin var. Gün boyunca kendi hedeflerine kilitlenebilir, yaratıcı enerjini somut bir alana aktararak çevrendekilerden hak ettiğin takdiri kolayca toplayabilirsin.",
+      "askIliskide": "İçten ve özgüvenli yaklaşımın partnerine güven veriyor. Birlikte eğlenceli bir organizasyon yapmak aranızdaki ateşi canlı tutacaktır.",
+      "askYalniz": "Parıltın ve samimiyetin etrafındakilerin dikkatinden kaçmıyor. Yeni biriyle tanışırken kendi gibiliğini koruman ilgi uyandıracaktır.",
+      "kariyer": "İnisiyatif almaktan çekinmeyeceğin bir gün. Kendine güvendiğin alanlarda öne çıkmak ve projelerine liderlik etmek başarı getirir.",
+      "saglik": "Canlılığın yüksek olsa da kendini aşırı yormamaya özen göstermelisin. Dengeli bir hareket ritmi enerjini korur."
+    },
+    "virgo": {
+      "ad": "Başak",
+      "ozet": "İç dünyanda sessizleşip zihnini toparlamak, yeni haftaya hazırlık için imkan sunuyor.",
+      "genel": "Arka planda kalmak ve kendi zihinsel alanında dinlenmek bugün sana büyük bir güç verecektir. Burcunda ilerleyen Mars sana eylem gücü verse de bugünün genel havası durup soluklanmayı işaret ediyor. Kendi kabuğunda yapacağın değerlendirmeler, artık sana hizmet etmeyen hangi konuları geride bırakman gerektiğini fark etmeni sağlayabilir.",
+      "askIliskide": "Baş başa kalmak ve sessizliği paylaşmak aranızdaki bağı güçlendirebilir. Derin duygusal paylaşımlar için sakin ortamları tercih edebilirsin.",
+      "askYalniz": "Kendinle baş başa kaldığında ne istediğini daha net kavrayabilirsin. Geçmişten taşıdığın duygusal yükleri serbest bırakmak seni rahatlatır.",
+      "kariyer": "Detay gerektiren işleri gözden geçirmek ve planlama yapmak için uygun bir akış var. Acele kararlar almadan önce gözlemde kalmak faydalı olur.",
+      "saglik": "Zihnini dinlendirecek aktiviteler ve sakin bir ortam ruhsal dengene katkı sağlar. Yavaş bir gün ritmi seçmek iyi gelecektir."
+    },
+    "libra": {
+      "ad": "Terazi",
+      "ozet": "Dostlarınla bir araya gelip gelecek hayallerine alan açmak sana ferahlık verecek.",
+      "genel": "Sosyal çevren ve arkadaş gruplarınla temasın yoğunlaşabileceği bir gün seni bekliyor. Yönetici gezegenin Venüs'ün Jüpiter ile uyumlu diyalog sürdürmesi, bulunduğun ortamlarda samimiyetle karşılanmanı sağlıyor. Ortak niyetler etrafında buluşmak veya bir topluluk içinde fikir beyan etmek ruhuna çok iyi gelebilir, geleceğe dair umutlarını tazeleyebilir.",
+      "askIliskide": "Sosyal ortamlara birlikte katılmak ya da ortak dostlarınızla vakit geçirmek ilişkinize keyif katar. Eğlenceli sohbetler bağınızı tazeler.",
+      "askYalniz": "Arkadaş ortamlarında veya katıldığın etkinliklerde zihinsel olarak uyum yakalayabileceğin biriyle tanışma olasılığın yüksek.",
+      "kariyer": "Geleceğe dönük projeleri ekiple paylaşmak adına verimli bir gün. İletişim gücünü kullanarak ortak paydada buluşmayı kolaylaştırabilirsin.",
+      "saglik": "Kalabalıkların getirdiği hareketlilik ruhunu canlandırır. Ancak kendi sınırlarını koruyarak zihinsel yorgunluğun önüne geçebilirsin."
+    },
+    "scorpio": {
+      "ad": "Akrep",
+      "ozet": "Hedeflerinde kararlılıkla ilerlerken duruşunla çevrende güven hissi uyandırıyorsun.",
+      "genel": "Toplum önündeki duruşun ve hedeflerin bugün dikkat çekiyor. Burcundaki Merkür zihnini oldukça keskin kıldığı için planlarını mantık süzgecinden geçirerek sunabilirsin. Güneş'in destekleyici açısı, yeteneklerine olan inancını pekiştiriyor ve emeklerinin görünür kılınmasını kolaylaştırıyor. Sorumluluklarını üstlenirken kendinden emin adımlar atabilirsin.",
+      "askIliskide": "Geleceğe yönelik ortak sorumlulukları konuşmak için uygun bir zemin var. Birbirinize destek verdiğinizi hissetmek ilişkinizi sağlamlaştırır.",
+      "askYalniz": "Ciddiyetin ve net duruşun etrafındaki insanlara cazip gelebilir. Ne istediğini bilen ve kararlı adımlar atan biri ilgini çekebilir.",
+      "kariyer": "Sorumluluklarını başarıyla üstlenebileceğin bir gündesin. Üstlerinle veya müşterilerinle yapacağın diyaloglarda duruşunu koruman saygınlık kazandırır.",
+      "saglik": "Yoğun sorumluluk hissi zaman zaman gerginlik yaratabilir. Gün sonunda zihnini serbest bırakacak bir uğraş bulmalısın."
+    },
+    "sagittarius": {
+      "ad": "Yay",
+      "ozet": "Hayata olan inancın ve merakın yükselirken ufkunu genişletecek diyaloglar öne çıkıyor.",
+      "genel": "Kendi burcunda ilerleyen Güneş'in Satürn ile kurduğu sağlam köprü ve yöneticin Jüpiter'in Venüs ile uyumu, neşeni ve özgüvenini artırıyor. Yeni şeyler öğrenmek, farklı kültürler ya da felsefi konular üzerine düşünmek sana heyecan verebilir. İnandığın değerlerin arkasında durarak kendini ifade etmek bugün oldukça kolay olacaktır.",
+      "askIliskide": "Birlikte yeni yerler keşfetme planı yapmak ya da ufkunuzu açacak konularda sohbet etmek ilişkinize canlılık katar.",
+      "askYalniz": "Farklı bakış açılarına sahip, entelektüel biriyle karşılaşma şansın var. Yaşama neşeyle bakan tavrın çekim yaratıyor.",
+      "kariyer": "Ufktaki hedeflerini genişletmek ve vizyonunu paylaşmak için ideal bir akış var. Eğitsel ve uzun vadeli işlerde somut adımlar atabilirsin.",
+      "saglik": "İçindeki yüksek enerjiyi açık havada yürüyerek ya da zihnini tazeleyecek hobilerle dengelemek sana çok iyi gelir."
+    },
+    "capricorn": {
+      "ad": "Oğlak",
+      "ozet": "Derin duygusal konuları ve kaynakları sabırla ele alarak içsel bir dengelenme yaşayabilirsin.",
+      "genel": "Yöneticin Satürn'ün Ay ve Güneş ile kurduğu yapıcı açılar, karmaşık meselelerde sakin ve olgun kalmanı destekliyor. Ortaklaşa yürütülen bütçeler veya dönüşüm gerektiren içsel durumlar üzerine düşünebilirsin. Geri hareketteki Satürn geçmişteki deneyimlerinden süzülen bilgeliği hatırlatırken, olaylara uzun vadeli bakmak sana huzur verir.",
+      "askIliskide": "Sevgilinle aranızdaki güveni pekiştirmek için samimi ve dürüst bir diyalog kurabilirsin. Derin paylaşımlar birbirinizi daha iyi anlamanızı sağlar.",
+      "askYalniz": "Yüzeysel etkileşimler yerine samimi ve güven veren insanlara çekilebilirsin. Gizemli ve olgun bir çekim zihnini kurcalayabilir.",
+      "kariyer": "Finansal konuları, borçları veya ortak yatırımları planlamak adına sağlam adımlar atabilirsin. İnce detayları kaçırmadan ilerlemek kazandırır.",
+      "saglik": "İçsel dinginliğini korumak için günün belli bir anında sessizlikte kalmak zihinsel yükünü hafifletir."
+    },
+    "aquarius": {
+      "ad": "Kova",
+      "ozet": "İlişkilerinde dengeyi yakalamak ve yapıcı diyaloglar kurmak gününü güzelleştiriyor.",
+      "genel": "Odak noktan doğrudan karşındaki insanlara ve ikili ilişkilere kayıyor. Yöneticin Satürn'ün Güneş ile kurduğu üçgen açı, insanlarla sağlam ve seviyeli bağlar kurmanı kolaylaştırıyor. Ortak kararlar alırken karşı tarafı dinlemek ve olgun bir tutum sergilemek, olası anlaşmazlıkları son derece kolay çözebilir.",
+      "askIliskide": "İletişimde karşılıklı anlayışın hakim olduğu bir gündesiniz. Partnerinle geleceğe dair ortak bir karara varmak bağınızı güçlendirir.",
+      "askYalniz": "Olgun, ne istediğini bilen ve sana zihinsel olarak eşlik edebilecek biriyle tanışman olasıdır. Seviyeli yaklaşımlar ilgini çeker.",
+      "kariyer": "İş ortaklıkları ve bire bir görüşmeler açısından verimli bir akış var. Anlaşmalarda yapıcı bir dil kullanmak kalıcı sonuçlar getirir.",
+      "saglik": "Başkalarının sorumluluklarını üstlenmeden kendi alanını korumak zihinsel enerjini yüksek tutmana yardımcı olur."
+    },
+    "pisces": {
+      "ad": "Balık",
+      "ozet": "Günlük rutinlerini düzenlemek ve alanını toparlamak sana zihinsel bir hafiflik katıyor.",
+      "genel": "Yaşamındaki küçük detayları sıraya koymak ve sorumluluklarını düzene sokmak isteyebilirsin. Yöneticin Jüpiter'in Venüs ile kurduğu tatlı açı, günlük işlerini yürütürken bile keyifli durumlarla karşılaşmanı destekliyor. Çevrene faydalı olma isteğin artarken, yapacağın küçük dokunuşlar yaşam alanına huzur getirecektir.",
+      "askIliskide": "Günlük hayatın getirdiği yükleri paylaşmak ve birbirinizin hayatını kolaylaştırmak ilişkinize sıcaklık katar.",
+      "askYalniz": "Günlük koşuşturmaca içinde ya da çalışma ortamında sana samimiyetle yaklaşan birinin ilgisini fark edebilirsin.",
+      "kariyer": "Masandaki ve zihnindeki birikmiş detayları toparlamak adına oldukça verimli bir gün. İşlerini adım adım tamamlamak zihnini ferahlatır.",
+      "saglik": "Günün ritmini çok hızlandırmadan, kendine dinlenme vakitleri ayırarak ilerlemek enerji dengeni korur."
+    }
+  }
+}
